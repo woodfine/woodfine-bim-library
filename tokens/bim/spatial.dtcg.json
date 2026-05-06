@@ -1,0 +1,53 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM SPATIAL token category — anchored to IFC 4.3 IfcSpatialElement entity hierarchy. Site / Building / Storey / Space taxonomy.",
+  "bim": {
+    "spatial": {
+      "site": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcSite",
+          "ifc_anchor": "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcSite.htm",
+          "uniclass": "Co",
+          "description": "The geographic site or land parcel containing one or more buildings. Authoritative spatial root."
+        },
+        "$description": "IFC Site — geographic land parcel; authoritative spatial root."
+      },
+      "building": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcBuilding",
+          "ifc_anchor": "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcBuilding.htm",
+          "uniclass": "Co_25",
+          "description": "A whole building. Composed within an IfcSite. May contain one or more IfcBuildingStorey."
+        }
+      },
+      "storey": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcBuildingStorey",
+          "ifc_anchor": "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcBuildingStorey.htm",
+          "uniclass": "Co_25_50",
+          "description": "A floor or level within a building. The default expansion target for SpatialTree per BB.4 — every AEC practitioner navigates at storey level first."
+        }
+      },
+      "space": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcSpace",
+          "ifc_anchor": "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcSpace.htm",
+          "uniclass": "SL",
+          "description": "A bounded volume within a storey. Rooms, corridors, voids, exclusion zones (the City-Code-as-Composable-Geometry channel for jurisdictional fragments)."
+        }
+      },
+      "facility": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcFacility",
+          "ifc_anchor": "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcFacility.htm",
+          "description": "IFC 4.3 introduced facilities for non-building infrastructure — bridges, roads, rail, ports, waterways. Track but treat as out-of-scope at v0.0.1; v0.0.2+ as infrastructure expands."
+        }
+      }
+    }
+  }
+}

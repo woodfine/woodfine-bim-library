@@ -1,0 +1,87 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM PERFORMANCE token category — anchored to IFC 4.3 IfcPropertySet + IfcQuantitySet. Energy / thermal / acoustic / fire properties.",
+  "bim": {
+    "performance": {
+      "property_set": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcPropertySet",
+          "description": "Generic property set attached to an IFC entity. Pset_* templates are the conventional vocabulary."
+        }
+      },
+      "quantity_set": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcElementQuantity",
+          "description": "Measured quantities (area, volume, length, weight) attached to an element."
+        }
+      }
+    },
+    "psets": {
+      "Pset_WallCommon": {
+        "$type": "bim.pset",
+        "$value": {
+          "Reference": "IfcIdentifier",
+          "FireRating": "IfcLabel",
+          "AcousticRating": "IfcLabel",
+          "ThermalTransmittance": "IfcThermalTransmittanceMeasure",
+          "IsExternal": "IfcBoolean",
+          "LoadBearing": "IfcBoolean"
+        }
+      },
+      "Pset_DoorCommon": {
+        "$type": "bim.pset",
+        "$value": {
+          "Reference": "IfcIdentifier",
+          "FireRating": "IfcLabel",
+          "FireExit": "IfcBoolean",
+          "AcousticRating": "IfcLabel",
+          "SecurityRating": "IfcLabel"
+        }
+      },
+      "Pset_SpaceCommon": {
+        "$type": "bim.pset",
+        "$value": {
+          "Reference": "IfcIdentifier",
+          "Category": "IfcLabel",
+          "GrossPlannedArea": "IfcAreaMeasure",
+          "NetPlannedArea": "IfcAreaMeasure",
+          "PubliclyAccessible": "IfcBoolean",
+          "HandicapAccessible": "IfcBoolean"
+        },
+        "$description": "Space common properties — used by both BIM authoring AND lease-register workflows. The convergence channel between BIM and rent-roll data."
+      }
+    },
+    "quantities": {
+      "Qto_WallBaseQuantities": {
+        "$type": "bim.quantity_set",
+        "$value": {
+          "Length": "IfcQuantityLength",
+          "Width": "IfcQuantityLength",
+          "Height": "IfcQuantityLength",
+          "GrossSideArea": "IfcQuantityArea",
+          "NetSideArea": "IfcQuantityArea",
+          "GrossVolume": "IfcQuantityVolume",
+          "NetVolume": "IfcQuantityVolume"
+        }
+      },
+      "Qto_SpaceBaseQuantities": {
+        "$type": "bim.quantity_set",
+        "$value": {
+          "Height": "IfcQuantityLength",
+          "FinishCeilingHeight": "IfcQuantityLength",
+          "FinishFloorHeight": "IfcQuantityLength",
+          "GrossPerimeter": "IfcQuantityLength",
+          "NetPerimeter": "IfcQuantityLength",
+          "GrossFloorArea": "IfcQuantityArea",
+          "NetFloorArea": "IfcQuantityArea",
+          "GrossWallArea": "IfcQuantityArea",
+          "NetWallArea": "IfcQuantityArea",
+          "GrossVolume": "IfcQuantityVolume",
+          "NetVolume": "IfcQuantityVolume"
+        }
+      }
+    }
+  }
+}

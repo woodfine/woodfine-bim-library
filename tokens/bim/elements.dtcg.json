@@ -1,0 +1,89 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM ELEMENTS token category — anchored to IFC 4.3 IfcBuiltElement family. The walls, slabs, columns, beams, doors, windows, roofs, stairs.",
+  "bim": {
+    "elements": {
+      "wall": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcWall",
+          "ifc_subtype": "IfcWallStandardCase",
+          "uniclass": "EF_25_10",
+          "description": "Vertical separating element. The most common element type in residential and commercial BIM models."
+        }
+      },
+      "slab": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcSlab",
+          "uniclass": "EF_20_10",
+          "description": "Horizontal element forming floor, roof, or landing. SlabType disambiguates floor vs roof vs landing."
+        }
+      },
+      "column": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcColumn",
+          "uniclass": "EF_25_30",
+          "description": "Vertical structural support."
+        }
+      },
+      "beam": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcBeam",
+          "uniclass": "EF_20_25",
+          "description": "Horizontal structural support."
+        }
+      },
+      "door": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcDoor",
+          "uniclass": "EF_25_30_25",
+          "description": "Door element. References its host wall via IfcRelFillsElement."
+        }
+      },
+      "window": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcWindow",
+          "uniclass": "EF_25_30_95",
+          "description": "Window element. References its host wall via IfcRelFillsElement."
+        }
+      },
+      "roof": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcRoof",
+          "uniclass": "EF_30",
+          "description": "Roof element — composite of slabs, plates, beams typically."
+        }
+      },
+      "stair": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcStair",
+          "uniclass": "EF_25_60_92",
+          "description": "Stair element. Decomposed into IfcStairFlight + IfcRailing children."
+        }
+      },
+      "railing": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcRailing",
+          "uniclass": "EF_25_60_70",
+          "description": "Railing or balustrade element."
+        }
+      },
+      "covering": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcCovering",
+          "uniclass": "EF_25",
+          "description": "Floor / wall / ceiling covering element."
+        }
+      }
+    }
+  }
+}

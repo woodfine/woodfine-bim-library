@@ -1,0 +1,30 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM ASSEMBLIES token category — anchored to IFC 4.3 IfcElementAssembly. Hierarchical compositions of elements.",
+  "bim": {
+    "assemblies": {
+      "element_assembly": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcElementAssembly",
+          "ifc_anchor": "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcElementAssembly.htm",
+          "description": "Decomposable element comprising multiple sub-elements (truss, frame, ladder, slab system). Use for BOM-style hierarchies."
+        }
+      },
+      "geographic_element": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcGeographicElement",
+          "description": "Site-scale features: trees, parking aisles, signage. Useful for property-manager BIM where the building exists within site context."
+        }
+      },
+      "furnishing_element": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcFurnishingElement",
+          "description": "Tenant fixtures and furnishings. Particularly relevant for FM workflows over commercial leasing."
+        }
+      }
+    }
+  }
+}
