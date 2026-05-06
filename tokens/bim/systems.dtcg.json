@@ -1,0 +1,46 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM SYSTEMS token category — anchored to IFC 4.3 IfcDistributionElement (mechanical, electrical, plumbing systems).",
+  "bim": {
+    "systems": {
+      "pipe": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcPipeSegment",
+          "uniclass": "Ss_55",
+          "description": "Plumbing or fluid pipe segment."
+        }
+      },
+      "duct": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcDuctSegment",
+          "uniclass": "Ss_65",
+          "description": "HVAC duct segment."
+        }
+      },
+      "cable": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcCableSegment",
+          "uniclass": "Ss_70",
+          "description": "Electrical cable segment."
+        }
+      },
+      "flow_terminal": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcFlowTerminal",
+          "description": "Distribution terminal — outlet, fixture, sensor, light fitting. Specialised by IfcDistributionFlowElement subclasses."
+        }
+      },
+      "distribution_system": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcDistributionSystem",
+          "description": "Logical grouping of MEP elements forming a single system (e.g., 'Heating Loop A')."
+        }
+      }
+    }
+  }
+}

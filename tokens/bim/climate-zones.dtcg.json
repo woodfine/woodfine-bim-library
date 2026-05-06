@@ -1,0 +1,39 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "ecoregion": {
+    "arctic": {
+      "performance": {
+        "thermal": {
+          "max_u_value_external_wall": {
+            "$type": "number",
+            "$value": 0.12,
+            "$description": "Maximum thermal transmittance for external walls (W/m²K)."
+          }
+        }
+      },
+      "materials": {
+        "insulation": {
+          "preferred_type": { "$type": "string", "$value": "Mineral Wool (High Density)" },
+          "bsdd_ref": { "$type": "string", "$value": "https://bsdd.buildingsmart.org/api/Entity/Mineral_Wool_Arctic_Grade" }
+        }
+      }
+    },
+    "temperate": {
+      "performance": {
+        "thermal": {
+          "max_u_value_external_wall": {
+            "$type": "number",
+            "$value": 0.18,
+            "$description": "Maximum thermal transmittance for external walls (W/m²K)."
+          }
+        }
+      },
+      "materials": {
+        "insulation": {
+          "preferred_type": { "$type": "string", "$value": "Mineral Wool (Standard)" },
+          "bsdd_ref": { "$type": "string", "$value": "https://bsdd.buildingsmart.org/api/Entity/Mineral_Wool_Temperate_Grade" }
+        }
+      }
+    }
+  }
+}

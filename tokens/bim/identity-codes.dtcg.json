@@ -1,0 +1,62 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM IDENTITY+CODES token category — anchored to IFC 4.3 IfcClassificationReference + IfcConstraint. Sub-agent A merged Identity + Codes onto a single classification axis.",
+  "bim": {
+    "identity": {
+      "global_id": {
+        "$type": "bim.identity",
+        "$value": {
+          "ifc_class": "IfcRoot",
+          "field": "GlobalId",
+          "description": "22-character base-64 encoded GUID. The authoritative stable identifier for IFC entities; survives schema migrations IFC 2x3 → 4 → 4.3."
+        }
+      },
+      "classification_reference": {
+        "$type": "bim.classification",
+        "$value": {
+          "ifc_class": "IfcClassificationReference",
+          "ifc_anchor": "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcClassificationReference.htm",
+          "description": "Reference into a classification system (Uniclass 2015, OmniClass, MasterFormat, UniFormat II, custom city codes). Carries Identification + Name + Source URI."
+        }
+      },
+      "constraint": {
+        "$type": "bim.constraint",
+        "$value": {
+          "ifc_class": "IfcConstraint",
+          "ifc_anchor": "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcConstraint.htm",
+          "description": "Restriction governing a property or relationship. The IFC entity used by the City-Code-as-Composable-Geometry encoding to attach jurisdictional rules to specific element classes or property sets."
+        }
+      }
+    },
+    "classifications": {
+      "uniclass_2015": {
+        "$type": "bim.classification.system",
+        "$value": {
+          "name": "Uniclass 2015",
+          "publisher": "NBS, UK",
+          "uri": "https://www.thenbs.com/our-tools/uniclass",
+          "tables": ["Co", "EF", "Ss", "Pr", "PM", "PC", "PE", "FI", "Ac", "SL", "Ro", "Pm", "Ma"],
+          "description": "The classification floor for project-bim. All elements receive a Uniclass 2015 reference at minimum; deployment-specific classifications layer on top."
+        }
+      },
+      "omniclass": {
+        "$type": "bim.classification.system",
+        "$value": {
+          "name": "OmniClass",
+          "publisher": "Construction Specifications Institute (CSI), USA",
+          "uri": "https://www.csiresources.org/standards/omniclass",
+          "description": "North-American counterpart to Uniclass. Cross-mapped at runtime via service-codes."
+        }
+      },
+      "masterformat": {
+        "$type": "bim.classification.system",
+        "$value": {
+          "name": "MasterFormat 2020",
+          "publisher": "CSI, USA",
+          "uri": "https://www.csiresources.org/standards/masterformat",
+          "description": "Specifications-section-oriented classification used in US construction documents. Cross-mapped to Uniclass / OmniClass."
+        }
+      }
+    }
+  }
+}

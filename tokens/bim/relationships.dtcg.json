@@ -1,0 +1,64 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM RELATIONSHIPS token category — anchored to IFC 4.3 IfcRel* relationship entities. Sub-agent A renamed 'Connections' to 'Relationships' to better match IFC vocabulary.",
+  "bim": {
+    "relationships": {
+      "contained_in_spatial_structure": {
+        "$type": "bim.relationship",
+        "$value": {
+          "ifc_class": "IfcRelContainedInSpatialStructure",
+          "description": "Element-to-spatial-container link. The most common relationship — every element belongs to exactly one spatial container (typically an IfcBuildingStorey)."
+        }
+      },
+      "aggregates": {
+        "$type": "bim.relationship",
+        "$value": {
+          "ifc_class": "IfcRelAggregates",
+          "description": "Hierarchical decomposition. IfcSite aggregates IfcBuilding, IfcBuilding aggregates IfcBuildingStorey, IfcStair aggregates IfcStairFlight + IfcRailing."
+        }
+      },
+      "fills_element": {
+        "$type": "bim.relationship",
+        "$value": {
+          "ifc_class": "IfcRelFillsElement",
+          "description": "Door/window filling its host wall opening. Authoritative parent-child linkage for openings."
+        }
+      },
+      "voids_element": {
+        "$type": "bim.relationship",
+        "$value": {
+          "ifc_class": "IfcRelVoidsElement",
+          "description": "Opening element subtraction relationship. The parent of fills_element."
+        }
+      },
+      "associates_classification": {
+        "$type": "bim.relationship",
+        "$value": {
+          "ifc_class": "IfcRelAssociatesClassification",
+          "description": "Element ↔ classification system link. Uniclass / OmniClass / MasterFormat references attach via this relationship."
+        }
+      },
+      "associates_material": {
+        "$type": "bim.relationship",
+        "$value": {
+          "ifc_class": "IfcRelAssociatesMaterial",
+          "description": "Element ↔ material set link. The doorway through which service-materials joins service-buildings at runtime."
+        }
+      },
+      "defines_by_properties": {
+        "$type": "bim.relationship",
+        "$value": {
+          "ifc_class": "IfcRelDefinesByProperties",
+          "description": "Element ↔ Pset_* property set link. The carrier of all per-element property data."
+        }
+      },
+      "connects_path_elements": {
+        "$type": "bim.relationship",
+        "$value": {
+          "ifc_class": "IfcRelConnectsPathElements",
+          "description": "Wall-to-wall corner connectivity. Linear-element junction relationships."
+        }
+      }
+    }
+  }
+}

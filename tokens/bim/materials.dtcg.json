@@ -1,0 +1,66 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM MATERIALS token category — anchored to IFC 4.3 IfcMaterial + bSDD URI references. Pset_Material* property sets.",
+  "bim": {
+    "materials": {
+      "material": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcMaterial",
+          "ifc_anchor": "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcMaterial.htm",
+          "description": "Single-component material. References bSDD URI for canonical classification (Uniclass Pm, OmniClass material classes, MasterFormat)."
+        }
+      },
+      "material_layer": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcMaterialLayer",
+          "description": "Single layer in a multi-layer wall / slab / roof assembly. Carries thickness + LayerSetName."
+        }
+      },
+      "material_layer_set": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcMaterialLayerSet",
+          "description": "Ordered set of material layers comprising an element (e.g., wall: gypsum + insulation + brick)."
+        }
+      },
+      "material_constituent_set": {
+        "$type": "bim.entity",
+        "$value": {
+          "ifc_class": "IfcMaterialConstituentSet",
+          "description": "IFC 4 alternative to LayerSet for non-stacked composite materials (e.g., reinforced concrete = concrete + rebar)."
+        }
+      }
+    },
+    "psets": {
+      "Pset_MaterialCommon": {
+        "$type": "bim.pset",
+        "$value": {
+          "MolecularWeight": "IfcMassMeasure",
+          "Porosity": "IfcNormalisedRatioMeasure",
+          "MassDensity": "IfcMassDensityMeasure"
+        }
+      },
+      "Pset_MaterialMechanical": {
+        "$type": "bim.pset",
+        "$value": {
+          "DynamicViscosity": "IfcDynamicViscosityMeasure",
+          "YoungModulus": "IfcModulusOfElasticityMeasure",
+          "ShearModulus": "IfcModulusOfElasticityMeasure",
+          "PoissonRatio": "IfcPositiveRatioMeasure",
+          "ThermalExpansionCoefficient": "IfcThermalExpansionCoefficientMeasure"
+        }
+      },
+      "Pset_MaterialThermal": {
+        "$type": "bim.pset",
+        "$value": {
+          "SpecificHeatCapacity": "IfcSpecificHeatCapacityMeasure",
+          "ThermalConductivity": "IfcThermalConductivityMeasure",
+          "ThermalTransmittance": "IfcThermalTransmittanceMeasure"
+        },
+        "$description": "Thermal property set — relevant to energy performance and ASHRAE / Passivhaus / NZEB workflows."
+      }
+    }
+  }
+}
