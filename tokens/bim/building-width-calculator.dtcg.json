@@ -1,0 +1,339 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM Building Width Calculator token category — zone depths per use type, anchored to the Key Plans and Tiles spatial taxonomy. Source: Summary_Key Plans tab (CONSTRUCTION_2026_01_06_Key Plan_Professional Office_FFE_FIN.xlsx, V3, 2025-11-29). Three zones per use type: Zone 1 Habitat (desks; European Lighting Standard 6m minimum), Zone 2 Magazine (storage beyond Habitat), Zone 3 Corridor (bilateral access; mirrored floor plate). Metre values are authoritative; feet equivalents in $description. All values from completed Key Plan samples except where noted TBD.",
+  "bim": {
+    "zone": {
+      "professional-office": {
+        "$description": "Professional Office use type — Business tenants in leased office suites. Zone 1 meets European Lighting Standard exactly at 6.0m.",
+        "habitat": {
+          "depth": {
+            "$type": "dimension",
+            "$value": "6.0m",
+            "$description": "19'8\" — desks/workstations; European Lighting Standard minimum. With desks perpendicular to façade add 0.7m for three desks in series (see bim.zone.circulation-addition.perpendicular-desk)."
+          }
+        },
+        "magazine": {
+          "depth": {
+            "$type": "dimension",
+            "$value": "3.8m",
+            "$description": "12'5\" — storage, bookshelves, filing. Balances floor plate to avoid long narrow rectangle."
+          }
+        },
+        "corridor": {
+          "width": {
+            "$type": "dimension",
+            "$value": "2.0m",
+            "$description": "6'6\" — bilateral corridor; mirrored at centre of floor plate. Overdesign by 20% recommended for well-being and smaller-tenant circulation."
+          }
+        }
+      },
+      "private-office": {
+        "$description": "Private Office use type — individual licensed offices (PO-1/PO-2/PO-3). No shared corridor; each office opens directly to a shared floor corridor or building egress. Zone 1 marginally under 6m from Key Plan sample geometry.",
+        "habitat": {
+          "depth": {
+            "$type": "dimension",
+            "$value": "5.9944m",
+            "$description": "19'8\" — desks/workstations. Marginally under the 6.0m European Lighting Standard; flag for review on final Key Plan sign-off."
+          }
+        },
+        "magazine": {
+          "depth": {
+            "$type": "dimension",
+            "$value": "1.3716m",
+            "$description": "4'6\" — shallow storage zone; private offices carry minimal shared storage relative to professional suites."
+          }
+        },
+        "corridor": {
+          "width": {
+            "$type": "dimension",
+            "$value": "0.0m",
+            "$description": "No shared bilateral corridor in Private Office use type. Each office accesses the building corridor directly."
+          }
+        }
+      },
+      "laboratory": {
+        "$description": "Laboratory use type — scientific, research, and testing leaseholds. Wider Zone 1 and Zone 2 reflect bench depth and fume hood clearances. Zone 3 corridor matches IBC egress minimums for lab occupancy.",
+        "habitat": {
+          "depth": {
+            "$type": "dimension",
+            "$value": "6.7818m",
+            "$description": "22'3\" — bench depth + circulation + safety clearances per German Circulation Law. Exceeds European Lighting Standard 6m minimum."
+          }
+        },
+        "magazine": {
+          "depth": {
+            "$type": "dimension",
+            "$value": "4.8006m",
+            "$description": "15'9\" — chemical storage, equipment staging, fume hood egress zone."
+          }
+        },
+        "corridor": {
+          "width": {
+            "$type": "dimension",
+            "$value": "3.048m",
+            "$description": "10'0\" — wider corridor required for lab cart and equipment transport; IBC egress minimum for high-hazard occupancy."
+          }
+        }
+      },
+      "academic": {
+        "$description": "Academic use type — classrooms, seminar rooms, lecture halls. Zone 1 shorter than 6m because desks face forward (not toward façade); Zone 3 absent as academic suites typically open to a shared corridor.",
+        "habitat": {
+          "depth": {
+            "$type": "dimension",
+            "$value": "4.7m",
+            "$description": "15'5\" — seating rows facing forward; European Lighting Standard applies to workstations, not auditorium-style seating. Review against WELL certification requirements if workstations are present."
+          }
+        },
+        "magazine": {
+          "depth": {
+            "$type": "dimension",
+            "$value": "3.0m",
+            "$description": "9'10\" — storage, AV equipment, accessible routes. Note: source spreadsheet shows '3'7\" ' for feet which appears to be a transposition error; 3.0m = 9'10\" and is used here."
+          }
+        },
+        "corridor": {
+          "width": {
+            "$type": "dimension",
+            "$value": "0.0m",
+            "$description": "No bilateral corridor in Academic use type. Suites open directly to building corridor."
+          }
+        }
+      },
+      "business": {
+        "$description": "Business use type — general commercial office, co-working-adjacent, larger open-plan leaseholds. Very wide Zone 2 reflects open storage walls and breakout spaces characteristic of larger business tenants.",
+        "habitat": {
+          "depth": {
+            "$type": "dimension",
+            "$value": "6.0m",
+            "$description": "19'8\" — desks/workstations at European Lighting Standard minimum."
+          }
+        },
+        "magazine": {
+          "depth": {
+            "$type": "dimension",
+            "$value": "7.3m",
+            "$description": "23'11\" — widest Magazine zone across use types; reflects open storage walls, server rooms, print areas, and team collaboration zones in business leaseholds."
+          }
+        },
+        "corridor": {
+          "width": {
+            "$type": "dimension",
+            "$value": "2.7m",
+            "$description": "8'10\" — bilateral corridor. No feet equivalent in source spreadsheet; converted from 2.7m."
+          }
+        }
+      },
+      "medical": {
+        "$description": "Medical use type — clinical, dental, diagnostic, and allied health leaseholds. Wider Zone 1 reflects exam-table depth and patient circulation. Acoustic and vibration isolation requirements apply (per building-width-calculator.docx).",
+        "habitat": {
+          "depth": {
+            "$type": "dimension",
+            "$value": "7.2m",
+            "$description": "23'10\" — widest Zone 1 Habitat across use types; exam table depth + patient + clinician circulation per German Circulation Law and WELL health standards."
+          }
+        },
+        "magazine": {
+          "depth": {
+            "$type": "dimension",
+            "$value": "4.87m",
+            "$description": "16'0\" — medical supply storage, sterilisation, equipment staging. Source spreadsheet shows '16\"' (inches) which is likely a display truncation of 16'0\" (feet); 4.87m = 15'11.8\" ≈ 16'0\" confirmed."
+          }
+        },
+        "corridor": {
+          "width": {
+            "$type": "dimension",
+            "$value": "2.89m",
+            "$description": "9'5\" — bilateral corridor; ADA/CSA-B651 compliant width for stretcher and wheelchair passage."
+          }
+        }
+      },
+      "civic": {
+        "$description": "Civic use type — courtrooms, municipal offices, cultural, and civic assembly spaces. Widest overall floor plate due to large Magazine and Corridor requirements for public assembly egress.",
+        "habitat": {
+          "depth": {
+            "$type": "dimension",
+            "$value": "6.0m",
+            "$description": "19'8\" — workstations/seating at European Lighting Standard minimum."
+          }
+        },
+        "magazine": {
+          "depth": {
+            "$type": "dimension",
+            "$value": "7.23m",
+            "$description": "23'8\" — public records storage, jury deliberation rooms, secure document areas; second-widest Magazine zone after Business."
+          }
+        },
+        "corridor": {
+          "width": {
+            "$type": "dimension",
+            "$value": "3.6m",
+            "$description": "12'0\" — widest corridor across all use types; required for public assembly egress, accessible courtroom approach, and ceremonial circulation."
+          }
+        }
+      }
+    },
+    "circulation-addition": {
+      "perpendicular-desk": {
+        "$type": "dimension",
+        "$value": "0.7m",
+        "$description": "2'4\" — additional depth required in Zone 1 Habitat when desks are placed perpendicular to the façade, to achieve three desks in series with proper German Circulation Law clearance. Without this addition, Zone 1 at exactly 6.0m yields only two perpendicular desks."
+      }
+    },
+    "key-plan": {
+      "private-office": {
+        "$description": "Private Office key plan sizes from completed samples (Key Plan Professional Office workbook, Summary_Key Plans tab V3).",
+        "small": {
+          "area": {
+            "$type": "number",
+            "$value": 30.1935,
+            "$description": "325 SF — PO-1. Minimum size accommodating 1 desk, 1 chair, 1 three-person round table, 1 filing cabinet, 1 credenza, 1 bookshelf, 1 coat rack with German Circulation Law compliance and Façade Frontage. May be 300–400 SF on final Key Plan to ensure correct width."
+          }
+        },
+        "medium": {
+          "area": {
+            "$type": "number",
+            "$value": 43.199,
+            "$description": "465 SF — PO-2. Adds second desk, chair, and credenza to PO-1 layout. Approximately 100 SF larger than PO-1; NOT double the area."
+          }
+        },
+        "large": {
+          "area": {
+            "$type": "number",
+            "$value": 63.6386,
+            "$description": "685 SF — PO-3. Three-person private office configuration."
+          }
+        }
+      },
+      "professional-office": {
+        "$description": "Professional Office key plan sizes. Only Small currently has a completed sample (130.06 m² / 1,400 SF); Medium and Large pending Key Plan completion.",
+        "small": {
+          "area": {
+            "$type": "number",
+            "$value": 130.06,
+            "$description": "1,400 SF — completed sample. Note: Small + Small combination = 260.12 m² / 2,800 SF, filling the gap between Professional Office Large and Corporate Office 1/8 Floor."
+          }
+        }
+      },
+      "laboratory": {
+        "$description": "Laboratory use type (Professional Office tier) key plan sizes from completed samples.",
+        "small": {
+          "area": {
+            "$type": "number",
+            "$value": 195.0035,
+            "$description": "2,099 SF"
+          }
+        },
+        "medium": {
+          "area": {
+            "$type": "number",
+            "$value": 315.96,
+            "$description": "3,401 SF"
+          }
+        },
+        "large": {
+          "area": {
+            "$type": "number",
+            "$value": 400.69,
+            "$description": "4,313 SF"
+          }
+        }
+      },
+      "academic": {
+        "$description": "Academic use type (Professional Office tier) key plan sizes from completed samples.",
+        "small": {
+          "area": {
+            "$type": "number",
+            "$value": 105.0,
+            "$description": "1,131 SF"
+          }
+        },
+        "medium": {
+          "area": {
+            "$type": "number",
+            "$value": 240.0,
+            "$description": "2,583 SF"
+          }
+        },
+        "large": {
+          "area": {
+            "$type": "number",
+            "$value": 378.0,
+            "$description": "4,070 SF"
+          }
+        }
+      },
+      "business": {
+        "$description": "Business use type (Professional Office tier) key plan sizes from completed samples.",
+        "small": {
+          "area": {
+            "$type": "number",
+            "$value": 311.22,
+            "$description": "3,350 SF"
+          }
+        },
+        "medium": {
+          "area": {
+            "$type": "number",
+            "$value": 399.66,
+            "$description": "4,302 SF"
+          }
+        },
+        "large": {
+          "area": {
+            "$type": "number",
+            "$value": 669.0,
+            "$description": "7,524 SF"
+          }
+        }
+      },
+      "medical": {
+        "$description": "Medical use type (Professional Office tier) key plan sizes from completed samples.",
+        "small": {
+          "area": {
+            "$type": "number",
+            "$value": 223.0,
+            "$description": "2,402 SF"
+          }
+        },
+        "medium": {
+          "area": {
+            "$type": "number",
+            "$value": 331.0,
+            "$description": "3,568 SF"
+          }
+        },
+        "large": {
+          "area": {
+            "$type": "number",
+            "$value": 486.0,
+            "$description": "5,231 SF"
+          }
+        }
+      },
+      "civic": {
+        "$description": "Civic use type (Professional Office tier) key plan sizes from completed samples.",
+        "small": {
+          "area": {
+            "$type": "number",
+            "$value": 270.0,
+            "$description": "2,912 SF"
+          }
+        },
+        "medium": {
+          "area": {
+            "$type": "number",
+            "$value": 577.0,
+            "$description": "6,215 SF"
+          }
+        },
+        "large": {
+          "area": {
+            "$type": "number",
+            "$value": 822.0,
+            "$description": "8,850 SF"
+          }
+        }
+      }
+    }
+  }
+}
