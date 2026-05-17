@@ -1,0 +1,65 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM WATER MANAGEMENT token category — site water management, stormwater detention, and sustainable landscaping metrics for the Professional Centre and Suburban Office site type. These tokens represent a sample site analysis illustrating the site detention and infiltration system design for a building with a 61,200 SF roof curtain area. Source: AEC_Sample Water Management System.pdf (Collaborators #11, 2025-04-01); AEC_Sample Architects_Landscaping and Parking_V3.pdf (Collaborators #27, 2025-05-06). Volume values are in US gallons (authoritative for this dataset); area values in SF. Intended as reference parameters for site design tokens in IFC IfcSite context.",
+  "bim": {
+    "water-management": {
+      "site-water": {
+        "$description": "Site-level water flow calculations for a sample Professional Centre site. All values are annual (GAL/YR).",
+        "total-treated-runoff": {
+          "$type": "number",
+          "$value": 2065937,
+          "$description": "2,065,937 GAL/YR — total water volume from 100% treated runoff on sample site. Includes all impervious and permeable surface contributions."
+        },
+        "buffalo-grass-runoff": {
+          "$type": "number",
+          "$value": 1858974,
+          "$description": "1,858,974 GAL/YR — annual runoff from Buffalo Grass landscaped areas. Buffalo Grass (Bouteloua dactyloides) is a drought-tolerant native prairie grass used as permaculture landscaping in Professional Centre sites."
+        },
+        "tidal-water-storage": {
+          "$type": "number",
+          "$value": 409063,
+          "$description": "409,063 GAL/YR — tidal water storage volume. Represents captured stormwater retained in site detention and infiltration systems before release or reuse."
+        }
+      },
+      "site-area": {
+        "$description": "Site surface areas driving stormwater calculations.",
+        "building-roof-curtain": {
+          "$type": "number",
+          "$value": 5685.12,
+          "$description": "61,200 SF (5,685.12 m²) — building roof curtain area contributing to stormwater runoff. Primary impervious surface on site."
+        },
+        "permeable-pavers": {
+          "$type": "number",
+          "$value": 2917.05,
+          "$description": "31,407 SF (2,917.05 m²) — permeable paver area. Reduces effective impervious surface coverage; allows stormwater infiltration to sub-base and underground gallery."
+        }
+      },
+      "infiltration-gallery": {
+        "$description": "Underground stormwater infiltration gallery — captures, stores, and infiltrates site runoff to reduce peak discharge and support landscaping irrigation.",
+        "capacity": {
+          "$type": "number",
+          "$value": 258800,
+          "$description": "258,800 gallons — underground infiltration gallery storage capacity. Provides peak-flow attenuation and groundwater recharge. IFC mapping: IfcDistributionSystem (domain: DRAINAGE); Uniclass: Ss_55_30 (drainage systems)."
+        }
+      },
+      "site-programming": {
+        "$description": "Site programming elements associated with the water management and sustainable landscaping design.",
+        "pedestrian-circulation": {
+          "$type": "string",
+          "$value": "integrated",
+          "$description": "Pedestrian circulation integrated with bioswale and permaculture landscaping zones. Paths separate from vehicular access per site programming diagram."
+        },
+        "bike-circulation": {
+          "$type": "string",
+          "$value": "integrated",
+          "$description": "Bike circulation routes integrated with pedestrian paths and landscaping. Supports active transportation modal split for Professional Centre tenants."
+        },
+        "site-materials-standard": {
+          "$type": "string",
+          "$value": "environmental-first",
+          "$description": "Site materials selected for environmental performance: permeable pavers over standard asphalt, Buffalo Grass over irrigated turf, bioswales over concrete drainage channels. Aligns with Permaculture as Commercial Landscaping principle (AEC_White Paper_Sample_V3.pdf)."
+        }
+      }
+    }
+  }
+}
