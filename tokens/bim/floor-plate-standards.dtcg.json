@@ -1,0 +1,122 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM FLOOR PLATE STANDARDS token category — floor plate size hierarchy, tile fraction breakdown, main floor space allocations, and upper floor common area standards for the Key Plans and Tiles system. Source: AEC_Floor Plates_Key Plans and Tiles_V12.pdf (Collaborators #11, 2025-04-01); CONSTRUCTION_2026_01_06_Tear Sheet_Floor Plans_Key Plans_Methodology_FIN.xlsx (V3, 2025-11-29); AEC_Floor Plates_Key Plans_Notes.pdf (Collaborators #32, 2026-01-06). Area values are in m² (authoritative); SF equivalents in $description.",
+  "bim": {
+    "floor-plate": {
+      "net-leasable": {
+        "area": {
+          "$type": "number",
+          "$value": 1858.06,
+          "$description": "20,000 SF — net leasable area per upper floor plate. Basis for all tile fraction calculations. Does not include building core, egress stairs, or mechanical."
+        }
+      },
+      "tile-fraction": {
+        "$description": "Standard tile fractions of the 20,000 SF net leasable floor plate. Tiles are self-similar and composable. Corporate Office tenants may occupy any fraction up to the full floor.",
+        "one-eighth": {
+          "area": {
+            "$type": "number",
+            "$value": 232.26,
+            "$description": "2,500 SF — 1/8 floor tile; minimum corporate office tile and Private Office leasehold aggregate tile."
+          }
+        },
+        "one-quarter": {
+          "area": {
+            "$type": "number",
+            "$value": 464.52,
+            "$description": "5,000 SF — 1/4 floor tile; standard Professional Office leasehold tile and minimum mid-tier Corporate Office tile."
+          }
+        },
+        "one-half": {
+          "area": {
+            "$type": "number",
+            "$value": 929.03,
+            "$description": "10,000 SF — 1/2 floor tile; Tenant Lounge occupies this fraction on the 2nd floor; large Corporate Office option."
+          }
+        },
+        "three-quarter": {
+          "area": {
+            "$type": "number",
+            "$value": 1393.55,
+            "$description": "15,000 SF — 3/4 floor tile; large Corporate Office option; not a standard Tile composition but a valid Corporate leasehold size."
+          }
+        },
+        "full": {
+          "area": {
+            "$type": "number",
+            "$value": 1858.06,
+            "$description": "20,000 SF — full floor tile; Corporate Office maximum; one tenant occupies entire upper floor."
+          }
+        }
+      },
+      "second-floor": {
+        "$description": "Second floor is structured differently from upper floors — it carries the Tenant Lounge as the primary space.",
+        "tenant-lounge": {
+          "area": {
+            "$type": "number",
+            "$value": 929.03,
+            "$description": "10,000 SF — Tenant Lounge occupying the second floor (1/2 floor equivalent). Decorated staircase from main floor lobby connects to Tenant Lounge atrium per AEC_Sample Architects_Staircases_V12.pdf."
+          }
+        }
+      },
+      "main-floor": {
+        "$description": "Main floor (ground level) contains building services, amenity, and circulation spaces rather than leasable office tiles.",
+        "building-manager-mail-room": {
+          "area": {
+            "$type": "number",
+            "$value": 83.61,
+            "$description": "900 SF — combined Building Manager office and Mail Room on main floor."
+          }
+        },
+        "loading-recycling": {
+          "area": {
+            "$type": "number",
+            "$value": 167.23,
+            "$description": "1,800 SF — Loading area and Recycling facility; service access on main floor."
+          }
+        },
+        "coffee-bread-public-restrooms": {
+          "area": {
+            "$type": "number",
+            "$value": 153.29,
+            "$description": "1,650 SF — Coffee/Bread service amenity and Public Restrooms; main floor public amenity zone."
+          }
+        }
+      },
+      "upper-floor-common": {
+        "$description": "Common area allocations on upper floors (above main floor and Tenant Lounge). These are non-leasable and reduce gross floor area to net leasable.",
+        "corridors": {
+          "area": {
+            "$type": "number",
+            "$value": 41.81,
+            "$description": "450 SF — bilateral corridor allocation per upper floor. Connects tenant leaseholds and provides egress path."
+          }
+        },
+        "restrooms-meters": {
+          "area": {
+            "$type": "number",
+            "$value": 65.03,
+            "$description": "700 SF — Tenant Restrooms plus Meter Room allocation per upper floor."
+          }
+        }
+      },
+      "furniture-availability": {
+        "$description": "Expected distribution of furniture configuration sizes across the tenant mix. Used for FFE procurement planning and Tile composition optimisation. Source: CONSTRUCTION_2026_01_06_Tear Sheet_Floor Plans_Key Plans_Methodology_FIN.xlsx.",
+        "small": {
+          "$type": "number",
+          "$value": 80,
+          "$description": "80% — majority of tenant fit-outs use small furniture configurations. Drives Private Office and small Professional Office tile prevalence."
+        },
+        "medium": {
+          "$type": "number",
+          "$value": 10,
+          "$description": "10% — medium furniture configuration tenant mix."
+        },
+        "large": {
+          "$type": "number",
+          "$value": 10,
+          "$description": "10% — large furniture configuration tenant mix; typically Corporate Office full-floor tenants."
+        }
+      }
+    }
+  }
+}

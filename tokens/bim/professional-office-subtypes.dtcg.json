@@ -1,0 +1,108 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM PROFESSIONAL OFFICE SUBTYPES token category — taxonomy and classification of the five Professional Office sub-types (Medical, Business, Laboratory, Academic, Civic) and their variants. Sub-types are the leasable-office categories within a Professional Centre or Suburban Office floor plate. Each occupies a 1/4 floor tile (5,000 SF / 464.52 m²) or combination thereof. Source: CONSTRUCTION_2026_01_06_Key Plan_Professional Office_FFE_FIN.xlsx (V3, 2025-11-29); AEC_Floor Plates_Key Plans_Index.pdf (V2, 2025-01-07, Collaborators #27); AEC_Floor Plates_Key Plans_Samples_V2.pdf (Collaborators #32, 2025-03-03); DISCOVERY_MCorp_Sketches_Key Plans_Summary_Notes.pdf. Key plan area measurements are in building-width-calculator.dtcg.json; this file captures taxonomy, codes, and specialisation variants.",
+  "bim": {
+    "professional-office-subtype": {
+      "medical": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Medical Office",
+          "ffe_codes": ["M1", "M2", "M3"],
+          "ffe_sizes_sf": {
+            "M3": 800,
+            "M1": 1100,
+            "M2": 1400
+          },
+          "specialisations": ["Dentist", "General Practitioner"],
+          "key_plan_index_range": "10–14",
+          "design_notes": "Wider Zone 1 (7.2m) than other sub-types to accommodate exam-table depth and patient + clinician circulation. ADA/CSA-B651 corridor width. Acoustic and vibration isolation requirements. Demising wall required between suites."
+        },
+        "$description": "Medical Office — clinical, dental, diagnostic, and allied health leaseholds. FFE codes M1 (1,100 SF), M2 (1,400 SF), M3 (800 SF). Specialisations: Dentist, General Practitioner."
+      },
+      "business": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Business Office",
+          "ffe_codes": ["B1", "B2", "B3"],
+          "ffe_sizes_sf": {
+            "B3": 800,
+            "B1": 1100,
+            "B2": 1400
+          },
+          "specialisations": [],
+          "key_plan_index_range": "15–21",
+          "design_notes": "Widest Zone 2 Magazine (7.3m) across all sub-types — reflects open storage walls, server rooms, print areas, and team collaboration zones. Large corporate office adjacencies common."
+        },
+        "$description": "Business Office — general commercial office, co-working-adjacent, larger open-plan leaseholds. FFE codes B1 (1,100 SF), B2 (1,400 SF), B3 (800 SF)."
+      },
+      "laboratory": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Laboratory",
+          "ffe_codes": ["L1", "L2", "L3"],
+          "ffe_sizes_sf": {
+            "L3": 800,
+            "L1": 1100,
+            "L2": 1400
+          },
+          "specialisations": ["Medical Laboratory", "Research Laboratory"],
+          "key_plan_index_range": "22–28",
+          "key_plan_areas_m2": {
+            "small": 195.0,
+            "medium": 316.0,
+            "large": 400.69
+          },
+          "key_plan_areas_sf": {
+            "small": 2099,
+            "medium": 3401,
+            "large": 4313
+          },
+          "design_notes": "Wider Zone 1 (6.78m / 22'3\") than standard Professional Office to accommodate bench depth and fume hood clearances per German Circulation Law. IBC high-hazard occupancy egress width (3.048m / 10'0\") in Zone 3 corridor. Small key plan: 195 m² (2,099 SF); Medium: 316 m² (3,401 SF); Large: 400.7 m² (4,313 SF)."
+        },
+        "$description": "Laboratory — scientific, research, and testing leaseholds. Specialisations: Medical Laboratory, Research Laboratory. FFE codes L1–L3. Key plan sizes: Small 2,099 SF, Medium 3,401 SF, Large 4,313 SF."
+      },
+      "academic": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Academic Office",
+          "ffe_codes": ["A1", "A2", "A3"],
+          "ffe_sizes_sf": {
+            "A3": 800,
+            "A1": 1100,
+            "A2": 1400
+          },
+          "specialisations": ["Classroom", "Seminar Room", "Lecture Hall"],
+          "key_plan_index_range": "29–32",
+          "key_plan_areas_m2": {
+            "small": 87.7,
+            "medium": 240.3,
+            "large": 376.3
+          },
+          "key_plan_areas_sf": {
+            "small": 944,
+            "medium": 2586,
+            "large": 4050
+          },
+          "design_notes": "Shorter Zone 1 (4.7m / 15'5\") than other sub-types because seating faces forward rather than toward façade. No bilateral corridor — suites open to building corridor. Small: 87.7 m² (944 SF) includes podium, desks, auditorium seating, storage; Medium: 240.3 m² (2,586 SF); Large: 376.3 m² (4,050 SF). Source: AEC_Floor Plates_Key Plans_Samples_V2.pdf."
+        },
+        "$description": "Academic Office — classrooms, seminar rooms, lecture halls. Specialisations: Classroom, Seminar Room, Lecture Hall. FFE codes A1–A3. Key plan sizes: Small 944 SF, Medium 2,586 SF, Large 4,050 SF."
+      },
+      "civic": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Civic Office",
+          "ffe_codes": ["C1", "C2", "C3"],
+          "ffe_sizes_sf": {
+            "C3": 800,
+            "C1": 1100,
+            "C2": 1400
+          },
+          "specialisations": ["Courtroom", "Municipal Office", "Cultural Space", "Civic Assembly"],
+          "key_plan_index_range": "33–37",
+          "design_notes": "Widest overall floor plate — large Zone 2 Magazine (7.23m / 23'8\") for public records and secure areas; widest Zone 3 Corridor (3.6m / 12'0\") across all sub-types for public assembly egress. ADA/accessible-route compliance mandatory throughout leasehold."
+        },
+        "$description": "Civic Office — courtrooms, municipal offices, cultural, and civic assembly spaces. FFE codes C1–C3. Widest corridor (3.6m / 12'0\") across all Professional Office sub-types."
+      }
+    }
+  }
+}

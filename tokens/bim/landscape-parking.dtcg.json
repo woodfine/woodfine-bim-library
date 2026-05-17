@@ -1,0 +1,199 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM LANDSCAPE AND PARKING token category — classification tokens for landscaping, site ecology, parking, circulation, and lighting elements specific to Professional Centre and Suburban Office site types. Derived from Key Plans Index V2 entries 51–72 (AEC_Floor Plates_Key Plans_Index.pdf, Collaborators #27, 2025-01-07). Landscaping types reflect the Permaculture as Commercial Landscaping design philosophy (AEC_White Paper_Sample_V3.pdf). IFC mapping: landscape elements → IfcGeographicElement; parking → IfcPaving + IfcTransportElement; lighting → IfcLightFixture. Uniclass 2015 codes included where applicable.",
+  "bim": {
+    "landscape": {
+      "$description": "Landscape and ecological system classifications for Professional Centre sites. Key Plans Index entries 51–56.",
+      "biofacility": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Biofacility",
+          "index_entry": 51,
+          "ifc_class": "IfcGeographicElement",
+          "uniclass": "EF_25_10",
+          "description": "Biological processing facility on site — composting, organic waste management, or living machine water treatment integrated into the Professional Centre landscape."
+        },
+        "$description": "Biofacility — site biological processing element (composting, living machine). Key Plans Index #51."
+      },
+      "bioswale": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Bioswale",
+          "index_entry": 52,
+          "ifc_class": "IfcGeographicElement",
+          "uniclass": "EF_25_15",
+          "description": "Vegetated channel designed to slow, filter, and infiltrate stormwater runoff. Primary sustainable drainage element in Professional Centre landscape. Replaces concrete curb-and-gutter drainage."
+        },
+        "$description": "Bioswale — vegetated stormwater channel. Key Plans Index #52."
+      },
+      "permaculture": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Permaculture Zone",
+          "index_entry": 53,
+          "ifc_class": "IfcGeographicElement",
+          "uniclass": "EF_25_20",
+          "description": "Permanent agricultural and ecological planting zone. Edible landscaping, food forest, or native prairie planting (including Buffalo Grass) used as commercial landscaping. Eliminates irrigated turf from the site envelope."
+        },
+        "$description": "Permaculture Zone — productive ecological landscaping (food forest, native prairie). Key Plans Index #53."
+      },
+      "irrigation-gallery": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Irrigation Gallery",
+          "index_entry": 54,
+          "ifc_class": "IfcDistributionSystem",
+          "uniclass": "Ss_55_30",
+          "description": "Underground stormwater capture and irrigation distribution system. Connected to site detention infiltration gallery. Delivers captured runoff to permaculture and bioswale zones, reducing potable water demand for landscape irrigation."
+        },
+        "$description": "Irrigation Gallery — underground stormwater-fed irrigation distribution system. Key Plans Index #54."
+      }
+    },
+    "parking": {
+      "$description": "Parking layout and surface classification tokens for Professional Centre sites. Key Plans Index entries 55–56.",
+      "parking-stalls": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Parking Stalls",
+          "index_entry": 55,
+          "ifc_class": "IfcPaving",
+          "uniclass": "EF_70_10",
+          "description": "Standard parking stall layout for Professional Centre surface parking. Stall dimensions per local jurisdiction; 90-degree configuration typical. Pavement variant determines surface permeability."
+        },
+        "$description": "Parking Stalls — standard surface parking stall layout. Key Plans Index #55."
+      },
+      "parking-layout": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Parking Layout",
+          "index_entry": 56,
+          "ifc_class": "IfcPaving",
+          "uniclass": "EF_70_10",
+          "pavement_variants": {
+            "fescue-grassland": "Permeable grass pavement using creeping red fescue (Festuca rubra) — low-maintenance, drought-tolerant; structurally reinforced for vehicle loads while maintaining stormwater infiltration.",
+            "parkland-natural": "Permeable natural parkland surface — compacted gravel or stabilised earth with naturalistic planting between stalls. Maximum ecological integration; suitable for low-traffic overflow parking."
+          },
+          "description": "Parking layout with pavement variant selection. Two permeable options replace standard asphalt: fescue-grassland and parkland-natural. Both variants qualify for permeable surface credit in stormwater calculations."
+        },
+        "$description": "Parking Layout — with pavement variants: fescue-grassland or parkland-natural (both permeable). Key Plans Index #56."
+      }
+    },
+    "site-circulation": {
+      "$description": "Site circulation and accessibility elements. Key Plans Index entries 57–62.",
+      "accessible-parking": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Accessible Parking",
+          "index_entry": 57,
+          "ifc_class": "IfcPaving",
+          "uniclass": "EF_70_10",
+          "standard": "ADA (US) / CSA-B651 (Canada)",
+          "description": "Accessible parking stalls with required access aisle. Minimum width per ADA: 8'0\" stall + 5'0\" access aisle (van accessible: 11'0\" stall + 5'0\" aisle). Located nearest to accessible building entrance."
+        },
+        "$description": "Accessible Parking — ADA/CSA-B651 compliant stalls with access aisle. Key Plans Index #57."
+      },
+      "sidewalks": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Sidewalks",
+          "index_entry": 58,
+          "ifc_class": "IfcPaving",
+          "uniclass": "EF_70_30",
+          "description": "Pedestrian sidewalk connecting parking field to building entrance and public street. Minimum 5'0\" (1.524m) clear width per ADA; 6'0\" recommended for comfortable bi-directional flow."
+        },
+        "$description": "Sidewalks — pedestrian pathways connecting parking to building entry. Key Plans Index #58."
+      },
+      "snowdrops": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Snow Storage / Snowdrops",
+          "index_entry": 59,
+          "ifc_class": "IfcGeographicElement",
+          "uniclass": "EF_25_30",
+          "description": "Designated snow storage zones within the parking field for plowed snow accumulation during winter maintenance. Located at parking lot perimeter or in designated landscape zones. Canadian and northern US climate requirement."
+        },
+        "$description": "Snowdrops — designated snow storage zones in parking field. Key Plans Index #59."
+      },
+      "site-watering": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Site Watering",
+          "index_entry": 60,
+          "ifc_class": "IfcDistributionSystem",
+          "uniclass": "Ss_55_30",
+          "description": "Site irrigation and watering system. In permaculture-landscaped sites, supplied primarily from captured stormwater via irrigation gallery. Supplemental potable connection for establishment period only."
+        },
+        "$description": "Site Watering — irrigation system, preferably stormwater-fed via irrigation gallery. Key Plans Index #60."
+      }
+    },
+    "site-lighting": {
+      "$description": "Site lighting classifications for Professional Centre parking and circulation. Key Plans Index entries 61–72. PF codes indicate Parking Facility lighting fixture classifications.",
+      "pf-1": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "PF-1 — Parking Field Pole Light (Standard)",
+          "index_entry": 61,
+          "ifc_class": "IfcLightFixture",
+          "uniclass": "Ss_70_30_30",
+          "description": "Standard parking field pole-mounted luminaire. LED area light on steel pole; height 20'–30' typical. Photocell or time-clock control. IES RP-20 parking facility illuminance criteria."
+        },
+        "$description": "PF-1: Standard parking field pole light. IES RP-20 compliant. Key Plans Index #61."
+      },
+      "pf-2": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "PF-2 — Parking Field Pole Light (Double Arm)",
+          "index_entry": 62,
+          "ifc_class": "IfcLightFixture",
+          "uniclass": "Ss_70_30_30",
+          "description": "Double-arm parking field pole luminaire for wider aisle coverage. Used at parking field interior rows where single-arm coverage is insufficient."
+        },
+        "$description": "PF-2: Double-arm parking field pole light. Key Plans Index #62."
+      },
+      "pf-3": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "PF-3 — Pedestrian Path Light",
+          "index_entry": 63,
+          "ifc_class": "IfcLightFixture",
+          "uniclass": "Ss_70_30_35",
+          "description": "Low-height (8'–12') pedestrian path luminaire along sidewalks and accessible routes. Bollard or decorative post style. Provides 0.2 fc minimum at grade per IES RP-20 pedestrian criteria."
+        },
+        "$description": "PF-3: Pedestrian path light — bollard or low post, 8'–12' height. Key Plans Index #63."
+      },
+      "pf-4": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "PF-4 — Building Façade Uplighting",
+          "index_entry": 64,
+          "ifc_class": "IfcLightFixture",
+          "uniclass": "Ss_70_30_55",
+          "description": "In-grade or wall-mounted uplighting fixture illuminating building façade for identity and wayfinding. LED wash or grazing fixture. Controls integrated with building automation system."
+        },
+        "$description": "PF-4: Building façade uplighting — in-grade or wall-mounted wash fixture. Key Plans Index #64."
+      },
+      "pf-5": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "PF-5 — Canopy Mounted Light (Entry)",
+          "index_entry": 65,
+          "ifc_class": "IfcLightFixture",
+          "uniclass": "Ss_70_30_30",
+          "description": "Downlight or linear fixture mounted to building entrance canopy. Provides 5 fc minimum at grade per IES RP-20 building entrance criteria. Integrated with building entrance lighting control zone."
+        },
+        "$description": "PF-5: Canopy mounted entry light — 5 fc minimum at grade. Key Plans Index #65."
+      },
+      "pf-6": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "PF-6 — Landscape Accent Light",
+          "index_entry": 66,
+          "ifc_class": "IfcLightFixture",
+          "uniclass": "Ss_70_30_55",
+          "description": "Low-wattage accent fixture for landscape feature illumination (bioswales, permaculture zones, specimen trees). LED spot or wash. Night-sky-friendly: full cutoff, warm CCT (2700K–3000K), minimal uplight."
+        },
+        "$description": "PF-6: Landscape accent light — full cutoff, warm CCT, minimal uplight. Night-sky-friendly. Key Plans Index #66."
+      }
+    }
+  }
+}
