@@ -1,29 +1,29 @@
-# woodfine-design-bim
+# woodfine-bim-library
 
-Woodfine Management Corp. BIM design token library — DTCG token bundle
+Woodfine Management Corp. BIM Object library — DTCG object bundle
 for the Building Design System.
 
-Sovereign customer-tier BIM token vault for [bim.woodfinegroup.com](https://bim.woodfinegroup.com).
+Sovereign customer-tier BIM Object vault for [bim.woodfinegroup.com](https://bim.woodfinegroup.com).
 Serves the `app-orchestration-bim` showcase engine at runtime via the
 `BIM_DESIGN_SYSTEM_DIR` environment variable.
 
 ---
 
-## Token categories
+## BIM Object categories
 
-Nine DTCG token files covering the eight IFC 4.3 primitive categories
+Nine DTCG object files covering the eight IFC 4.3 primitive categories
 plus climate zone performance specifications:
 
 | File | IFC anchor | Description |
 |---|---|---|
-| `tokens/bim/spatial.dtcg.json` | `IfcSpatialElement` | Spatial structure tokens |
-| `tokens/bim/elements.dtcg.json` | `IfcBuiltElement` | Built element tokens |
-| `tokens/bim/systems.dtcg.json` | `IfcDistributionElement` | Building systems tokens |
-| `tokens/bim/materials.dtcg.json` | `IfcMaterial` | Material tokens |
-| `tokens/bim/assemblies.dtcg.json` | `IfcElementAssembly` | Assembly tokens |
-| `tokens/bim/performance.dtcg.json` | `IfcPropertySet` | Performance property tokens |
-| `tokens/bim/identity-codes.dtcg.json` | `IfcClassificationReference` | Identity and classification tokens |
-| `tokens/bim/relationships.dtcg.json` | `IfcRel*` | Relationship tokens |
+| `tokens/bim/spatial.dtcg.json` | `IfcSpatialElement` | Spatial structure BIM Objects |
+| `tokens/bim/elements.dtcg.json` | `IfcBuiltElement` | Built element BIM Objects |
+| `tokens/bim/systems.dtcg.json` | `IfcDistributionElement` | Building systems BIM Objects |
+| `tokens/bim/materials.dtcg.json` | `IfcMaterial` | Material BIM Objects |
+| `tokens/bim/assemblies.dtcg.json` | `IfcElementAssembly` | Assembly BIM Objects |
+| `tokens/bim/performance.dtcg.json` | `IfcPropertySet` | Performance property BIM Objects |
+| `tokens/bim/identity-codes.dtcg.json` | `IfcClassificationReference` | Identity and classification BIM Objects |
+| `tokens/bim/relationships.dtcg.json` | `IfcRel*` | Relationship BIM Objects |
 | `tokens/bim/climate-zones.dtcg.json` | — | Climate zone performance specifications |
 
 All token files use the [W3C Design Token Community Group](https://design-tokens.github.io/community-group/format/)
@@ -54,4 +54,4 @@ research/          ← AI-readable research files
 
 ## License
 
-European Union Public Licence v1.2 (EUPL-1.2). See [LICENSE](LICENSE).
+Apache License 2.0 (Apache-2.0). See [LICENSE](LICENSE).
