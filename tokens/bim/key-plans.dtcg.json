@@ -1,0 +1,501 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM KEY PLANS token category — authoritative catalog of all Woodfine BIM Object Key Plans. A Key Plan is the smallest BIM Object unit: a spatial program defined by real furniture placement (manufacturer SKUs), three-zone cross-section (Zone 1 Habitat / Zone 2 Magazine / Zone 3 Corridor), net leasable area, facade frontage, and accessibility compliance. Key Plans are authored by architects from Woodfine equipment programs; the tool-buildingwidth Rust engine nests them into Tiles and Floor Plates. IFC anchor: IfcSpace (each Key Plan is a bounded, named space within a floor storey). Source: CONSTRUCTION_2026_01_06_Key Plan_Professional Office_FFE_FIN.xlsx — tab Summary_Key Plans (V3, 2025-11-29). Note: approximate square footages per source spreadsheet.",
+  "bim": {
+    "key-plan": {
+      "private-office": {
+        "$description": "Private Office — facade-facing individual leaseholds. Three sizes share the same zone depths; frontage width increases with size, not Zone 2 depth. Building ID issued per desk. Zone 1 enforces the European Lighting Standard (6 m desk-to-window). Zone 2 holds filing, credenza, bookshelf. Zone 3 is the shared corridor.",
+        "small": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Private Office — Small",
+            "internal_code": "PO-1",
+            "category": "private-office",
+            "area_m2": 30.19,
+            "area_sf": 325,
+            "zone1_depth_m": 6.0,
+            "zone2_depth_m": 3.8,
+            "zone3_depth_m": 2.0,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "furniture_program": [
+              "desk + ergonomic chair (Steelcase Leap)",
+              "3-person round table",
+              "2 side chairs",
+              "2-drawer filing cabinet",
+              "credenza",
+              "bookshelf (wall-mounted)",
+              "coat rack"
+            ],
+            "compliance": {
+              "european_lighting_standard": "Zone 1 = 6.0 m satisfies 6 m desk-to-window rule",
+              "wheelchair_clearance": "1200 mm turning radius at desk and table confirmed",
+              "german_circulation_law": "900 mm clear passage at door swing",
+              "building_id": "issued per desk — minimum 1 per PO-1"
+            },
+            "design_notes": "Desks placed perpendicular to facade require +0.7 m in Zone 1 for three desks in series. Zone 2 depth is identical across PO-1 / PO-2 / PO-3 — only facade frontage increases with size.",
+            "development_classes": ["Professional Centres", "Suburban Office"],
+            "tile_role": "component — nests into 2700 SF Tile with other Private Office Key Plans"
+          },
+          "$description": "Private Office — Small. 30.19 m² / 325 SF. Zone 1 = 6.0 m, Zone 2 = 3.8 m, Zone 3 = 2.0 m. Steelcase Leigh desk + round table + 2 side chairs + filing + credenza + bookshelf + coat rack. European Lighting Standard compliant."
+        },
+        "medium": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Private Office — Medium",
+            "internal_code": "PO-2",
+            "category": "private-office",
+            "area_m2": 43.20,
+            "area_sf": 465,
+            "zone1_depth_m": 6.0,
+            "zone2_depth_m": 3.8,
+            "zone3_depth_m": 2.0,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "furniture_program": [
+              "desk + ergonomic chair (Steelcase Leap)",
+              "5-person meeting table",
+              "4 side chairs",
+              "2-drawer filing cabinet",
+              "credenza",
+              "bookshelf (wall-mounted)",
+              "coat rack"
+            ],
+            "compliance": {
+              "european_lighting_standard": "Zone 1 = 6.0 m satisfies 6 m desk-to-window rule",
+              "wheelchair_clearance": "1200 mm turning radius confirmed at desk and meeting table",
+              "german_circulation_law": "900 mm clear passage at door swing",
+              "building_id": "issued per desk"
+            },
+            "development_classes": ["Professional Centres", "Suburban Office"],
+            "tile_role": "component — nests into 2700 SF Tile"
+          },
+          "$description": "Private Office — Medium. 43.20 m² / 465 SF. Zone 1 = 6.0 m, Zone 2 = 3.8 m, Zone 3 = 2.0 m. Wider frontage than Small; same zone depths."
+        },
+        "large": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Private Office — Large",
+            "internal_code": "PO-3",
+            "category": "private-office",
+            "area_m2": 63.64,
+            "area_sf": 685,
+            "zone1_depth_m": 6.0,
+            "zone2_depth_m": 3.8,
+            "zone3_depth_m": 2.0,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "furniture_program": [
+              "desk + ergonomic chair (Steelcase Leap)",
+              "8-person boardroom table",
+              "7 side chairs",
+              "lateral filing cabinet (4-drawer)",
+              "credenza",
+              "bookshelf (wall-mounted)",
+              "coat rack",
+              "side console"
+            ],
+            "compliance": {
+              "european_lighting_standard": "Zone 1 = 6.0 m satisfies 6 m desk-to-window rule",
+              "wheelchair_clearance": "1200 mm turning radius confirmed at desk, table head, and table ends",
+              "german_circulation_law": "900 mm clear passage at door swing",
+              "building_id": "issued per desk"
+            },
+            "development_classes": ["Professional Centres", "Suburban Office"],
+            "tile_role": "component — nests into 2700 SF Tile or 6000 SF End-Cap Tile"
+          },
+          "$description": "Private Office — Large. 63.64 m² / 685 SF. Zone 1 = 6.0 m, Zone 2 = 3.8 m, Zone 3 = 2.0 m. Widest frontage of the Private Office series; accommodates 8-person boardroom table."
+        }
+      },
+      "corporate-office": {
+        "$description": "Corporate Office — full-floor and fractional-floor leaseholds. Dimensions are a proportion of the Floor Plate; independent Key Plan dimensions are not defined at this stage. Architect sizes Corporate Office against confirmed Floor Plate dimensions.",
+        "full-floor": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Corporate Office — Full Floor",
+            "internal_code": "CO-FF",
+            "category": "corporate-office",
+            "area_m2": null,
+            "area_sf": null,
+            "status": "size-tbd-floor-plate-dependent",
+            "tile_code": "CO-A",
+            "development_classes": ["Professional Centres", "Suburban Office"],
+            "design_notes": "Sized as proportion of Floor Plate. No sub-lease; one climate zone per Tile."
+          },
+          "$description": "Corporate Office — Full Floor. Size TBD — floor-plate dependent. Internal tile code CO-A."
+        },
+        "half-floor": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Corporate Office — Half Floor",
+            "internal_code": "CO-1/2",
+            "category": "corporate-office",
+            "area_m2": null,
+            "area_sf": null,
+            "status": "size-tbd-floor-plate-dependent",
+            "tile_code": "CO-B",
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Corporate Office — Half Floor. Size TBD — floor-plate dependent. Internal tile code CO-B."
+        },
+        "third-floor": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Corporate Office — Third Floor",
+            "internal_code": "CO-1/3",
+            "category": "corporate-office",
+            "area_m2": null,
+            "area_sf": null,
+            "status": "size-tbd-floor-plate-dependent",
+            "tile_code": "CO-C",
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Corporate Office — Third Floor. Size TBD — floor-plate dependent. Internal tile code CO-C."
+        },
+        "quarter-floor": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Corporate Office — Quarter Floor",
+            "internal_code": "CO-1/4",
+            "category": "corporate-office",
+            "area_m2": null,
+            "area_sf": null,
+            "status": "size-tbd-floor-plate-dependent",
+            "tile_code": "CO-D",
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Corporate Office — Quarter Floor. Size TBD — floor-plate dependent. Internal tile code CO-D."
+        },
+        "eighth-floor": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Corporate Office — Eighth Floor",
+            "internal_code": "CO-1/8",
+            "category": "corporate-office",
+            "area_m2": null,
+            "area_sf": null,
+            "status": "size-tbd-floor-plate-dependent",
+            "tile_code": "CO-E",
+            "design_notes": "Minimum viable Corporate Office Tile.",
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Corporate Office — Eighth Floor. Size TBD — floor-plate dependent. Minimum viable Corporate Office Tile. Internal tile code CO-E."
+        }
+      },
+      "medical": {
+        "$description": "Professional Office — Medical. Wider Zone 1 (7.2 m) than other sub-types to accommodate exam-table depth and patient + clinician circulation. ADA / CSA-B651 corridor width. Key rooms: reception, exam / dental chairs, file room, autoclave, sterilization, imaging, storage, washroom. Furniture: Midmark examination tables.",
+        "chiropractor": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Medical — Chiropractor",
+            "internal_code": "M-1",
+            "category": "medical",
+            "area_m2": 223,
+            "area_sf": 2401,
+            "zone1_depth_m": 7.20,
+            "zone2_depth_m": 4.87,
+            "zone3_depth_m": null,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "exam_chairs": 2,
+            "key_rooms": ["reception", "2 exam rooms", "file room", "autoclave", "storage", "washroom"],
+            "compliance": {
+              "european_lighting_standard": "Zone 1 = 7.2 m exceeds 6 m minimum",
+              "ada_csa": "CSA-B651 corridor width in Zone 3",
+              "acoustic_isolation": "demising wall required between suites"
+            },
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Medical — Chiropractor. 223 m² / 2,401 SF. Zone 1 = 7.20 m, Zone 2 = 4.87 m. 2 exam rooms. Reception, file room, autoclave, storage, washroom."
+        },
+        "dentist": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Medical — Dentist",
+            "internal_code": "M-2",
+            "category": "medical",
+            "area_m2": 331,
+            "area_sf": 3568,
+            "zone1_depth_m": 7.20,
+            "zone2_depth_m": 4.87,
+            "zone3_depth_m": null,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "exam_chairs": 4,
+            "key_rooms": ["reception", "4 dental chairs", "file room", "sterilization", "imaging", "storage", "washroom"],
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Medical — Dentist. 331 m² / 3,568 SF. Zone 1 = 7.20 m, Zone 2 = 4.87 m. 4 dental chairs. Reception, sterilization, imaging, storage, washroom."
+        },
+        "general-practitioner": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Medical — General Practitioner",
+            "internal_code": "M-3",
+            "category": "medical",
+            "area_m2": 486,
+            "area_sf": 5231,
+            "zone1_depth_m": 7.20,
+            "zone2_depth_m": 4.87,
+            "zone3_depth_m": null,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "exam_chairs": 6,
+            "key_rooms": ["reception", "6 exam rooms", "file room", "autoclave", "sterilization", "imaging", "storage", "washroom"],
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Medical — General Practitioner. 486 m² / 5,231 SF. Zone 1 = 7.20 m, Zone 2 = 4.87 m. 6 exam rooms. Full clinical suite with imaging and sterilization."
+        }
+      },
+      "business": {
+        "$description": "Professional Office — Business. Widest Zone 2 Magazine (7.3 m) across all Professional Office sub-types — reflects open storage walls, server rooms, print areas, and team collaboration zones. Width options A–D available per size. Total facade frontage range: 25.3 m – 32.3 m.",
+        "small": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Business — Small",
+            "internal_code": "B-1",
+            "category": "business",
+            "area_m2": 311.22,
+            "area_sf": 3350,
+            "zone1_depth_m": 6.00,
+            "zone2_depth_m": 7.30,
+            "zone3_depth_m": 2.75,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "width_options": ["A", "B", "C", "D"],
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Business — Small. 311.22 m² / 3,350 SF. Zone 1 = 6.00 m, Zone 2 = 7.30 m, Zone 3 = 2.75 m. Width options A–D."
+        },
+        "medium": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Business — Medium",
+            "internal_code": "B-2",
+            "category": "business",
+            "area_m2": 399.66,
+            "area_sf": 4301,
+            "zone1_depth_m": 6.00,
+            "zone2_depth_m": 7.30,
+            "zone3_depth_m": 2.75,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "width_options": ["A", "B", "C", "D"],
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Business — Medium. 399.66 m² / 4,301 SF. Zone 1 = 6.00 m, Zone 2 = 7.30 m, Zone 3 = 2.75 m."
+        },
+        "large": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Business — Large",
+            "internal_code": "B-3",
+            "category": "business",
+            "area_m2": 669.00,
+            "area_sf": 7201,
+            "zone1_depth_m": 6.00,
+            "zone2_depth_m": 7.30,
+            "zone3_depth_m": 2.90,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "width_options": ["A", "B", "C", "D"],
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Business — Large. 669.00 m² / 7,201 SF. Zone 1 = 6.00 m, Zone 2 = 7.30 m, Zone 3 = 2.90 m. Widest Zone 3 in Business series."
+        }
+      },
+      "laboratory": {
+        "$description": "Professional Office — Laboratory. Wider Zone 1 (6.78 m) than standard Professional Office to accommodate bench depth and fume hood clearances per German Circulation Law. IBC high-hazard occupancy egress width (3.048 m / 10'0\") in Zone 3. Key rooms: reception, 1–2 offices, 3–9 benches, staff room, storage, mechanical, clean room.",
+        "medical": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Laboratory — Medical",
+            "internal_code": "L-1",
+            "category": "laboratory",
+            "area_m2": 195.00,
+            "area_sf": 2099,
+            "zone1_depth_m": 6.78,
+            "zone2_depth_m": 4.80,
+            "zone3_depth_m": 3.10,
+            "facade_frontage_m": 16.8,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "bench_count": 3,
+            "occupancy_persons": 34,
+            "area_per_person_m2": 5.7,
+            "key_rooms": ["reception", "1 office", "3 benches", "staff room", "storage", "mechanical", "clean room"],
+            "compliance": {
+              "german_circulation_law": "Zone 1 = 6.78 m satisfies bench depth + fume hood clearance",
+              "ibc_high_hazard": "Zone 3 = 3.10 m satisfies IBC high-hazard egress width (3.048 m)"
+            },
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Laboratory — Medical. 195.00 m² / 2,099 SF. Zone 1 = 6.78 m, Zone 2 = 4.80 m, Zone 3 = 3.10 m. Frontage ~16.8 m. 3 benches. Occupancy: 34 (5.7 m²/pp)."
+        },
+        "research": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Laboratory — Research",
+            "internal_code": "L-2",
+            "category": "laboratory",
+            "area_m2": 315.96,
+            "area_sf": 3401,
+            "zone1_depth_m": 6.78,
+            "zone2_depth_m": 4.80,
+            "zone3_depth_m": 3.10,
+            "facade_frontage_m": 27.3,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "bench_count": 6,
+            "occupancy_persons": 49,
+            "area_per_person_m2": 6.4,
+            "key_rooms": ["reception", "2 offices", "6 benches", "staff room", "storage", "mechanical", "clean room"],
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Laboratory — Research. 315.96 m² / 3,401 SF. Zone 1 = 6.78 m, Zone 2 = 4.80 m, Zone 3 = 3.10 m. Frontage ~27.3 m. 6 benches. Occupancy: 49 (6.4 m²/pp)."
+        },
+        "large": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Laboratory — Large",
+            "internal_code": "L-3",
+            "category": "laboratory",
+            "area_m2": 400.69,
+            "area_sf": 4313,
+            "zone1_depth_m": 6.78,
+            "zone2_depth_m": 4.80,
+            "zone3_depth_m": 3.10,
+            "facade_frontage_m": 34.6,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "bench_count": 9,
+            "occupancy_persons": 61,
+            "area_per_person_m2": 6.5,
+            "key_rooms": ["reception", "2 offices", "9 benches", "staff room", "storage", "mechanical", "clean room"],
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Laboratory — Large. 400.69 m² / 4,313 SF. Zone 1 = 6.78 m, Zone 2 = 4.80 m, Zone 3 = 3.10 m. Frontage ~34.6 m. 9 benches. Occupancy: 61 (6.5 m²/pp)."
+        }
+      },
+      "academic": {
+        "$description": "Professional Office — Academic. Shorter Zone 1 (4.7 m) than other sub-types — seating faces forward toward a podium or screen, not toward the facade. No bilateral corridor; suites open to the building corridor. Configurations: seminar / podium (Small), multi-use seminar (Medium), tiered auditorium (Large).",
+        "small": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Academic — Small",
+            "internal_code": "A-1",
+            "category": "academic",
+            "area_m2": 105,
+            "area_sf": 1131,
+            "zone1_depth_m": 4.70,
+            "zone2_depth_m": 3.00,
+            "zone3_depth_m": null,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "configuration": "seminar / podium",
+            "occupancy_persons_min": 21,
+            "occupancy_persons_max": 25,
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Academic — Small. 105 m² / 1,131 SF. Zone 1 = 4.70 m, Zone 2 = 3.00 m. Seminar / podium configuration. Occupancy: 21–25."
+        },
+        "medium": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Academic — Medium",
+            "internal_code": "A-2",
+            "category": "academic",
+            "area_m2": 240,
+            "area_sf": 2583,
+            "zone1_depth_m": 4.70,
+            "zone2_depth_m": 3.00,
+            "zone3_depth_m": null,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "configuration": "multi-use seminar",
+            "occupancy_persons": 63,
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Academic — Medium. 240 m² / 2,583 SF. Zone 1 = 4.70 m, Zone 2 = 3.00 m. Multi-use seminar configuration. Occupancy: 63."
+        },
+        "large": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Academic — Large",
+            "internal_code": "A-3",
+            "category": "academic",
+            "area_m2": 378,
+            "area_sf": 4070,
+            "zone1_depth_m": 4.70,
+            "zone2_depth_m": 3.00,
+            "zone3_depth_m": null,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "configuration": "tiered auditorium",
+            "occupancy_persons_min": 82,
+            "occupancy_persons_max": 103,
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Academic — Large. 378 m² / 4,070 SF. Zone 1 = 4.70 m, Zone 2 = 3.00 m. Tiered auditorium ~60-seat configuration. Occupancy: 82–103."
+        }
+      },
+      "civic": {
+        "$description": "Professional Office — Civic. Government services, community programming, and social services. Widest Zone 2 Magazine (7.23 m) for public records and secure areas. ADA / accessible-route compliance mandatory throughout leasehold. Key rooms: offices, clerk desks, conference rooms, staff room, restrooms, communal corridor.",
+        "small": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Civic — Small",
+            "internal_code": "C-1",
+            "category": "civic",
+            "area_m2": 270,
+            "area_sf": 2912,
+            "zone1_depth_m": 6.00,
+            "zone2_depth_m": 7.23,
+            "zone3_depth_m": null,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "key_rooms": ["offices", "clerk desks", "conference room", "staff room", "restrooms", "communal corridor"],
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Civic — Small. 270 m² / 2,912 SF. Zone 1 = 6.00 m, Zone 2 = 7.23 m."
+        },
+        "medium": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Civic — Medium",
+            "internal_code": "C-2",
+            "category": "civic",
+            "area_m2": 577,
+            "area_sf": 6215,
+            "zone1_depth_m": 6.00,
+            "zone2_depth_m": 7.23,
+            "zone3_depth_m": null,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "key_rooms": ["offices", "clerk desks", "2 conference rooms", "staff room", "restrooms", "communal corridor"],
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Civic — Medium. 577 m² / 6,215 SF. Zone 1 = 6.00 m, Zone 2 = 7.23 m."
+        },
+        "large": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Civic — Large",
+            "internal_code": "C-3",
+            "category": "civic",
+            "area_m2": 822,
+            "area_sf": 8850,
+            "zone1_depth_m": 6.00,
+            "zone2_depth_m": 7.23,
+            "zone3_depth_m": null,
+            "status": "confirmed",
+            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "key_rooms": ["offices", "clerk desks", "3 conference rooms", "staff room", "restrooms", "communal corridor"],
+            "development_classes": ["Professional Centres", "Suburban Office"]
+          },
+          "$description": "Civic — Large. 822 m² / 8,850 SF. Zone 1 = 6.00 m, Zone 2 = 7.23 m. Largest single-leasehold Civic Key Plan."
+        }
+      }
+    }
+  }
+}
