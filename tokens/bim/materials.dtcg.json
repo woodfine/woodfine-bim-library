@@ -56,10 +56,9 @@
         "$type": "bim.pset",
         "$value": {
           "SpecificHeatCapacity": "IfcSpecificHeatCapacityMeasure",
-          "ThermalConductivity": "IfcThermalConductivityMeasure",
-          "ThermalTransmittance": "IfcThermalTransmittanceMeasure"
+          "ThermalConductivity": "IfcThermalConductivityMeasure"
         },
-        "$description": "Thermal property set — relevant to energy performance and ASHRAE / Passivhaus / NZEB workflows."
+        "$description": "Thermal property set — material-level properties only. ThermalConductivity (λ, W/m·K) is a material property. ThermalTransmittance (U-value, W/m²K) is an assembly property per ISO 10077; apply via Pset_WallCommon, Pset_DoorCommon, or Pset_MaterialLayerSet at the assembly level."
       }
     }
   }

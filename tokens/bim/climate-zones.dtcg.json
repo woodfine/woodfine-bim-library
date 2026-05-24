@@ -1,37 +1,51 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "ecoregion": {
-    "arctic": {
+  "$description": "BIM climate zone tokens — anchored to ASHRAE 90.1-2022 climate zone taxonomy (Zones 0-8, subtypes A/B/C). U-values listed are high-performance targets (Passivhaus / NZEB level); ASHRAE 90.1 minimum thresholds are less restrictive. Cite ASHRAE 90.1 Tables 5.5-0 through 5.5-8 for code-minimum U-values per zone.",
+  "$cites": ["ashrae-90-1-2022", "bsdd-v1", "ifc-4-3"],
+  "climate_zone": {
+    "very_cold_arctic": {
+      "$description": "ASHRAE 90.1 Climate Zones 7 (Very Cold) and 8 (Subarctic/Arctic). HDD18 > 5400°C-days. Dominant in northern Canada, Alaska, Scandinavia, Siberia.",
+      "ashrae_zones": ["7", "8"],
       "performance": {
         "thermal": {
           "max_u_value_external_wall": {
             "$type": "number",
             "$value": 0.12,
-            "$description": "Maximum thermal transmittance for external walls (W/m²K)."
+            "$description": "High-performance target U-value for external walls (W/m²K). Passivhaus / NZEB level — more stringent than ASHRAE 90.1 minimum. ASHRAE 90.1 Zone 7/8 mass-wall minimum: ~0.205 W/m²K (U-0.036 BTU/hr·ft²·°F). Cite ASHRAE 90.1-2022 Table 5.5-7/8 for code-compliance thresholds."
           }
         }
       },
       "materials": {
         "insulation": {
           "preferred_type": { "$type": "string", "$value": "Mineral Wool (High Density)" },
-          "bsdd_ref": { "$type": "string", "$value": "https://bsdd.buildingsmart.org/api/Entity/Mineral_Wool_Arctic_Grade" }
+          "bsdd_ref": {
+            "$type": "string",
+            "$value": "https://identifier.buildingsmart.org/uri/nbs/uniclass2015/1/class/Pr_25_57_06_56",
+            "$description": "Uniclass 2015 Pr_25_57_06_56 — Mineral wool insulation products (NBS bSDD dictionary). Verify classification code against current bSDD at identifier.buildingsmart.org."
+          }
         }
       }
     },
-    "temperate": {
+    "mixed_cool_temperate": {
+      "$description": "ASHRAE 90.1 Climate Zones 3 (Mixed), 4 (Mixed), and 5 (Cool). Covers most of continental Europe, UK, Pacific Northwest, and upper Midwest USA.",
+      "ashrae_zones": ["3A", "3B", "3C", "4A", "4B", "4C", "5A", "5B", "5C"],
       "performance": {
         "thermal": {
           "max_u_value_external_wall": {
             "$type": "number",
             "$value": 0.18,
-            "$description": "Maximum thermal transmittance for external walls (W/m²K)."
+            "$description": "High-performance target U-value for external walls (W/m²K). Passivhaus / NZEB level — more stringent than ASHRAE 90.1 minimum. ASHRAE 90.1 Zone 3-5 mass-wall minimums range ~0.227–0.490 W/m²K depending on zone and construction type. Cite ASHRAE 90.1-2022 Tables 5.5-3 through 5.5-5 for code-compliance thresholds."
           }
         }
       },
       "materials": {
         "insulation": {
           "preferred_type": { "$type": "string", "$value": "Mineral Wool (Standard)" },
-          "bsdd_ref": { "$type": "string", "$value": "https://bsdd.buildingsmart.org/api/Entity/Mineral_Wool_Temperate_Grade" }
+          "bsdd_ref": {
+            "$type": "string",
+            "$value": "https://identifier.buildingsmart.org/uri/nbs/uniclass2015/1/class/Pr_25_57_06_56",
+            "$description": "Uniclass 2015 Pr_25_57_06_56 — Mineral wool insulation products (NBS bSDD dictionary). Verify classification code against current bSDD at identifier.buildingsmart.org."
+          }
         }
       }
     }
