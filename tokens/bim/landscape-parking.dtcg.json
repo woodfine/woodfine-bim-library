@@ -22,7 +22,13 @@
           "index_entry": 52,
           "ifc_class": "IfcGeographicElement",
           "uniclass": "EF_25_15",
-          "description": "Vegetated channel designed to slow, filter, and infiltrate stormwater runoff. Primary sustainable drainage element in Professional Centre landscape. Replaces concrete curb-and-gutter drainage."
+          "description": "Vegetated channel designed to slow, filter, and infiltrate stormwater runoff. Primary sustainable drainage element in Professional Centre landscape. Replaces concrete curb-and-gutter drainage.",
+          "eco_region_variants": [
+            "boreal-plains",
+            "fescue-grassland",
+            "parkland-natural"
+          ],
+          "key_plan_code": "LL-1"
         },
         "$description": "Bioswale — vegetated stormwater channel. Key Plans Index #52."
       },
@@ -71,9 +77,19 @@
           "uniclass": "EF_70_10",
           "pavement_variants": {
             "fescue-grassland": "Permeable grass pavement using creeping red fescue (Festuca rubra) — low-maintenance, drought-tolerant; structurally reinforced for vehicle loads while maintaining stormwater infiltration.",
-            "parkland-natural": "Permeable natural parkland surface — compacted gravel or stabilised earth with naturalistic planting between stalls. Maximum ecological integration; suitable for low-traffic overflow parking."
+            "parkland-natural": "Permeable natural parkland surface — compacted gravel or stabilised earth with naturalistic planting between stalls. Maximum ecological integration; suitable for low-traffic overflow parking.",
+            "boreal-plains": "Permeable surface adapted for boreal plains eco-region — native grass species suited to subarctic-continental climate (short growing season, freeze-thaw cycles). Structural reinforcement for frost heave. Low-irrigation once established."
           },
-          "description": "Parking layout with pavement variant selection. Two permeable options replace standard asphalt: fescue-grassland and parkland-natural. Both variants qualify for permeable surface credit in stormwater calculations."
+          "description": "Parking layout with pavement variant selection. Two permeable options replace standard asphalt: fescue-grassland and parkland-natural. Both variants qualify for permeable surface credit in stormwater calculations.",
+          "eco_region_variants": [
+            "boreal-plains",
+            "fescue-grassland",
+            "parkland-natural"
+          ],
+          "key_plan_codes": [
+            "PP-1",
+            "PP-2"
+          ]
         },
         "$description": "Parking Layout — with pavement variants: fescue-grassland or parkland-natural (both permeable). Key Plans Index #56."
       }
