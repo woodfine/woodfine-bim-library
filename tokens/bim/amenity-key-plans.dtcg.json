@@ -1,0 +1,665 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM AMENITY KEY PLANS token category — non-leasable building service and amenity spaces for Professional Centre and Suburban Office development classes. Includes building core amenities (Tenant Lounge, Lobby Atrium, Building Manager, Mail Room, Elevator Lobby, Restrooms, Loading, Recycling, Bike Room, Workbench, Lockers, Coffee/Bread, Public Restrooms, Mop Room) and general-type utility spaces (Corridor Expanders, Meter Room). Areas sourced from Spatial Taxonomy — Key Plans and Tiles — Professional Centres and Suburban Office (AEC_Floor Plates_Key Plans and Tiles_V12.pdf, Collaborators #11, 2025-01-07). All spaces are non-leasable; they form the building core component of the 13% core factor. IFC anchor: IfcSpace for occupied rooms; IfcTransportElement for circulation elements.",
+  "bim": {
+    "amenity-key-plan": {
+      "general": {
+        "$description": "General-type utility Key Plans present across all development classes (Professional Centre and Suburban Office). Not tied to a specific development class.",
+        "corridor-expanders": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Corridor Expanders",
+            "internal_code": "R-1",
+            "key_plan_code": "R-1",
+            "category": "general-utility",
+            "area_sf": 50,
+            "area_m2": 4.6,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — R 50 SF",
+            "ifc_class": "IfcTransportElement",
+            "ifc_type": "USERDEFINED",
+            "description": "Small corridor-widening segment used at junctions and corners in the upper-floor circulation system. 50 SF. Placed at elevator lobbies, stairwell landings, and demising-wall offsets where the standard Tile corridor is insufficient for accessible turning radii.",
+            "use_type": "circulation-expander",
+            "development_classes": ["Professional Centres", "Suburban Office"],
+            "tile_role": "circulation — non-leasable; part of building core allocation"
+          },
+          "$description": "Corridor Expanders R-1. 50 SF (4.6 m²). General-type upper-floor circulation segment."
+        },
+        "meter-room": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Meter Room",
+            "internal_code": "V-1",
+            "key_plan_code": "V-1",
+            "category": "general-utility",
+            "area_sf": 150,
+            "area_m2": 13.9,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — V 150 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Electrical meter room housing tenant submetering equipment. 150 SF. Located on each floor; accessed from core corridor. Contains sub-metering panels for each Tile climate zone to enable direct tenant thermostat control.",
+            "use_type": "electrical-utility",
+            "development_classes": ["Professional Centres", "Suburban Office"],
+            "tile_role": "building-core — non-leasable; climate-zone metering"
+          },
+          "$description": "Meter Room V-1. 150 SF (13.9 m²). Electrical sub-metering room per floor. General-type."
+        }
+      },
+      "professional-centre": {
+        "$description": "Amenity and service Key Plans specific to Professional Centre development class (3–5 stories, 19,000–23,000 SF gross floor plate). These spaces form the building core and ground-floor public zone. All areas sourced from AEC_Floor Plates_Key Plans and Tiles_V12.pdf (Collaborators #11, 2025-01-07).",
+        "tenant-lounge": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Tenant Lounge — Professional Centre",
+            "internal_code": "N-1",
+            "key_plan_code": "N-1",
+            "category": "tenant-amenity",
+            "area_sf": 10000,
+            "area_m2": 929.0,
+            "tile_count": 4,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.3 — N 10,000 SF (1/2 floor tile)",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Shared tenant lounge occupying a half-floor tile on the second floor. 10,000 SF. Accompanied by Private Office Key Plans in the remaining half-floor. Provides breakout seating, informal meeting, and amenity space for upper-floor tenants.",
+            "use_type": "shared-amenity",
+            "floor_location": "second-floor",
+            "tile_fraction": "1/2",
+            "companion_key_plans": ["PO-1", "PO-2"],
+            "development_classes": ["Professional Centres"],
+            "tile_role": "amenity — occupies 1/2 floor tile on second floor; paired with Private Office Key Plans"
+          },
+          "$description": "Tenant Lounge N-1. 10,000 SF (929.0 m²). Professional Centre second floor, half-tile."
+        },
+        "lobby-atrium": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Lobby Atrium — Professional Centre",
+            "internal_code": "EE-1",
+            "key_plan_code": "EE-1",
+            "category": "public-circulation",
+            "area_sf": null,
+            "area_m2": null,
+            "status": "architect-TBD",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.3 — Lobby Atrium shown alongside O+P; area not specified",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Main-floor public entrance lobby and atrium. Area determined by architect per site. Located between Coffee/Bread (CC-1), Public Restrooms (DD-1), Building Manager (O-1), and Mail Room (P-1). Primary wayfinding and building identity space.",
+            "use_type": "public-lobby",
+            "floor_location": "main-floor",
+            "adjacencies": ["CC-1", "DD-1", "O-1", "P-1"],
+            "development_classes": ["Professional Centres"],
+            "tile_role": "building-core — main floor public zone; architect-sized"
+          },
+          "$description": "Lobby Atrium EE-1. Area architect-TBD. Professional Centre main-floor public entrance and atrium."
+        },
+        "building-manager": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Building Manager Office — Professional Centre",
+            "internal_code": "O-1",
+            "key_plan_code": "O-1",
+            "category": "building-management",
+            "area_sf": 450,
+            "area_m2": 41.8,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.3 — O 450 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "OFFICE",
+            "description": "On-site building manager office. 450 SF. Main floor. Contains workstation, file storage, building systems monitoring console, and meeting seating for two. Adjacent to Mail Room (P-1) and Lobby Atrium (EE-1).",
+            "use_type": "building-management-office",
+            "floor_location": "main-floor",
+            "adjacencies": ["P-1", "EE-1"],
+            "development_classes": ["Professional Centres"],
+            "tile_role": "building-core — non-leasable"
+          },
+          "$description": "Building Manager Office O-1. 450 SF (41.8 m²). Main floor, adjacent to Mail Room."
+        },
+        "mail-room": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Mail Room — Professional Centre",
+            "internal_code": "P-1",
+            "key_plan_code": "P-1",
+            "category": "building-management",
+            "area_sf": 450,
+            "area_m2": 41.8,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.3 — P 450 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Mail room and parcel receiving. 450 SF. Main floor. Parcel sorting tables, tenant mailboxes, secure delivery reception, and package holding area. Adjacent to Building Manager Office (O-1) and Lobby Atrium (EE-1).",
+            "use_type": "mail-and-parcel",
+            "floor_location": "main-floor",
+            "adjacencies": ["O-1", "EE-1"],
+            "development_classes": ["Professional Centres"],
+            "tile_role": "building-core — non-leasable"
+          },
+          "$description": "Mail Room P-1. 450 SF (41.8 m²). Main floor, adjacent to Building Manager Office."
+        },
+        "elevator-lobby": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Elevator Lobby — Professional Centre",
+            "internal_code": "S-1",
+            "key_plan_code": "S-1",
+            "category": "vertical-circulation",
+            "area_sf": 300,
+            "area_m2": 27.9,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — S 300 SF",
+            "ifc_class": "IfcTransportElement",
+            "ifc_type": "ELEVATOR",
+            "description": "Elevator lobby at the core of each upper floor. 300 SF. Located at the floor plate centre adjacent to stairwells and Corridor Expanders (R-1). Satisfies accessibility requirements for waiting area and door swing clearance.",
+            "use_type": "elevator-lobby",
+            "floor_location": "upper-floors",
+            "adjacencies": ["R-1", "V-1"],
+            "development_classes": ["Professional Centres"],
+            "tile_role": "building-core — non-leasable vertical circulation node"
+          },
+          "$description": "Elevator Lobby S-1. 300 SF (27.9 m²). Upper floors, building core."
+        },
+        "tenant-restroom": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Tenant Restroom — Professional Centre",
+            "internal_code": "U-1",
+            "key_plan_code": "U-1",
+            "category": "sanitary-facilities",
+            "area_sf": 400,
+            "area_m2": 37.2,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — U 400 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "SANITARY",
+            "description": "Upper-floor tenant restrooms. 400 SF. One per floor; serves all tenants on the floor. Gender-neutral or split-gender per jurisdiction. Accessible stall per ADA / CSA-B651.",
+            "use_type": "tenant-restroom",
+            "floor_location": "upper-floors",
+            "compliance": {
+              "accessible_stall": "ADA / CSA-B651 — 60\" × 60\" turning radius in accessible stall",
+              "fixture_ratio": "per local jurisdiction occupancy load"
+            },
+            "development_classes": ["Professional Centres"],
+            "tile_role": "building-core — non-leasable; one per upper floor"
+          },
+          "$description": "Tenant Restroom U-1. 400 SF (37.2 m²). Upper floors, per-floor provision."
+        },
+        "loading": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Loading — Professional Centre",
+            "internal_code": "X-1",
+            "key_plan_code": "X-1",
+            "category": "service-infrastructure",
+            "area_sf": 750,
+            "area_m2": 69.7,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — X 750 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Loading dock and receiving area. 750 SF. Main floor rear access. Handles freight deliveries, move-in / move-out, and recycling / waste pickup. Required adjacency to Recycling (Y-1). Access controlled from Building Manager Office (O-1).",
+            "use_type": "loading-dock",
+            "floor_location": "main-floor",
+            "adjacencies": ["Y-1", "O-1"],
+            "development_classes": ["Professional Centres"],
+            "tile_role": "building-core — non-leasable service infrastructure"
+          },
+          "$description": "Loading X-1. 750 SF (69.7 m²). Main floor rear, adjacent to Recycling."
+        },
+        "recycling": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Recycling — Professional Centre",
+            "internal_code": "Y-1",
+            "key_plan_code": "Y-1",
+            "category": "service-infrastructure",
+            "area_sf": 400,
+            "area_m2": 37.2,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — Y 400 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Recycling and waste sorting room. 400 SF. Main floor, adjacent to Loading (X-1). Contains sorted recycling bins (paper, plastics, glass, organics), waste compactor area, and cardboard baling station.",
+            "use_type": "recycling-and-waste",
+            "floor_location": "main-floor",
+            "adjacencies": ["X-1"],
+            "development_classes": ["Professional Centres"],
+            "tile_role": "building-core — non-leasable"
+          },
+          "$description": "Recycling Y-1. 400 SF (37.2 m²). Main floor, adjacent to Loading."
+        },
+        "bike-room": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Bike Room — Professional Centre",
+            "internal_code": "Z-1",
+            "key_plan_code": "Z-1",
+            "category": "tenant-amenity",
+            "area_sf": 300,
+            "area_m2": 27.9,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — Z 300 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Secure bicycle storage room. 300 SF. Main floor. Wall-mounted and floor-standing bicycle racks. Access via fob or PIN for tenants. Supports active transportation and LEED / WELL active features credits.",
+            "use_type": "bicycle-storage",
+            "floor_location": "main-floor",
+            "development_classes": ["Professional Centres"],
+            "tile_role": "building-core — non-leasable tenant amenity"
+          },
+          "$description": "Bike Room Z-1. 300 SF (27.9 m²). Main floor secure bicycle storage."
+        },
+        "workbench": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Workbench — Professional Centre",
+            "internal_code": "AA-1",
+            "key_plan_code": "AA-1",
+            "category": "building-management",
+            "area_sf": 150,
+            "area_m2": 13.9,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — AA 150 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Building maintenance workbench and tool storage. 150 SF. Main floor, adjacent to Loading (X-1). Houses hand tools, power tools, maintenance supplies, and workbench for minor repairs. Accessed by building staff only.",
+            "use_type": "maintenance-workshop",
+            "floor_location": "main-floor",
+            "adjacencies": ["X-1"],
+            "development_classes": ["Professional Centres"],
+            "tile_role": "building-core — non-leasable building operations"
+          },
+          "$description": "Workbench AA-1. 150 SF (13.9 m²). Main floor, maintenance workshop."
+        },
+        "building-staff-lockers": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Building Staff Lockers — Professional Centre",
+            "internal_code": "BB-1",
+            "key_plan_code": "BB-1",
+            "category": "building-management",
+            "area_sf": 200,
+            "area_m2": 18.6,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — BB 200 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Building staff change room and lockers. 200 SF. Main floor. Personal lockers, coat storage, and changing facilities for cleaning staff, maintenance technicians, and building management staff.",
+            "use_type": "staff-change-room",
+            "floor_location": "main-floor",
+            "development_classes": ["Professional Centres"],
+            "tile_role": "building-core — non-leasable staff facilities"
+          },
+          "$description": "Building Staff Lockers BB-1. 200 SF (18.6 m²). Main floor, staff change room."
+        },
+        "coffee-bread": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Coffee/Bread — Professional Centre",
+            "internal_code": "CC-1",
+            "key_plan_code": "CC-1",
+            "category": "public-amenity",
+            "area_sf": 1200,
+            "area_m2": 111.5,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — CC 1,200 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Main-floor café and food-service amenity. 1,200 SF. Public-facing — requires access to the Lobby Atrium (EE-1), Public Restrooms (DD-1), and Loading/Recycling (X-1/Y-1). Coffee, baked goods, and light food service. Tenant-facing amenity that supports building identity and dwell time.",
+            "use_type": "food-service",
+            "floor_location": "main-floor",
+            "adjacencies": ["EE-1", "DD-1", "X-1", "Y-1"],
+            "development_classes": ["Professional Centres"],
+            "tile_role": "building-core — public amenity; required adjacency to lobby and loading"
+          },
+          "$description": "Coffee/Bread CC-1. 1,200 SF (111.5 m²). Main floor café, public-facing."
+        },
+        "public-restrooms": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Public Restrooms — Professional Centre",
+            "internal_code": "DD-1",
+            "key_plan_code": "DD-1",
+            "category": "sanitary-facilities",
+            "area_sf": 450,
+            "area_m2": 41.8,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — DD 450 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "SANITARY",
+            "description": "Main-floor public restrooms. 450 SF. Adjacent to Coffee/Bread (CC-1) and Lobby Atrium (EE-1). Serves visitors, café patrons, and ground-floor public zone. Accessible stall per ADA / CSA-B651. Gender-neutral or split-gender per jurisdiction.",
+            "use_type": "public-restroom",
+            "floor_location": "main-floor",
+            "adjacencies": ["CC-1", "EE-1"],
+            "compliance": {
+              "accessible_stall": "ADA / CSA-B651 — 60\" × 60\" turning radius",
+              "fixture_ratio": "per local jurisdiction occupancy load + visitor count"
+            },
+            "development_classes": ["Professional Centres"],
+            "tile_role": "building-core — non-leasable public facility"
+          },
+          "$description": "Public Restrooms DD-1. 450 SF (41.8 m²). Main floor, public-facing, adjacent to café."
+        }
+      },
+      "suburban-office": {
+        "$description": "Amenity and service Key Plans specific to Suburban Office development class (6–9 stories, 17,000–21,000 SF gross floor plate). Mirror of Professional Centre amenities but identified as -2 series; includes Mop Room (W-2) not present in Professional Centre. Areas consistent with Professional Centre -1 series unless otherwise noted.",
+        "tenant-lounge": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Tenant Lounge — Suburban Office",
+            "internal_code": "N-2",
+            "key_plan_code": "N-2",
+            "category": "tenant-amenity",
+            "area_sf": 10000,
+            "area_m2": 929.0,
+            "tile_count": 4,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.3 — N 10,000 SF (1/2 floor tile); consistent across development classes",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Shared tenant lounge occupying a half-floor tile on the second floor. 10,000 SF. Suburban Office variant of N-1. Accompanied by Private Office Key Plans in the remaining half-floor.",
+            "use_type": "shared-amenity",
+            "floor_location": "second-floor",
+            "tile_fraction": "1/2",
+            "companion_key_plans": ["PO-1", "PO-2"],
+            "development_classes": ["Suburban Office"],
+            "tile_role": "amenity — occupies 1/2 floor tile on second floor; paired with Private Office Key Plans"
+          },
+          "$description": "Tenant Lounge N-2. 10,000 SF (929.0 m²). Suburban Office second floor, half-tile."
+        },
+        "lobby-atrium": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Lobby Atrium — Suburban Office",
+            "internal_code": "EE-2",
+            "key_plan_code": "EE-2",
+            "category": "public-circulation",
+            "area_sf": null,
+            "area_m2": null,
+            "status": "architect-TBD",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.3 — Lobby Atrium shown but area not specified",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Main-floor public entrance lobby and atrium for Suburban Office. Area determined by architect per site. Suburban Office variant of EE-1; may be larger to accommodate higher-density tower floor counts.",
+            "use_type": "public-lobby",
+            "floor_location": "main-floor",
+            "adjacencies": ["CC-2", "DD-2", "O-2", "P-2"],
+            "development_classes": ["Suburban Office"],
+            "tile_role": "building-core — main floor public zone; architect-sized"
+          },
+          "$description": "Lobby Atrium EE-2. Area architect-TBD. Suburban Office main-floor public entrance and atrium."
+        },
+        "building-manager": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Building Manager Office — Suburban Office",
+            "internal_code": "O-2",
+            "key_plan_code": "O-2",
+            "category": "building-management",
+            "area_sf": 450,
+            "area_m2": 41.8,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.3 — O 450 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "OFFICE",
+            "description": "On-site building manager office. 450 SF. Suburban Office variant of O-1. Main floor adjacent to Mail Room (P-2) and Lobby Atrium (EE-2).",
+            "use_type": "building-management-office",
+            "floor_location": "main-floor",
+            "adjacencies": ["P-2", "EE-2"],
+            "development_classes": ["Suburban Office"],
+            "tile_role": "building-core — non-leasable"
+          },
+          "$description": "Building Manager Office O-2. 450 SF (41.8 m²). Suburban Office main floor."
+        },
+        "mail-room": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Mail Room — Suburban Office",
+            "internal_code": "P-2",
+            "key_plan_code": "P-2",
+            "category": "building-management",
+            "area_sf": 450,
+            "area_m2": 41.8,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.3 — P 450 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Mail room and parcel receiving. 450 SF. Suburban Office variant of P-1. Main floor adjacent to Building Manager (O-2) and Lobby Atrium (EE-2).",
+            "use_type": "mail-and-parcel",
+            "floor_location": "main-floor",
+            "adjacencies": ["O-2", "EE-2"],
+            "development_classes": ["Suburban Office"],
+            "tile_role": "building-core — non-leasable"
+          },
+          "$description": "Mail Room P-2. 450 SF (41.8 m²). Suburban Office main floor."
+        },
+        "elevator-lobby": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Elevator Lobby — Suburban Office",
+            "internal_code": "S-2",
+            "key_plan_code": "S-2",
+            "category": "vertical-circulation",
+            "area_sf": 300,
+            "area_m2": 27.9,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — S 300 SF",
+            "ifc_class": "IfcTransportElement",
+            "ifc_type": "ELEVATOR",
+            "description": "Elevator lobby at the core of each upper floor. 300 SF. Suburban Office variant of S-1; may include additional lift shafts for taller towers. Located at floor plate centre adjacent to stairwells and Corridor Expanders (R-1).",
+            "use_type": "elevator-lobby",
+            "floor_location": "upper-floors",
+            "adjacencies": ["R-1", "V-1"],
+            "development_classes": ["Suburban Office"],
+            "tile_role": "building-core — non-leasable vertical circulation node"
+          },
+          "$description": "Elevator Lobby S-2. 300 SF (27.9 m²). Suburban Office upper floors, building core."
+        },
+        "tenant-restroom": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Tenant Restroom — Suburban Office",
+            "internal_code": "U-2",
+            "key_plan_code": "U-2",
+            "category": "sanitary-facilities",
+            "area_sf": 400,
+            "area_m2": 37.2,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — U 400 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "SANITARY",
+            "description": "Upper-floor tenant restrooms. 400 SF. Suburban Office variant of U-1. One per floor serving all tenants.",
+            "use_type": "tenant-restroom",
+            "floor_location": "upper-floors",
+            "compliance": {
+              "accessible_stall": "ADA / CSA-B651 — 60\" × 60\" turning radius in accessible stall",
+              "fixture_ratio": "per local jurisdiction occupancy load"
+            },
+            "development_classes": ["Suburban Office"],
+            "tile_role": "building-core — non-leasable; one per upper floor"
+          },
+          "$description": "Tenant Restroom U-2. 400 SF (37.2 m²). Suburban Office upper floors."
+        },
+        "mop-room": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Mop Room — Suburban Office",
+            "internal_code": "W-2",
+            "key_plan_code": "W-2",
+            "category": "building-management",
+            "area_sf": 150,
+            "area_m2": 13.9,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — W 150 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Housekeeping and cleaning supply room. 150 SF. Suburban Office only (no W-1 in Professional Centre). Per-floor or per-zone utility room with mop sink, cleaning chemicals storage, and janitorial cart parking. Required in taller towers (6–9 floors) where cleaning crew logistics require dedicated per-floor staging.",
+            "use_type": "housekeeping-utility",
+            "floor_location": "upper-floors",
+            "design_notes": "Absent in Professional Centre (3–5 floors). Required in Suburban Office due to tower height and cleaning crew logistics.",
+            "development_classes": ["Suburban Office"],
+            "tile_role": "building-core — non-leasable housekeeping facility"
+          },
+          "$description": "Mop Room W-2. 150 SF (13.9 m²). Suburban Office only — absent from Professional Centre."
+        },
+        "loading": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Loading — Suburban Office",
+            "internal_code": "X-2",
+            "key_plan_code": "X-2",
+            "category": "service-infrastructure",
+            "area_sf": 750,
+            "area_m2": 69.7,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — X 750 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Loading dock and receiving area. 750 SF. Suburban Office variant of X-1. Main floor rear access, adjacent to Recycling (Y-2).",
+            "use_type": "loading-dock",
+            "floor_location": "main-floor",
+            "adjacencies": ["Y-2", "O-2"],
+            "development_classes": ["Suburban Office"],
+            "tile_role": "building-core — non-leasable service infrastructure"
+          },
+          "$description": "Loading X-2. 750 SF (69.7 m²). Suburban Office main floor."
+        },
+        "recycling": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Recycling — Suburban Office",
+            "internal_code": "Y-2",
+            "key_plan_code": "Y-2",
+            "category": "service-infrastructure",
+            "area_sf": 400,
+            "area_m2": 37.2,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — Y 400 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Recycling and waste sorting room. 400 SF. Suburban Office variant of Y-1. Main floor adjacent to Loading (X-2).",
+            "use_type": "recycling-and-waste",
+            "floor_location": "main-floor",
+            "adjacencies": ["X-2"],
+            "development_classes": ["Suburban Office"],
+            "tile_role": "building-core — non-leasable"
+          },
+          "$description": "Recycling Y-2. 400 SF (37.2 m²). Suburban Office main floor."
+        },
+        "bike-room": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Bike Room — Suburban Office",
+            "internal_code": "Z-2",
+            "key_plan_code": "Z-2",
+            "category": "tenant-amenity",
+            "area_sf": 300,
+            "area_m2": 27.9,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — Z 300 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Secure bicycle storage room. 300 SF. Suburban Office variant of Z-1. Main floor.",
+            "use_type": "bicycle-storage",
+            "floor_location": "main-floor",
+            "development_classes": ["Suburban Office"],
+            "tile_role": "building-core — non-leasable tenant amenity"
+          },
+          "$description": "Bike Room Z-2. 300 SF (27.9 m²). Suburban Office main floor."
+        },
+        "workbench": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Workbench — Suburban Office",
+            "internal_code": "AA-2",
+            "key_plan_code": "AA-2",
+            "category": "building-management",
+            "area_sf": 150,
+            "area_m2": 13.9,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — AA 150 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Building maintenance workbench and tool storage. 150 SF. Suburban Office variant of AA-1. Main floor.",
+            "use_type": "maintenance-workshop",
+            "floor_location": "main-floor",
+            "adjacencies": ["X-2"],
+            "development_classes": ["Suburban Office"],
+            "tile_role": "building-core — non-leasable building operations"
+          },
+          "$description": "Workbench AA-2. 150 SF (13.9 m²). Suburban Office main floor."
+        },
+        "building-staff-lockers": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Building Staff Lockers — Suburban Office",
+            "internal_code": "BB-2",
+            "key_plan_code": "BB-2",
+            "category": "building-management",
+            "area_sf": 200,
+            "area_m2": 18.6,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — BB 200 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Building staff change room and lockers. 200 SF. Suburban Office variant of BB-1. Main floor.",
+            "use_type": "staff-change-room",
+            "floor_location": "main-floor",
+            "development_classes": ["Suburban Office"],
+            "tile_role": "building-core — non-leasable staff facilities"
+          },
+          "$description": "Building Staff Lockers BB-2. 200 SF (18.6 m²). Suburban Office main floor."
+        },
+        "coffee-bread": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Coffee/Bread — Suburban Office",
+            "internal_code": "CC-2",
+            "key_plan_code": "CC-2",
+            "category": "public-amenity",
+            "area_sf": 1200,
+            "area_m2": 111.5,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — CC 1,200 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "USERDEFINED",
+            "description": "Main-floor café and food-service amenity. 1,200 SF. Suburban Office variant of CC-1. Required adjacency to Lobby Atrium (EE-2), Public Restrooms (DD-2), and Loading/Recycling (X-2/Y-2).",
+            "use_type": "food-service",
+            "floor_location": "main-floor",
+            "adjacencies": ["EE-2", "DD-2", "X-2", "Y-2"],
+            "development_classes": ["Suburban Office"],
+            "tile_role": "building-core — public amenity; required adjacency to lobby and loading"
+          },
+          "$description": "Coffee/Bread CC-2. 1,200 SF (111.5 m²). Suburban Office main floor café."
+        },
+        "public-restrooms": {
+          "$type": "bim.entity",
+          "$value": {
+            "display_name": "Public Restrooms — Suburban Office",
+            "internal_code": "DD-2",
+            "key_plan_code": "DD-2",
+            "category": "sanitary-facilities",
+            "area_sf": 450,
+            "area_m2": 41.8,
+            "status": "confirmed",
+            "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.4 — DD 450 SF",
+            "ifc_class": "IfcSpace",
+            "ifc_space_type": "SANITARY",
+            "description": "Main-floor public restrooms. 450 SF. Suburban Office variant of DD-1. Adjacent to Coffee/Bread (CC-2) and Lobby Atrium (EE-2).",
+            "use_type": "public-restroom",
+            "floor_location": "main-floor",
+            "adjacencies": ["CC-2", "EE-2"],
+            "compliance": {
+              "accessible_stall": "ADA / CSA-B651 — 60\" × 60\" turning radius",
+              "fixture_ratio": "per local jurisdiction occupancy load + visitor count"
+            },
+            "development_classes": ["Suburban Office"],
+            "tile_role": "building-core — non-leasable public facility"
+          },
+          "$description": "Public Restrooms DD-2. 450 SF (41.8 m²). Suburban Office main floor."
+        }
+      }
+    }
+  }
+}

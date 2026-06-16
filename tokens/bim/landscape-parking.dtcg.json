@@ -48,11 +48,12 @@
         "$value": {
           "label": "Irrigation Gallery",
           "index_entry": 54,
+          "key_plan_code": "LL-2",
           "ifc_class": "IfcDistributionSystem",
           "uniclass": "Ss_55_30",
           "description": "Underground stormwater capture and irrigation distribution system. Connected to site detention infiltration gallery. Delivers captured runoff to permaculture and bioswale zones, reducing potable water demand for landscape irrigation."
         },
-        "$description": "Irrigation Gallery — underground stormwater-fed irrigation distribution system. Key Plans Index #54."
+        "$description": "Irrigation Gallery LL-2 — underground stormwater-fed irrigation distribution system. Key Plans Index #54 / Key Plan code LL-2."
       }
     },
     "parking": {
@@ -140,6 +141,25 @@
           "description": "Site irrigation and watering system. In permaculture-landscaped sites, supplied primarily from captured stormwater via irrigation gallery. Supplemental potable connection for establishment period only."
         },
         "$description": "Site Watering — irrigation system, preferably stormwater-fed via irrigation gallery. Key Plans Index #60."
+      },
+      "signage": {
+        "$type": "bim.entity",
+        "$value": {
+          "label": "Signage",
+          "index_entry": 61,
+          "key_plan_code": "PP-5",
+          "ifc_class": "IfcAnnotation",
+          "uniclass": "EF_70_60",
+          "description": "Site wayfinding and identification signage. Includes directional signs for parking aisle flow, accessible stall identifiers, building address numerals, tenant identification panels, and entrance / exit signs. Permits required per local sign bylaws. Illuminated signs must meet dark-sky ordinance where applicable.",
+          "sign_types": [
+            "directional — parking aisle flow",
+            "accessible stall identifier (ADA/CSA-B651)",
+            "building address numeral",
+            "tenant identification panel",
+            "entrance / exit signs"
+          ]
+        },
+        "$description": "Signage PP-5 — site wayfinding, identification, and accessible stall markers. Key Plan code PP-5."
       }
     },
     "site-lighting": {
