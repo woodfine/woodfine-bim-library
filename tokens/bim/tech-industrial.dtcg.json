@@ -1,0 +1,101 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM TECH INDUSTRIAL token category — leasable Key Plans for single-storey light-industrial, R&D, and tech-production leaseholds where the Tile equals the Floor Plate. Three sizes (TI-1 Medium / TI-2 Large / TI-3 Extra Large) assembled from fixed component blocks: A=2,200 SF / B=2,100 SF / C=1,200 SF (repeatable) / D=1,500 SF / M=200 SF. Areas sourced from Spatial Taxonomy — Key Plans and Tiles V12 (AEC_Floor Plates_Key Plans and Tiles_V12.pdf, Collaborators #11, 2025-01-07). Confirmed by tool-floorplate D3 (2026-06-15). IFC anchor: IfcSpace for each leasehold unit.",
+  "bim": {
+    "tech-industrial": {
+      "$description": "Tech Industrial Key Plans — single-storey light-industrial, R&D, and tech-production leaseholds. Tile = Floor Plate (no building core deduction). Three sizes (TI-1 Medium / TI-2 Large / TI-3 Extra Large) assembled from fixed component blocks: A=2,200 SF / B=2,100 SF / C=1,200 SF (repeatable) / D=1,500 SF / M=200 SF. Development class: single-storey grade-level industrial with service access. Source: AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.6.",
+      "medium": {
+        "$type": "bim.entity",
+        "$value": {
+          "display_name": "Tech Industrial — Medium",
+          "internal_code": "TI-1",
+          "key_plan_code": "TI-1",
+          "category": "tech-industrial",
+          "area_sf": 7200,
+          "area_m2": 669.0,
+          "status": "confirmed",
+          "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.6 — BUILDING SIZE MEDIUM 7,200 SF",
+          "ifc_class": "IfcSpace",
+          "ifc_space_type": "USERDEFINED",
+          "description": "Tech Industrial — Medium. 7,200 SF leasable. Single storey; Tile = Floor Plate. Component blocks: A(2,200) + B(2,100) + C(1,200) + D(1,500) + M(200). Light industrial, R&D, or tech-production use. Grade-level service door. High clear height (20'–24' typical).",
+          "use_type": "tech-industrial-leasehold",
+          "floors": 1,
+          "tile_is_floor_plate": true,
+          "component_blocks": {
+            "A": 2200,
+            "B": 2100,
+            "C": 1200,
+            "D": 1500,
+            "M": 200
+          },
+          "development_classes": ["Tech Industrial"],
+          "tile_role": "standalone — Tile = Floor Plate; no building core deduction",
+          "design_notes": "Base Tech Industrial unit. Add C-blocks (1,200 SF each) to expand to Large or Extra Large."
+        },
+        "$description": "Tech Industrial — Medium TI-1. 7,200 SF (669.0 m²). Tile = Floor Plate. Blocks: A+B+C+D+M."
+      },
+      "large": {
+        "$type": "bim.entity",
+        "$value": {
+          "display_name": "Tech Industrial — Large",
+          "internal_code": "TI-2",
+          "key_plan_code": "TI-2",
+          "category": "tech-industrial",
+          "area_sf": 8400,
+          "area_m2": 780.4,
+          "status": "confirmed",
+          "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.6 — BUILDING SIZE LARGE 8,400 SF",
+          "ifc_class": "IfcSpace",
+          "ifc_space_type": "USERDEFINED",
+          "description": "Tech Industrial — Large. 8,400 SF leasable. Single storey; Tile = Floor Plate. Component blocks: A(2,200) + B(2,100) + C(1,200) + C(1,200) + D(1,500) + M(200). Adds one C-block to Medium configuration.",
+          "use_type": "tech-industrial-leasehold",
+          "floors": 1,
+          "tile_is_floor_plate": true,
+          "component_blocks": {
+            "A": 2200,
+            "B": 2100,
+            "C1": 1200,
+            "C2": 1200,
+            "D": 1500,
+            "M": 200
+          },
+          "development_classes": ["Tech Industrial"],
+          "tile_role": "standalone — Tile = Floor Plate; no building core deduction"
+        },
+        "$description": "Tech Industrial — Large TI-2. 8,400 SF (780.4 m²). Tile = Floor Plate. Blocks: A+B+2×C+D+M."
+      },
+      "extra-large": {
+        "$type": "bim.entity",
+        "$value": {
+          "display_name": "Tech Industrial — Extra Large",
+          "internal_code": "TI-3",
+          "key_plan_code": "TI-3",
+          "category": "tech-industrial",
+          "area_sf": 9600,
+          "area_m2": 891.9,
+          "status": "confirmed",
+          "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.6 — range 7,200–9,600 SF; derived by adding 1×C-block to Large per 'CAN ADD MORE C TO MAKE BUILDING BIGGER'",
+          "ifc_class": "IfcSpace",
+          "ifc_space_type": "USERDEFINED",
+          "description": "Tech Industrial — Extra Large. 9,600 SF leasable. Single storey; Tile = Floor Plate. Component blocks: A(2,200) + B(2,100) + C(1,200) + C(1,200) + C(1,200) + D(1,500) + M(200). Adds a third C-block to Large. Maximum standard Tech Industrial leasehold.",
+          "use_type": "tech-industrial-leasehold",
+          "floors": 1,
+          "tile_is_floor_plate": true,
+          "component_blocks": {
+            "A": 2200,
+            "B": 2100,
+            "C1": 1200,
+            "C2": 1200,
+            "C3": 1200,
+            "D": 1500,
+            "M": 200
+          },
+          "development_classes": ["Tech Industrial"],
+          "tile_role": "standalone — Tile = Floor Plate; no building core deduction",
+          "design_notes": "Maximum standard unit per source document floor-plate range 7,200–9,600 SF."
+        },
+        "$description": "Tech Industrial — Extra Large TI-3. 9,600 SF (891.9 m²). Tile = Floor Plate. Blocks: A+B+3×C+D+M."
+      }
+    }
+  }
+}

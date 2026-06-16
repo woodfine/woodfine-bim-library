@@ -1,0 +1,104 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM RETAIL SELECT token category — leasable Key Plans for single-storey neighbourhood retail leaseholds where the Tile equals the Floor Plate. Three sizes (RA-1 Small / RB-2 Medium / RC-3 Large) assembled from fixed component blocks: A=1,400 SF / B=1,000 SF / C=700 SF / D=1,100 SF / E=1,200 SF / M=200 SF. Areas sourced from Spatial Taxonomy — Key Plans and Tiles V12 (AEC_Floor Plates_Key Plans and Tiles_V12.pdf, Collaborators #11, 2025-01-07). Confirmed by tool-floorplate D3 (2026-06-15). IFC anchor: IfcSpace for each leasehold unit.",
+  "bim": {
+    "retail-select": {
+      "$description": "Retail Select Key Plans — single-storey neighbourhood retail leaseholds. Tile = Floor Plate (no building core deduction). Three sizes (RA-1 Small / RB-2 Medium / RC-3 Large) assembled from fixed component blocks: A=1,400 SF / B=1,000 SF / C=700 SF / D=1,100 SF / E=1,200 SF / M=200 SF (mezzanine or mechanical). Development class: single-storey with grade-level access. Source: AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.5.",
+      "small": {
+        "$type": "bim.entity",
+        "$value": {
+          "display_name": "Retail Select — Small",
+          "internal_code": "RA-1",
+          "key_plan_code": "RA-1",
+          "category": "retail-select",
+          "area_sf": 4500,
+          "area_m2": 418.1,
+          "status": "confirmed",
+          "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.5 — BUILDING SIZE SMALL 4,500 SF",
+          "ifc_class": "IfcSpace",
+          "ifc_space_type": "USERDEFINED",
+          "description": "Retail Select — Small. 4,500 SF leasable. Single storey; Tile = Floor Plate (no separate building core). Component blocks: A(1,400) + B(1,000) + C(700) + E(1,200) + M(200). Neighbourhood strip or freestanding retail pad. Maximum fascia frontage to parking lot.",
+          "use_type": "retail-leasehold",
+          "floors": 1,
+          "tile_is_floor_plate": true,
+          "component_blocks": {
+            "A": 1400,
+            "B": 1000,
+            "C": 700,
+            "E": 1200,
+            "M": 200
+          },
+          "development_classes": ["Retail Select"],
+          "tile_role": "standalone — Tile = Floor Plate; no building core deduction",
+          "design_notes": "Smallest Retail Select leasehold. Can add B and D blocks to expand to Medium (6,700 SF). Grade-level access with storefront glazing."
+        },
+        "$description": "Retail Select — Small RA-1. 4,500 SF (418.1 m²). Tile = Floor Plate. Blocks: A+B+C+E+M."
+      },
+      "medium": {
+        "$type": "bim.entity",
+        "$value": {
+          "display_name": "Retail Select — Medium",
+          "internal_code": "RB-2",
+          "key_plan_code": "RB-2",
+          "category": "retail-select",
+          "area_sf": 6700,
+          "area_m2": 622.5,
+          "status": "confirmed",
+          "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.5 — BUILDING SIZE MEDIUM 6,700 SF",
+          "ifc_class": "IfcSpace",
+          "ifc_space_type": "USERDEFINED",
+          "description": "Retail Select — Medium. 6,700 SF leasable. Single storey; Tile = Floor Plate. Component blocks: A(1,400) + B(1,000) + C(700) + D(1,100) + D(1,100) + E(1,200) + M(200). Adds two D-blocks to Small configuration.",
+          "use_type": "retail-leasehold",
+          "floors": 1,
+          "tile_is_floor_plate": true,
+          "component_blocks": {
+            "A": 1400,
+            "B": 1000,
+            "C": 700,
+            "D1": 1100,
+            "D2": 1100,
+            "E": 1200,
+            "M": 200
+          },
+          "development_classes": ["Retail Select"],
+          "tile_role": "standalone — Tile = Floor Plate; no building core deduction",
+          "design_notes": "Expanded from Small by adding two D-blocks (1,100 SF each). Can add another B-block to reach Large (7,700 SF)."
+        },
+        "$description": "Retail Select — Medium RB-2. 6,700 SF (622.5 m²). Tile = Floor Plate. Blocks: A+B+C+2×D+E+M."
+      },
+      "large": {
+        "$type": "bim.entity",
+        "$value": {
+          "display_name": "Retail Select — Large",
+          "internal_code": "RC-3",
+          "key_plan_code": "RC-3",
+          "category": "retail-select",
+          "area_sf": 7700,
+          "area_m2": 715.3,
+          "status": "confirmed",
+          "source": "AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.5 — BUILDING SIZE LARGE 7,700 SF",
+          "ifc_class": "IfcSpace",
+          "ifc_space_type": "USERDEFINED",
+          "description": "Retail Select — Large. 7,700 SF leasable. Single storey; Tile = Floor Plate. Component blocks: A(1,400) + B(1,000) + B(1,000) + C(700) + D(1,100) + D(1,100) + E(1,200) + M(200). Adds second B-block to Medium configuration.",
+          "use_type": "retail-leasehold",
+          "floors": 1,
+          "tile_is_floor_plate": true,
+          "component_blocks": {
+            "A": 1400,
+            "B1": 1000,
+            "B2": 1000,
+            "C": 700,
+            "D1": 1100,
+            "D2": 1100,
+            "E": 1200,
+            "M": 200
+          },
+          "development_classes": ["Retail Select"],
+          "tile_role": "standalone — Tile = Floor Plate; no building core deduction",
+          "design_notes": "Largest Retail Select leasehold. Further expansion possible by adding B or D blocks per PDF note 'CAN ADD MORE B AND D TO MAKE BUILDING BIGGER'."
+        },
+        "$description": "Retail Select — Large RC-3. 7,700 SF (715.3 m²). Tile = Floor Plate. Blocks: A+2×B+C+2×D+E+M."
+      }
+    }
+  }
+}
