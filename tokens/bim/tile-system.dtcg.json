@@ -193,6 +193,63 @@
           "$description": "Tile H: Large Professional Office — 4,900 SF; 3 Professional Office units (any sub-type mix) + corridor. 3 climate zones."
         }
       },
+      "corridor-expander": {
+        "$description": "Corridor expander component — not a full tile. Used to fill arithmetic gaps between Key Plan composition sums and headline tile SF targets at design time. tool-buildingwidth inserts corridor expanders automatically when Tile/Key-Plan/Floor-Plate negotiation requires it.",
+        "tile-t": {
+          "$type": "bim.entity",
+          "$value": {
+            "label": "Corridor Expander T",
+            "total_area_sf": 300,
+            "total_area_m2": 27.87,
+            "source": "AEC_Floor Plates_Tiles_Alternatives.pdf V12 — diagram value operative",
+            "notes": "300 SF corridor expander. The diagram value 300 SF is operative; the nominal arithmetic sum of adjacent Key Plans may differ — this gap is intentional. tool-buildingwidth manages Tile/Key-Plan/Floor-Plate size negotiation at build time."
+          },
+          "$description": "Corridor Expander T — 300 SF (27.87 m²). Diagram value is operative. Arithmetic gap vs Key Plan sum is intentional per Decision 4 (operator-resolved 2026-05-20)."
+        }
+      },
+      "reserved": {
+        "$description": "Reserved tile slots — referenced in AEC_Floor Plates_Tiles_Alternatives.pdf V12 p.3 footnote but source document not yet located. All entries status: reserved pending V13 source document or operator confirmation of values.",
+        "tile-j": {
+          "$type": "bim.entity",
+          "$value": {
+            "label": "Tile J — Reserved",
+            "status": "reserved",
+            "source": "AEC_Floor Plates_Tiles_Alternatives.pdf V12 p.3 footnote",
+            "notes": "Source document referenced in Tiles PDF p.3 footnote not yet located. Values withheld pending V13 or source confirmation."
+          },
+          "$description": "Tile J — Reserved stub. Values withheld pending V13 source confirmation."
+        },
+        "tile-k": {
+          "$type": "bim.entity",
+          "$value": {
+            "label": "Tile K — Reserved",
+            "status": "reserved",
+            "source": "AEC_Floor Plates_Tiles_Alternatives.pdf V12 p.3 footnote",
+            "notes": "Source document referenced in Tiles PDF p.3 footnote not yet located. Values withheld pending V13 or source confirmation."
+          },
+          "$description": "Tile K — Reserved stub. Values withheld pending V13 source confirmation."
+        },
+        "tile-l": {
+          "$type": "bim.entity",
+          "$value": {
+            "label": "Tile L — Reserved",
+            "status": "reserved",
+            "source": "AEC_Floor Plates_Tiles_Alternatives.pdf V12 p.3 footnote",
+            "notes": "Source document referenced in Tiles PDF p.3 footnote not yet located. Values withheld pending V13 or source confirmation."
+          },
+          "$description": "Tile L — Reserved stub. Values withheld pending V13 source confirmation."
+        },
+        "tile-m": {
+          "$type": "bim.entity",
+          "$value": {
+            "label": "Tile M — Reserved",
+            "status": "reserved",
+            "source": "AEC_Floor Plates_Tiles_Alternatives.pdf V12 p.3 footnote",
+            "notes": "Source document referenced in Tiles PDF p.3 footnote not yet located. Values withheld pending V13 or source confirmation."
+          },
+          "$description": "Tile M — Reserved stub. Values withheld pending V13 source confirmation."
+        }
+      },
       "design-principles": {
         "$description": "Encoded design principles for the Key Plans and Tiles assembly system. These are not measurable tokens but captured as reference metadata for the BIM design system substrate.",
         "climate-zone-autonomy": {
