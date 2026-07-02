@@ -1,0 +1,10 @@
+---
+display_name: Amenity Key Plans
+ifc_anchor: IfcSpace
+uniclass: SL_25
+ifc_hierarchy: IfcRoot → IfcObjectDefinition → IfcObject → IfcSpatialElement → IfcSpace
+elements: IfcSpace · IfcTransportElement · IfcAnnotation
+card_desc: Tenant Lounge · Lobby Atrium · Loading · Restrooms · Coffee/Bread · Building service rooms
+property_sets:
+---
+Non-leasable building amenity and service spaces for Professional Centre and Suburban Office development classes.

@@ -2,7 +2,7 @@
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$description": "BIM climate zone tokens — anchored to ASHRAE 90.1-2022 climate zone taxonomy (Zones 0-8, subtypes A/B/C). U-values listed are high-performance targets (Passivhaus / NZEB level); ASHRAE 90.1 minimum thresholds are less restrictive. Cite ASHRAE 90.1 Tables 5.5-0 through 5.5-8 for code-minimum U-values per zone.",
   "$cites": ["ashrae-90-1-2022", "bsdd-v1", "ifc-4-3"],
-  "climate_zone": {
+  "bim": {
     "very_cold_arctic": {
       "$description": "ASHRAE 90.1 Climate Zones 7 (Very Cold) and 8 (Subarctic/Arctic). HDD18 > 5400°C-days. Dominant in northern Canada, Alaska, Scandinavia, Siberia.",
       "ashrae_zones": ["7", "8"],
