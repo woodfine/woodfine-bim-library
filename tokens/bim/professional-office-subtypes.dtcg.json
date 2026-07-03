@@ -22,14 +22,24 @@
             "General Practitioner"
           ],
           "key_plan_index_range": "10–14",
-          "design_notes": "Wider Zone 1 (7.2m) than other sub-types to accommodate exam-table depth and patient + clinician circulation. ADA/CSA-B651 corridor width. Acoustic and vibration isolation requirements. Demising wall required between suites.",
+          "key_plan_areas_m2": {
+            "small": 223,
+            "medium": 331,
+            "large": 486
+          },
+          "key_plan_areas_sf": {
+            "small": 2401,
+            "medium": 3568,
+            "large": 5231
+          },
+          "design_notes": "Wider Zone 1 (7.2m) than other sub-types to accommodate exam-table depth and patient + clinician circulation. ADA/CSA-B651 corridor width. Acoustic and vibration isolation requirements. Demising wall required between suites. Small: 223 m² (2,401 SF, Chiropractor variant); Medium: 331 m² (3,568 SF, Dentist variant); Large: 486 m² (5,231 SF, General Practitioner variant). key_plan_areas_m2/sf backfilled 2026-07-03 per tool-buildingwidth-architecture.md §Internal inconsistencies #2, sourced from key-plans.dtcg.json's already-live medical chiropractor/dentist/general-practitioner entries.",
           "sf_per_workstation": {
             "small": 72.4,
             "medium": 62.5,
             "large": 78.4
           }
         },
-        "$description": "Medical Office — clinical, dental, diagnostic, and allied health leaseholds. FFE codes M1 (1,100 SF), M2 (1,400 SF), M3 (800 SF). Specialisations: Dentist, General Practitioner."
+        "$description": "Medical Office — clinical, dental, diagnostic, and allied health leaseholds. FFE codes M1 (1,100 SF), M2 (1,400 SF), M3 (800 SF). Specialisations: Dentist, General Practitioner. Key plan sizes: Small 2,401 SF, Medium 3,568 SF, Large 5,231 SF."
       },
       "business": {
         "$type": "bim.entity",
@@ -115,23 +125,23 @@
           ],
           "key_plan_index_range": "29–32",
           "key_plan_areas_m2": {
-            "small": 87.7,
+            "small": 105.0,
             "medium": 240.3,
             "large": 376.3
           },
           "key_plan_areas_sf": {
-            "small": 944,
+            "small": 1131,
             "medium": 2586,
             "large": 4050
           },
-          "design_notes": "Shorter Zone 1 (4.7m / 15'5\") than other sub-types because seating faces forward rather than toward façade. No bilateral corridor — suites open to building corridor. Small: 87.7 m² (944 SF) includes podium, desks, auditorium seating, storage; Medium: 240.3 m² (2,586 SF); Large: 376.3 m² (4,050 SF). Source: AEC_Floor Plates_Key Plans_Samples_V2.pdf.",
+          "design_notes": "Shorter Zone 1 (4.7m / 15'5\") than other sub-types because seating faces forward rather than toward façade. No bilateral corridor — suites open to building corridor. Small: 105.0 m² (1,131 SF) includes podium, desks, auditorium seating, storage; Medium: 240.3 m² (2,586 SF); Large: 376.3 m² (4,050 SF). Small reconciled 2026-07-03 per tool-buildingwidth-architecture.md §Internal inconsistencies #1: this file previously carried 87.7 m² (944 SF) from AEC_Floor Plates_Key Plans_Samples_V2.pdf, which conflicted with 105.0 m² (1,131 SF) in building-width-calculator.dtcg.json's Summary_Key Plans tab (V3, 2025-11-29, CONSTRUCTION_2026_01_06_Key Plan_Professional Office_FFE_FIN.xlsx) — V3 Master Summary is the later, authoritative source per key-plans-registry.md's own source citation; V2 Samples value is superseded. sf_per_workstation.small below is NOT yet recomputed against the new area — flagged, not guessed, pending a confirmed workstation count for this key plan.",
           "sf_per_workstation": {
             "small": 147.9,
             "medium": 95.8,
             "large": 139.1
           }
         },
-        "$description": "Academic Office — classrooms, seminar rooms, lecture halls. Specialisations: Classroom, Seminar Room, Lecture Hall. FFE codes A1–A3. Key plan sizes: Small 944 SF, Medium 2,586 SF, Large 4,050 SF."
+        "$description": "Academic Office — classrooms, seminar rooms, lecture halls. Specialisations: Classroom, Seminar Room, Lecture Hall. FFE codes A1–A3. Key plan sizes: Small 1,131 SF (reconciled 2026-07-03, was 944 SF from a superseded V2 source), Medium 2,586 SF, Large 4,050 SF."
       },
       "civic": {
         "$type": "bim.entity",
@@ -154,9 +164,19 @@
             "Civic Assembly"
           ],
           "key_plan_index_range": "33–37",
-          "design_notes": "Widest overall floor plate — large Zone 2 Magazine (7.23m / 23'8\") for public records and secure areas; widest Zone 3 Corridor (3.6m / 12'0\") across all sub-types for public assembly egress. ADA/accessible-route compliance mandatory throughout leasehold."
+          "key_plan_areas_m2": {
+            "small": 270,
+            "medium": 577,
+            "large": 822
+          },
+          "key_plan_areas_sf": {
+            "small": 2912,
+            "medium": 6215,
+            "large": 8850
+          },
+          "design_notes": "Widest overall floor plate — large Zone 2 Magazine (7.23m / 23'8\") for public records and secure areas; widest Zone 3 Corridor (3.6m / 12'0\") across all sub-types for public assembly egress. ADA/accessible-route compliance mandatory throughout leasehold. Small: 270 m² (2,912 SF); Medium: 577 m² (6,215 SF); Large: 822 m² (8,850 SF). key_plan_areas_m2/sf backfilled 2026-07-03 per tool-buildingwidth-architecture.md §Internal inconsistencies #2, sourced from key-plans.dtcg.json's already-live civic small/medium/large entries."
         },
-        "$description": "Civic Office — courtrooms, municipal offices, cultural, and civic assembly spaces. FFE codes C1–C3. Widest corridor (3.6m / 12'0\") across all Professional Office sub-types."
+        "$description": "Civic Office — courtrooms, municipal offices, cultural, and civic assembly spaces. FFE codes C1–C3. Widest corridor (3.6m / 12'0\") across all Professional Office sub-types. Key plan sizes: Small 2,912 SF, Medium 6,215 SF, Large 8,850 SF."
       }
     }
   }

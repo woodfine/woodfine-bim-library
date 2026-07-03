@@ -1,0 +1,76 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM FLOOR PLATE ASSEMBLY RULES token category — machine-readable validation rules for a valid floor plate composition. Previously all rules were narrative-only in PDFs; tool-floorplates cannot validate a composition without a machine-readable form of these rules. Source: tool-buildingwidth-architecture.md §Missing DTCG token files #2 (2026-05-17, Opus agent research), synthesising AEC_Floor Plates_Key Plans and Tiles_V12.pdf and AEC_Floor Plates_Methodology_V12.pdf. Created 2026-07-03 — this file did not previously exist. Rule IDs (FP-*) match the identifiers already referenced elsewhere in this token set (e.g. tile-system.dtcg.json's corridor-expander notes cite 'Decision 4' and Tile/Key-Plan/Floor-Plate negotiation, which these rules formalise).",
+  "bim": {
+    "floor-plate-rule": {
+      "fp-sum-001": {
+        "$type": "bim.rule",
+        "$value": {
+          "rule_id": "FP-SUM-001",
+          "predicate": "sum(tiles) + sum(special_tiles) + core_area + sum(amenities) == net_leasable_area ± 100_sf",
+          "tolerance_sf": 100,
+          "severity": "error"
+        },
+        "$description": "FP-SUM-001 — the sum of all tiles, special tiles, core area, and amenities must equal the target net leasable area within ±100 SF."
+      },
+      "fp-endcap-001": {
+        "$type": "bim.rule",
+        "$value": {
+          "rule_id": "FP-ENDCAP-001",
+          "predicate": "end_cap_tiles placed at short_sides only AND natural_light on both perpendicular_axes",
+          "severity": "error"
+        },
+        "$description": "FP-ENDCAP-001 — end-cap tiles (B-1, E-1, E-2, and the Medium-family end caps) may only be placed at the building's short sides, and must have natural light on both perpendicular axes at that position."
+      },
+      "fp-core-001": {
+        "$type": "bim.rule",
+        "$value": {
+          "rule_id": "FP-CORE-001",
+          "predicate": "core_type == 'offset_pulled_back' AND core_distance_from_short_end_m >= 18.0",
+          "min_distance_from_short_end_m": 18.0,
+          "severity": "error"
+        },
+        "$description": "FP-CORE-001 — the building core must be an Offset Pulled Back Core, positioned at least 18m from the short end of the building."
+      },
+      "fp-snap-001": {
+        "$type": "bim.rule",
+        "$value": {
+          "rule_id": "FP-SNAP-001",
+          "predicate": "special_tile.width snaps_to nearest(po_key_plan_width) within ±50_sf",
+          "tolerance_sf": 50,
+          "severity": "warning"
+        },
+        "$description": "FP-SNAP-001 — a special tile's width should snap to the nearest Private Office key-plan width, within a ±50 SF tolerance."
+      },
+      "fp-climate-001": {
+        "$type": "bim.rule",
+        "$value": {
+          "rule_id": "FP-CLIMATE-001",
+          "predicate": "count(hvac_zones_per_tile) == 1",
+          "severity": "error"
+        },
+        "$description": "FP-CLIMATE-001 — each tile is exactly one HVAC climate zone (see bim.tile.design-principles.climate-zone-autonomy in tile-system.dtcg.json — this rule formalises that design principle as a validation predicate)."
+      },
+      "fp-doors-001": {
+        "$type": "bim.rule",
+        "$value": {
+          "rule_id": "FP-DOORS-001",
+          "predicate": "doors_per_tile <= 10 AND doors_per_floor <= 80",
+          "max_doors_per_tile": 10,
+          "max_doors_per_floor": 80,
+          "severity": "error"
+        },
+        "$description": "FP-DOORS-001 — a maximum of 10 doors per tile and 80 doors per floor."
+      },
+      "fp-corner-001": {
+        "$type": "bim.rule",
+        "$value": {
+          "rule_id": "FP-CORNER-001",
+          "predicate": "tile_at_corner AND tile.family == 'small' triggers structural_grid_review",
+          "severity": "warning"
+        },
+        "$description": "FP-CORNER-001 — a Small-family tile placed at a building corner triggers a required structural-grid review (see tile-system.dtcg.json's corner-handling design principle and the Tile E-1/E-2 'review structural grid before specifying' notes — this rule formalises that caution as a validation predicate)."
+      }
+    }
+  }
+}

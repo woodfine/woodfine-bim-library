@@ -1,13 +1,40 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM FLOOR PLATE STANDARDS token category — floor plate size hierarchy, tile fraction breakdown, main floor space allocations, and upper floor common area standards for the Key Plans and Tiles system. Source: AEC_Floor Plates_Key Plans and Tiles_V12.pdf (Collaborators #11, 2025-04-01); CONSTRUCTION_2026_01_06_Tear Sheet_Floor Plans_Key Plans_Methodology_FIN.xlsx (V3, 2025-11-29); AEC_Floor Plates_Key Plans_Notes.pdf (Collaborators #32, 2026-01-06). Area values are in m² (authoritative); SF equivalents in $description.",
+  "$description": "BIM FLOOR PLATE STANDARDS token category — floor plate size hierarchy, tile fraction breakdown, main floor space allocations, and upper floor common area standards for the Key Plans and Tiles system. Source: AEC_Floor Plates_Key Plans and Tiles_V12.pdf (Collaborators #11, 2025-04-01); CONSTRUCTION_2026_01_06_Tear Sheet_Floor Plans_Key Plans_Methodology_FIN.xlsx (V3, 2025-11-29); AEC_Floor Plates_Key Plans_Notes.pdf (Collaborators #32, 2026-01-06). Area values are in m² (authoritative); SF equivalents in $description. Tenant furniture-size and use-type mix distributions moved to tenant-mix.dtcg.json (2026-07-03) — this file covers floor-plate geometry only.",
   "bim": {
     "floor-plate": {
       "net-leasable": {
+        "$description": "Net leasable area per upper floor plate varies by building class — Professional Centre (PC) and Suburban Office (SU) target different ranges, not a single fixed figure. `area` below is the 20,000 SF design-target value used as the basis for the tile-fraction breakdown; `range.pc`/`range.su` are the class-specific bounds. Fixed 2026-07-03 per tool-buildingwidth-architecture.md §Internal inconsistencies #4 — previously hard-coded at 20,000 SF with no class variance.",
         "area": {
           "$type": "number",
           "$value": 1858.06,
-          "$description": "20,000 SF — net leasable area per upper floor plate. Basis for all tile fraction calculations. Does not include building core, egress stairs, or mechanical."
+          "$description": "20,000 SF — net leasable design-target area per upper floor plate. Basis for all tile fraction calculations below. Does not include building core, egress stairs, or mechanical. Falls within both the PC and SU ranges."
+        },
+        "range": {
+          "pc": {
+            "min": {
+              "$type": "number",
+              "$value": 1765.16,
+              "$description": "19,000 SF — Professional Centre floor plate, minimum."
+            },
+            "max": {
+              "$type": "number",
+              "$value": 2136.77,
+              "$description": "23,000 SF — Professional Centre floor plate, maximum."
+            }
+          },
+          "su": {
+            "min": {
+              "$type": "number",
+              "$value": 1579.35,
+              "$description": "17,000 SF — Suburban Office floor plate, minimum."
+            },
+            "max": {
+              "$type": "number",
+              "$value": 1950.96,
+              "$description": "21,000 SF — Suburban Office floor plate, maximum."
+            }
+          }
         }
       },
       "tile-fraction": {
@@ -97,24 +124,6 @@
             "$value": 65.03,
             "$description": "700 SF — Tenant Restrooms plus Meter Room allocation per upper floor."
           }
-        }
-      },
-      "furniture-availability": {
-        "$description": "Expected distribution of furniture configuration sizes across the tenant mix. Used for FFE procurement planning and Tile composition optimisation. Source: CONSTRUCTION_2026_01_06_Tear Sheet_Floor Plans_Key Plans_Methodology_FIN.xlsx.",
-        "small": {
-          "$type": "number",
-          "$value": 80,
-          "$description": "80% — majority of tenant fit-outs use small furniture configurations. Drives Private Office and small Professional Office tile prevalence."
-        },
-        "medium": {
-          "$type": "number",
-          "$value": 10,
-          "$description": "10% — medium furniture configuration tenant mix."
-        },
-        "large": {
-          "$type": "number",
-          "$value": 10,
-          "$description": "10% — large furniture configuration tenant mix; typically Corporate Office full-floor tenants."
         }
       }
     }

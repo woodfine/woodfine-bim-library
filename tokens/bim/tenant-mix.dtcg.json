@@ -1,0 +1,44 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM TENANT MIX token category — expected distribution of tenant furniture-configuration sizes and use-type categories across a Professional Centre or Suburban Office floor plate. Used for FFE procurement planning and Tile composition optimisation. Source: CONSTRUCTION_2026_01_06_Tear Sheet_Floor Plans_Key Plans_Methodology_FIN.xlsx. Moved here from floor-plate-standards.dtcg.json (2026-07-03) per tool-buildingwidth-architecture.md §6 — tenant-mix distributions are inputs to the floor-plate solver, not floor-plate geometry, and belong in their own token file.",
+  "bim": {
+    "tenant-mix": {
+      "furniture-availability": {
+        "$description": "Expected distribution of furniture configuration sizes across the tenant mix. Used for FFE procurement planning and Tile composition optimisation.",
+        "small": {
+          "$type": "number",
+          "$value": 80,
+          "$description": "80% — majority of tenant fit-outs use small furniture configurations. Drives Private Office and small Professional Office tile prevalence."
+        },
+        "medium": {
+          "$type": "number",
+          "$value": 10,
+          "$description": "10% — medium furniture configuration tenant mix."
+        },
+        "large": {
+          "$type": "number",
+          "$value": 10,
+          "$description": "10% — large furniture configuration tenant mix; typically Corporate Office full-floor tenants."
+        }
+      },
+      "use-type-distribution": {
+        "$description": "Expected distribution of tenant use-type category across the tenant mix. Used by tool-floorplates when no explicit tenant-mix request is supplied, to project a representative floor plate composition. Source: tool-buildingwidth-architecture.md §6 (2026-05-17, Opus agent research).",
+        "private": {
+          "$type": "number",
+          "$value": 40,
+          "$description": "40% — Private Office leaseholds (individual licensed offices, PO-1/PO-2/PO-3)."
+        },
+        "professional": {
+          "$type": "number",
+          "$value": 35,
+          "$description": "35% — Professional Office leaseholds across all sub-types (Medical, Business, Laboratory, Academic, Civic)."
+        },
+        "corporate": {
+          "$type": "number",
+          "$value": 25,
+          "$description": "25% — Corporate Office leaseholds (single-tenant tiles up to full floor)."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "BIM BUILDING GRID token category — structural module dimensions, wall/partition thicknesses, and the floor-plate-width tolerance bands that drive tool-buildingwidth's bidirectional adjustment logic. Source: tool-buildingwidth-architecture.md §3 (2026-05-17, Opus agent research), synthesising AEC_Floor Plates_Key Plans and Tiles_V12.pdf and AEC_Floor Plates_Methodology_V12.pdf. Metre values are authoritative; feet equivalents in $description. Created 2026-07-03 — this file did not previously exist (tool-buildingwidth-architecture.md §Missing DTCG token files #3).",
+  "bim": {
+    "grid": {
+      "$description": "Structural module and wall/partition thickness constants used when converting centerline zone-depth arithmetic (Z1+Z2+Z3) into an overall building width.",
+      "structural-module": {
+        "$type": "dimension",
+        "$value": "1.524m",
+        "$description": "5'0\" — the base structural grid module. This is also the unit of bidirectional adjustment: tool-buildingwidth's tolerance bands (below) are expressed as multiples of this module (green = 0.5×, yellow = 1×, red = 2×)."
+      },
+      "facade-wall-thickness": {
+        "$type": "dimension",
+        "$value": "0.4m",
+        "$description": "1'4\" — exterior façade wall thickness, added to the Zone 1+2+3 centerline sum to get overall building width."
+      },
+      "demising-wall-thickness": {
+        "$type": "dimension",
+        "$value": "0.15m",
+        "$description": "6\" — thickness of a demising wall between adjacent tenant leaseholds."
+      },
+      "corridor-partition-thickness": {
+        "$type": "dimension",
+        "$value": "0.12m",
+        "$description": "4¾\" — thickness of a corridor-side partition wall."
+      }
+    },
+    "tolerance": {
+      "$description": "Floor-plate-width tolerance bands for tool-buildingwidth's bidirectional adjustment logic (adjust() function). Zone 1 Habitat and Zone 3 Corridor are locked downward by regulatory minima (EN 12464-1, IBC/NBC egress); Zone 2 Magazine is the only zone with no hard regulatory floor and yields first when a floor plate must be resized.",
+      "fp-width-green-band": {
+        "$type": "dimension",
+        "$value": "0.762m",
+        "$description": "±2.5 ft (0.5× the structural module). Within this band, Zone 2 Magazine absorbs the delta silently — no composition change, no operator review required."
+      },
+      "fp-width-yellow-band": {
+        "$type": "dimension",
+        "$value": "1.524m",
+        "$description": "±5 ft (1× the structural module). Zone 2 Magazine adjusts, key-plan areas are recomputed, tile lengths snap to the new width — operator review required before committing the adjustment."
+      },
+      "fp-width-red-band": {
+        "$type": "dimension",
+        "$value": "3.048m",
+        "$description": "±10 ft (2× the structural module). Beyond this band the tile family itself changes (Small→Medium or Medium→Large) — door count and climate-zone count shift, and tenant demising is affected. Requires a full re-composition, not just a zone adjustment."
+      },
+      "demising-structural": {
+        "$type": "dimension",
+        "$value": "0.6m",
+        "$description": "2'0\" — the gap between the Professional Office Methodology PDF's stated total width (21m) and the arithmetic sum of the Professional Office zone-depth tokens in building-width-calculator.dtcg.json (2×(6.0+3.8)+2.0 = 21.6m). This 0.6m is structural/demising allowance not captured as a separate line item in the source PDF's headline total — the token arithmetic is correct; the PDF total is the rounded/summary figure. Added 2026-07-03 per tool-buildingwidth-architecture.md §Internal inconsistencies #6."
+      }
+    }
+  }
+}
