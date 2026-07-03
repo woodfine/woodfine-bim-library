@@ -1,5 +1,6 @@
 ---
 display_name: Floor Plate Assembly Rules
+section: Compositions
 ifc_anchor: IfcConstraint
 uniclass: —
 ifc_hierarchy: IfcRoot → IfcConstraint

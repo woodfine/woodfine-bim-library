@@ -1,5 +1,6 @@
 ---
 display_name: Relationships
+section: Taxonomy
 ifc_anchor: IfcRel*
 uniclass: —
 ifc_hierarchy: IfcRelationship

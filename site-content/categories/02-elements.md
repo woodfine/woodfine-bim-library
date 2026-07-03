@@ -1,5 +1,6 @@
 ---
 display_name: Elements
+section: Taxonomy
 ifc_anchor: IfcBuiltElement
 uniclass: EE
 ifc_hierarchy: IfcRoot → IfcObjectDefinition → IfcObject → IfcElement → IfcBuiltElement

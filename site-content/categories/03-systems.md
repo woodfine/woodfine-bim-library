@@ -1,5 +1,6 @@
 ---
 display_name: Systems
+section: Taxonomy
 ifc_anchor: IfcDistributionElement
 uniclass: SS
 ifc_hierarchy: IfcRoot → IfcObjectDefinition → IfcObject → IfcElement → IfcDistributionElement

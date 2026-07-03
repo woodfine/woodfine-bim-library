@@ -1,5 +1,6 @@
 ---
 display_name: Spatial
+section: Taxonomy
 ifc_anchor: IfcSpatialElement
 uniclass: SL
 ifc_hierarchy: IfcRoot → IfcObjectDefinition → IfcObject → IfcSpatialElement

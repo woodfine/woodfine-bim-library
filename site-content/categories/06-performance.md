@@ -1,5 +1,6 @@
 ---
 display_name: Performance
+section: Taxonomy
 ifc_anchor: IfcPropertySet
 uniclass: —
 ifc_hierarchy: IfcPropertySet · IfcQuantitySet

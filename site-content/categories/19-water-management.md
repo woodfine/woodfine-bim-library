@@ -1,5 +1,6 @@
 ---
 display_name: Water Management
+section: Context
 ifc_anchor: IfcSite
 uniclass: —
 ifc_hierarchy: IfcRoot → IfcObjectDefinition → IfcObject → IfcSpatialElement → IfcSite

@@ -1,5 +1,6 @@
 ---
 display_name: Tenant Mix
+section: Compositions
 ifc_anchor: —
 uniclass: —
 ifc_hierarchy: —

@@ -1,5 +1,6 @@
 ---
 display_name: Furniture
+section: Objects
 ifc_anchor: IfcFurniture
 uniclass: —
 ifc_hierarchy: IfcRoot → IfcObjectDefinition → IfcObject → IfcElement → IfcFurnishingElement → IfcFurniture

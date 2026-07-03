@@ -1,5 +1,6 @@
 ---
 display_name: Landscape + Parking
+section: Context
 ifc_anchor: IfcGeographicElement
 uniclass: —
 ifc_hierarchy: IfcRoot → IfcObjectDefinition → IfcObject → IfcElement → IfcGeographicElement

@@ -1,5 +1,6 @@
 ---
 display_name: Professional Office Subtypes
+section: Taxonomy
 ifc_anchor: IfcSpace
 uniclass: —
 ifc_hierarchy: IfcRoot → IfcObjectDefinition → IfcObject → IfcSpatialElement → IfcSpace

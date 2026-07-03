@@ -1,5 +1,6 @@
 ---
 display_name: Climate Zones
+section: Context
 ifc_anchor: IfcPropertySet
 uniclass: —
 ifc_hierarchy: IfcPropertySet · IfcQuantitySet

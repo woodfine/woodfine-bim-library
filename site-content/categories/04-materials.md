@@ -1,5 +1,6 @@
 ---
 display_name: Materials
+section: Taxonomy
 ifc_anchor: IfcMaterial
 uniclass: Pr
 ifc_hierarchy: IfcMaterial

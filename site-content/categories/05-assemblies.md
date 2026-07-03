@@ -1,5 +1,6 @@
 ---
 display_name: Assemblies
+section: Taxonomy
 ifc_anchor: IfcElementAssembly
 uniclass: Co
 ifc_hierarchy: IfcRoot → IfcObjectDefinition → IfcObject → IfcElement → IfcElementAssembly

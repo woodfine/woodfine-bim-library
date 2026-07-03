@@ -1,5 +1,6 @@
 ---
 display_name: Key Plans
+section: Objects
 ifc_anchor: IfcSpace
 uniclass: SL_25
 ifc_hierarchy: IfcRoot → IfcObjectDefinition → IfcObject → IfcSpatialElement → IfcSpace

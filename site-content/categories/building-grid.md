@@ -1,5 +1,6 @@
 ---
 display_name: Building Grid
+section: Compositions
 ifc_anchor: IfcGrid
 uniclass: —
 ifc_hierarchy: IfcRoot → IfcObjectDefinition → IfcObject → IfcProduct → IfcGrid

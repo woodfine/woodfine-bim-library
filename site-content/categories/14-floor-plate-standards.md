@@ -1,5 +1,6 @@
 ---
 display_name: Floor Plate Standards
+section: Compositions
 ifc_anchor: IfcBuildingStorey
 uniclass: —
 ifc_hierarchy: IfcRoot → IfcObjectDefinition → IfcObject → IfcSpatialElement → IfcBuildingStorey

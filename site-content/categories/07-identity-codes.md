@@ -1,5 +1,6 @@
 ---
 display_name: Identity + Codes
+section: Taxonomy
 ifc_anchor: IfcClassificationReference
 uniclass: —
 ifc_hierarchy: IfcClassificationReference · IfcConstraint

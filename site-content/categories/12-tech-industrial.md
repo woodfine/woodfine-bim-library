@@ -1,5 +1,6 @@
 ---
 display_name: Tech Industrial
+section: Objects
 ifc_anchor: IfcSpace
 uniclass: —
 ifc_hierarchy: IfcRoot → IfcObjectDefinition → IfcObject → IfcSpatialElement → IfcSpace

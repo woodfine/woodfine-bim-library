@@ -1,5 +1,6 @@
 ---
 display_name: Tile System
+section: Compositions
 ifc_anchor: IfcZone
 uniclass: —
 ifc_hierarchy: IfcRoot → IfcObjectDefinition → IfcObject → IfcSpatialElement → IfcZone
