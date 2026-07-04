@@ -17,4 +17,4 @@ When an architect places a wall, the BIM Object for that wall already knows its 
 
 ## Browse the catalog
 
-Organized by IFC 4.3 entity class. [Browse all categories](/tokens) or navigate by category in the sidebar.
+Organized by IFC 4.3 entity class. [Browse all categories](/tokens), or click a volume in the envelope diagram above to jump straight to its section.
