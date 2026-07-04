@@ -1,7 +1,4 @@
 ---
-hero_eyebrow: Woodfine BIM Object Library
-hero_statline: Building specifications that enforce compliance at placement,<br>not inspection after the fact.
-hero_lead: The AEC industry has spent twenty years validating BIM models after design is complete. BIM Objects take a different position: if every element in the design library already encodes its regulatory requirements and performance constraints, a non-compliant model cannot be assembled. Compliance is a property of the starting material, not a filter applied at the end.
 ---
 ## The problem with building specifications
 
@@ -15,6 +12,12 @@ A BIM Object is a machine-readable specification unit stored in W3C DTCG format 
 
 When an architect places a wall, the BIM Object for that wall already knows its required fire rating, its thermal transmittance range, and which jurisdictional code clause governs it. No post-hoc checking. No separate specification document. The compliance constraint is encoded in the starting material.
 
+## Proven at scale, built differently
+
+Denver International Airport has already shown the industry needs this at scale: a BIM library covering roughly 17 million square feet across 93 buildings, coordinated through hundreds of proprietary Revit models inside a vendor-managed common data environment. The Woodfine BIM Object Library is the same underlying idea, built on open standards instead of vendor-proprietary formats — self-hostable by the property owner, not licensed per seat from a single vendor.
+
+It's also one expression of a wider pattern: PointSav Digital Systems organizes its platform around Business Administration, Record Keeping, and Building Connectivity. A Digital Twin isn't a separate product bolted on top of that — it's what Totebox Orchestration produces by default once a property's BIM Objects, records, and operations already live in the same self-hosted substrate.
+
 ## Browse the catalog
 
-Organized by IFC 4.3 entity class. [Browse all categories](/tokens), or click a volume in the envelope diagram above to jump straight to its section.
+Organized by IFC 4.3 entity class. [Browse all categories](/tokens), or click a fact in the Key Plan diagram above to jump straight to its section.

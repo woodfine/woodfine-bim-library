@@ -4,7 +4,7 @@
   "bim": {
     "key-plan": {
       "private-office": {
-        "$description": "Private Office — facade-facing individual leaseholds. Three sizes share the same zone depths; frontage width increases with size, not Zone 2 depth. Building ID issued per desk. Zone 1 enforces the European Lighting Standard (6 m desk-to-window). Zone 2 holds filing, credenza, bookshelf. Zone 3 is the shared corridor.",
+        "$description": "Private Office — facade-facing individual leaseholds. Three sizes share the same zone depths (sourced from the real drafted key-plan sheet, DISCOVERY_MCorp_Sketches_Key Plans_Private Office.pdf); frontage width increases with size, not zone depth. Building ID issued per desk. Zone 1 = 5.9944 m (19'-8\"), marginally under the 6 m European Lighting Standard desk-to-window threshold. Zone 2 = 1.3716 m (4'-6\"), holds filing, credenza, bookshelf. No Zone 3 — each office opens directly to the shared building corridor. Corrected 2026-07-04: prior values (6.0/3.8/2.0 m) had been inherited from the Professional Office use-type in error; see key-plans-foundation-study.md.",
         "small": {
           "$type": "bim.entity",
           "$value": {
@@ -13,13 +13,12 @@
             "category": "private-office",
             "area_m2": 30.19,
             "area_sf": 325,
-            "zone1_depth_m": 6.0,
-            "zone2_depth_m": 3.8,
-            "zone3_depth_m": 2.0,
+            "zone1_depth_m": 5.9944,
+            "zone2_depth_m": 1.3716,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "DISCOVERY_MCorp_Sketches_Key Plans_Private Office.pdf (drafted key-plan sheet, \"PO 1 / 325 SF\"); corrected 2026-07-04 from FIN.xlsx Summary_Key Plans V3 2025-11-29, which had inherited the Professional Office use-type's zone depths in error",
             "furniture_program": [
-              "desk + ergonomic chair (Steelcase Leap)",
+              "desk + ergonomic task chair",
               "3-person round table",
               "2 side chairs",
               "2-drawer filing cabinet",
@@ -28,12 +27,12 @@
               "coat rack"
             ],
             "compliance": {
-              "european_lighting_standard": "Zone 1 = 6.0 m satisfies 6 m desk-to-window rule",
+              "european_lighting_standard": "Zone 1 = 5.9944 m — marginally under the 6 m European Lighting Standard desk-to-window threshold",
               "wheelchair_clearance": "1200 mm turning radius at desk and table confirmed",
               "german_circulation_law": "900 mm clear passage at door swing",
               "building_id": "issued per desk — minimum 1 per PO-1"
             },
-            "design_notes": "Desks placed perpendicular to facade require +0.7 m in Zone 1 for three desks in series. Zone 2 depth is identical across PO-1 / PO-2 / PO-3 — only facade frontage increases with size.",
+            "design_notes": "Desks placed perpendicular to facade require +0.7 m in Zone 1 for three desks in series. Zone 2 depth is identical across PO-1 / PO-2 / PO-3 — only facade frontage increases with size. No Zone 3 — the office opens directly to the shared building corridor.",
             "development_classes": [
               "Professional Centres",
               "Suburban Office"
@@ -42,7 +41,7 @@
             "sf_per_workstation": 325.0,
             "workstation_count": 1
           },
-          "$description": "Private Office — Small. 30.19 m² / 325 SF. Zone 1 = 6.0 m, Zone 2 = 3.8 m, Zone 3 = 2.0 m. Steelcase Leigh desk + round table + 2 side chairs + filing + credenza + bookshelf + coat rack. European Lighting Standard compliant."
+          "$description": "Private Office — Small. 30.19 m² / 325 SF. Zone 1 = 5.9944 m, Zone 2 = 1.3716 m, no Zone 3 (opens to shared corridor). Desk + task chair + round table + 2 side chairs + filing + credenza + bookshelf + coat rack. Sourced from the real drafted key-plan sheet."
         },
         "medium": {
           "$type": "bim.entity",
@@ -52,13 +51,12 @@
             "category": "private-office",
             "area_m2": 43.2,
             "area_sf": 465,
-            "zone1_depth_m": 6.0,
-            "zone2_depth_m": 3.8,
-            "zone3_depth_m": 2.0,
+            "zone1_depth_m": 5.9944,
+            "zone2_depth_m": 1.3716,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "DISCOVERY_MCorp_Sketches_Key Plans_Private Office.pdf (drafted key-plan sheet, \"PO 2 / 465 SF\"); corrected 2026-07-04 from FIN.xlsx Summary_Key Plans V3 2025-11-29, which had inherited the Professional Office use-type's zone depths in error",
             "furniture_program": [
-              "desk + ergonomic chair (Steelcase Leap)",
+              "desk + ergonomic task chair",
               "5-person meeting table",
               "4 side chairs",
               "2-drawer filing cabinet",
@@ -67,11 +65,12 @@
               "coat rack"
             ],
             "compliance": {
-              "european_lighting_standard": "Zone 1 = 6.0 m satisfies 6 m desk-to-window rule",
+              "european_lighting_standard": "Zone 1 = 5.9944 m — marginally under the 6 m European Lighting Standard desk-to-window threshold",
               "wheelchair_clearance": "1200 mm turning radius confirmed at desk and meeting table",
               "german_circulation_law": "900 mm clear passage at door swing",
               "building_id": "issued per desk"
             },
+            "design_notes": "No Zone 3 — the office opens directly to the shared building corridor. Zone depths identical to PO-1/PO-3; only facade frontage increases with size.",
             "development_classes": [
               "Professional Centres",
               "Suburban Office"
@@ -80,7 +79,7 @@
             "sf_per_workstation": 232.5,
             "workstation_count": 2
           },
-          "$description": "Private Office — Medium. 43.20 m² / 465 SF. Zone 1 = 6.0 m, Zone 2 = 3.8 m, Zone 3 = 2.0 m. Wider frontage than Small; same zone depths."
+          "$description": "Private Office — Medium. 43.20 m² / 465 SF. Zone 1 = 5.9944 m, Zone 2 = 1.3716 m, no Zone 3 (opens to shared corridor). Wider frontage than Small; same zone depths."
         },
         "large": {
           "$type": "bim.entity",
@@ -90,13 +89,12 @@
             "category": "private-office",
             "area_m2": 63.64,
             "area_sf": 685,
-            "zone1_depth_m": 6.0,
-            "zone2_depth_m": 3.8,
-            "zone3_depth_m": 2.0,
+            "zone1_depth_m": 5.9944,
+            "zone2_depth_m": 1.3716,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "DISCOVERY_MCorp_Sketches_Key Plans_Private Office.pdf (drafted key-plan sheet, \"PO 3 / 685 SF\"); corrected 2026-07-04 from FIN.xlsx Summary_Key Plans V3 2025-11-29, which had inherited the Professional Office use-type's zone depths in error",
             "furniture_program": [
-              "desk + ergonomic chair (Steelcase Leap)",
+              "desk + ergonomic task chair",
               "8-person boardroom table",
               "7 side chairs",
               "lateral filing cabinet (4-drawer)",
@@ -106,11 +104,12 @@
               "side console"
             ],
             "compliance": {
-              "european_lighting_standard": "Zone 1 = 6.0 m satisfies 6 m desk-to-window rule",
+              "european_lighting_standard": "Zone 1 = 5.9944 m — marginally under the 6 m European Lighting Standard desk-to-window threshold",
               "wheelchair_clearance": "1200 mm turning radius confirmed at desk, table head, and table ends",
               "german_circulation_law": "900 mm clear passage at door swing",
               "building_id": "issued per desk"
             },
+            "design_notes": "No Zone 3 — the office opens directly to the shared building corridor. Zone depths identical to PO-1/PO-2; only facade frontage increases with size.",
             "development_classes": [
               "Professional Centres",
               "Suburban Office"
@@ -119,7 +118,7 @@
             "sf_per_workstation": 228.3,
             "workstation_count": 3
           },
-          "$description": "Private Office — Large. 63.64 m² / 685 SF. Zone 1 = 6.0 m, Zone 2 = 3.8 m, Zone 3 = 2.0 m. Widest frontage of the Private Office series; accommodates 8-person boardroom table."
+          "$description": "Private Office — Large. 63.64 m² / 685 SF. Zone 1 = 5.9944 m, Zone 2 = 1.3716 m, no Zone 3 (opens to shared corridor). Widest frontage of the Private Office series; accommodates 8-person boardroom table."
         }
       },
       "corporate-office": {
