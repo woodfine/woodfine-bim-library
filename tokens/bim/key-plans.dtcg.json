@@ -1,6 +1,6 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM KEY PLANS token category — authoritative catalog of all Woodfine BIM Object Key Plans. A Key Plan is the smallest BIM Object unit: a spatial program defined by real furniture placement (manufacturer SKUs), three-zone cross-section (Zone 1 Habitat / Zone 2 Magazine / Zone 3 Corridor), net leasable area, facade frontage, and accessibility compliance. Key Plans are authored by architects from Woodfine equipment programs; the tool-buildingwidth Rust engine nests them into Tiles and Floor Plates. IFC anchor: IfcSpace (each Key Plan is a bounded, named space within a floor storey). Source: CONSTRUCTION_2026_01_06_Key Plan_Professional Office_FFE_FIN.xlsx — tab Summary_Key Plans (V3, 2025-11-29). Note: approximate square footages per source spreadsheet.",
+  "$description": "BIM KEY PLANS token category — authoritative catalog of all Woodfine Key Plan Compositions. A Key Plan is a Composition, not a BIM Object: a spatial program assembled from several BIM Objects (furniture, manufacturer SKUs) to satisfy a methodology, defined by a three-zone cross-section (Zone 1 Habitat / Zone 2 Magazine / Zone 3 Corridor), net leasable area, facade frontage, and accessibility compliance. Classified at Uniclass 2015 SL (Spaces-locations) level, distinct from the BIM Objects (Uniclass Pr/Ss level) it composes. Key Plans are authored by architects from Woodfine equipment programs; the tool-buildingwidth Rust engine nests them into Tiles and Floor Plates. IFC anchor: IfcSpace (each Key Plan is a bounded, named space within a floor storey — consistent with a Composition, not a product). Source: CONSTRUCTION_2026_01_06_Key Plan_Professional Office_FFE_FIN.xlsx — tab Summary_Key Plans (V3, 2025-11-29). Note: approximate square footages per source spreadsheet.",
   "bim": {
     "key-plan": {
       "private-office": {
@@ -26,6 +26,16 @@
               "bookshelf (wall-mounted)",
               "coat rack"
             ],
+            "furniture_refs": [
+              "bim.interior.furniture.desk.steelcase-migration-se-58x29",
+              "bim.interior.furniture.task-chair.steelcase-leap-v2",
+              "bim.interior.furniture.table.steelcase-groupwork-36",
+              "bim.interior.furniture.storage.steelcase-ts-mobile-pedestal",
+              "bim.interior.furniture.storage.steelcase-currency-bookcase-36",
+              "bim.interior.furniture.utility.generic-coat-rack"
+            ],
+            "furniture_refs_note": "Structured references generated 2026-07-06 via tool-keyplan (--interior interior.dtcg.json --config configs/po-1.toml), a real, verified compile. Only furniture_refs and circulation_ref were merged from that run — its zone-depth/bounding-box output uses po-1.toml's stale 6.0/3.8/2.0 m values, superseded by the real 2026-07-04 correction (5.9944/1.3716 m) already in this entry, so those fields were deliberately not overwritten.",
+            "circulation_ref": "bim.interior.circulation.standard-private-office",
             "compliance": {
               "european_lighting_standard": "Zone 1 = 5.9944 m — marginally under the 6 m European Lighting Standard desk-to-window threshold",
               "wheelchair_clearance": "1200 mm turning radius at desk and table confirmed",

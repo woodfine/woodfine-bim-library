@@ -13,7 +13,8 @@ Authoritative catalog of all BIM Object Key Plans for Woodfine Management Corp.
 Source of record for `bim.woodfinegroup.com` library pages and the
 `tool-buildingwidth` Rust engine.
 
-A **Key Plan** is the smallest BIM Object unit — a spatial program defined by
+A **Key Plan** is a **Composition**, not a BIM Object — a spatial program
+assembled from several BIM Objects (furniture, fixtures), defined by
 real furniture placement, three-zone cross-section, net leasable area, and
 accessibility compliance.
 

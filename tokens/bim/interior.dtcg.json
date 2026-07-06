@@ -31,9 +31,11 @@
               "weight_kg": null,
               "weight_note": "33 kg confirmed as gross/packaged weight from UK steelcase.com; net weight not published",
               "ifc_class": "IfcFurnishingElement",
+              "uniclass_pr": "Pr_40_50_12_57",
+              "uniclass_pr_title": "Office chairs",
               "url": "https://www.steelcase.com/products/office-chairs/leap/"
             },
-            "$description": "Steelcase Leap V2 ergonomic task chair (462 Series). W 686 mm × D 629 mm (seat-travel envelope) × H 978–1099 mm. Seat height 410–540 mm. No public SKU — configured to order. Source: uk.steelcase.com + au.steelcase.com (retrieved 2026-05-22)."
+            "$description": "Steelcase Leap V2 ergonomic task chair (462 Series). W 686 mm × D 629 mm (seat-travel envelope) × H 978–1099 mm. Seat height 410–540 mm. No public SKU — configured to order. Uniclass 2015 Pr_40_50_12_57 (Office chairs), verified against the NBS Pr table (github.com/buildig/uniclass-2015). Source: uk.steelcase.com + au.steelcase.com (retrieved 2026-05-22)."
           }
         },
         "desk": {
@@ -59,9 +61,11 @@
               "weight_kg": 46.7,
               "weight_note": "Confirmed for 58\" × 29\" configuration only; other sizes not published",
               "ifc_class": "IfcFurnishingElement",
+              "uniclass_pr": "Pr_40_50_21_59",
+              "uniclass_pr_title": "Office desks",
               "url": "https://www.steelcase.com/products/height-adjustable-desks/migration-se/"
             },
-            "$description": "Steelcase Migration SE height-adjustable desk, 58\" × 29\" (1473 × 737 mm). Extended-height base: 574–1237 mm. Motor: 24V DC, 33 mm/sec. Weight capacity 99.8 kg surface load. Source: steelcase.com product page + user manual part 1323350001 (retrieved 2026-05-22)."
+            "$description": "Steelcase Migration SE height-adjustable desk, 58\" × 29\" (1473 × 737 mm). Extended-height base: 574–1237 mm. Motor: 24V DC, 33 mm/sec. Weight capacity 99.8 kg surface load. Uniclass 2015 Pr_40_50_21_59 (Office desks), verified against the NBS Pr table (github.com/buildig/uniclass-2015). Source: steelcase.com product page + user manual part 1323350001 (retrieved 2026-05-22)."
           }
         },
         "table": {
@@ -91,9 +95,11 @@
               "seating_capacity": 4,
               "seating_note": "Steelcase rates the 36\" round as 4 persons; used here as a 3-person round per FFE program",
               "ifc_class": "IfcFurnishingElement",
+              "uniclass_pr": "Pr_40_50_21_60",
+              "uniclass_pr_title": "Office tables",
               "url": "https://www.steelcase.com/products/conference-collaborative-tables/groupwork/"
             },
-            "$description": "Steelcase Groupwork 36-Inch Working Height Round Table. Diameter 914 mm, H 724 mm. Steelcase rates as 4-person; used as 3-person round in Private Office Key Plans per FFE program. Source: steelcase.com/products/conference-collaborative-tables/groupwork/ (retrieved 2026-05-22)."
+            "$description": "Steelcase Groupwork 36-Inch Working Height Round Table. Diameter 914 mm, H 724 mm. Steelcase rates as 4-person; used as 3-person round in Private Office Key Plans per FFE program. Uniclass 2015 Pr_40_50_21_60 (Office tables), verified against the NBS Pr table (github.com/buildig/uniclass-2015). Source: steelcase.com/products/conference-collaborative-tables/groupwork/ (retrieved 2026-05-22)."
           }
         },
         "storage": {
@@ -120,9 +126,11 @@
               "weight_kg": null,
               "weight_note": "Not published on steelcase.com",
               "ifc_class": "IfcFurnishingElement",
+              "uniclass_pr": "Pr_40_30_87_57",
+              "uniclass_pr_title": "Office storage units",
               "url": "https://www.steelcase.com/products/workstation-storage/ts-series/"
             },
-            "$description": "Steelcase TS Series Mobile Pedestal with Steel Top. W 387 mm × D 559 mm × H 533 mm. BBF drawer configuration. Mobile (casters). Source: TS Series brochure IM#18-0101973 via steelcase.com (retrieved 2026-05-22)."
+            "$description": "Steelcase TS Series Mobile Pedestal with Steel Top. W 387 mm × D 559 mm × H 533 mm. BBF drawer configuration. Mobile (casters). Uniclass 2015 Pr_40_30_87_57 (Office storage units), verified against the NBS Pr table (github.com/buildig/uniclass-2015). Source: TS Series brochure IM#18-0101973 via steelcase.com (retrieved 2026-05-22)."
           },
           "steelcase-currency-bookcase-36": {
             "$type": "bim.furniture-object",
@@ -147,9 +155,11 @@
               "weight_kg": null,
               "weight_note": "Not published on steelcase.com web pages; available in NASPO spec PDF only",
               "ifc_class": "IfcFurnishingElement",
+              "uniclass_pr": "Pr_40_30_78_58",
+              "uniclass_pr_title": "Open bookcases",
               "url": "https://www.steelcase.com/products/private-offices/currency/"
             },
-            "$description": "Steelcase Currency Enhanced Bookcase, 36\" wide (914 × 381 × 1846 mm). 4 adjustable shelves. Source: Currency NASPO spec guide June 2025 via steelcase.com (retrieved 2026-05-22)."
+            "$description": "Steelcase Currency Enhanced Bookcase, 36\" wide (914 × 381 × 1846 mm). 4 adjustable shelves. Uniclass 2015 Pr_40_30_78_58 (Open bookcases), verified against the NBS Pr table (github.com/buildig/uniclass-2015). Source: Currency NASPO spec guide June 2025 via steelcase.com (retrieved 2026-05-22)."
           }
         },
         "lounge-chair": {
@@ -179,10 +189,12 @@
               "weight_kg": 36,
               "weight_note": "36 kg confirmed from multiple authorized retailers; not directly confirmed from steelcase.com (page returned 404)",
               "ifc_class": "IfcFurnishingElement",
+              "uniclass_pr": "Pr_40_50_12_48",
+              "uniclass_pr_title": "Lounge chairs",
               "url": "https://www.coalesse.com/products/seating/lounge-seating/ch445-wing-chair/",
               "url_note": "steelcase.com/products/lounge-chairs/wing-chair-ch445/ returned 404 on 2026-05-22; Coalesse URL is authoritative Steelcase-family source"
             },
-            "$description": "Wing Chair CH445 by Carl Hansen & Son (Coalesse Partners product). W 899 mm × D 896 mm × H 1031 mm. Seat height 391 mm. Weight 36 kg. Designed Hans J. Wegner 1960. Source: coalesse.com/products/seating/lounge-seating/ch445-wing-chair/ (retrieved 2026-05-22)."
+            "$description": "Wing Chair CH445 by Carl Hansen & Son (Coalesse Partners product). W 899 mm × D 896 mm × H 1031 mm. Seat height 391 mm. Weight 36 kg. Designed Hans J. Wegner 1960. Uniclass 2015 Pr_40_50_12_48 (Lounge chairs), verified against the NBS Pr table (github.com/buildig/uniclass-2015). Source: coalesse.com/products/seating/lounge-seating/ch445-wing-chair/ (retrieved 2026-05-22)."
           }
         },
         "utility": {
@@ -206,9 +218,11 @@
               },
               "weight_kg": null,
               "ifc_class": "IfcFurnishingElement",
+              "uniclass_pr": "Pr_40_30_78_17",
+              "uniclass_pr_title": "Coat racks",
               "url": null
             },
-            "$description": "Generic freestanding coat rack / hook panel. Non-Steelcase; dimensions are representative (400 × 300 mm footprint, 1800 mm height). Used in Zone 3 corridor entry of Private Office Key Plans."
+            "$description": "Generic freestanding coat rack / hook panel. Non-Steelcase; dimensions are representative (400 × 300 mm footprint, 1800 mm height). Used in Zone 3 corridor entry of Private Office Key Plans. Uniclass 2015 Pr_40_30_78_17 (Coat racks), verified against the NBS Pr table (github.com/buildig/uniclass-2015)."
           }
         }
       },
