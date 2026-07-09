@@ -100,28 +100,29 @@
         }
       },
       "business": {
-        "$description": "Business use type — general commercial office, co-working-adjacent, larger open-plan leaseholds. Very wide Zone 2 reflects open storage walls and breakout spaces characteristic of larger business tenants.",
+        "$description": "Business use type — general commercial office, co-working-adjacent, larger open-plan leaseholds. Reconciled 2026-07-09 to DISCOVERY Sketches 1-4's mixed-option-facade Option C/C (balanced) per operator decision — see design_notes below. Was previously an untraced 6.0/7.3/2.7 working value never reconciled against the Notes V3 options table.",
         "habitat": {
           "depth": {
             "$type": "dimension",
-            "$value": "6.0m",
-            "$description": "19'8\" — desks/workstations at European Lighting Standard minimum."
+            "$value": "5.63m",
+            "$description": "18'6\" — Option C Zone 1 Habitat depth (DISCOVERY Sketches 1-4, Business — Small width-options table)."
           }
         },
         "magazine": {
           "depth": {
             "$type": "dimension",
-            "$value": "7.3m",
-            "$description": "23'11\" — widest Magazine zone across use types; reflects open storage walls, server rooms, print areas, and team collaboration zones in business leaseholds."
+            "$value": "6.63m",
+            "$description": "21'9\" — Option C Zone 2 Magazine depth (DISCOVERY Sketches 1-4). Narrower than the previous untraced 7.3m working value; reflects the balanced option rather than the widest (Option A) envelope."
           }
         },
         "corridor": {
           "width": {
             "$type": "dimension",
-            "$value": "2.7m",
-            "$description": "8'10\" — bilateral corridor. No feet equivalent in source spreadsheet; converted from 2.7m."
+            "$value": "2.75m",
+            "$description": "9'0\" — Zone 3 Corridor, constant across all four DISCOVERY width options (A/B/C/D)."
           }
-        }
+        },
+        "design_notes": "Reconciled 2026-07-09 per operator decision during the plan-completeness audit (see cleanup-log.md). DISCOVERY Sketches 1-4 (topic-bim-business-key-plans.draft.md) table two options across a mixed-option-facade building width: Option A/A (widest, 5.51/9.26/2.75 → 32.29 m total) vs. Option C/C (balanced, 5.63/6.63/2.75 → 27.27 m total). `.agent/plans/agent-1-building-width-report.md` (2026-05-17) had applied A/A as a working default without operator confirmation — operator confirmed C/C on 2026-07-09. totalWidth formula: 2 × (habitat + magazine) + corridor = 2 × (5.63 + 6.63) + 2.75 = 27.27 m."
       },
       "medical": {
         "$description": "Medical use type — clinical, dental, diagnostic, and allied health leaseholds. Wider Zone 1 reflects exam-table depth and patient circulation. Acoustic and vibration isolation requirements apply (per building-width-calculator.docx).",
