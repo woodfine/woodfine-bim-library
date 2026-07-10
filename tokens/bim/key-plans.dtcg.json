@@ -74,6 +74,13 @@
               "bookshelf (wall-mounted)",
               "coat rack"
             ],
+            "furniture_refs": [
+              "bim.interior.furniture.desk.steelcase-migration-se-58x29",
+              "bim.interior.furniture.task-chair.steelcase-leap-v2",
+              "bim.interior.furniture.utility.generic-coat-rack"
+            ],
+            "furniture_refs_note": "Round 5 (2026-07-10): partial resolution, honestly incomplete — only 3 of the 7 furniture_program items have a real, correctly-specified catalog object to link (desk, task chair, coat rack). The catalog's only table (steelcase-groupwork-36) is a 3-person round table, not the 5-person meeting table this programme calls for — linking it would misstate capacity. No credenza, wall-mounted bookshelf, or 2-drawer filing-cabinet SKU exists in the catalog at all (steelcase-ts-mobile-pedestal is a mobile under-desk pedestal, a different product than a lateral filing cabinet); the Wing Chair CH445 is a lounge chair, not confirmed as a meeting-room side chair, so it was not linked on a guess. Filling these requires adding real furniture SKUs to the catalog, not just cross-referencing existing ones.",
+            "circulation_ref": "bim.interior.circulation.standard-private-office",
             "compliance": {
               "european_lighting_standard": "Zone 1 = 5.9944 m — marginally under the 6 m European Lighting Standard desk-to-window threshold",
               "wheelchair_clearance": "1200 mm turning radius confirmed at desk and meeting table",
@@ -113,6 +120,13 @@
               "coat rack",
               "side console"
             ],
+            "furniture_refs": [
+              "bim.interior.furniture.desk.steelcase-migration-se-58x29",
+              "bim.interior.furniture.task-chair.steelcase-leap-v2",
+              "bim.interior.furniture.utility.generic-coat-rack"
+            ],
+            "furniture_refs_note": "Round 5 (2026-07-10): partial resolution, honestly incomplete — only 3 of the 8 furniture_program items have a real, correctly-specified catalog object to link (desk, task chair, coat rack), same catalog gap as PO-2. The catalog's only table (steelcase-groupwork-36) is a 3-person round table, not the 8-person boardroom table this programme calls for. No credenza, wall-mounted bookshelf, lateral 4-drawer filing cabinet, or side console SKU exists in the catalog. Filling these requires adding real furniture SKUs to the catalog, not just cross-referencing existing ones.",
+            "circulation_ref": "bim.interior.circulation.standard-private-office",
             "compliance": {
               "european_lighting_standard": "Zone 1 = 5.9944 m — marginally under the 6 m European Lighting Standard desk-to-window threshold",
               "wheelchair_clearance": "1200 mm turning radius confirmed at desk, table head, and table ends",

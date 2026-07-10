@@ -8,4 +8,6 @@ elements: IfcDuctSegment · IfcPipeSegment · IfcCableSegment · IfcAirTerminal 
 card_desc: HVAC, plumbing, electrical distribution, and fire protection systems
 property_sets: Pset_DuctSegmentTypeCommon,NominalDiameter,IfcPositiveLengthMeasure; Pset_ElectricMotorTypeCommon,PowerNominal,IfcPowerMeasure
 ---
+Systems — the building's working machinery: HVAC, plumbing, electrical distribution, and fire protection.
+
 Distribution elements are mechanical, electrical, and plumbing (MEP) systems: ducts, pipes, conduits, outlets, and equipment.

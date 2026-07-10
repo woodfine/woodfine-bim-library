@@ -8,4 +8,6 @@ elements: Private Office · Medical · Business · Laboratory · Academic · Civ
 card_desc: Leasable spatial programs with zone depths, furniture programs, and compliance data
 property_sets: Pset_SpaceCommon,NetFloorArea,IfcAreaMeasure; Pset_SpaceCommon,IsExternal,BOOLEAN; Pset_OccupancyRequirements,OccupancyNumber,INTEGER
 ---
-Key Plans are the smallest BIM Object unit — spatial programs defined by real furniture placement, a three-zone cross-section (Zone 1 Habitat / Zone 2 Magazine / Zone 3 Corridor), net leasable area, and accessibility compliance. Authored by architects from Woodfine equipment programs; the tool-buildingwidth engine nests them into Tiles and Floor Plates.
+Key Plans — the smallest unit of space worth leasing, planned from the furniture out.
+
+A Key Plan is a space, not a product — `IfcSpace` in the hierarchy above, the same category as a Tile or a Floor Plate, not the same category as an Object. It is the smallest spatial program worth leasing: real furniture placement, a three-zone cross-section (Zone 1 Habitat / Zone 2 Magazine / Zone 3 Corridor), net leasable area, and accessibility compliance. Authored by architects from Woodfine equipment programs; the tool-buildingwidth engine nests them into Tiles and Floor Plates.

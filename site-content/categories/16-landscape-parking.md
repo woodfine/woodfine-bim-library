@@ -8,4 +8,6 @@ elements: IfcGeographicElement · IfcPaving · IfcLightFixture
 card_desc: Landscaping, site ecology, parking, circulation, and lighting elements
 property_sets:
 ---
+Landscape + Parking — the site's outdoor program: landscaping, ecology, parking, circulation, and lighting.
+
 Classification tokens for landscaping, site ecology, parking, circulation, and lighting elements specific to Professional Centre and Suburban Office site types. Landscaping types reflect a Permaculture-as-Commercial-Landscaping design philosophy. IFC mapping: landscape elements map to IfcGeographicElement, parking and circulation to IfcPaving, and site lighting to IfcLightFixture. Uniclass 2015 codes are included where applicable at the entity level.

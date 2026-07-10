@@ -8,4 +8,6 @@ elements: IfcSpace · IfcTransportElement · IfcAnnotation
 card_desc: Tenant Lounge · Lobby Atrium · Loading · Restrooms · Coffee/Bread · Building service rooms
 property_sets:
 ---
+Amenity Key Plans — the shared spaces every tenant uses but no single tenant leases: lobby, lounge, loading, restrooms.
+
 Non-leasable building amenity and service spaces for Professional Centre and Suburban Office development classes.

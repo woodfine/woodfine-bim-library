@@ -8,4 +8,6 @@ elements: Pset_ThermalLoad · Pset_SpaceThermalDesign · Pset_ZoneCommon · IfcQ
 card_desc: Property sets expressing thermal, acoustic, structural, and fire performance
 property_sets: Pset_SpaceThermalDesign,HeatingDesignLoad,IfcPowerMeasure; Pset_SpaceThermalDesign,CoolingDesignLoad,IfcPowerMeasure; Pset_ZoneCommon,IsExternal,BOOLEAN
 ---
+Performance — the measurable thresholds an element must meet: thermal, acoustic, structural, and fire.
+
 Performance tokens carry energy, thermal, acoustic, and fire properties as IfcPropertySet and IfcQuantitySet entries. These are the specification values that drive compliance checking.

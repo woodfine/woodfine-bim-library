@@ -17,6 +17,19 @@ Bentley AssetWise, EcoDomus, ONUMA).
 | Subscription-lapse posture | Tandem: "you will need to enter into a new Token Flex Term…" — twin disappears | Owner holds the files; permanent and unconditional access |
 | Asset-deed transfer | Requires reonboarding to the new owner's tenant | Files travel with the deed |
 
+**Deployment topology.** This is not a hypothetical architecture
+choice — Woodfine's internal design-response deck specifies each
+Woodfine Building running on its own independent virtual machine
+rather than a shared multi-tenant platform: "The Prototypes for each
+of the Woodfine Buildings will be set up on their own Virtual
+Machines... implement both a Building Database and Materials
+Database on independent servers, lightweight Virtual Machines, for
+each Woodfine Building... the individual Virtual Machines for each
+building would also collect the data from the IoT Devices —
+Sensors." The same document frames this as "an independent BIM
+Server for each of the Woodfine Buildings." *(Source: internal
+design-response deck, CONSTRUCTION_2025_10_31.)*
+
 ## Who can see the data
 
 | Dimension | Cloud-authoritative BIM | Flat-file BIM |
@@ -49,6 +62,12 @@ Bentley AssetWise, EcoDomus, ONUMA).
 | Marginal cost of additional sensors | Often per-sensor charges | Zero — local MQTT broker |
 | Renewal-rate exposure | Hyperscaler price-cap expiry triggers shock | None |
 | TCO over 30-year asset life | Effectively unbounded | One-time + maintenance |
+
+Woodfine's own stated rationale for this cost model: "With our own
+Operating System we end up with a single integration cost per
+building that we can amortize... avoids per-seat pricing or software
+bloat. It's infrastructure — not overhead." *(Source: internal
+design-response deck, CONSTRUCTION_2025_10_31.)*
 
 ## Format permanence
 

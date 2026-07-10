@@ -8,4 +8,6 @@ elements: Net Leasable · Tile Fraction · Main Floor · Second Floor · Upper F
 card_desc: Floor plate size hierarchy, tile fraction breakdown, and common-area standards
 property_sets:
 ---
+Floor Plate Standards — the size hierarchy a floor plate is assembled from, and how much of it is common area.
+
 The floor plate size hierarchy, tile fraction breakdown, main-floor space allocations, and upper-floor common-area standards that the Key Plans and Tiles system builds on. The second floor is structured differently from upper floors — it carries the Tenant Lounge as its primary amenity. Area values are in m² (authoritative) with SF equivalents alongside.

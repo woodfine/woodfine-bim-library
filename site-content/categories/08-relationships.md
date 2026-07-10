@@ -8,4 +8,6 @@ elements: IfcRelContainedInSpatialStructure · IfcRelAggregates · IfcRelConnect
 card_desc: Aggregation, containment, nesting, and constraint relationship templates
 property_sets:
 ---
+Relationships — how parts connect to each other: aggregation, containment, nesting, and constraint.
+
 Relationship tokens define how building elements connect, contain, aggregate, and interact with each other through the IFC IfcRel* relationship entity family.
