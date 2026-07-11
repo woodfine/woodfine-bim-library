@@ -57,7 +57,7 @@
           "depth": {
             "$type": "dimension",
             "$value": "6.7818m",
-            "$description": "22'3\" — bench depth + circulation + safety clearances per German Circulation Law. Exceeds European Lighting Standard 6m minimum."
+            "$description": "22'3\" — bench depth + circulation + safety clearances per German workplace-circulation standards (ArbStättV; \"German Circulation Law\" elsewhere on this site). Exceeds European Lighting Standard 6m minimum."
           }
         },
         "magazine": {
@@ -130,7 +130,7 @@
           "depth": {
             "$type": "dimension",
             "$value": "7.2m",
-            "$description": "23'10\" — widest Habitat across use types; exam table depth + patient + clinician circulation per German Circulation Law and WELL health standards."
+            "$description": "23'10\" — widest Habitat across use types; exam table depth + patient + clinician circulation per German workplace-circulation standards (ArbStättV) and WELL health standards."
           }
         },
         "magazine": {
@@ -177,7 +177,7 @@
       "perpendicular-desk": {
         "$type": "dimension",
         "$value": "0.7m",
-        "$description": "2'4\" — additional depth required in Habitat when desks are placed perpendicular to the façade, to achieve three desks in series with proper German Circulation Law clearance. Without this addition, Habitat at exactly 6.0m yields only two perpendicular desks. This is a DELTA, not a standalone clearance value: ArbStättV Anhang §3.1 requires 1.0m movement clearance behind a perpendicular-facing seat, versus the 0.3m baseline clearance already accounted for in the parallel-desk Habitat depth; 1.0m − 0.3m = 0.7m is the additional depth this perpendicular arrangement requires on top of the parallel-desk baseline. Amended 2026-07-03 per tool-buildingwidth-architecture.md §Internal inconsistencies #5 — the prior description did not disclose this was a delta calculation."
+        "$description": "2'4\" — additional depth required in Habitat when desks are placed perpendicular to the façade, to achieve three desks in series with proper clearance under German workplace-circulation standards (ArbStättV — the Arbeitsstättenverordnung, Germany's Workplace Ordinance; referred to elsewhere on this site as \"German Circulation Law\"). Without this addition, Habitat at exactly 6.0m yields only two perpendicular desks. This is a DELTA, not a standalone clearance value: ArbStättV Anhang §3.1 requires 1.0m movement clearance behind a perpendicular-facing seat, versus the 0.3m baseline clearance already accounted for in the parallel-desk Habitat depth; 1.0m − 0.3m = 0.7m is the additional depth this perpendicular arrangement requires on top of the parallel-desk baseline. Amended 2026-07-03 per tool-buildingwidth-architecture.md §Internal inconsistencies #5 — the prior description did not disclose this was a delta calculation. Glossed 2026-07-11 per Round 9 L3 finding — \"German Circulation Law\" is Woodfine's own informal shorthand, not a real named statute; ArbStättV is the actual German legal citation."
       }
     },
     "key-plan": {
@@ -187,7 +187,7 @@
           "area": {
             "$type": "number",
             "$value": 30.1935,
-            "$description": "325 SF — PO-1. Minimum size accommodating 1 desk, 1 chair, 1 three-person round table, 1 filing cabinet, 1 credenza, 1 bookshelf, 1 coat rack with German Circulation Law compliance and Façade Frontage. May be 300–400 SF on final Key Plan to ensure correct width."
+            "$description": "325 SF — PO-1. Minimum size accommodating 1 desk, 1 chair, 1 three-person round table, 1 filing cabinet, 1 credenza, 1 bookshelf, 1 coat rack with German workplace-circulation-standard compliance (ArbStättV) and Façade Frontage. May be 300–400 SF on final Key Plan to ensure correct width."
           }
         },
         "medium": {
