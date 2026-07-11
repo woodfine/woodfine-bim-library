@@ -1,10 +1,10 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM KEY PLANS token category — authoritative catalog of all Woodfine Key Plan Compositions. A Key Plan is a Composition, not a BIM Object: a spatial program assembled from several BIM Objects (furniture, manufacturer SKUs) to satisfy a methodology, defined by a three-zone cross-section (Zone 1 Habitat / Zone 2 Magazine / Zone 3 Corridor), net leasable area, facade frontage, and accessibility compliance. Classified at Uniclass 2015 SL (Spaces-locations) level, distinct from the BIM Objects (Uniclass Pr/Ss level) it composes. Key Plans are authored by architects from Woodfine equipment programs; the tool-buildingwidth Rust engine nests them into Tiles and Floor Plates. IFC anchor: IfcSpace (each Key Plan is a bounded, named space within a floor storey — consistent with a Composition, not a product). Source: CONSTRUCTION_2026_01_06_Key Plan_Professional Office_FFE_FIN.xlsx — tab Summary_Key Plans (V3, 2025-11-29). Note: approximate square footages per source spreadsheet.",
+  "$description": "BIM KEY PLANS token category — authoritative catalog of all Woodfine Key Plan Compositions. A Key Plan is a Composition, not a BIM Object: a spatial program assembled from several BIM Objects (furniture, manufacturer SKUs) to satisfy a methodology, defined by a three-zone cross-section (Habitat / Magazine / Corridor), net leasable area, facade frontage, and accessibility compliance. Classified at Uniclass 2015 SL (Spaces-locations) level, distinct from the BIM Objects (Uniclass Pr/Ss level) it composes. Key Plans are authored by architects from Woodfine equipment programs; Key Plans nest into Tiles and Floor Plates without remainder, in both directions. IFC anchor: IfcSpace (each Key Plan is a bounded, named space within a floor storey — consistent with a Composition, not a product). Source: CONSTRUCTION_2026_01_06_Key Plan_Professional Office_FFE_FIN.xlsx — tab Summary_Key Plans (V3, 2025-11-29). Note: approximate square footages per source spreadsheet.",
   "bim": {
     "key-plan": {
       "private-office": {
-        "$description": "Private Office — facade-facing individual leaseholds. Three sizes share the same zone depths (sourced from the real drafted key-plan sheet, DISCOVERY_MCorp_Sketches_Key Plans_Private Office.pdf); frontage width increases with size, not zone depth. Building ID issued per desk. Zone 1 = 5.9944 m (19'-8\"), marginally under the 6 m European Lighting Standard desk-to-window threshold. Zone 2 = 1.3716 m (4'-6\"), holds filing, credenza, bookshelf. No Zone 3 — each office opens directly to the shared building corridor. Corrected 2026-07-04: prior values (6.0/3.8/2.0 m) had been inherited from the Professional Office use-type in error; see key-plans-foundation-study.md.",
+        "$description": "Private Office — facade-facing individual leaseholds. Three sizes share the same zone depths (sourced from the real drafted key-plan sheet, DISCOVERY_MCorp_Sketches_Key Plans_Private Office.pdf); frontage width increases with size, not zone depth. Building ID issued per desk. Habitat = 5.9944 m (19'-8\"), marginally under the 6 m European Lighting Standard desk-to-window threshold. Magazine = 1.3716 m (4'-6\"), holds filing, credenza, bookshelf. No Corridor — each office opens directly to the shared building corridor. Corrected 2026-07-04: prior values (6.0/3.8/2.0 m) had been inherited from the Professional Office use-type in error; see key-plans-foundation-study.md.",
         "small": {
           "$type": "bim.entity",
           "$value": {
@@ -37,12 +37,12 @@
             "furniture_refs_note": "Structured references generated 2026-07-06 via tool-keyplan (--interior interior.dtcg.json --config configs/po-1.toml), a real, verified compile. Only furniture_refs and circulation_ref were merged from that run — its zone-depth/bounding-box output uses po-1.toml's stale 6.0/3.8/2.0 m values, superseded by the real 2026-07-04 correction (5.9944/1.3716 m) already in this entry, so those fields were deliberately not overwritten.",
             "circulation_ref": "bim.interior.circulation.standard-private-office",
             "compliance": {
-              "european_lighting_standard": "Zone 1 = 5.9944 m — marginally under the 6 m European Lighting Standard desk-to-window threshold",
+              "european_lighting_standard": "Habitat = 5.9944 m — marginally under the 6 m European Lighting Standard desk-to-window threshold",
               "wheelchair_clearance": "1200 mm turning radius at desk and table confirmed",
               "german_circulation_law": "900 mm clear passage at door swing",
               "building_id": "issued per desk — minimum 1 per PO-1"
             },
-            "design_notes": "Desks placed perpendicular to facade require +0.7 m in Zone 1 for three desks in series. Zone 2 depth is identical across PO-1 / PO-2 / PO-3 — only facade frontage increases with size. No Zone 3 — the office opens directly to the shared building corridor.",
+            "design_notes": "Desks placed perpendicular to facade require +0.7 m in Habitat for three desks in series. Magazine depth is identical across PO-1 / PO-2 / PO-3 — only facade frontage increases with size. No Corridor — the office opens directly to the shared building corridor.",
             "development_classes": [
               "Professional Centres",
               "Suburban Office"
@@ -51,7 +51,7 @@
             "sf_per_workstation": 325.0,
             "workstation_count": 1
           },
-          "$description": "Private Office — Small. 30.19 m² / 325 SF. Zone 1 = 5.9944 m, Zone 2 = 1.3716 m, no Zone 3 (opens to shared corridor). Desk + task chair + round table + 2 side chairs + filing + credenza + bookshelf + coat rack. Sourced from the real drafted key-plan sheet."
+          "$description": "Private Office — Small. 30.19 m² / 325 SF. Habitat = 5.9944 m, Magazine = 1.3716 m, no Corridor (opens to shared corridor). Desk + task chair + round table + 2 side chairs + filing + credenza + bookshelf + coat rack. Sourced from the real drafted key-plan sheet."
         },
         "medium": {
           "$type": "bim.entity",
@@ -82,12 +82,12 @@
             "furniture_refs_note": "Round 5 (2026-07-10): partial resolution, honestly incomplete — only 3 of the 7 furniture_program items have a real, correctly-specified catalog object to link (desk, task chair, coat rack). The catalog's only table (steelcase-groupwork-36) is a 3-person round table, not the 5-person meeting table this programme calls for — linking it would misstate capacity. No credenza, wall-mounted bookshelf, or 2-drawer filing-cabinet SKU exists in the catalog at all (steelcase-ts-mobile-pedestal is a mobile under-desk pedestal, a different product than a lateral filing cabinet); the Wing Chair CH445 is a lounge chair, not confirmed as a meeting-room side chair, so it was not linked on a guess. Filling these requires adding real furniture SKUs to the catalog, not just cross-referencing existing ones.",
             "circulation_ref": "bim.interior.circulation.standard-private-office",
             "compliance": {
-              "european_lighting_standard": "Zone 1 = 5.9944 m — marginally under the 6 m European Lighting Standard desk-to-window threshold",
+              "european_lighting_standard": "Habitat = 5.9944 m — marginally under the 6 m European Lighting Standard desk-to-window threshold",
               "wheelchair_clearance": "1200 mm turning radius confirmed at desk and meeting table",
               "german_circulation_law": "900 mm clear passage at door swing",
               "building_id": "issued per desk"
             },
-            "design_notes": "No Zone 3 — the office opens directly to the shared building corridor. Zone depths identical to PO-1/PO-3; only facade frontage increases with size.",
+            "design_notes": "No Corridor — the office opens directly to the shared building corridor. Zone depths identical to PO-1/PO-3; only facade frontage increases with size.",
             "development_classes": [
               "Professional Centres",
               "Suburban Office"
@@ -96,7 +96,7 @@
             "sf_per_workstation": 232.5,
             "workstation_count": 2
           },
-          "$description": "Private Office — Medium. 43.20 m² / 465 SF. Zone 1 = 5.9944 m, Zone 2 = 1.3716 m, no Zone 3 (opens to shared corridor). Wider frontage than Small; same zone depths."
+          "$description": "Private Office — Medium. 43.20 m² / 465 SF. Habitat = 5.9944 m, Magazine = 1.3716 m, no Corridor (opens to shared corridor). Wider frontage than Small; same zone depths."
         },
         "large": {
           "$type": "bim.entity",
@@ -128,12 +128,12 @@
             "furniture_refs_note": "Round 5 (2026-07-10): partial resolution, honestly incomplete — only 3 of the 8 furniture_program items have a real, correctly-specified catalog object to link (desk, task chair, coat rack), same catalog gap as PO-2. The catalog's only table (steelcase-groupwork-36) is a 3-person round table, not the 8-person boardroom table this programme calls for. No credenza, wall-mounted bookshelf, lateral 4-drawer filing cabinet, or side console SKU exists in the catalog. Filling these requires adding real furniture SKUs to the catalog, not just cross-referencing existing ones.",
             "circulation_ref": "bim.interior.circulation.standard-private-office",
             "compliance": {
-              "european_lighting_standard": "Zone 1 = 5.9944 m — marginally under the 6 m European Lighting Standard desk-to-window threshold",
+              "european_lighting_standard": "Habitat = 5.9944 m — marginally under the 6 m European Lighting Standard desk-to-window threshold",
               "wheelchair_clearance": "1200 mm turning radius confirmed at desk, table head, and table ends",
               "german_circulation_law": "900 mm clear passage at door swing",
               "building_id": "issued per desk"
             },
-            "design_notes": "No Zone 3 — the office opens directly to the shared building corridor. Zone depths identical to PO-1/PO-2; only facade frontage increases with size.",
+            "design_notes": "No Corridor — the office opens directly to the shared building corridor. Zone depths identical to PO-1/PO-2; only facade frontage increases with size.",
             "development_classes": [
               "Professional Centres",
               "Suburban Office"
@@ -142,7 +142,7 @@
             "sf_per_workstation": 228.3,
             "workstation_count": 3
           },
-          "$description": "Private Office — Large. 63.64 m² / 685 SF. Zone 1 = 5.9944 m, Zone 2 = 1.3716 m, no Zone 3 (opens to shared corridor). Widest frontage of the Private Office series; accommodates 8-person boardroom table."
+          "$description": "Private Office — Large. 63.64 m² / 685 SF. Habitat = 5.9944 m, Magazine = 1.3716 m, no Corridor (opens to shared corridor). Widest frontage of the Private Office series; accommodates 8-person boardroom table."
         }
       },
       "corporate-office": {
@@ -251,7 +251,7 @@
         }
       },
       "medical": {
-        "$description": "Professional Office — Medical. Wider Zone 1 (7.2 m) than other sub-types to accommodate exam-table depth and patient + clinician circulation. ADA / CSA-B651 corridor width. Key rooms: reception, exam / dental chairs, file room, autoclave, sterilization, imaging, storage, washroom. Furniture: Midmark examination tables.",
+        "$description": "Professional Office — Medical. Wider Habitat (7.2 m) than other sub-types to accommodate exam-table depth and patient + clinician circulation. ADA / CSA-B651 corridor width. Key rooms: reception, exam / dental chairs, file room, autoclave, sterilization, imaging, storage, washroom. Furniture: Midmark examination tables.",
         "chiropractor": {
           "$type": "bim.entity",
           "$value": {
@@ -275,8 +275,8 @@
               "washroom"
             ],
             "compliance": {
-              "european_lighting_standard": "Zone 1 = 7.2 m exceeds 6 m minimum",
-              "ada_csa": "CSA-B651 corridor width in Zone 3",
+              "european_lighting_standard": "Habitat = 7.2 m exceeds 6 m minimum",
+              "ada_csa": "CSA-B651 corridor width in Corridor",
               "acoustic_isolation": "demising wall required between suites"
             },
             "development_classes": [
@@ -284,7 +284,7 @@
               "Suburban Office"
             ]
           },
-          "$description": "Medical — Chiropractor. 223 m² / 2,401 SF. Zone 1 = 7.20 m, Zone 2 = 4.87 m. 2 exam rooms. Reception, file room, autoclave, storage, washroom."
+          "$description": "Medical — Chiropractor. 223 m² / 2,401 SF. Habitat = 7.20 m, Magazine = 4.87 m. 2 exam rooms. Reception, file room, autoclave, storage, washroom."
         },
         "dentist": {
           "$type": "bim.entity",
@@ -314,7 +314,7 @@
               "Suburban Office"
             ]
           },
-          "$description": "Medical — Dentist. 331 m² / 3,568 SF. Zone 1 = 7.20 m, Zone 2 = 4.87 m. 4 dental chairs. Reception, sterilization, imaging, storage, washroom."
+          "$description": "Medical — Dentist. 331 m² / 3,568 SF. Habitat = 7.20 m, Magazine = 4.87 m. 4 dental chairs. Reception, sterilization, imaging, storage, washroom."
         },
         "general-practitioner": {
           "$type": "bim.entity",
@@ -345,11 +345,11 @@
               "Suburban Office"
             ]
           },
-          "$description": "Medical — General Practitioner. 486 m² / 5,231 SF. Zone 1 = 7.20 m, Zone 2 = 4.87 m. 6 exam rooms. Full clinical suite with imaging and sterilization."
+          "$description": "Medical — General Practitioner. 486 m² / 5,231 SF. Habitat = 7.20 m, Magazine = 4.87 m. 6 exam rooms. Full clinical suite with imaging and sterilization."
         }
       },
       "business": {
-        "$description": "Professional Office — Business. Widest Zone 2 Magazine (7.3 m) across all Professional Office sub-types — reflects open storage walls, server rooms, print areas, and team collaboration zones. Width options A–D available per size. Total facade frontage range: 25.3 m – 32.3 m.",
+        "$description": "Professional Office — Business. Widest Magazine (7.3 m) across all Professional Office sub-types — reflects open storage walls, server rooms, print areas, and team collaboration zones. Width options A–D available per size. Total facade frontage range: 25.3 m – 32.3 m.",
         "small": {
           "$type": "bim.entity",
           "$value": {
@@ -374,7 +374,7 @@
               "Suburban Office"
             ]
           },
-          "$description": "Business — Small. 311.22 m² / 3,350 SF. Zone 1 = 6.00 m, Zone 2 = 7.30 m, Zone 3 = 2.75 m. Width options A–D."
+          "$description": "Business — Small. 311.22 m² / 3,350 SF. Habitat = 6.00 m, Magazine = 7.30 m, Corridor = 2.75 m. Width options A–D."
         },
         "medium": {
           "$type": "bim.entity",
@@ -400,7 +400,7 @@
               "Suburban Office"
             ]
           },
-          "$description": "Business — Medium. 399.66 m² / 4,301 SF. Zone 1 = 6.00 m, Zone 2 = 7.30 m, Zone 3 = 2.75 m."
+          "$description": "Business — Medium. 399.66 m² / 4,301 SF. Habitat = 6.00 m, Magazine = 7.30 m, Corridor = 2.75 m."
         },
         "large": {
           "$type": "bim.entity",
@@ -426,11 +426,11 @@
               "Suburban Office"
             ]
           },
-          "$description": "Business — Large. 669.00 m² / 7,201 SF. Zone 1 = 6.00 m, Zone 2 = 7.30 m, Zone 3 = 2.90 m. Widest Zone 3 in Business series."
+          "$description": "Business — Large. 669.00 m² / 7,201 SF. Habitat = 6.00 m, Magazine = 7.30 m, Corridor = 2.90 m. Widest Corridor in Business series."
         }
       },
       "laboratory": {
-        "$description": "Professional Office — Laboratory. Wider Zone 1 (6.78 m) than standard Professional Office to accommodate bench depth and fume hood clearances per German Circulation Law. IBC high-hazard occupancy egress width (3.048 m / 10'0\") in Zone 3. Key rooms: reception, 1–2 offices, 3–9 benches, staff room, storage, mechanical, clean room.",
+        "$description": "Professional Office — Laboratory. Wider Habitat (6.78 m) than standard Professional Office to accommodate bench depth and fume hood clearances per German Circulation Law. IBC high-hazard occupancy egress width (3.048 m / 10'0\") in Corridor. Key rooms: reception, 1–2 offices, 3–9 benches, staff room, storage, mechanical, clean room.",
         "medical": {
           "$type": "bim.entity",
           "$value": {
@@ -458,15 +458,15 @@
               "clean room"
             ],
             "compliance": {
-              "german_circulation_law": "Zone 1 = 6.78 m satisfies bench depth + fume hood clearance",
-              "ibc_high_hazard": "Zone 3 = 3.10 m satisfies IBC high-hazard egress width (3.048 m)"
+              "german_circulation_law": "Habitat = 6.78 m satisfies bench depth + fume hood clearance",
+              "ibc_high_hazard": "Corridor = 3.10 m satisfies IBC high-hazard egress width (3.048 m)"
             },
             "development_classes": [
               "Professional Centres",
               "Suburban Office"
             ]
           },
-          "$description": "Laboratory — Medical. 195.00 m² / 2,099 SF. Zone 1 = 6.78 m, Zone 2 = 4.80 m, Zone 3 = 3.10 m. Frontage ~16.8 m. 3 benches. Occupancy: 34 (5.7 m²/pp)."
+          "$description": "Laboratory — Medical. 195.00 m² / 2,099 SF. Habitat = 6.78 m, Magazine = 4.80 m, Corridor = 3.10 m. Frontage ~16.8 m. 3 benches. Occupancy: 34 (5.7 m²/pp)."
         },
         "research": {
           "$type": "bim.entity",
@@ -499,7 +499,7 @@
               "Suburban Office"
             ]
           },
-          "$description": "Laboratory — Research. 315.96 m² / 3,401 SF. Zone 1 = 6.78 m, Zone 2 = 4.80 m, Zone 3 = 3.10 m. Frontage ~27.3 m. 6 benches. Occupancy: 49 (6.4 m²/pp)."
+          "$description": "Laboratory — Research. 315.96 m² / 3,401 SF. Habitat = 6.78 m, Magazine = 4.80 m, Corridor = 3.10 m. Frontage ~27.3 m. 6 benches. Occupancy: 49 (6.4 m²/pp)."
         },
         "large": {
           "$type": "bim.entity",
@@ -532,11 +532,11 @@
               "Suburban Office"
             ]
           },
-          "$description": "Laboratory — Large. 400.69 m² / 4,313 SF. Zone 1 = 6.78 m, Zone 2 = 4.80 m, Zone 3 = 3.10 m. Frontage ~34.6 m. 9 benches. Occupancy: 61 (6.5 m²/pp)."
+          "$description": "Laboratory — Large. 400.69 m² / 4,313 SF. Habitat = 6.78 m, Magazine = 4.80 m, Corridor = 3.10 m. Frontage ~34.6 m. 9 benches. Occupancy: 61 (6.5 m²/pp)."
         }
       },
       "academic": {
-        "$description": "Professional Office — Academic. Shorter Zone 1 (4.7 m) than other sub-types — seating faces forward toward a podium or screen, not toward the facade. No bilateral corridor; suites open to the building corridor. Configurations: seminar / podium (Small), multi-use seminar (Medium), tiered auditorium (Large).",
+        "$description": "Professional Office — Academic. Shorter Habitat (4.7 m) than other sub-types — seating faces forward toward a podium or screen, not toward the facade. No bilateral corridor; suites open to the building corridor. Configurations: seminar / podium (Small), multi-use seminar (Medium), tiered auditorium (Large).",
         "small": {
           "$type": "bim.entity",
           "$value": {
@@ -558,7 +558,7 @@
               "Suburban Office"
             ]
           },
-          "$description": "Academic — Small. 105 m² / 1,131 SF. Zone 1 = 4.70 m, Zone 2 = 3.00 m. Seminar / podium configuration. Occupancy: 21–25."
+          "$description": "Academic — Small. 105 m² / 1,131 SF. Habitat = 4.70 m, Magazine = 3.00 m. Seminar / podium configuration. Occupancy: 21–25."
         },
         "medium": {
           "$type": "bim.entity",
@@ -580,7 +580,7 @@
               "Suburban Office"
             ]
           },
-          "$description": "Academic — Medium. 240 m² / 2,583 SF. Zone 1 = 4.70 m, Zone 2 = 3.00 m. Multi-use seminar configuration. Occupancy: 63."
+          "$description": "Academic — Medium. 240 m² / 2,583 SF. Habitat = 4.70 m, Magazine = 3.00 m. Multi-use seminar configuration. Occupancy: 63."
         },
         "large": {
           "$type": "bim.entity",
@@ -603,11 +603,11 @@
               "Suburban Office"
             ]
           },
-          "$description": "Academic — Large. 378 m² / 4,070 SF. Zone 1 = 4.70 m, Zone 2 = 3.00 m. Tiered auditorium ~60-seat configuration. Occupancy: 82–103."
+          "$description": "Academic — Large. 378 m² / 4,070 SF. Habitat = 4.70 m, Magazine = 3.00 m. Tiered auditorium ~60-seat configuration. Occupancy: 82–103."
         }
       },
       "civic": {
-        "$description": "Professional Office — Civic. Government services, community programming, and social services. Widest Zone 2 Magazine (7.23 m) for public records and secure areas. ADA / accessible-route compliance mandatory throughout leasehold. Key rooms: offices, clerk desks, conference rooms, staff room, restrooms, communal corridor.",
+        "$description": "Professional Office — Civic. Government services, community programming, and social services. Widest Magazine (7.23 m) for public records and secure areas. ADA / accessible-route compliance mandatory throughout leasehold. Key rooms: offices, clerk desks, conference rooms, staff room, restrooms, communal corridor.",
         "small": {
           "$type": "bim.entity",
           "$value": {
@@ -634,7 +634,7 @@
               "Suburban Office"
             ]
           },
-          "$description": "Civic — Small. 270 m² / 2,912 SF. Zone 1 = 6.00 m, Zone 2 = 7.23 m."
+          "$description": "Civic — Small. 270 m² / 2,912 SF. Habitat = 6.00 m, Magazine = 7.23 m."
         },
         "medium": {
           "$type": "bim.entity",
@@ -662,7 +662,7 @@
               "Suburban Office"
             ]
           },
-          "$description": "Civic — Medium. 577 m² / 6,215 SF. Zone 1 = 6.00 m, Zone 2 = 7.23 m."
+          "$description": "Civic — Medium. 577 m² / 6,215 SF. Habitat = 6.00 m, Magazine = 7.23 m."
         },
         "large": {
           "$type": "bim.entity",
@@ -690,7 +690,7 @@
               "Suburban Office"
             ]
           },
-          "$description": "Civic — Large. 822 m² / 8,850 SF. Zone 1 = 6.00 m, Zone 2 = 7.23 m. Largest single-leasehold Civic Key Plan."
+          "$description": "Civic — Large. 822 m² / 8,850 SF. Habitat = 6.00 m, Magazine = 7.23 m. Largest single-leasehold Civic Key Plan."
         }
       }
     }

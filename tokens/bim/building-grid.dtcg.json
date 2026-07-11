@@ -3,7 +3,7 @@
   "$description": "BIM BUILDING GRID token category — structural module dimensions, wall/partition thicknesses, and the floor-plate-width tolerance bands that drive tool-buildingwidth's bidirectional adjustment logic. Source: tool-buildingwidth-architecture.md §3 (2026-05-17, Opus agent research), synthesising AEC_Floor Plates_Key Plans and Tiles_V12.pdf and AEC_Floor Plates_Methodology_V12.pdf. Metre values are authoritative; feet equivalents in $description. Created 2026-07-03 — this file did not previously exist (tool-buildingwidth-architecture.md §Missing DTCG token files #3).",
   "bim": {
     "grid": {
-      "$description": "Structural module and wall/partition thickness constants used when converting centerline zone-depth arithmetic (Z1+Z2+Z3) into an overall building width.",
+      "$description": "Structural module and wall/partition thickness constants used when converting centerline Habitat+Magazine+Corridor arithmetic into an overall building width.",
       "structural-module": {
         "$type": "dimension",
         "$value": "1.524m",
@@ -12,7 +12,7 @@
       "facade-wall-thickness": {
         "$type": "dimension",
         "$value": "0.4m",
-        "$description": "1'4\" — exterior façade wall thickness, added to the Zone 1+2+3 centerline sum to get overall building width."
+        "$description": "1'4\" — exterior façade wall thickness, added to the Habitat+2+3 centerline sum to get overall building width."
       },
       "demising-wall-thickness": {
         "$type": "dimension",
@@ -26,16 +26,16 @@
       }
     },
     "tolerance": {
-      "$description": "Floor-plate-width tolerance bands for tool-buildingwidth's bidirectional adjustment logic (adjust() function). Zone 1 Habitat and Zone 3 Corridor are locked downward by regulatory minima (EN 12464-1, IBC/NBC egress); Zone 2 Magazine is the only zone with no hard regulatory floor and yields first when a floor plate must be resized.",
+      "$description": "Floor-plate-width tolerance bands for tool-buildingwidth's bidirectional adjustment logic (adjust() function). Habitat and Corridor are locked downward by regulatory minima (EN 12464-1, IBC/NBC egress); Magazine is the only zone with no hard regulatory floor and yields first when a floor plate must be resized.",
       "fp-width-green-band": {
         "$type": "dimension",
         "$value": "0.762m",
-        "$description": "±2.5 ft (0.5× the structural module). Within this band, Zone 2 Magazine absorbs the delta silently — no composition change, no operator review required."
+        "$description": "±2.5 ft (0.5× the structural module). Within this band, Magazine absorbs the delta silently — no composition change, no operator review required."
       },
       "fp-width-yellow-band": {
         "$type": "dimension",
         "$value": "1.524m",
-        "$description": "±5 ft (1× the structural module). Zone 2 Magazine adjusts, key-plan areas are recomputed, tile lengths snap to the new width — operator review required before committing the adjustment."
+        "$description": "±5 ft (1× the structural module). Magazine adjusts, key-plan areas are recomputed, tile lengths snap to the new width — operator review required before committing the adjustment."
       },
       "fp-width-red-band": {
         "$type": "dimension",

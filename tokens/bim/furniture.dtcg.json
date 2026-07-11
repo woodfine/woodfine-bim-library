@@ -1,6 +1,6 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM FURNITURE token category — real manufacturer furniture SKUs and regulatory clearances that DERIVE the Zone 1/2/3 depths in building-width-calculator.dtcg.json. This is the missing foundation: previously zone depths were results with no derivation recorded. Every dimension here traces to a real manufacturer product or a cited regulatory clause. Source: tool-buildingwidth-architecture.md §Missing DTCG token files #1 (2026-05-17, Opus agent research) — Research provenance section. Created 2026-07-03 — this file did not previously exist. Millimetre values are authoritative for furniture/clearance dimensions (matching manufacturer spec-sheet convention); metre values in $description for cross-reference against building-width-calculator.dtcg.json's zone tokens.",
+  "$description": "BIM FURNITURE token category — real manufacturer furniture SKUs and regulatory clearances that DERIVE the Habitat/Magazine/Corridor depths in building-width-calculator.dtcg.json. This is the missing foundation: previously zone depths were results with no derivation recorded. Every dimension here traces to a real manufacturer product or a cited regulatory clause. Source: tool-buildingwidth-architecture.md §Missing DTCG token files #1 (2026-05-17, Opus agent research) — Research provenance section. Created 2026-07-03 — this file did not previously exist. Millimetre values are authoritative for furniture/clearance dimensions (matching manufacturer spec-sheet convention); metre values in $description for cross-reference against building-width-calculator.dtcg.json's zone tokens.",
   "bim": {
     "furniture": {
       "office": {
@@ -11,9 +11,9 @@
             "manufacturer": "Steelcase",
             "product-line": "Ology",
             "depth_mm": 762,
-            "role": "Zone 1 Habitat driver — Professional Office, Business, Civic (non-courtroom)"
+            "role": "Habitat driver — Professional Office, Business, Civic (non-courtroom)"
           },
-          "$description": "Steelcase Ology desk, 762mm (2'6\") depth. Zone 1 Habitat driver for Professional Office, Business, and Civic use types."
+          "$description": "Steelcase Ology desk, 762mm (2'6\") depth. Habitat driver for Professional Office, Business, and Civic use types."
         },
         "steelcase-think-desk": {
           "$type": "bim.furniture",
@@ -21,7 +21,7 @@
             "manufacturer": "Steelcase",
             "product-line": "Think",
             "depth_mm": 762,
-            "role": "Zone 1 Habitat driver — alternate SKU, same depth as Ology"
+            "role": "Habitat driver — alternate SKU, same depth as Ology"
           },
           "$description": "Steelcase Think desk, 762mm (2'6\") depth. Same depth as Ology — interchangeable for zone-depth derivation purposes."
         },
@@ -32,9 +32,9 @@
             "product-line": "Coalesse",
             "seats": 3,
             "diameter_mm": 1067,
-            "role": "Zone 1 Habitat driver — Private Office (PO-1)"
+            "role": "Habitat driver — Private Office (PO-1)"
           },
-          "$description": "Steelcase Coalesse 3-person round table, 1,067mm (3'6\") diameter. Zone 1 Habitat driver for Private Office — see PO-1 Zone 1 depth 5.9944m in building-width-calculator.dtcg.json."
+          "$description": "Steelcase Coalesse 3-person round table, 1,067mm (3'6\") diameter. Habitat driver for Private Office — see PO-1 Habitat depth 5.9944m in building-width-calculator.dtcg.json."
         },
         "credenza": {
           "$type": "bim.furniture",
@@ -43,18 +43,18 @@
             "depth_mm": 508,
             "door_swing_mm": 600,
             "combined_mm": 1108,
-            "role": "Zone 2 Magazine driver"
+            "role": "Magazine driver"
           },
-          "$description": "Credenza, 508mm (1'8\") body depth + 600mm (2'0\") door swing clearance = 1,108mm combined. Zone 2 Magazine driver."
+          "$description": "Credenza, 508mm (1'8\") body depth + 600mm (2'0\") door swing clearance = 1,108mm combined. Magazine driver."
         },
         "bookcase": {
           "$type": "bim.furniture",
           "$value": {
             "manufacturer": "generic",
             "depth_mm": 305,
-            "role": "Zone 2 Magazine driver"
+            "role": "Magazine driver"
           },
-          "$description": "Bookcase, 305mm (1'0\") depth. Zone 2 Magazine driver."
+          "$description": "Bookcase, 305mm (1'0\") depth. Magazine driver."
         },
         "filing-cabinet": {
           "$type": "bim.furniture",
@@ -63,9 +63,9 @@
             "depth_mm": 635,
             "drawer_pull_mm": 750,
             "combined_mm": 1385,
-            "role": "Zone 2 Magazine driver"
+            "role": "Magazine driver"
           },
-          "$description": "Filing cabinet, 635mm (2'1\") body depth + 750mm (2'6\") drawer-pull clearance = 1,385mm combined. Zone 2 Magazine driver."
+          "$description": "Filing cabinet, 635mm (2'1\") body depth + 750mm (2'6\") drawer-pull clearance = 1,385mm combined. Magazine driver."
         }
       },
       "medical": {
@@ -77,9 +77,9 @@
             "product-line": "626",
             "depth_mm": 790,
             "ada_compliant": true,
-            "role": "Zone 1 Habitat driver — Medical"
+            "role": "Habitat driver — Medical"
           },
-          "$description": "Midmark 626 exam table, 790mm (2'7\") depth, ADA-compliant. Zone 1 Habitat driver for Medical — see Medical Zone 1 depth 7.2m in building-width-calculator.dtcg.json."
+          "$description": "Midmark 626 exam table, 790mm (2'7\") depth, ADA-compliant. Habitat driver for Medical — see Medical Habitat depth 7.2m in building-width-calculator.dtcg.json."
         }
       },
       "laboratory": {
@@ -90,9 +90,9 @@
             "manufacturer": "Treston",
             "product-line": "TP-915",
             "depth_mm": 900,
-            "role": "Zone 1 Habitat driver — Laboratory"
+            "role": "Habitat driver — Laboratory"
           },
-          "$description": "Treston TP-915 lab bench, 900mm (2'11\") depth. Zone 1 Habitat driver for Laboratory — see Laboratory Zone 1 depth 6.7818m in building-width-calculator.dtcg.json."
+          "$description": "Treston TP-915 lab bench, 900mm (2'11\") depth. Habitat driver for Laboratory — see Laboratory Habitat depth 6.7818m in building-width-calculator.dtcg.json."
         },
         "fume-hood": {
           "$type": "bim.furniture",
@@ -101,9 +101,9 @@
             "depth_mm": 940,
             "egress_clearance_mm": 1500,
             "combined_mm": 2440,
-            "role": "Zone 2 Magazine driver — Laboratory"
+            "role": "Magazine driver — Laboratory"
           },
-          "$description": "Fume hood, 940mm (3'1\") body depth + 1,500mm (4'11\") egress clearance = 2,440mm combined. Zone 2 Magazine driver for Laboratory."
+          "$description": "Fume hood, 940mm (3'1\") body depth + 1,500mm (4'11\") egress clearance = 2,440mm combined. Magazine driver for Laboratory."
         }
       },
       "academic": {
@@ -114,9 +114,9 @@
             "manufacturer": "generic",
             "type": "tablet-arm chair",
             "row_pitch_mm": 965,
-            "role": "Zone 1 Habitat driver — Academic"
+            "role": "Habitat driver — Academic"
           },
-          "$description": "Tablet-arm chair, 965mm (3'2\") row-to-row pitch. Zone 1 Habitat driver for Academic — see Academic Zone 1 depth 4.7m in building-width-calculator.dtcg.json (4 rows × pitch, forward-facing seating, not façade-facing)."
+          "$description": "Tablet-arm chair, 965mm (3'2\") row-to-row pitch. Habitat driver for Academic — see Academic Habitat depth 4.7m in building-width-calculator.dtcg.json (4 rows × pitch, forward-facing seating, not façade-facing)."
         }
       },
       "civic": {
@@ -127,9 +127,9 @@
             "manufacturer": "Agati",
             "product-line": "Judges Bench",
             "depth_mm": 1200,
-            "role": "Zone 1 Habitat driver — Civic courtroom variant"
+            "role": "Habitat driver — Civic courtroom variant"
           },
-          "$description": "Agati judges bench, 1,200mm (3'11\") depth. Zone 1 Habitat driver for Civic courtroom specialisation."
+          "$description": "Agati judges bench, 1,200mm (3'11\") depth. Habitat driver for Civic courtroom specialisation."
         }
       }
     },
@@ -153,21 +153,21 @@
       "ibc-egress-laboratory": {
         "$type": "dimension",
         "$value": "3.048m",
-        "$description": "10'0\" — IBC 2021 §1020/§1029 egress-width minimum for high-hazard (laboratory) occupancy. Matches Laboratory Zone 3 Corridor width in building-width-calculator.dtcg.json — this is the IBC citation for that value, not a separate independent figure."
+        "$description": "10'0\" — IBC 2021 §1020/§1029 egress-width minimum for high-hazard (laboratory) occupancy. Matches Laboratory Corridor width in building-width-calculator.dtcg.json — this is the IBC citation for that value, not a separate independent figure."
       },
       "ibc-egress-civic-assembly": {
         "$type": "dimension",
         "$value": "3.6m",
-        "$description": "11'10\" — IBC 2021 §1020/§1029 egress-width minimum for assembly (civic/public) occupancy. Matches Civic Zone 3 Corridor width in building-width-calculator.dtcg.json — this is the IBC citation for that value, not a separate independent figure. Only these two occupancy classes (laboratory high-hazard, civic assembly) have confirmed IBC citations in this workspace; a full occupancy-class table is not reproduced here."
+        "$description": "11'10\" — IBC 2021 §1020/§1029 egress-width minimum for assembly (civic/public) occupancy. Matches Civic Corridor width in building-width-calculator.dtcg.json — this is the IBC citation for that value, not a separate independent figure. Only these two occupancy classes (laboratory high-hazard, civic assembly) have confirmed IBC citations in this workspace; a full occupancy-class table is not reproduced here."
       },
       "en12464-workstation-to-window": {
         "$type": "dimension",
         "$value": "6.0m",
-        "$description": "19'8\" — EN 12464-1:2021 + EN 17037 maximum workstation-to-window distance (2.4m window head × 2.5). This is the regulatory cap that sets Professional Office/Business/Civic Zone 1 Habitat depth at exactly 6.0m."
+        "$description": "19'8\" — EN 12464-1:2021 + EN 17037 maximum workstation-to-window distance (2.4m window head × 2.5). This is the regulatory cap that sets Professional Office/Business/Civic Habitat depth at exactly 6.0m."
       }
     },
     "derivation-example": {
-      "$description": "Worked example showing how bim.furniture + bim.clearance tokens sum to the Professional Office Zone 1 Habitat depth (6.0m) already present in building-width-calculator.dtcg.json. Encodes the derivation cited in tool-buildingwidth-architecture.md §Missing DTCG token files #1 so tool-buildingwidth's --derive-from-furniture mode has a machine-readable reference calculation.",
+      "$description": "Worked example showing how bim.furniture + bim.clearance tokens sum to the Professional Office Habitat depth (6.0m) already present in building-width-calculator.dtcg.json. Encodes the derivation cited in tool-buildingwidth-architecture.md §Missing DTCG token files #1 so tool-buildingwidth's --derive-from-furniture mode has a machine-readable reference calculation.",
       "professional-office-zone1": {
         "$type": "bim.derivation",
         "$value": {
@@ -183,7 +183,7 @@
           "sum_m": 6.0,
           "caveat": "The fourth term (1.714m) is presented in tool-buildingwidth-architecture.md as 'EN 17037 daylight buffer (2.4m window head × 2.5)' summing the four terms to exactly 6.000m. The arithmetic (2.286 + 1.0 + 1.0 + 1.714 = 6.0) is confirmed; the derivation of 1.714m specifically from '2.4m × 2.5' is not (2.4 × 2.5 = 6.0, not 1.714) — this term is better read as 'the remainder after desk + two clearances, independently corroborated by the EN 12464-1 6.0m cap' rather than a direct product of the cited factors. Flagging rather than silently reproducing an arithmetic claim that doesn't check out at face value."
         },
-        "$description": "Professional Office Zone 1 derivation: 3× Steelcase Ology desk (2.286m) + ArbStättV clearance (1.0m) + ASR A1.8 aisle (1.0m) + daylight buffer (1.714m) = 6.000m. See $value.caveat for a flagged arithmetic note on the fourth term."
+        "$description": "Professional Office Habitat derivation: 3× Steelcase Ology desk (2.286m) + ArbStättV clearance (1.0m) + ASR A1.8 aisle (1.0m) + daylight buffer (1.714m) = 6.000m. See $value.caveat for a flagged arithmetic note on the fourth term."
       }
     }
   }

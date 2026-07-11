@@ -1,10 +1,10 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM Building Width Calculator token category — zone depths per use type, anchored to the Key Plans and Tiles spatial taxonomy. Source: Summary_Key Plans tab (CONSTRUCTION_2026_01_06_Key Plan_Professional Office_FFE_FIN.xlsx, V3, 2025-11-29). Three zones per use type: Zone 1 Habitat (desks; European Lighting Standard 6m minimum), Zone 2 Magazine (storage beyond Habitat), Zone 3 Corridor (bilateral access; mirrored floor plate). Metre values are authoritative; feet equivalents in $description. All values from completed Key Plan samples except where noted TBD.",
+  "$description": "BIM Building Width Calculator token category — zone depths per use type, anchored to the Key Plans and Tiles spatial taxonomy. Source: Summary_Key Plans tab (CONSTRUCTION_2026_01_06_Key Plan_Professional Office_FFE_FIN.xlsx, V3, 2025-11-29). Three zones per use type: Habitat (desks; European Lighting Standard 6m minimum), Magazine (storage beyond Habitat), Corridor (bilateral access; mirrored floor plate). Metre values are authoritative; feet equivalents in $description. All values from completed Key Plan samples except where noted TBD.",
   "bim": {
     "zone": {
       "professional-office": {
-        "$description": "Professional Office use type — Business tenants in leased office suites. Zone 1 meets European Lighting Standard exactly at 6.0m.",
+        "$description": "Professional Office use type — Business tenants in leased office suites. Habitat meets European Lighting Standard exactly at 6.0m.",
         "habitat": {
           "depth": {
             "$type": "dimension",
@@ -28,7 +28,7 @@
         }
       },
       "private-office": {
-        "$description": "Private Office use type — individual licensed offices (PO-1/PO-2/PO-3). No shared corridor; each office opens directly to a shared floor corridor or building egress. Zone 1 marginally under 6m from Key Plan sample geometry.",
+        "$description": "Private Office use type — individual licensed offices (PO-1/PO-2/PO-3). No shared corridor; each office opens directly to a shared floor corridor or building egress. Habitat marginally under 6m from Key Plan sample geometry.",
         "habitat": {
           "depth": {
             "$type": "dimension",
@@ -52,7 +52,7 @@
         }
       },
       "laboratory": {
-        "$description": "Laboratory use type — scientific, research, and testing leaseholds. Wider Zone 1 and Zone 2 reflect bench depth and fume hood clearances. Zone 3 corridor matches IBC egress minimums for lab occupancy.",
+        "$description": "Laboratory use type — scientific, research, and testing leaseholds. Wider Habitat and Magazine reflect bench depth and fume hood clearances. Corridor corridor matches IBC egress minimums for lab occupancy.",
         "habitat": {
           "depth": {
             "$type": "dimension",
@@ -76,7 +76,7 @@
         }
       },
       "academic": {
-        "$description": "Academic use type — classrooms, seminar rooms, lecture halls. Zone 1 shorter than 6m because desks face forward (not toward façade); Zone 3 absent as academic suites typically open to a shared corridor.",
+        "$description": "Academic use type — classrooms, seminar rooms, lecture halls. Habitat shorter than 6m because desks face forward (not toward façade); Corridor absent as academic suites typically open to a shared corridor.",
         "habitat": {
           "depth": {
             "$type": "dimension",
@@ -105,32 +105,32 @@
           "depth": {
             "$type": "dimension",
             "$value": "5.63m",
-            "$description": "18'6\" — Option C Zone 1 Habitat depth (DISCOVERY Sketches 1-4, Business — Small width-options table)."
+            "$description": "18'6\" — Option C Habitat depth (DISCOVERY Sketches 1-4, Business — Small width-options table)."
           }
         },
         "magazine": {
           "depth": {
             "$type": "dimension",
             "$value": "6.63m",
-            "$description": "21'9\" — Option C Zone 2 Magazine depth (DISCOVERY Sketches 1-4). Narrower than the previous untraced 7.3m working value; reflects the balanced option rather than the widest (Option A) envelope."
+            "$description": "21'9\" — Option C Magazine depth (DISCOVERY Sketches 1-4). Narrower than the previous untraced 7.3m working value; reflects the balanced option rather than the widest (Option A) envelope."
           }
         },
         "corridor": {
           "width": {
             "$type": "dimension",
             "$value": "2.75m",
-            "$description": "9'0\" — Zone 3 Corridor, constant across all four DISCOVERY width options (A/B/C/D)."
+            "$description": "9'0\" — Corridor, constant across all four DISCOVERY width options (A/B/C/D)."
           }
         },
         "design_notes": "Reconciled 2026-07-09 per operator decision during the plan-completeness audit (see cleanup-log.md). DISCOVERY Sketches 1-4 (topic-bim-business-key-plans.draft.md) table two options across a mixed-option-facade building width: Option A/A (widest, 5.51/9.26/2.75 → 32.29 m total) vs. Option C/C (balanced, 5.63/6.63/2.75 → 27.27 m total). `.agent/plans/agent-1-building-width-report.md` (2026-05-17) had applied A/A as a working default without operator confirmation — operator confirmed C/C on 2026-07-09. totalWidth formula: 2 × (habitat + magazine) + corridor = 2 × (5.63 + 6.63) + 2.75 = 27.27 m."
       },
       "medical": {
-        "$description": "Medical use type — clinical, dental, diagnostic, and allied health leaseholds. Wider Zone 1 reflects exam-table depth and patient circulation. Acoustic and vibration isolation requirements apply (per building-width-calculator.docx).",
+        "$description": "Medical use type — clinical, dental, diagnostic, and allied health leaseholds. Wider Habitat reflects exam-table depth and patient circulation. Acoustic and vibration isolation requirements apply (per building-width-calculator.docx).",
         "habitat": {
           "depth": {
             "$type": "dimension",
             "$value": "7.2m",
-            "$description": "23'10\" — widest Zone 1 Habitat across use types; exam table depth + patient + clinician circulation per German Circulation Law and WELL health standards."
+            "$description": "23'10\" — widest Habitat across use types; exam table depth + patient + clinician circulation per German Circulation Law and WELL health standards."
           }
         },
         "magazine": {
@@ -177,7 +177,7 @@
       "perpendicular-desk": {
         "$type": "dimension",
         "$value": "0.7m",
-        "$description": "2'4\" — additional depth required in Zone 1 Habitat when desks are placed perpendicular to the façade, to achieve three desks in series with proper German Circulation Law clearance. Without this addition, Zone 1 at exactly 6.0m yields only two perpendicular desks. This is a DELTA, not a standalone clearance value: ArbStättV Anhang §3.1 requires 1.0m movement clearance behind a perpendicular-facing seat, versus the 0.3m baseline clearance already accounted for in the parallel-desk Zone 1 depth; 1.0m − 0.3m = 0.7m is the additional depth this perpendicular arrangement requires on top of the parallel-desk baseline. Amended 2026-07-03 per tool-buildingwidth-architecture.md §Internal inconsistencies #5 — the prior description did not disclose this was a delta calculation."
+        "$description": "2'4\" — additional depth required in Habitat when desks are placed perpendicular to the façade, to achieve three desks in series with proper German Circulation Law clearance. Without this addition, Habitat at exactly 6.0m yields only two perpendicular desks. This is a DELTA, not a standalone clearance value: ArbStättV Anhang §3.1 requires 1.0m movement clearance behind a perpendicular-facing seat, versus the 0.3m baseline clearance already accounted for in the parallel-desk Habitat depth; 1.0m − 0.3m = 0.7m is the additional depth this perpendicular arrangement requires on top of the parallel-desk baseline. Amended 2026-07-03 per tool-buildingwidth-architecture.md §Internal inconsistencies #5 — the prior description did not disclose this was a delta calculation."
       }
     },
     "key-plan": {
