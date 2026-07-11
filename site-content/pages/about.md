@@ -18,9 +18,9 @@ Each BIM Object is stored as W3C Design Token Community Group (DTCG) format JSON
 
 Objects and Compositions are not the only structure in the Library — above them sits a second, parallel system: Key Plans, Tiles, and Floor Plates. The two are easy to conflate, but the distinction is load-bearing and the Library keeps them strictly separate.
 
-**The parts ladder** holds physical things: an Object (a desk, a luminaire, a door) and a Composition (an Object assembly — a furnished room type). A Composition is built *from* Objects the way a piece of furniture is built from its components.
+**The parts ladder** holds physical things: an Object (a desk, a luminaire, a door) and a Composition (an assembly of Objects — what an architectural drawing becomes once every part in it is real). A Composition is built *from* Objects the way a piece of furniture is built from its components.
 
-**The space ladder** holds volumes of space, not things: a Key Plan, a Tile, a Floor Plate, a Building. A Tile is built *from* Key Plans, and a Floor Plate is built *from* Tiles, the same way a building's storeys are built from rooms — this is composition-of-spaces, not composition-of-parts, and it follows its own, separate progression.
+**The space ladder** holds volumes of space, not things: a Key Plan, a Tile, a Floor Plate, a Building — this is composition-of-spaces, not composition-of-parts, and it follows its own, separate progression. It is not simple addition: a Tile is not Key Plans summed together, and a Floor Plate is not Tiles summed together. Each scale nests into the one above it without remainder, the same self-similar arrangement repeating from a single Key Plan up to the whole building.
 
 **The two ladders meet by containment, not aggregation.** A Composition is *placed inside* a Key Plan — the desk sits in the room, but the desk is not "part of" the room the way the room is part of the floor above it. Confusing these two relationships is the single most common category error in BIM data modelling: a wall is not a room, and a room is not a wall, even though both are things a building is "made of." The Library keeps them separate for the same reason IFC 4.3 does: an `IfcFurniture` and an `IfcSpace` are fundamentally different kinds of entity, joined by an "is located in" relationship, not a "is part of" one.
 
