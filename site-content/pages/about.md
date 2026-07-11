@@ -16,7 +16,7 @@ Each BIM Object is stored as W3C Design Token Community Group (DTCG) format JSON
 
 ## Two ladders, one substrate
 
-Objects and Compositions are not the only structure in the Library — above them sits a second, parallel system: Zones, Key Plans, Tiles, and Floor Plates. It is easy to conflate the two, and an earlier version of this page did exactly that. Getting the distinction right matters, so it is stated precisely here.
+Objects and Compositions are not the only structure in the Library — above them sits a second, parallel system: Zones, Key Plans, Tiles, and Floor Plates. The two are easy to conflate, but the distinction is load-bearing and the Library keeps them strictly separate.
 
 **The parts ladder** holds physical things: an Object (a desk, a luminaire, a door) and a Composition (an Object assembly — a furnished room type). A Composition is built *from* Objects the way a piece of furniture is built from its components.
 
@@ -28,9 +28,9 @@ Objects and Compositions are not the only structure in the Library — above the
 
 ## Key Plans and Tiles
 
-Woodfine plans space from the furniture out, not the square footage down. A **Key Plan** is the smallest unit of space worth leasing: a bounded room-scale plan defined by real furniture placement, real circulation, and real daylight — not by an area quota. Key Plans combine into **Tiles**: blocks of Key Plans that serve double duty as the unit a tenant leases and the zone the building's services and climate systems serve. Tiles combine into **Floor Plates** — and a floor plate assembled this way arrives with its light, circulation, and ventilation already proven at every scale below it. This fractional, self-similar composability (an eighth, a quarter, a half, three-quarters, or a full floor plate) is Woodfine's own extension of the space ladder — it is not a claim about how any external BIM standard works.
+Woodfine plans space from the furniture out, not the square footage down. A **Key Plan** is the smallest unit of space worth leasing: a bounded room-scale plan defined by real furniture placement, real circulation, and real daylight — not by an area quota. Key Plans combine into **Tiles**: blocks of Key Plans that serve double duty as the unit a tenant leases and the zone the building's services and climate systems serve. Tiles combine into **Floor Plates** — and a floor plate assembled this way arrives with its light, circulation, and ventilation already proven at every scale below it. This fractional, self-similar composability — an eighth, a quarter, a half, three-quarters, or a full floor plate — is Woodfine's own extension of the space ladder.
 
-Every Key Plan resolves into three zones. **Zone 1 — Habitat:** where people work, held within six metres of the building perimeter so every workstation gets natural light. **Zone 2 — Magazine:** storage and flexible depth — the dimension you can only find by iterating real plans, not by formula. **Zone 3 — Corridor:** circulation, sized by its own Key Plan. Zones 1 and 2 mirror each other across Zone 3. The building's width is not assumed; it is computed from these zones outward. The underlying logic — a daylight-adjacent zone, a flexible interior zone, and a circulation zone — is a well-established principle in building science and space planning generally (ASHRAE perimeter-zone HVAC guidance, the British Council for Offices' Guide to Specification, LEED and WELL daylight-zone requirements); the specific three-zone system named here, and its coupling to the Building Width Calculator below, is Woodfine's own operationalization of that principle, not an external standard's name.
+Every Key Plan resolves into three zones. **Zone 1 — Habitat:** where people work, held within six metres of the building perimeter so every workstation gets natural light. **Zone 2 — Magazine:** storage and flexible depth — the dimension you can only find by iterating real plans, not by formula. **Zone 3 — Corridor:** circulation, sized by its own Key Plan. Zones 1 and 2 mirror each other across Zone 3. The building's width is not assumed; it is computed from these zones outward. The underlying logic — a daylight-adjacent zone, a flexible interior zone, and a circulation zone — is a well-established principle in building science and space planning generally (ASHRAE perimeter-zone HVAC guidance, the British Council for Offices' Guide to Specification, LEED and WELL daylight-zone requirements). Habitat, Magazine, and Corridor, and their coupling to the Building Width Calculator below, are Woodfine's own operationalization of that principle.
 
 The efficiency claim is specific: a plan built from real furniture and circulation wastes less area than a plan built from a square-footage formula. Waste less area per tenant and you can build less total floor area while housing the same number of tenants. Woodfine's source language calls this "the reduction of the production curve — a sincere form of sustainability" — less construction demanded from the world for the same accommodation delivered.
 
@@ -42,7 +42,7 @@ A Composition's constituent-Objects view is its **parts list** — every Object 
 
 "Key Plans and Tiles" means a geometric self-similar aperiodic space planning system based on furniture/equipment arrangements and circulation versus modular area per person progressions. — Woodfine Openstudio design response
 
-Technical note: the `tool-buildingwidth` Rust engine computes remainder-free nesting of Key Plans into Tiles and Floor Plates in both directions.
+Key Plans nest into Tiles and Floor Plates without remainder, in both directions.
 
 ## Geometry of Sustainability
 

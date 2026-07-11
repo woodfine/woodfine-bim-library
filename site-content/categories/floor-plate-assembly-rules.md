@@ -10,4 +10,4 @@ property_sets:
 ---
 Floor Plate Assembly Rules — the machine-checked rules that decide whether a floor plate composition is valid.
 
-Machine-readable validation rules (FP-*) for a valid floor plate composition — tile-area summation tolerances, end-cap and core placement constraints, HVAC climate-zone-per-tile, door counts, and corner-tile structural-grid review triggers. Previously these rules existed only as narrative text in PDFs; this file gives tool-floorplates predicates it can actually evaluate. See also Tile System for the tiles these rules validate, and Building Grid for the tolerance bands referenced by several rules.
+Machine-readable validation rules (FP-*) for a valid floor plate composition — tile-area summation tolerances, end-cap and core placement constraints, HVAC climate-zone-per-tile, door counts, and corner-tile structural-grid review triggers. Previously these rules existed only as narrative text in PDFs; here they are stated as predicates a validator can actually evaluate. See also Tile System for the tiles these rules validate, and Building Grid for the tolerance bands referenced by several rules.

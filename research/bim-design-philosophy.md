@@ -6,11 +6,11 @@ stylistic choices. They are the precise set of constraints that turn
 five common weaknesses in cloud-authoritative BIM platforms into
 customer-visible differentiators.
 
-Hyperscalers (Autodesk, Bentley, Trimble, and the broader IWMS
-incumbents like Planon, IBM Tririga, Eptura Archibus) sell different-
-looking products that share an identical architectural spine. Five
-foundational assumptions underpin all of them, each one
-simultaneously a revenue mechanism and a structural vulnerability:
+Commercial cloud-authoritative BIM platforms and the broader IWMS
+incumbent category sell different-looking products that share an
+identical architectural spine. Five foundational assumptions
+underpin all of them, each one simultaneously a revenue mechanism
+and a structural vulnerability:
 
 1. The authoritative database lives in the vendor's multi-tenant cloud.
 2. Access to the customer's own data requires a live subscription
@@ -20,10 +20,10 @@ simultaneously a revenue mechanism and a structural vulnerability:
 4. AI must run in vendor tenancy on vendor-controlled data.
 5. The economic unit is the seat, or the token, per month.
 
-A sixth — version lock (Revit 2025 cannot open in 2024) — is
-arguably the most effective lock-in mechanism ever shipped in AEC
-software. The flat-file BIM substrate refuses each of these by
-construction.
+A sixth — version lock, where a file saved in one software release
+cannot open in an earlier release of the same product — is arguably
+the most effective lock-in mechanism in wide use in AEC software.
+The flat-file BIM substrate refuses each of these by construction.
 
 ## What the substrate is
 
@@ -40,7 +40,7 @@ SDK, decades after the software vendor that produced it is gone.
 | Per-element YAML sidecars | local convention | Pset_* + sensor + work-order |
 | Speckle-inspired object store | local convention | Hash-addressed Merkle DAG |
 | glTF 2.0 | ISO/IEC 12113:2022 | Visualization cache (regenerable) |
-| SVG | ISO/IEC 14496-22:2019 | 2D drawings (regenerable) |
+| SVG 2 | W3C Recommendation | 2D drawings (regenerable) |
 | CityJSONSeq | OGC | Portfolio / urban context |
 
 The building's authoritative state is the `.ifc` file plus the
@@ -119,12 +119,16 @@ that stated intent, not a retrofit narrative built after the fact.
 
 ## Government regulatory acceptance
 
-The format stack — IFC-SPF + IDS 1.0 + BCF 3.0 + COBie — fulfills the
-mandatory open-standard delivery requirements across US federal
-(GSA, USACE, VA, NAVFAC), EU member states (Germany, Italy, Spain,
-Denmark, Norway, Netherlands, Poland), the UK BIM Framework, Singapore
-CORENET X (mandatory October 2026), Dubai (mandatory since January
-2024), and emerging Latin-American mandates.
+The format stack — IFC-SPF + IDS 1.0 + BCF 3.0 + COBie — satisfies
+open-standard delivery requirements already in force across US
+federal procurement (GSA, USACE, VA, NAVFAC), the UK's Information
+Management Mandate (ISO 19650, mandatory for publicly funded
+projects), Singapore's CORENET X framework (mandatory for all new
+building projects from October 2026), and Dubai's BIM mandate
+(mandatory since January 2024). Adoption across the European Union
+is uneven by member state and growing — Denmark has required BIM on
+public procurement since 2007 and Spain since 2018, while several
+other member states are still phasing in national programmes.
 
 The offline-first, flat-file architecture is intended to natively
 satisfy ITAR air-gapped requirements for defence projects, EU Data Act
@@ -136,6 +140,7 @@ Level 2 readiness documentation.
 
 ## References
 
-- Autodesk Platform Services — https://aps.autodesk.com/
-- Bentley iTwin.js — https://www.itwinjs.org/
-- Trimble Connect — https://connect.trimble.com/
+- IFC 4.3 — Industry Foundation Classes (ISO 16739-1:2024), buildingSMART International
+- Information Delivery Specification (IDS) 1.0, buildingSMART International
+- BIM Collaboration Format (BCF) 3.0, buildingSMART International
+- COBie v3 — Construction Operations Building Information Exchange, National Institute of Building Sciences

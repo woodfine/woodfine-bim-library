@@ -45,7 +45,7 @@
         "$value": {
           "ifc_class": "IfcFacility",
           "ifc_anchor": "https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcFacility.htm",
-          "description": "IFC 4.3 introduced facilities for non-building infrastructure — bridges, roads, rail, ports, waterways. Track but treat as out-of-scope at v0.0.1; v0.0.2+ as infrastructure expands."
+          "description": "IFC 4.3 introduced facilities for non-building infrastructure — bridges, roads, rail, ports, waterways. Tracked in the registry; out of scope for the current catalog, which covers buildings."
         }
       }
     }

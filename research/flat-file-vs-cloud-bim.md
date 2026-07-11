@@ -1,11 +1,10 @@
 # Flat-file BIM vs cloud-authoritative BIM
 
 A point-by-point comparison of architectural stances. The flat-file
-side describes the Building Design System; the cloud-authoritative
-side describes Autodesk Tandem / ACC, Bentley iTwin Experience,
-Trimble Connect, Nemetschek dTwin, and the broader IWMS incumbent
-class (Planon, IBM Tririga, Eptura Archibus, IBM Maximo, FM:Systems,
-Bentley AssetWise, EcoDomus, ONUMA).
+side describes the Woodfine BIM Library; the cloud-authoritative side
+describes the multi-tenant cloud digital-twin platforms and
+Integrated Workplace Management System (IWMS) products in wide
+commercial use — a category, not any single product.
 
 ## Where the data lives
 
@@ -14,7 +13,7 @@ Bentley AssetWise, EcoDomus, ONUMA).
 | Authoritative database location | Vendor's multi-tenant cloud (Azure / AWS / Google Cloud) | Customer's hardware; bytes never leave |
 | Replication model | Vendor-controlled across vendor regions | Customer-controlled; backup is `cp -r` |
 | Subscription dependency | Yes — non-Snapshot iModels enforce live check | No — files open in any IFC-aware tool |
-| Subscription-lapse posture | Tandem: "you will need to enter into a new Token Flex Term…" — twin disappears | Owner holds the files; permanent and unconditional access |
+| Subscription-lapse posture | Published terms for one commercial digital-twin platform state that a lapsed license requires entering a new paid term before the twin is accessible again | Owner holds the files; permanent and unconditional access |
 | Asset-deed transfer | Requires reonboarding to the new owner's tenant | Files travel with the deed |
 
 **Deployment topology.** This is not a hypothetical architecture
@@ -58,7 +57,7 @@ design-response deck, CONSTRUCTION_2025_10_31.)*
 |---|---|---|
 | Economic unit | Seat, token, project | Outright purchase / subscription / EUPL-1.2 free |
 | Marginal cost of additional users | Per seat, per month | Zero |
-| Marginal cost of additional models | Per Forge token, per Tandem twin | Zero |
+| Marginal cost of additional models | Per proprietary cloud token or twin instance | Zero |
 | Marginal cost of additional sensors | Often per-sensor charges | Zero — local MQTT broker |
 | Renewal-rate exposure | Hyperscaler price-cap expiry triggers shock | None |
 | TCO over 30-year asset life | Effectively unbounded | One-time + maintenance |
@@ -83,7 +82,7 @@ design-response deck, CONSTRUCTION_2025_10_31.)*
 | Dimension | Cloud-authoritative BIM | Flat-file BIM |
 |---|---|---|
 | Lease register integration | Separate IWMS subscription | Per-IfcSpace YAML sidecar |
-| Financial ledger integration | Separate ERP integration (often broken) | Per-element sidecar links to project-bookkeeping vault |
+| Financial ledger integration | Separate ERP integration (often broken) | Per-element sidecar links directly to the property's financial ledger |
 | Sensor / IoT integration | Cloud intermediary (vendor-controlled) | Local MQTT broker → per-element sidecar |
 | Work-order integration | Separate CMMS subscription | Per-element sidecar |
 | Document integration | Separate document-management SaaS | Per-element sidecar references the document vault |
@@ -96,27 +95,25 @@ data residency, financial-audit trails, and multi-tenant isolation
 all prevent it. The flat-file substrate makes them one thing by
 construction.
 
-## What flat-file BIM does NOT do well (yet)
+## Where flat-file BIM has limits
 
-Honest accounting:
-
-- **Real-time multi-user editing** — git-style merging works for
-  authoring workflows but is slower than real-time collaborative
-  editing for design-charette-style workshops. Cloud SaaS is genuinely
-  better for synchronous design sessions; PointSav's offline-first
-  posture is the trade-off accepted.
-- **Massive city-scale federation** — the flat-file substrate scales
-  to a portfolio of buildings; full city-scale digital twins (1M+
-  buildings) need a different streaming architecture.
-- **Generative AI BIM authoring** — Project Bernini-class generative
-  3D foundation models are vendor-closed today. The substrate is
-  AI-ready (Doorman dispatches AS-2 grammar substrate; service-slm
-  routes generative requests through the audit ledger) but PointSav
-  does not ship a generative BIM authoring tool at v0.0.1. v0.0.2+.
+- **Real-time multi-user editing.** Git-style merging suits
+  asynchronous authoring workflows but is slower than real-time
+  collaborative editing for design-charette-style workshops. Cloud
+  SaaS platforms are genuinely better suited to synchronous design
+  sessions; the flat-file substrate accepts this trade-off in
+  exchange for its offline-first posture.
+- **Massive city-scale federation.** The flat-file substrate scales
+  to a portfolio of buildings; full city-scale digital twins
+  (1M+ buildings) need a different streaming architecture.
+- **Generative AI BIM authoring.** Generative 3D foundation models
+  capable of authoring BIM directly are vendor-closed today across
+  the industry. The substrate is structured to accept generative
+  output once such tooling matures, but does not ship a generative
+  BIM authoring capability in the current release.
 
 ## References
 
-- Autodesk Platform Services token pricing — https://aps.autodesk.com/
-- Bentley iTwin.js — https://www.itwinjs.org/
-- Trimble Connect — https://connect.trimble.com/
-- Planon EasyFlow (Feb 2026 mid-market launch) — https://planonsoftware.com/
+- IFC 4.3 — Industry Foundation Classes (ISO 16739-1:2024), buildingSMART International
+- IfcOpenShell — https://ifcopenshell.org
+- EUPL v1.2 — European Union Public Licence

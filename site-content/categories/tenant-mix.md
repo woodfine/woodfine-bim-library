@@ -10,4 +10,4 @@ property_sets:
 ---
 Tenant Mix — the expected spread of tenant sizes and use-types across a floor plate.
 
-Expected distribution of tenant furniture-configuration sizes and use-type categories across a Professional Centre or Suburban Office floor plate — used for FFE procurement planning and by tool-floorplates when no explicit tenant-mix request is supplied, to project a representative floor plate composition. Moved out of Floor Plate Standards (2026-07-03) since tenant-mix distributions are solver inputs, not floor-plate geometry.
+Expected distribution of tenant furniture-configuration sizes and use-type categories across a Professional Centre or Suburban Office floor plate — used for FFE procurement planning, and as the default assumption when a floor plate composition is projected without an explicit tenant-mix request. Tenant-mix distributions are solver inputs, not floor-plate geometry, and are tracked here separately from Floor Plate Standards for that reason.

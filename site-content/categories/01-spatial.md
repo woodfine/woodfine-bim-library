@@ -4,7 +4,7 @@ section: Taxonomy
 ifc_anchor: IfcSpatialElement
 uniclass: SL
 ifc_hierarchy: IfcRoot → IfcObjectDefinition → IfcObject → IfcSpatialElement
-elements: IfcSite · IfcBuilding · IfcBuildingStorey · IfcSpace · IfcZone
+elements: IfcSite · IfcBuilding · IfcBuildingStorey · IfcSpace
 card_desc: Spaces, levels (IfcBuildingStorey), buildings, sites, and zones
 property_sets: Pset_SpaceCommon,IsExternal,BOOLEAN; Pset_SpaceCommon,NetFloorArea,IfcAreaMeasure; Pset_BuildingCommon,NumberOfStoreys,INTEGER; Pset_SiteCommon,BuildableArea,IfcAreaMeasure
 ---

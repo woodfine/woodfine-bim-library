@@ -10,4 +10,4 @@ property_sets: Pset_SpaceCommon,NetFloorArea,IfcAreaMeasure; Pset_SpaceCommon,Is
 ---
 Key Plans — the smallest unit of space worth leasing, planned from the furniture out.
 
-A Key Plan is a space, not a product — `IfcSpace` in the hierarchy above, the same category as a Tile or a Floor Plate, not the same category as an Object. It is the smallest spatial program worth leasing: real furniture placement, a three-zone cross-section (Zone 1 Habitat / Zone 2 Magazine / Zone 3 Corridor), net leasable area, and accessibility compliance. Authored by architects from Woodfine equipment programs; the tool-buildingwidth engine nests them into Tiles and Floor Plates.
+A Key Plan is a space, not a product — `IfcSpace` in the hierarchy above, the same category as a Tile or a Floor Plate, not the same category as an Object. It is the smallest spatial program worth leasing: real furniture placement, a three-zone cross-section (Zone 1 Habitat / Zone 2 Magazine / Zone 3 Corridor), net leasable area, and accessibility compliance. Authored by architects from Woodfine equipment programs; Key Plans nest into Tiles and Floor Plates without remainder, in both directions.
