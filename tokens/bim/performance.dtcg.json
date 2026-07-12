@@ -40,7 +40,7 @@
           "AcousticRating": "IfcLabel",
           "SecurityRating": "IfcLabel"
         },
-        "$description": "Corrected 2026-07-07: property is IsFireExit per the buildingSMART IFC4 Pset_DoorCommon definition (boolean properties in this pset follow the Is-prefix convention — see Pset_WallCommon.IsExternal above for the same pattern). The catalog previously had the un-prefixed FireExit, which is not a valid IFC4 property name. Cite ifc-4-3 (ISO 16739-1:2024) §Pset_DoorCommon."
+        "$description": "Property is IsFireExit per the buildingSMART IFC4 Pset_DoorCommon definition (boolean properties in this pset follow the Is-prefix convention — see Pset_WallCommon.IsExternal above for the same pattern). Cite ifc-4-3 (ISO 16739-1:2024) §Pset_DoorCommon."
       },
       "Pset_SpaceCommon": {
         "$type": "bim.pset",

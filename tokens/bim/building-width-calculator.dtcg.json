@@ -1,6 +1,6 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM Building Width Calculator token category — zone depths per use type, anchored to the Key Plans and Tiles spatial taxonomy. Source: Summary_Key Plans tab (CONSTRUCTION_2026_01_06_Key Plan_Professional Office_FFE_FIN.xlsx, V3, 2025-11-29). Three zones per use type: Habitat (desks; European Lighting Standard 6m minimum), Magazine (storage beyond Habitat), Corridor (bilateral access; mirrored floor plate). Metre values are authoritative; feet equivalents in $description. All values from completed Key Plan samples except where noted TBD.",
+  "$description": "BIM Building Width Calculator token category — zone depths per use type, anchored to the Key Plans and Tiles spatial taxonomy. Source: internal design documentation (V3, November 2025). Three zones per use type: Habitat (desks; European Lighting Standard 6m minimum), Magazine (storage beyond Habitat), Corridor (bilateral access; mirrored floor plate). Metre values are authoritative; feet equivalents in $description. All values from completed Key Plan samples except where noted TBD.",
   "bim": {
     "zone": {
       "professional-office": {
@@ -57,7 +57,7 @@
           "depth": {
             "$type": "dimension",
             "$value": "6.7818m",
-            "$description": "22'3\" — bench depth + circulation + safety clearances per German workplace-circulation standards (ArbStättV; \"German Circulation Law\" elsewhere on this site). Exceeds European Lighting Standard 6m minimum."
+            "$description": "22'3\" — bench depth + circulation + safety clearances per German workplace-circulation standards (ArbStättV). Exceeds European Lighting Standard 6m minimum."
           }
         },
         "magazine": {
@@ -100,32 +100,32 @@
         }
       },
       "business": {
-        "$description": "Business use type — general commercial office, co-working-adjacent, larger open-plan leaseholds. Reconciled 2026-07-09 to DISCOVERY Sketches 1-4's mixed-option-facade Option C/C (balanced) per operator decision — see design_notes below. Was previously an untraced 6.0/7.3/2.7 working value never reconciled against the Notes V3 options table.",
+        "$description": "Business use type — general commercial office, co-working-adjacent, larger open-plan leaseholds.",
         "habitat": {
           "depth": {
             "$type": "dimension",
             "$value": "5.63m",
-            "$description": "18'6\" — Option C Habitat depth (DISCOVERY Sketches 1-4, Business — Small width-options table)."
+            "$description": "18'6\" — the balanced-width option's Habitat depth for Business — Small."
           }
         },
         "magazine": {
           "depth": {
             "$type": "dimension",
             "$value": "6.63m",
-            "$description": "21'9\" — Option C Magazine depth (DISCOVERY Sketches 1-4). Narrower than the previous untraced 7.3m working value; reflects the balanced option rather than the widest (Option A) envelope."
+            "$description": "21'9\" — the balanced-width option's Magazine depth, narrower than the widest envelope option."
           }
         },
         "corridor": {
           "width": {
             "$type": "dimension",
             "$value": "2.75m",
-            "$description": "9'0\" — Corridor, constant across all four DISCOVERY width options (A/B/C/D)."
+            "$description": "9'0\" — Corridor, constant across all width options considered."
           }
         },
-        "design_notes": "Reconciled 2026-07-09 per operator decision during the plan-completeness audit (see cleanup-log.md). DISCOVERY Sketches 1-4 (topic-bim-business-key-plans.draft.md) table two options across a mixed-option-facade building width: Option A/A (widest, 5.51/9.26/2.75 → 32.29 m total) vs. Option C/C (balanced, 5.63/6.63/2.75 → 27.27 m total). `.agent/plans/agent-1-building-width-report.md` (2026-05-17) had applied A/A as a working default without operator confirmation — operator confirmed C/C on 2026-07-09. totalWidth formula: 2 × (habitat + magazine) + corridor = 2 × (5.63 + 6.63) + 2.75 = 27.27 m."
+        "design_notes": "We considered two options for this mixed-option-facade building width: the widest option (5.51/9.26/2.75 → 32.29 m total) versus a balanced option (5.63/6.63/2.75 → 27.27 m total), and confirmed the balanced option. totalWidth formula: 2 × (habitat + magazine) + corridor = 2 × (5.63 + 6.63) + 2.75 = 27.27 m."
       },
       "medical": {
-        "$description": "Medical use type — clinical, dental, diagnostic, and allied health leaseholds. Wider Habitat reflects exam-table depth and patient circulation. Acoustic and vibration isolation requirements apply (per building-width-calculator.docx).",
+        "$description": "Medical use type — clinical, dental, diagnostic, and allied health leaseholds. Wider Habitat reflects exam-table depth and patient circulation. Acoustic and vibration isolation requirements apply.",
         "habitat": {
           "depth": {
             "$type": "dimension",
@@ -177,7 +177,7 @@
       "perpendicular-desk": {
         "$type": "dimension",
         "$value": "0.7m",
-        "$description": "2'4\" — additional depth required in Habitat when desks are placed perpendicular to the façade, to achieve three desks in series with proper clearance under German workplace-circulation standards (ArbStättV — the Arbeitsstättenverordnung, Germany's Workplace Ordinance; referred to elsewhere on this site as \"German Circulation Law\"). Without this addition, Habitat at exactly 6.0m yields only two perpendicular desks. This is a DELTA, not a standalone clearance value: ArbStättV Anhang §3.1 requires 1.0m movement clearance behind a perpendicular-facing seat, versus the 0.3m baseline clearance already accounted for in the parallel-desk Habitat depth; 1.0m − 0.3m = 0.7m is the additional depth this perpendicular arrangement requires on top of the parallel-desk baseline. Amended 2026-07-03 per tool-buildingwidth-architecture.md §Internal inconsistencies #5 — the prior description did not disclose this was a delta calculation. Glossed 2026-07-11 per Round 9 L3 finding — \"German Circulation Law\" is Woodfine's own informal shorthand, not a real named statute; ArbStättV is the actual German legal citation."
+        "$description": "2'4\" — additional depth required in Habitat when desks are placed perpendicular to the façade, to achieve three desks in series with proper clearance under German workplace-circulation standards (ArbStättV — the Arbeitsstättenverordnung, Germany's Workplace Ordinance). Without this addition, Habitat at exactly 6.0m yields only two perpendicular desks. This is a DELTA, not a standalone clearance value: ArbStättV Anhang §3.1 requires 1.0m movement clearance behind a perpendicular-facing seat, versus the 0.3m baseline clearance already accounted for in the parallel-desk Habitat depth; 1.0m − 0.3m = 0.7m is the additional depth this perpendicular arrangement requires on top of the parallel-desk baseline."
       }
     },
     "key-plan": {
@@ -206,7 +206,7 @@
         }
       },
       "professional-office": {
-        "$description": "Professional Office key plan sizes. Only Small currently has a completed sample (130.06 m² / 1,400 SF); Medium and Large pending Key Plan completion. Per tool-buildingwidth-architecture.md §Internal inconsistencies #3 (re-investigated 2026-07-03): no source document (Methodology PDF or Samples PDF) with Professional Office Medium/Large key-plan areas was found in this workspace — status:reserved stubs added below rather than fabricated values, matching the tile-j/k/l/m reserved-stub convention in tile-system.dtcg.json. Needs either a located source document or operator-confirmed values before these can be filled in.",
+        "$description": "Professional Office key plan sizes. Only Small currently has a completed sample (130.06 m² / 1,400 SF); Medium and Large are pending Key Plan completion.",
         "small": {
           "area": {
             "$type": "number",

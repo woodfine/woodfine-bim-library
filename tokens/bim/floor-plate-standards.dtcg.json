@@ -1,10 +1,10 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM FLOOR PLATE STANDARDS token category — floor plate size hierarchy, tile fraction breakdown, main floor space allocations, and upper floor common area standards for the Key Plans and Tiles system. Source: AEC_Floor Plates_Key Plans and Tiles_V12.pdf (Collaborators #11, 2025-04-01); CONSTRUCTION_2026_01_06_Tear Sheet_Floor Plans_Key Plans_Methodology_FIN.xlsx (V3, 2025-11-29); AEC_Floor Plates_Key Plans_Notes.pdf (Collaborators #32, 2026-01-06). Area values are in m² (authoritative); SF equivalents in $description. Tenant furniture-size and use-type mix distributions moved to tenant-mix.dtcg.json (2026-07-03) — this file covers floor-plate geometry only.",
+  "$description": "BIM FLOOR PLATE STANDARDS token category — floor plate size hierarchy, tile fraction breakdown, main floor space allocations, and upper floor common area standards for the Key Plans and Tiles system. Source: internal design documentation. Area values are in m² (authoritative); SF equivalents in $description. Tenant furniture-size and use-type mix distributions are tracked separately — this file covers floor-plate geometry only.",
   "bim": {
     "floor-plate": {
       "net-leasable": {
-        "$description": "Net leasable area per upper floor plate varies by building class — Professional Centre (PC) and Suburban Office (SU) target different ranges, not a single fixed figure. `area` below is the 20,000 SF design-target value used as the basis for the tile-fraction breakdown; `range.pc`/`range.su` are the class-specific bounds. Fixed 2026-07-03 per tool-buildingwidth-architecture.md §Internal inconsistencies #4 — previously hard-coded at 20,000 SF with no class variance.",
+        "$description": "Net leasable area per upper floor plate varies by building class — Professional Centre (PC) and Suburban Office (SU) target different ranges, not a single fixed figure. `area` below is the 20,000 SF design-target value used as the basis for the tile-fraction breakdown; `range.pc`/`range.su` are the class-specific bounds.",
         "area": {
           "$type": "number",
           "$value": 1858.06,

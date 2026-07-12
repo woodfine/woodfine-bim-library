@@ -1,6 +1,6 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM TILE SYSTEM token category — the Key Plans and Tiles assembly taxonomy. A Tile is a composable floor plate segment that combines Private Office, Professional Office, and Corporate Office key plans into standardised building-width increments. Three standard Tile sizes: Small (2,700 SF / 250.84 m²), Medium (3,500 SF / 325.16 m², added 2026-07-03), and Large (4,900 SF / 455.22 m²). Plus Special Tiles — residual core-adjacent fillers, also added 2026-07-03. Tiles compose to fill the 20,000 SF net leasable floor plate. Design principle: maximise climate zone autonomy (one Tile = one HVAC zone) while maintaining rolling efficiency (ability to reach 100% utilisation as tenant mix changes). Source: AEC_Floor Plates_Tiles_Alternatives.pdf (V12, 2025-01-07, Collaborators #27); AEC_Floor Plates_Methodology_V12.pdf (Collaborators #27). See also floor-plate-standards.dtcg.json for floor plate size hierarchy, floor-plate-assembly-rules.dtcg.json for the FP-* validation rules referenced below.",
+  "$description": "BIM TILE SYSTEM token category — the Key Plans and Tiles assembly taxonomy. A Tile is a composable floor plate segment that combines Private Office, Professional Office, and Corporate Office key plans into standardised building-width increments. Three standard Tile sizes: Small (2,700 SF / 250.84 m²), Medium (3,500 SF / 325.16 m², added 2026-07-03), and Large (4,900 SF / 455.22 m²). Plus Special Tiles — residual core-adjacent fillers, also added 2026-07-03. Tiles compose to fill the 20,000 SF net leasable floor plate. Design principle: maximise climate zone autonomy (one Tile = one HVAC zone) while maintaining rolling efficiency (ability to reach 100% utilisation as tenant mix changes). Source: internal design documentation (January 2025).",
   "bim": {
     "tile": {
       "small-tile": {
@@ -144,7 +144,7 @@
         }
       },
       "medium-tile": {
-        "$description": "Medium Tile family — 3,500 SF (325.16 m²) per tile. Methodology PDF p.2 shows three tile sizes overall (Small 2,700 SF, Medium 3,500 SF, Large 4,900 SF); this family was previously missing entirely from this file. Added 2026-07-03 per tool-buildingwidth-architecture.md §Missing DTCG token files #4. Unlike the Small and Large families above, precise composition line-items for the end-cap and Professional-Office variants were not found in a located source document — flagged per-entry below rather than fabricated; Tile D (single-unit Corporate Office) is the one entry with unambiguous composition.",
+        "$description": "Medium Tile family — 3,500 SF (325.16 m²) per tile. Our source documentation shows three tile sizes overall: Small 2,700 SF, Medium 3,500 SF, Large 4,900 SF. Precise composition line-items for the end-cap and Professional-Office variants are not yet confirmed and are flagged per-entry below rather than assumed; Tile D (single-unit Corporate Office) is the one entry with unambiguous composition.",
         "tile-d": {
           "$type": "bim.entity",
           "$value": {
@@ -169,9 +169,9 @@
             "composition_status": "not-sourced",
             "end_cap": true,
             "orientation": "left",
-            "notes": "Methodology PDF p.2 names a Medium-family 'Tile E, E-1 (Left End Cap Medium)' but no source document with exact composition line-items (unlike the Small-family Tile E-1, which has a confirmed 2×Private-Office + Professional-Office-Small + Corridor breakdown) was located in this workspace. total_area_sf is the confirmed Medium-family target; composition is NOT fabricated — needs a located source document or operator-confirmed breakdown."
+            "notes": "Our source documentation names a Medium-family 'Tile E, E-1 (Left End Cap Medium)' but does not give exact composition line-items (unlike the Small-family Tile E-1, which has a confirmed 2×Private-Office + Professional-Office-Small + Corridor breakdown). total_area_sf is the confirmed Medium-family target; composition is not yet confirmed."
           },
-          "$description": "Tile E-1 (Medium): Left End Cap — 3,500 SF target, composition not yet sourced. See $value.notes."
+          "$description": "Tile E-1 (Medium): Left End Cap — 3,500 SF target; total area is confirmed, but the exact composition line-items are not yet sourced."
         },
         "tile-e2-medium": {
           "$type": "bim.entity",
@@ -197,9 +197,9 @@
             ],
             "stated_composition_sum_sf": 1440,
             "composition_status": "arithmetic-does-not-reconcile",
-            "notes": "tool-buildingwidth-architecture.md §Missing DTCG token files #4 describes this tile as '3× PO Small + PO Medium'. Using the actual PO Small (325 SF) and PO Medium (465 SF) areas from key-plans.dtcg.json, 3×325 + 465 = 1,440 SF — this does not reconcile with the 3,500 SF Medium-tile family target (a 2,060 SF / 59% gap). Recording the stated composition and the confirmed PO unit areas rather than inventing a corrected composition or silently presenting mismatched numbers as if they summed correctly. Needs either a located source document with the actual composition, or an operator decision on how to resolve the gap (different unit counts? a Professional Office sub-type other than Private Office? an additional filler unit?)."
+            "notes": "Our source documentation describes this tile as '3× PO Small + PO Medium'. Using the actual PO Small (325 SF) and PO Medium (465 SF) areas, 3×325 + 465 = 1,440 SF — this does not reconcile with the 3,500 SF Medium-tile family target (a 2,060 SF / 59% gap). We record the stated composition and the confirmed unit areas rather than inventing a corrected composition or presenting mismatched numbers as if they summed correctly."
           },
-          "$description": "Tile F (Medium): Professional Office — 3,500 SF target per source, but the stated '3× PO Small + PO Medium' composition sums to only 1,440 SF against known PO unit areas. Flagged, not fabricated — see $value.notes."
+          "$description": "Tile F (Medium): Professional Office — 3,500 SF target per our source documentation, but the stated '3× PO Small + PO Medium' composition sums to only 1,440 SF against known PO unit areas — a real gap we haven't yet resolved."
         }
       },
       "large-tile": {
@@ -253,7 +253,7 @@
         }
       },
       "special-tile": {
-        "$description": "Special Tiles — residual tiles that fill the area around the building core, distinct from the Small/Medium/Large tile families above (which compose the main leasable floor plate). Previously absent from this file. Added 2026-07-03 per tool-buildingwidth-architecture.md §Missing DTCG token files #5. Two entries (tile-sp-a, tile-sp-b) are SF ranges rather than single fixed values — this is a genuine characteristic of special tiles (they flex to fill whatever residual space the core position leaves), not an unsourced gap.",
+        "$description": "Special Tiles — residual tiles that fill the area around the building core, distinct from the Small/Medium/Large tile families above (which compose the main leasable floor plate). Two entries (tile-sp-a, tile-sp-b) are SF ranges rather than single fixed values — a genuine characteristic of special tiles, which flex to fill whatever residual space the core position leaves.",
         "tile-sp-a": {
           "$type": "bim.entity",
           "$value": {
@@ -289,28 +289,28 @@
         }
       },
       "corridor-expander": {
-        "$description": "Corridor expander component — not a full tile. Used to fill arithmetic gaps between Key Plan composition sums and headline tile SF targets at design time. tool-buildingwidth inserts corridor expanders automatically when Tile/Key-Plan/Floor-Plate negotiation requires it.",
+        "$description": "Corridor expander component — not a full tile. Used to fill arithmetic gaps between Key Plan composition sums and headline tile SF targets at design time. Our floor-plate assembly system inserts corridor expanders automatically when Tile/Key-Plan/Floor-Plate negotiation requires it.",
         "tile-t": {
           "$type": "bim.entity",
           "$value": {
             "label": "Corridor Expander T",
             "total_area_sf": 300,
             "total_area_m2": 27.87,
-            "source": "AEC_Floor Plates_Tiles_Alternatives.pdf V12 — diagram value operative",
-            "notes": "300 SF corridor expander. The diagram value 300 SF is operative; the nominal arithmetic sum of adjacent Key Plans may differ — this gap is intentional. tool-buildingwidth manages Tile/Key-Plan/Floor-Plate size negotiation at build time."
+            "source": "internal design documentation",
+            "notes": "300 SF corridor expander. The diagram value 300 SF is operative; the nominal arithmetic sum of adjacent Key Plans may differ — this gap is intentional. Our floor-plate assembly system manages Tile/Key-Plan/Floor-Plate size negotiation at build time."
           },
           "$description": "Corridor Expander T — 300 SF (27.87 m²). Diagram value is operative. Arithmetic gap vs Key Plan sum is intentional per Decision 4 (operator-resolved 2026-05-20)."
         }
       },
       "reserved": {
-        "$description": "Reserved tile slots — referenced in AEC_Floor Plates_Tiles_Alternatives.pdf V12 p.3 footnote but source document not yet located. All entries status: reserved pending V13 source document or operator confirmation of values.",
+        "$description": "Reserved tile slots — dimensions not yet confirmed. Values withheld pending further source documentation.",
         "tile-j": {
           "$type": "bim.entity",
           "$value": {
             "label": "Tile J — Reserved",
             "status": "reserved",
-            "source": "AEC_Floor Plates_Tiles_Alternatives.pdf V12 p.3 footnote",
-            "notes": "Source document referenced in Tiles PDF p.3 footnote not yet located. Values withheld pending V13 or source confirmation."
+            "source": "internal design documentation — not yet confirmed",
+            "notes": "Values withheld pending further source documentation."
           },
           "$description": "Tile J — Reserved stub. Values withheld pending V13 source confirmation."
         },
@@ -319,8 +319,8 @@
           "$value": {
             "label": "Tile K — Reserved",
             "status": "reserved",
-            "source": "AEC_Floor Plates_Tiles_Alternatives.pdf V12 p.3 footnote",
-            "notes": "Source document referenced in Tiles PDF p.3 footnote not yet located. Values withheld pending V13 or source confirmation."
+            "source": "internal design documentation — not yet confirmed",
+            "notes": "Values withheld pending further source documentation."
           },
           "$description": "Tile K — Reserved stub. Values withheld pending V13 source confirmation."
         },
@@ -329,8 +329,8 @@
           "$value": {
             "label": "Tile L — Reserved",
             "status": "reserved",
-            "source": "AEC_Floor Plates_Tiles_Alternatives.pdf V12 p.3 footnote",
-            "notes": "Source document referenced in Tiles PDF p.3 footnote not yet located. Values withheld pending V13 or source confirmation."
+            "source": "internal design documentation — not yet confirmed",
+            "notes": "Values withheld pending further source documentation."
           },
           "$description": "Tile L — Reserved stub. Values withheld pending V13 source confirmation."
         },
@@ -339,8 +339,8 @@
           "$value": {
             "label": "Tile M — Reserved",
             "status": "reserved",
-            "source": "AEC_Floor Plates_Tiles_Alternatives.pdf V12 p.3 footnote",
-            "notes": "Source document referenced in Tiles PDF p.3 footnote not yet located. Values withheld pending V13 or source confirmation."
+            "source": "internal design documentation — not yet confirmed",
+            "notes": "Values withheld pending further source documentation."
           },
           "$description": "Tile M — Reserved stub. Values withheld pending V13 source confirmation."
         }

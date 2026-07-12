@@ -59,43 +59,30 @@ authoring tool is replaceable; the archive is permanent.
   City Code as Composable Geometry overlay are additive; the
   substrate itself is open.
 
-## Why build, not buy
+## Why we build, not buy
 
-The case against licensing a hyperscaler's platform instead of
-building the flat-file substrate was made internally, by Woodfine,
-before this document existed:
+We choose not to license a hyperscaler's platform, for three reasons.
 
-On vendor heterogeneity: "Most buildings are filled with equipment
-from multiple vendors, all speaking different languages, and running
-separate firmware. Some devices can't be updated. Others can, but
-only through vendor calls and consulting agreements. It's not
-efficient. It's not accountable."
+Most buildings run equipment from multiple vendors, speaking different languages, on separate firmware —
+some devices can't be updated at all; others only through vendor calls and consulting agreements. That
+isn't efficient, and it isn't accountable.
 
-On the cost model: "With our own Operating System we end up with a
-single integration cost per building that we can amortize... Ongoing
-support fits into Operating Costs and avoids per-seat pricing or
-software bloat. It's infrastructure — not overhead."
+Building our own operating system gives us a single integration cost per building that we can amortize.
+Ongoing support fits into operating costs and avoids per-seat pricing or software bloat — it's
+infrastructure, not overhead.
 
-On control: "If we do not develop the software ourselves, we will
-never really have control over it" — and, on the counterfactual of
-building on someone else's platform: "One downside of using Microsoft
-Windows as the base of our Operating Systems is that we would no
-longer be in control of the technology underpinning the delivery of
-our Digital Twin."
+And if we don't develop the software ourselves, we never really control it. Building on a third party's
+platform instead — Microsoft Windows, for example — would put the technology underpinning our digital
+twin's delivery outside our control.
 
-The intent for the BIM layer specifically was stated the same way:
-"The Control Architect will be responsible for ensuring all data is
-compatible, working towards an open-sourced Building Information
-Modelling (BIM) run time, which should allow for compatibility with
-any software the Collaborators require." Woodfine's original framing
-called for "an independent BIM Server for each of the Woodfine
-Buildings... Hopefully, we will be able to use an Open BIM, allowing
-for full access amongst all the Collaborators, regardless of their
-particular software selections" — targeting buildingSMART's ISO
-19650 certification. The flat-file substrate is the realization of
-that stated intent, not a retrofit narrative built after the fact.
+We set this intent for the BIM layer specifically from the start: our Control Architect is responsible for
+ensuring all data is compatible, working toward an open-sourced Building Information Modelling (BIM) run
+time that supports any software our collaborators use. We called for an independent BIM Server for each of
+our buildings — an Open BIM, giving full access across all collaborators regardless of their software
+selections — targeting buildingSMART's ISO 19650 certification. The flat-file substrate realizes that
+intent; it isn't a retrofit narrative built after the fact.
 
-*Source: internal design-response deck, CONSTRUCTION_2025_10_31.*
+*(Internal design documentation, October 2025.)*
 
 ## Five hyperscaler-incompatible capabilities
 
@@ -106,10 +93,9 @@ that stated intent, not a retrofit narrative built after the fact.
    air-gapped defence facilities, healthcare campuses. Comparable
    cloud-authoritative platforms cannot work offline by construction.
 3. **Vendor-obsolescence-survivable BIM** — buildings live 50+ years
-   (Woodfine's internal design-response deck targets 100+ years for
-   its own buildings specifically); proprietary CAD file formats
-   last a fraction of that. The flat-file archive outlives the
-   vendor by decades.
+   (we target 100+ years for our own buildings); proprietary CAD
+   file formats last a fraction of that. The flat-file archive
+   outlives the vendor by decades.
 4. **IoT integration directly into the BIM archive** — per-element
    YAML sidecars ingest sensor readings via a local broker. No
    cloud intermediary; data never leaves the owner's premises.

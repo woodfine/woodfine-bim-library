@@ -1,6 +1,6 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM PROFESSIONAL OFFICE SUBTYPES token category — taxonomy and classification of the five Professional Office sub-types (Medical, Business, Laboratory, Academic, Civic) and their variants. Sub-types are the leasable-office categories within a Professional Centre or Suburban Office floor plate. Each occupies a 1/4 floor tile (5,000 SF / 464.52 m²) or combination thereof. Source: CONSTRUCTION_2026_01_06_Key Plan_Professional Office_FFE_FIN.xlsx (V3, 2025-11-29); AEC_Floor Plates_Key Plans_Index.pdf (V2, 2025-01-07, Collaborators #27); AEC_Floor Plates_Key Plans_Samples_V2.pdf (Collaborators #32, 2025-03-03); DISCOVERY_MCorp_Sketches_Key Plans_Summary_Notes.pdf. Key plan area measurements are in building-width-calculator.dtcg.json; this file captures taxonomy, codes, and specialisation variants.",
+  "$description": "BIM PROFESSIONAL OFFICE SUBTYPES token category — taxonomy and classification of the five Professional Office sub-types (Medical, Business, Laboratory, Academic, Civic) and their variants. Sub-types are the leasable-office categories within a Professional Centre or Suburban Office floor plate. Each occupies a 1/4 floor tile (5,000 SF / 464.52 m²) or combination thereof. Source: internal design documentation (January–November 2025). Key plan area measurements are tracked separately; this file captures taxonomy, codes, and specialisation variants.",
   "bim": {
     "professional-office-subtype": {
       "medical": {
@@ -32,7 +32,7 @@
             "medium": 3568,
             "large": 5231
           },
-          "design_notes": "Wider Habitat (7.2m) than other sub-types to accommodate exam-table depth and patient + clinician circulation. ADA/CSA-B651 corridor width. Acoustic and vibration isolation requirements. Demising wall required between suites. Small: 223 m² (2,401 SF, Chiropractor variant); Medium: 331 m² (3,568 SF, Dentist variant); Large: 486 m² (5,231 SF, General Practitioner variant). key_plan_areas_m2/sf backfilled 2026-07-03 per tool-buildingwidth-architecture.md §Internal inconsistencies #2, sourced from key-plans.dtcg.json's already-live medical chiropractor/dentist/general-practitioner entries.",
+          "design_notes": "Wider Habitat (7.2m) than other sub-types to accommodate exam-table depth and patient + clinician circulation. ADA/CSA-B651 corridor width. Acoustic and vibration isolation requirements. Demising wall required between suites. Small: 223 m² (2,401 SF, Chiropractor variant); Medium: 331 m² (3,568 SF, Dentist variant); Large: 486 m² (5,231 SF, General Practitioner variant).",
           "sf_per_workstation": {
             "small": 72.4,
             "medium": 62.5,
@@ -95,7 +95,7 @@
             "medium": 3401,
             "large": 4313
           },
-          "design_notes": "Wider Habitat (6.78m / 22'3\") than standard Professional Office to accommodate bench depth and fume hood clearances per German workplace-circulation standards (ArbStättV; \"German Circulation Law\" elsewhere on this site). IBC high-hazard occupancy egress width (3.048m / 10'0\") in Corridor. Small key plan: 195 m² (2,099 SF); Medium: 316 m² (3,401 SF); Large: 400.7 m² (4,313 SF).",
+          "design_notes": "Wider Habitat (6.78m / 22'3\") than standard Professional Office to accommodate bench depth and fume hood clearances per German workplace-circulation standards (ArbStättV). IBC high-hazard occupancy egress width (3.048m / 10'0\") in Corridor. Small key plan: 195 m² (2,099 SF); Medium: 316 m² (3,401 SF); Large: 400.7 m² (4,313 SF).",
           "sf_per_workstation": {
             "small": 149.9,
             "medium": 105.0,
@@ -134,7 +134,7 @@
             "medium": 2586,
             "large": 4050
           },
-          "design_notes": "Shorter Habitat (4.7m / 15'5\") than other sub-types because seating faces forward rather than toward façade. No bilateral corridor — suites open to building corridor. Small: 105.0 m² (1,131 SF) includes podium, desks, auditorium seating, storage; Medium: 240.3 m² (2,586 SF); Large: 376.3 m² (4,050 SF). Small reconciled 2026-07-03 per tool-buildingwidth-architecture.md §Internal inconsistencies #1: this file previously carried 87.7 m² (944 SF) from AEC_Floor Plates_Key Plans_Samples_V2.pdf, which conflicted with 105.0 m² (1,131 SF) in building-width-calculator.dtcg.json's Summary_Key Plans tab (V3, 2025-11-29, CONSTRUCTION_2026_01_06_Key Plan_Professional Office_FFE_FIN.xlsx) — V3 Master Summary is the later, authoritative source per key-plans-registry.md's own source citation; V2 Samples value is superseded. sf_per_workstation.small below is NOT yet recomputed against the new area — flagged, not guessed, pending a confirmed workstation count for this key plan.",
+          "design_notes": "Shorter Habitat (4.7m / 15'5\") than other sub-types because seating faces forward rather than toward façade. No bilateral corridor — suites open to building corridor. Small: 105.0 m² (1,131 SF) includes podium, desks, auditorium seating, storage; Medium: 240.3 m² (2,586 SF); Large: 376.3 m² (4,050 SF).",
           "sf_per_workstation": {
             "small": 147.9,
             "medium": 95.8,
@@ -174,7 +174,7 @@
             "medium": 6215,
             "large": 8850
           },
-          "design_notes": "Widest overall floor plate — large Magazine (7.23m / 23'8\") for public records and secure areas; widest Corridor (3.6m / 12'0\") across all sub-types for public assembly egress. ADA/accessible-route compliance mandatory throughout leasehold. Small: 270 m² (2,912 SF); Medium: 577 m² (6,215 SF); Large: 822 m² (8,850 SF). key_plan_areas_m2/sf backfilled 2026-07-03 per tool-buildingwidth-architecture.md §Internal inconsistencies #2, sourced from key-plans.dtcg.json's already-live civic small/medium/large entries."
+          "design_notes": "Widest overall floor plate — large Magazine (7.23m / 23'8\") for public records and secure areas; widest Corridor (3.6m / 12'0\") across all sub-types for public assembly egress. ADA/accessible-route compliance mandatory throughout leasehold. Small: 270 m² (2,912 SF); Medium: 577 m² (6,215 SF); Large: 822 m² (8,850 SF)."
         },
         "$description": "Civic Office — courtrooms, municipal offices, cultural, and civic assembly spaces. FFE codes C1–C3. Widest corridor (3.6m / 12'0\") across all Professional Office sub-types. Key plan sizes: Small 2,912 SF, Medium 6,215 SF, Large 8,850 SF."
       }

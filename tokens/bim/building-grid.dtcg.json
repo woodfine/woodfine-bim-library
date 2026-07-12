@@ -1,13 +1,13 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM BUILDING GRID token category — structural module dimensions, wall/partition thicknesses, and the floor-plate-width tolerance bands that drive tool-buildingwidth's bidirectional adjustment logic. Source: tool-buildingwidth-architecture.md §3 (2026-05-17, Opus agent research), synthesising AEC_Floor Plates_Key Plans and Tiles_V12.pdf and AEC_Floor Plates_Methodology_V12.pdf. Metre values are authoritative; feet equivalents in $description. Created 2026-07-03 — this file did not previously exist (tool-buildingwidth-architecture.md §Missing DTCG token files #3).",
+  "$description": "BIM BUILDING GRID token category — structural module dimensions, wall/partition thicknesses, and the floor-plate-width tolerance bands that drive the Building Width Calculator's bidirectional adjustment logic. Source: internal design documentation. Metre values are authoritative; feet equivalents in $description.",
   "bim": {
     "grid": {
       "$description": "Structural module and wall/partition thickness constants used when converting centerline Habitat+Magazine+Corridor arithmetic into an overall building width.",
       "structural-module": {
         "$type": "dimension",
         "$value": "1.524m",
-        "$description": "5'0\" — the base structural grid module. This is also the unit of bidirectional adjustment: tool-buildingwidth's tolerance bands (below) are expressed as multiples of this module (green = 0.5×, yellow = 1×, red = 2×)."
+        "$description": "5'0\" — the base structural grid module. This is also the unit of bidirectional adjustment: the Building Width Calculator's tolerance bands (below) are expressed as multiples of this module (green = 0.5×, yellow = 1×, red = 2×)."
       },
       "facade-wall-thickness": {
         "$type": "dimension",
@@ -26,7 +26,7 @@
       }
     },
     "tolerance": {
-      "$description": "Floor-plate-width tolerance bands for tool-buildingwidth's bidirectional adjustment logic (adjust() function). Habitat and Corridor are locked downward by regulatory minima (EN 12464-1, IBC/NBC egress); Magazine is the only zone with no hard regulatory floor and yields first when a floor plate must be resized.",
+      "$description": "Floor-plate-width tolerance bands for the Building Width Calculator's bidirectional adjustment logic. Habitat and Corridor are locked downward by regulatory minima (EN 12464-1, IBC/NBC egress); Magazine is the only zone with no hard regulatory floor and yields first when a floor plate must be resized.",
       "fp-width-green-band": {
         "$type": "dimension",
         "$value": "0.762m",
@@ -45,7 +45,7 @@
       "demising-structural": {
         "$type": "dimension",
         "$value": "0.6m",
-        "$description": "2'0\" — the gap between the Professional Office Methodology PDF's stated total width (21m) and the arithmetic sum of the Professional Office zone-depth tokens in building-width-calculator.dtcg.json (2×(6.0+3.8)+2.0 = 21.6m). This 0.6m is structural/demising allowance not captured as a separate line item in the source PDF's headline total — the token arithmetic is correct; the PDF total is the rounded/summary figure. Added 2026-07-03 per tool-buildingwidth-architecture.md §Internal inconsistencies #6."
+        "$description": "2'0\" — the gap between our source documentation's stated total width (21m) and the arithmetic sum of the Professional Office zone depths (2×(6.0+3.8)+2.0 = 21.6m). This 0.6m is structural/demising allowance not captured as a separate line item in the headline total — the detailed arithmetic is correct; the headline total is the rounded/summary figure."
       }
     }
   }

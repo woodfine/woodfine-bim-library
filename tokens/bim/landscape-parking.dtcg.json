@@ -1,6 +1,6 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM LANDSCAPE AND PARKING token category — classification tokens for landscaping, site ecology, parking, circulation, and lighting elements specific to Professional Centre and Suburban Office site types. Derived from Key Plans Index V2 entries 51–72 (AEC_Floor Plates_Key Plans_Index.pdf, Collaborators #27, 2025-01-07). Landscaping types reflect the Permaculture as Commercial Landscaping design philosophy (AEC_White Paper_Sample_V3.pdf). IFC mapping: landscape elements → IfcGeographicElement; parking → IfcPaving + IfcTransportElement; lighting → IfcLightFixture. Uniclass 2015 codes included where applicable.",
+  "$description": "BIM LANDSCAPE AND PARKING token category — classification tokens for landscaping, site ecology, parking, circulation, and lighting elements specific to Professional Centre and Suburban Office site types. Source: internal design documentation. Landscaping types reflect our Permaculture as Commercial Landscaping design philosophy. IFC mapping: landscape elements → IfcGeographicElement; parking → IfcPaving + IfcTransportElement; lighting → IfcLightFixture. Uniclass 2015 codes included where applicable.",
   "bim": {
     "landscape": {
       "$description": "Landscape and ecological system classifications for Professional Centre sites. Key Plans Index entries 51–56.",

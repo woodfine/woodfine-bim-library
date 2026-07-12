@@ -1,6 +1,6 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM AMENITY KEY PLANS token category — non-leasable building service and amenity spaces for Professional Centre and Suburban Office development classes. Includes building core amenities (Tenant Lounge, Lobby Atrium, Building Manager, Mail Room, Elevator Lobby, Restrooms, Loading, Recycling, Bike Room, Workbench, Lockers, Coffee/Bread, Public Restrooms, Mop Room) and general-type utility spaces (Corridor Expanders, Meter Room). Areas sourced from Spatial Taxonomy — Key Plans and Tiles — Professional Centres and Suburban Office (AEC_Floor Plates_Key Plans and Tiles_V12.pdf, Collaborators #11, 2025-01-07). All spaces are non-leasable; they form the building core component of the 13% core factor. IFC anchor: IfcSpace for occupied rooms; IfcTransportElement for circulation elements.",
+  "$description": "BIM AMENITY KEY PLANS token category — non-leasable building service and amenity spaces for Professional Centre and Suburban Office development classes. Includes building core amenities (Tenant Lounge, Lobby Atrium, Building Manager, Mail Room, Elevator Lobby, Restrooms, Loading, Recycling, Bike Room, Workbench, Lockers, Coffee/Bread, Public Restrooms, Mop Room) and general-type utility spaces (Corridor Expanders, Meter Room). Areas sourced from our internal spatial taxonomy documentation. All spaces are non-leasable; they form the building core component of the 13% core factor. IFC anchor: IfcSpace for occupied rooms; IfcTransportElement for circulation elements.",
   "bim": {
     "amenity-key-plan": {
       "general": {
@@ -47,7 +47,7 @@
         }
       },
       "professional-centre": {
-        "$description": "Amenity and service Key Plans specific to Professional Centre development class (3–5 stories, 19,000–23,000 SF gross floor plate). These spaces form the building core and ground-floor public zone. All areas sourced from AEC_Floor Plates_Key Plans and Tiles_V12.pdf (Collaborators #11, 2025-01-07).",
+        "$description": "Amenity and service Key Plans specific to Professional Centre development class (3–5 stories, 19,000–23,000 SF gross floor plate). These spaces form the building core and ground-floor public zone. All areas sourced from our internal design documentation.",
         "tenant-lounge": {
           "$type": "bim.entity",
           "$value": {

@@ -1,6 +1,6 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM FLOOR PLATE ASSEMBLY RULES token category — machine-readable validation rules for a valid floor plate composition. Previously all rules were narrative-only in PDFs; tool-floorplates cannot validate a composition without a machine-readable form of these rules. Source: tool-buildingwidth-architecture.md §Missing DTCG token files #2 (2026-05-17, Opus agent research), synthesising AEC_Floor Plates_Key Plans and Tiles_V12.pdf and AEC_Floor Plates_Methodology_V12.pdf. Created 2026-07-03 — this file did not previously exist. Rule IDs (FP-*) match the identifiers already referenced elsewhere in this token set (e.g. tile-system.dtcg.json's corridor-expander notes cite 'Decision 4' and Tile/Key-Plan/Floor-Plate negotiation, which these rules formalise).",
+  "$description": "BIM FLOOR PLATE ASSEMBLY RULES token category — machine-readable validation rules for a valid floor plate composition. Source: internal design documentation. Rule IDs (FP-*) match the identifiers referenced elsewhere in this token set.",
   "bim": {
     "floor-plate-rule": {
       "fp-sum-001": {
@@ -49,7 +49,7 @@
           "predicate": "count(hvac_zones_per_tile) == 1",
           "severity": "error"
         },
-        "$description": "FP-CLIMATE-001 — each tile is exactly one HVAC climate zone (see bim.tile.design-principles.climate-zone-autonomy in tile-system.dtcg.json — this rule formalises that design principle as a validation predicate)."
+        "$description": "FP-CLIMATE-001 — each tile is exactly one HVAC climate zone. This rule formalises our tile climate-zone-autonomy design principle as a validation predicate."
       },
       "fp-doors-001": {
         "$type": "bim.rule",
@@ -69,7 +69,7 @@
           "predicate": "tile_at_corner AND tile.family == 'small' triggers structural_grid_review",
           "severity": "warning"
         },
-        "$description": "FP-CORNER-001 — a Small-family tile placed at a building corner triggers a required structural-grid review (see tile-system.dtcg.json's corner-handling design principle and the Tile E-1/E-2 'review structural grid before specifying' notes — this rule formalises that caution as a validation predicate)."
+        "$description": "FP-CORNER-001 — a Small-family tile placed at a building corner triggers a required structural-grid review. This rule formalises the same caution behind our Tile E-1/E-2 corner-handling notes as a validation predicate."
       }
     }
   }

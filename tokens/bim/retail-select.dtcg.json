@@ -1,6 +1,6 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM RETAIL SELECT token category — leasable Key Plans for single-storey neighbourhood retail leaseholds where the Tile equals the Floor Plate. Three sizes (RA-1 Small / RB-2 Medium / RC-3 Large) assembled from fixed component blocks: A=1,400 SF / B=1,000 SF / C=700 SF / D=1,100 SF / E=1,200 SF / M=200 SF. Areas sourced from Spatial Taxonomy — Key Plans and Tiles V12 (AEC_Floor Plates_Key Plans and Tiles_V12.pdf, Collaborators #11, 2025-01-07). Confirmed by tool-floorplate D3 (2026-06-15). IFC anchor: IfcSpace for each leasehold unit.",
+  "$description": "BIM RETAIL SELECT token category — leasable Key Plans for single-storey neighbourhood retail leaseholds where the Tile equals the Floor Plate. Three sizes (RA-1 Small / RB-2 Medium / RC-3 Large) assembled from fixed component blocks: A=1,400 SF / B=1,000 SF / C=700 SF / D=1,100 SF / E=1,200 SF / M=200 SF. Areas sourced from our internal spatial taxonomy documentation. IFC anchor: IfcSpace for each leasehold unit.",
   "bim": {
     "retail-select": {
       "$description": "Retail Select Key Plans — single-storey neighbourhood retail leaseholds. Tile = Floor Plate (no building core deduction). Three sizes (RA-1 Small / RB-2 Medium / RC-3 Large) assembled from fixed component blocks: A=1,400 SF / B=1,000 SF / C=700 SF / D=1,100 SF / E=1,200 SF / M=200 SF (mezzanine or mechanical). Development class: single-storey with grade-level access. Source: AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.5.",

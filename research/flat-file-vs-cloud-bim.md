@@ -16,18 +16,11 @@ commercial use — a category, not any single product.
 | Subscription-lapse posture | Published terms for one commercial digital-twin platform state that a lapsed license requires entering a new paid term before the twin is accessible again | Owner holds the files; permanent and unconditional access |
 | Asset-deed transfer | Requires reonboarding to the new owner's tenant | Files travel with the deed |
 
-**Deployment topology.** This is not a hypothetical architecture
-choice — Woodfine's internal design-response deck specifies each
-Woodfine Building running on its own independent virtual machine
-rather than a shared multi-tenant platform: "The Prototypes for each
-of the Woodfine Buildings will be set up on their own Virtual
-Machines... implement both a Building Database and Materials
-Database on independent servers, lightweight Virtual Machines, for
-each Woodfine Building... the individual Virtual Machines for each
-building would also collect the data from the IoT Devices —
-Sensors." The same document frames this as "an independent BIM
-Server for each of the Woodfine Buildings." *(Source: internal
-design-response deck, CONSTRUCTION_2025_10_31.)*
+**Deployment topology.** This is not a hypothetical architecture choice. Each of our buildings runs on its
+own independent virtual machine rather than a shared multi-tenant platform — a Building Database and a
+Materials Database on independent, lightweight servers per building, with each building's virtual machine
+also collecting IoT sensor data directly. We treat this as an independent BIM Server for each of our
+buildings. *(Internal design documentation, October 2025.)*
 
 ## Who can see the data
 
@@ -62,11 +55,9 @@ design-response deck, CONSTRUCTION_2025_10_31.)*
 | Renewal-rate exposure | Hyperscaler price-cap expiry triggers shock | None |
 | TCO over 30-year asset life | Effectively unbounded | One-time + maintenance |
 
-Woodfine's own stated rationale for this cost model: "With our own
-Operating System we end up with a single integration cost per
-building that we can amortize... avoids per-seat pricing or software
-bloat. It's infrastructure — not overhead." *(Source: internal
-design-response deck, CONSTRUCTION_2025_10_31.)*
+Our rationale for this cost model: building our own operating system gives us a single integration cost
+per building that we can amortize, avoiding per-seat pricing or software bloat. It's infrastructure, not
+overhead. *(Internal design documentation, October 2025.)*
 
 ## Format permanence
 

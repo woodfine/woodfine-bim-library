@@ -1,6 +1,6 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM INTERIOR token category — furniture BIM Objects and circulation constraints for Key Plan authoring. Each furniture token carries Steelcase/manufacturer product data (dimensions mm, clearance mm, SKU, weight, IFC class, source URL). Circulation tokens carry the applicable code reference and spatial thresholds, used for constraint validation when a Key Plan is authored. Sources: steelcase.com product pages, coalesse.com, AEC Floor Plates Key Plans Notes.pdf, ASR A1.2 (2011), DIN 18040, ArbStättV §12.",
+  "$description": "BIM INTERIOR token category — furniture BIM Objects and circulation constraints for Key Plan authoring. Each furniture token carries Steelcase/manufacturer product data (dimensions mm, clearance mm, SKU, weight, IFC class, source URL). Circulation tokens carry the applicable code reference and spatial thresholds, used for constraint validation when a Key Plan is authored. Sources: steelcase.com product pages, coalesse.com, our internal design documentation, ASR A1.2 (2011), DIN 18040, ArbStättV §12.",
   "bim": {
     "interior": {
       "furniture": {

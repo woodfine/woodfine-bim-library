@@ -1,6 +1,6 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM FURNITURE token category — real manufacturer furniture SKUs and regulatory clearances that DERIVE the Habitat/Magazine/Corridor depths in building-width-calculator.dtcg.json. This is the missing foundation: previously zone depths were results with no derivation recorded. Every dimension here traces to a real manufacturer product or a cited regulatory clause. Source: tool-buildingwidth-architecture.md §Missing DTCG token files #1 (2026-05-17, Opus agent research) — Research provenance section. Created 2026-07-03 — this file did not previously exist. Millimetre values are authoritative for furniture/clearance dimensions (matching manufacturer spec-sheet convention); metre values in $description for cross-reference against building-width-calculator.dtcg.json's zone tokens.",
+  "$description": "BIM FURNITURE token category — real manufacturer furniture SKUs and regulatory clearances that derive the Habitat/Magazine/Corridor depths our Building Width Calculator uses. Every dimension here traces to a real manufacturer product or a cited regulatory clause. Source: internal design documentation. Millimetre values are authoritative for furniture/clearance dimensions (matching manufacturer spec-sheet convention); metre values in $description for cross-reference against the Building Width Calculator's zone depths.",
   "bim": {
     "furniture": {
       "office": {
@@ -143,7 +143,7 @@
       "asr-a18-corridor-aisle-20person": {
         "$type": "dimension",
         "$value": "1.0m",
-        "$description": "3'3\" — ASR A1.8 (German workplace rule, traffic routes) Tabelle 2, aisle width for occupancy ≤20 persons. This is the one ASR A1.8 tier this workspace has a confirmed source value for; the full multi-tier table (by occupant count) is not reproduced here — do not assume other occupancy tiers without a source."
+        "$description": "3'3\" — ASR A1.8 (German workplace rule, traffic routes) Tabelle 2, aisle width for occupancy ≤20 persons. This is the one ASR A1.8 tier we have a confirmed source value for; the full multi-tier table (by occupant count) is not reproduced here — do not assume other occupancy tiers without a source."
       },
       "ada-wheelchair-turn": {
         "$type": "dimension",
@@ -158,7 +158,7 @@
       "ibc-egress-civic-assembly": {
         "$type": "dimension",
         "$value": "3.6m",
-        "$description": "11'10\" — IBC 2021 §1020/§1029 egress-width minimum for assembly (civic/public) occupancy. Matches Civic Corridor width in building-width-calculator.dtcg.json — this is the IBC citation for that value, not a separate independent figure. Only these two occupancy classes (laboratory high-hazard, civic assembly) have confirmed IBC citations in this workspace; a full occupancy-class table is not reproduced here."
+        "$description": "11'10\" — IBC 2021 §1020/§1029 egress-width minimum for assembly (civic/public) occupancy. Matches our Civic Corridor width — this is the IBC citation for that value, not a separate independent figure. Only these two occupancy classes (laboratory high-hazard, civic assembly) have confirmed IBC citations; a full occupancy-class table is not reproduced here."
       },
       "en12464-workstation-to-window": {
         "$type": "dimension",
@@ -167,7 +167,7 @@
       }
     },
     "derivation-example": {
-      "$description": "Worked example showing how bim.furniture + bim.clearance tokens sum to the Professional Office Habitat depth (6.0m) already present in building-width-calculator.dtcg.json. Encodes the derivation cited in tool-buildingwidth-architecture.md §Missing DTCG token files #1 so tool-buildingwidth's --derive-from-furniture mode has a machine-readable reference calculation.",
+      "$description": "Worked example showing how our furniture and clearance tokens sum to the Professional Office Habitat depth (6.0m) used by the Building Width Calculator, providing a machine-readable reference calculation for deriving zone depths from furniture and clearances.",
       "professional-office-zone1": {
         "$type": "bim.derivation",
         "$value": {
@@ -181,9 +181,9 @@
             {"source": "bim.clearance.en12464-workstation-to-window", "quantity": 1, "depth_m": 1.714, "note": "EN 17037 daylight buffer, derived: 2.4m window head × 2.5 minus the desk+clearance terms above, NOT the raw 6.0m cap value itself — see caveat"}
           ],
           "sum_m": 6.0,
-          "caveat": "The fourth term (1.714m) is presented in tool-buildingwidth-architecture.md as 'EN 17037 daylight buffer (2.4m window head × 2.5)' summing the four terms to exactly 6.000m. The arithmetic (2.286 + 1.0 + 1.0 + 1.714 = 6.0) is confirmed; the derivation of 1.714m specifically from '2.4m × 2.5' is not (2.4 × 2.5 = 6.0, not 1.714) — this term is better read as 'the remainder after desk + two clearances, independently corroborated by the EN 12464-1 6.0m cap' rather than a direct product of the cited factors. Flagging rather than silently reproducing an arithmetic claim that doesn't check out at face value."
+          "caveat": "The fourth term (1.714m) is described elsewhere as 'EN 17037 daylight buffer (2.4m window head × 2.5)', summing the four terms to exactly 6.000m. The arithmetic (2.286 + 1.0 + 1.0 + 1.714 = 6.0) is confirmed; the derivation of 1.714m specifically from '2.4m × 2.5' is not (2.4 × 2.5 = 6.0, not 1.714) — this term is better read as the remainder after the desk and two clearances, independently corroborated by the EN 12464-1 6.0m cap, rather than a direct product of the cited factors."
         },
-        "$description": "Professional Office Habitat derivation: 3× Steelcase Ology desk (2.286m) + ArbStättV clearance (1.0m) + ASR A1.8 aisle (1.0m) + daylight buffer (1.714m) = 6.000m. See $value.caveat for a flagged arithmetic note on the fourth term."
+        "$description": "Professional Office Habitat derivation: 3× Steelcase Ology desk (2.286m) + ArbStättV clearance (1.0m) + ASR A1.8 aisle (1.0m) + daylight buffer (1.714m) = 6.000m. The fourth term's stated derivation (2.4m window head × 2.5) does not actually multiply out to 1.714m — that figure is better read as the remainder after the desk and two clearances, independently corroborated by the EN 12464-1 6.0m cap, rather than a direct product of the cited factors."
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM WATER MANAGEMENT token category — site water management, stormwater detention, and sustainable landscaping metrics for the Professional Centre and Suburban Office site type. These tokens represent a sample site analysis illustrating the site detention and infiltration system design for a building with a 61,200 SF roof curtain area. Source: AEC_Sample Water Management System.pdf (Collaborators #11, 2025-04-01); AEC_Sample Architects_Landscaping and Parking_V3.pdf (Collaborators #27, 2025-05-06). Volume values are in US gallons (authoritative for this dataset); area values in SF. Intended as reference parameters for site design tokens in IFC IfcSite context.",
+  "$description": "BIM WATER MANAGEMENT token category — site water management, stormwater detention, and sustainable landscaping metrics for the Professional Centre and Suburban Office site type. These tokens represent a sample site analysis illustrating the site detention and infiltration system design for a building with a 61,200 SF roof curtain area. Source: internal design documentation. Volume values are in US gallons (authoritative for this dataset); area values in SF. Intended as reference parameters for site design tokens in IFC IfcSite context.",
   "bim": {
     "water-management": {
       "site-water": {

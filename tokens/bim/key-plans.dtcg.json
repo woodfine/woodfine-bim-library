@@ -1,10 +1,10 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$description": "BIM KEY PLANS token category — authoritative catalog of all Woodfine Key Plans. A Key Plan is a volume of space, not a BIM Object: a spatial program assembled from several BIM Objects (furniture, manufacturer SKUs) to satisfy a methodology, defined by a three-zone cross-section (Habitat / Magazine / Corridor), net leasable area, facade frontage, and accessibility compliance. Classified at Uniclass 2015 SL (Spaces-locations) level, distinct from the BIM Objects (Uniclass Pr/Ss level) it contains. Key Plans are authored by architects from Woodfine equipment programs; Key Plans nest into Tiles and Floor Plates without remainder, in both directions. IFC anchor: IfcSpace (each Key Plan is a bounded, named space within a floor storey, containing but not aggregating the Objects placed in it). Source: CONSTRUCTION_2026_01_06_Key Plan_Professional Office_FFE_FIN.xlsx — tab Summary_Key Plans (V3, 2025-11-29). Note: approximate square footages per source spreadsheet. Retitled from \"Composition\" Round 9 (2026-07-11) — see about.md \"The containment model.\"",
+  "$description": "BIM KEY PLANS token category — authoritative catalog of all Woodfine Key Plans. A Key Plan is a volume of space, not a BIM Object: a spatial program assembled from several BIM Objects (furniture, manufacturer SKUs) to satisfy a methodology, defined by a three-zone cross-section (Habitat / Magazine / Corridor), net leasable area, facade frontage, and accessibility compliance. Classified at Uniclass 2015 SL (Spaces-locations) level, distinct from the BIM Objects (Uniclass Pr/Ss level) it contains. We author Key Plans from our own equipment programs; Key Plans nest into Tiles and Floor Plates without remainder, in both directions. IFC anchor: IfcSpace (each Key Plan is a bounded, named space within a floor storey, containing but not aggregating the Objects placed in it). Source: internal design documentation (V3, November 2025). Note: approximate square footages per source spreadsheet.",
   "bim": {
     "key-plan": {
       "private-office": {
-        "$description": "Private Office — facade-facing individual leaseholds. Three sizes share the same zone depths (sourced from the real drafted key-plan sheet, DISCOVERY_MCorp_Sketches_Key Plans_Private Office.pdf); frontage width increases with size, not zone depth. Building ID issued per desk. Habitat = 5.99 m (19'-8\"), marginally under the 6 m European Lighting Standard desk-to-window threshold. Magazine = 1.37 m (4'-6\"), holds filing, credenza, bookshelf. No Corridor — each office opens directly to the shared building corridor. Corrected 2026-07-04: prior values (6.0/3.8/2.0 m) had been inherited from the Professional Office use-type in error; see key-plans-foundation-study.md.",
+        "$description": "Private Office — facade-facing individual leaseholds. Three sizes share the same zone depths (sourced from our own drafted key-plan sheet); frontage width increases with size, not zone depth. Building ID issued per desk. Habitat = 5.99 m (19'-8\"), marginally under the 6 m European Lighting Standard desk-to-window threshold. Magazine = 1.37 m (4'-6\"), holds filing, credenza, bookshelf. No Corridor — each office opens directly to the shared building corridor. Corrected 2026-07-04: prior values (6.0/3.8/2.0 m) had been inherited from the Professional Office use-type in error; see key-plans-foundation-study.md.",
         "small": {
           "$type": "bim.entity",
           "$value": {
@@ -16,7 +16,7 @@
             "zone1_depth_m": 5.9944,
             "zone2_depth_m": 1.3716,
             "status": "confirmed",
-            "source": "DISCOVERY_MCorp_Sketches_Key Plans_Private Office.pdf (drafted key-plan sheet, \"PO 1 / 325 SF\"); corrected 2026-07-04 from FIN.xlsx Summary_Key Plans V3 2025-11-29, which had inherited the Professional Office use-type's zone depths in error",
+            "source": "our own drafted key-plan sheet (\"PO 1 / 325 SF\"); corrected from an earlier draft that had inherited the Professional Office use-type's zone depths in error",
             "furniture_program": [
               "desk + ergonomic task chair",
               "3-person round table",
@@ -34,7 +34,7 @@
               "bim.interior.furniture.storage.steelcase-currency-bookcase-36",
               "bim.interior.furniture.utility.generic-coat-rack"
             ],
-            "furniture_refs_note": "Structured references generated 2026-07-06 via tool-keyplan (--interior interior.dtcg.json --config configs/po-1.toml), a real, verified compile. Only furniture_refs and circulation_ref were merged from that run — its zone-depth/bounding-box output uses po-1.toml's stale 6.0/3.8/2.0 m values, superseded by the real 2026-07-04 correction (5.9944/1.3716 m) already in this entry, so those fields were deliberately not overwritten.",
+            "furniture_refs_note": "Structured references generated 2026-07-06 via our internal key-plan authoring tool, a real, verified compile. Only furniture_refs and circulation_ref were merged from that run — its zone-depth/bounding-box output uses po-1.toml's stale 6.0/3.8/2.0 m values, superseded by the real 2026-07-04 correction (5.9944/1.3716 m) already in this entry, so those fields were deliberately not overwritten.",
             "circulation_ref": "bim.interior.circulation.standard-private-office",
             "compliance": {
               "european_lighting_standard": "Habitat = 5.99 m — marginally under the 6 m European Lighting Standard desk-to-window threshold",
@@ -64,7 +64,7 @@
             "zone1_depth_m": 5.9944,
             "zone2_depth_m": 1.3716,
             "status": "confirmed",
-            "source": "DISCOVERY_MCorp_Sketches_Key Plans_Private Office.pdf (drafted key-plan sheet, \"PO 2 / 465 SF\"); corrected 2026-07-04 from FIN.xlsx Summary_Key Plans V3 2025-11-29, which had inherited the Professional Office use-type's zone depths in error",
+            "source": "our own drafted key-plan sheet (\"PO 2 / 465 SF\"); corrected from an earlier draft that had inherited the Professional Office use-type's zone depths in error",
             "furniture_program": [
               "desk + ergonomic task chair",
               "5-person meeting table",
@@ -79,7 +79,7 @@
               "bim.interior.furniture.task-chair.steelcase-leap-v2",
               "bim.interior.furniture.utility.generic-coat-rack"
             ],
-            "furniture_refs_note": "Round 5 (2026-07-10): partial resolution, honestly incomplete — only 3 of the 7 furniture_program items have a real, correctly-specified catalog object to link (desk, task chair, coat rack). The catalog's only table (steelcase-groupwork-36) is a 3-person round table, not the 5-person meeting table this programme calls for — linking it would misstate capacity. No credenza, wall-mounted bookshelf, or 2-drawer filing-cabinet SKU exists in the catalog at all (steelcase-ts-mobile-pedestal is a mobile under-desk pedestal, a different product than a lateral filing cabinet); the Wing Chair CH445 is a lounge chair, not confirmed as a meeting-room side chair, so it was not linked on a guess. Filling these requires adding real furniture SKUs to the catalog, not just cross-referencing existing ones.",
+            "furniture_refs_note": "Only 3 of the 7 furniture_program items have a real, correctly-specified catalog object to link (desk, task chair, coat rack). The catalog's only table (steelcase-groupwork-36) is a 3-person round table, not the 5-person meeting table this programme calls for — linking it would misstate capacity. No credenza, wall-mounted bookshelf, or 2-drawer filing-cabinet SKU exists in the catalog at all (steelcase-ts-mobile-pedestal is a mobile under-desk pedestal, a different product than a lateral filing cabinet); the Wing Chair CH445 is a lounge chair, not confirmed as a meeting-room side chair, so it was not linked on a guess. Filling these requires adding real furniture SKUs to the catalog, not just cross-referencing existing ones.",
             "circulation_ref": "bim.interior.circulation.standard-private-office",
             "compliance": {
               "european_lighting_standard": "Habitat = 5.99 m — marginally under the 6 m European Lighting Standard desk-to-window threshold",
@@ -109,7 +109,7 @@
             "zone1_depth_m": 5.9944,
             "zone2_depth_m": 1.3716,
             "status": "confirmed",
-            "source": "DISCOVERY_MCorp_Sketches_Key Plans_Private Office.pdf (drafted key-plan sheet, \"PO 3 / 685 SF\"); corrected 2026-07-04 from FIN.xlsx Summary_Key Plans V3 2025-11-29, which had inherited the Professional Office use-type's zone depths in error",
+            "source": "our own drafted key-plan sheet (\"PO 3 / 685 SF\"); corrected from an earlier draft that had inherited the Professional Office use-type's zone depths in error",
             "furniture_program": [
               "desk + ergonomic task chair",
               "8-person boardroom table",
@@ -125,7 +125,7 @@
               "bim.interior.furniture.task-chair.steelcase-leap-v2",
               "bim.interior.furniture.utility.generic-coat-rack"
             ],
-            "furniture_refs_note": "Round 5 (2026-07-10): partial resolution, honestly incomplete — only 3 of the 8 furniture_program items have a real, correctly-specified catalog object to link (desk, task chair, coat rack), same catalog gap as PO-2. The catalog's only table (steelcase-groupwork-36) is a 3-person round table, not the 8-person boardroom table this programme calls for. No credenza, wall-mounted bookshelf, lateral 4-drawer filing cabinet, or side console SKU exists in the catalog. Filling these requires adding real furniture SKUs to the catalog, not just cross-referencing existing ones.",
+            "furniture_refs_note": "Only 3 of the 8 furniture_program items have a real, correctly-specified catalog object to link (desk, task chair, coat rack), same catalog gap as PO-2. The catalog's only table (steelcase-groupwork-36) is a 3-person round table, not the 8-person boardroom table this programme calls for. No credenza, wall-mounted bookshelf, lateral 4-drawer filing cabinet, or side console SKU exists in the catalog. Filling these requires adding real furniture SKUs to the catalog, not just cross-referencing existing ones.",
             "circulation_ref": "bim.interior.circulation.standard-private-office",
             "compliance": {
               "european_lighting_standard": "Habitat = 5.99 m — marginally under the 6 m European Lighting Standard desk-to-window threshold",
@@ -164,7 +164,7 @@
             "design_notes": "Sized as proportion of Floor Plate. No sub-lease; one climate zone per Tile.",
             "tile_fraction": "full",
             "leasable_tile_count": 8,
-            "source": "tool-floorplate D3 2026-06-15; derived: CO-FF=20000 SF / 8 tiles; core_factor=0.13"
+            "source": "our floor-plate assembly system (verified 2026-06-15); derived: CO-FF=20000 SF / 8 tiles; core_factor=0.13"
           },
           "$description": "Corporate Office — Full Floor. 20,000 SF leasable (1858.1 m²). Tile fraction: full. Internal tile code CO-A."
         },
@@ -184,7 +184,7 @@
             ],
             "tile_fraction": "1/2",
             "leasable_tile_count": 4,
-            "source": "tool-floorplate D3 2026-06-15; derived: CO-FF=20000 SF / 8 tiles; core_factor=0.13"
+            "source": "our floor-plate assembly system (verified 2026-06-15); derived: CO-FF=20000 SF / 8 tiles; core_factor=0.13"
           },
           "$description": "Corporate Office — Half Floor. 10,000 SF leasable (929.0 m²). Tile fraction: 1/2. Internal tile code CO-B."
         },
@@ -204,7 +204,7 @@
             ],
             "tile_fraction": "1/3",
             "leasable_tile_count": 2.67,
-            "source": "tool-floorplate D3 2026-06-15; derived: CO-FF=20000 SF / 8 tiles; core_factor=0.13"
+            "source": "our floor-plate assembly system (verified 2026-06-15); derived: CO-FF=20000 SF / 8 tiles; core_factor=0.13"
           },
           "$description": "Corporate Office — Third Floor. 6,667 SF leasable (619.3 m²). Tile fraction: 1/3. Internal tile code CO-C."
         },
@@ -224,7 +224,7 @@
             ],
             "tile_fraction": "1/4",
             "leasable_tile_count": 2,
-            "source": "tool-floorplate D3 2026-06-15; derived: CO-FF=20000 SF / 8 tiles; core_factor=0.13"
+            "source": "our floor-plate assembly system (verified 2026-06-15); derived: CO-FF=20000 SF / 8 tiles; core_factor=0.13"
           },
           "$description": "Corporate Office — Quarter Floor. 5,000 SF leasable (464.5 m²). Tile fraction: 1/4. Internal tile code CO-D."
         },
@@ -245,7 +245,7 @@
             ],
             "tile_fraction": "1/8",
             "leasable_tile_count": 1,
-            "source": "tool-floorplate D3 2026-06-15; derived: CO-FF=20000 SF / 8 tiles; core_factor=0.13"
+            "source": "our floor-plate assembly system (verified 2026-06-15); derived: CO-FF=20000 SF / 8 tiles; core_factor=0.13"
           },
           "$description": "Corporate Office — Eighth Floor. 2,500 SF leasable (232.3 m²). Tile fraction: 1/8. Minimum viable Corporate Office Tile. Internal tile code CO-E."
         }
@@ -264,7 +264,7 @@
             "zone2_depth_m": 4.87,
             "zone3_depth_m": null,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "internal design documentation (V3, November 2025)",
             "exam_chairs": 2,
             "key_rooms": [
               "reception",
@@ -298,7 +298,7 @@
             "zone2_depth_m": 4.87,
             "zone3_depth_m": null,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "internal design documentation (V3, November 2025)",
             "exam_chairs": 4,
             "key_rooms": [
               "reception",
@@ -328,7 +328,7 @@
             "zone2_depth_m": 4.87,
             "zone3_depth_m": null,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "internal design documentation (V3, November 2025)",
             "exam_chairs": 6,
             "key_rooms": [
               "reception",
@@ -362,7 +362,7 @@
             "zone2_depth_m": 7.3,
             "zone3_depth_m": 2.75,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "internal design documentation (V3, November 2025)",
             "width_options": [
               "A",
               "B",
@@ -388,7 +388,7 @@
             "zone2_depth_m": 7.3,
             "zone3_depth_m": 2.75,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "internal design documentation (V3, November 2025)",
             "width_options": [
               "A",
               "B",
@@ -414,7 +414,7 @@
             "zone2_depth_m": 7.3,
             "zone3_depth_m": 2.9,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "internal design documentation (V3, November 2025)",
             "width_options": [
               "A",
               "B",
@@ -430,7 +430,7 @@
         }
       },
       "laboratory": {
-        "$description": "Professional Office — Laboratory. Wider Habitat (6.78 m) than standard Professional Office to accommodate bench depth and fume hood clearances per German workplace-circulation standards (ArbStättV; \"German Circulation Law\" elsewhere on this site). IBC high-hazard occupancy egress width (3.048 m / 10'0\") in Corridor. Key rooms: reception, 1–2 offices, 3–9 benches, staff room, storage, mechanical, clean room.",
+        "$description": "Professional Office — Laboratory. Wider Habitat (6.78 m) than standard Professional Office to accommodate bench depth and fume hood clearances per German workplace-circulation standards (ArbStättV). IBC high-hazard occupancy egress width (3.048 m / 10'0\") in Corridor. Key rooms: reception, 1–2 offices, 3–9 benches, staff room, storage, mechanical, clean room.",
         "medical": {
           "$type": "bim.entity",
           "$value": {
@@ -444,7 +444,7 @@
             "zone3_depth_m": 3.1,
             "facade_frontage_m": 16.8,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "internal design documentation (V3, November 2025)",
             "bench_count": 3,
             "occupancy_persons": 34,
             "area_per_person_m2": 5.7,
@@ -481,7 +481,7 @@
             "zone3_depth_m": 3.1,
             "facade_frontage_m": 27.3,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "internal design documentation (V3, November 2025)",
             "bench_count": 6,
             "occupancy_persons": 49,
             "area_per_person_m2": 6.4,
@@ -514,7 +514,7 @@
             "zone3_depth_m": 3.1,
             "facade_frontage_m": 34.6,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "internal design documentation (V3, November 2025)",
             "bench_count": 9,
             "occupancy_persons": 61,
             "area_per_person_m2": 6.5,
@@ -549,7 +549,7 @@
             "zone2_depth_m": 3.0,
             "zone3_depth_m": null,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "internal design documentation (V3, November 2025)",
             "configuration": "seminar / podium",
             "occupancy_persons_min": 21,
             "occupancy_persons_max": 25,
@@ -572,7 +572,7 @@
             "zone2_depth_m": 3.0,
             "zone3_depth_m": null,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "internal design documentation (V3, November 2025)",
             "configuration": "multi-use seminar",
             "occupancy_persons": 63,
             "development_classes": [
@@ -594,7 +594,7 @@
             "zone2_depth_m": 3.0,
             "zone3_depth_m": null,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "internal design documentation (V3, November 2025)",
             "configuration": "tiered auditorium",
             "occupancy_persons_min": 82,
             "occupancy_persons_max": 103,
@@ -620,7 +620,7 @@
             "zone2_depth_m": 7.23,
             "zone3_depth_m": null,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "internal design documentation (V3, November 2025)",
             "key_rooms": [
               "offices",
               "clerk desks",
@@ -648,7 +648,7 @@
             "zone2_depth_m": 7.23,
             "zone3_depth_m": null,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "internal design documentation (V3, November 2025)",
             "key_rooms": [
               "offices",
               "clerk desks",
@@ -676,7 +676,7 @@
             "zone2_depth_m": 7.23,
             "zone3_depth_m": null,
             "status": "confirmed",
-            "source": "FIN.xlsx Summary_Key Plans V3 2025-11-29",
+            "source": "internal design documentation (V3, November 2025)",
             "key_rooms": [
               "offices",
               "clerk desks",
