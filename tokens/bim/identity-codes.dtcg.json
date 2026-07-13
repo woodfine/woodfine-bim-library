@@ -1,6 +1,7 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$description": "BIM IDENTITY+CODES token category — anchored to IFC 4.3 IfcClassificationReference + IfcConstraint. Sub-agent A merged Identity + Codes onto a single classification axis.",
+  "$description_es": "Categoría de tokens IDENTITY+CODES de BIM — anclada a IfcClassificationReference + IfcConstraint de IFC 4.3. El Sub-agent A fusionó Identity + Codes en un solo eje de clasificación.",
   "bim": {
     "identity": {
       "global_id": {

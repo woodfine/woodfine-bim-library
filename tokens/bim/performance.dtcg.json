@@ -1,6 +1,7 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$description": "BIM PERFORMANCE token category — anchored to IFC 4.3 IfcPropertySet + IfcQuantitySet. Energy / thermal / acoustic / fire properties.",
+  "$description_es": "Categoría de tokens PERFORMANCE de BIM — anclada a IfcPropertySet + IfcQuantitySet de IFC 4.3. Propiedades energéticas, térmicas, acústicas y contra incendio.",
   "$cites": ["ifc-4-3"],
   "bim": {
     "performance": {
@@ -40,7 +41,8 @@
           "AcousticRating": "IfcLabel",
           "SecurityRating": "IfcLabel"
         },
-        "$description": "Property is IsFireExit per the buildingSMART IFC4 Pset_DoorCommon definition (boolean properties in this pset follow the Is-prefix convention — see Pset_WallCommon.IsExternal above for the same pattern). Cite ifc-4-3 (ISO 16739-1:2024) §Pset_DoorCommon."
+        "$description": "Property is IsFireExit per the buildingSMART IFC4 Pset_DoorCommon definition (boolean properties in this pset follow the Is-prefix convention — see Pset_WallCommon.IsExternal above for the same pattern). Cite ifc-4-3 (ISO 16739-1:2024) §Pset_DoorCommon.",
+        "$description_es": "La propiedad es IsFireExit según la definición de Pset_DoorCommon de buildingSMART IFC4 (las propiedades booleanas de este pset siguen la convención de prefijo Is- — ver Pset_WallCommon.IsExternal arriba para el mismo patrón). Cita ifc-4-3 (ISO 16739-1:2024) §Pset_DoorCommon."
       },
       "Pset_SpaceCommon": {
         "$type": "bim.pset",
@@ -52,7 +54,8 @@
           "PubliclyAccessible": "IfcBoolean",
           "HandicapAccessible": "IfcBoolean"
         },
-        "$description": "Space common properties — used by both BIM authoring AND lease-register workflows. The convergence channel between BIM and rent-roll data."
+        "$description": "Space common properties — used by both BIM authoring AND lease-register workflows. The convergence channel between BIM and rent-roll data.",
+        "$description_es": "Propiedades comunes de espacio — utilizadas tanto en la autoría BIM como en los flujos de trabajo del registro de arrendamiento. El canal de convergencia entre BIM y los datos de rent-roll."
       }
     },
     "quantities": {

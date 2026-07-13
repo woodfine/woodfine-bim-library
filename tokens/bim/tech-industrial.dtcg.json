@@ -1,9 +1,11 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$description": "BIM TECH INDUSTRIAL token category — leasable Key Plans for single-storey light-industrial, R&D, and tech-production leaseholds where the Tile equals the Floor Plate. Three sizes (TI-1 Medium / TI-2 Large / TI-3 Extra Large) assembled from fixed component blocks: A=2,200 SF / B=2,100 SF / C=1,200 SF (repeatable) / D=1,500 SF / M=200 SF. Areas sourced from our internal spatial taxonomy documentation. IFC anchor: IfcSpace for each leasehold unit.",
+  "$description_es": "Categoría de tokens TECH INDUSTRIAL de BIM — Key Plans arrendables para locales industriales ligeros, de I+D, y de producción tecnológica de una sola planta donde el Tile equivale a la Placa de Piso. Tres tamaños (TI-1 Mediano / TI-2 Grande / TI-3 Extra Grande) ensamblados a partir de bloques de componentes fijos: A=2,200 SF / B=2,100 SF / C=1,200 SF (repetible) / D=1,500 SF / M=200 SF. Áreas obtenidas de nuestra documentación interna de taxonomía espacial. Anclaje IFC: IfcSpace para cada unidad de arrendamiento.",
   "bim": {
     "tech-industrial": {
       "$description": "Tech Industrial Key Plans — single-storey light-industrial, R&D, and tech-production leaseholds. Tile = Floor Plate (no building core deduction). Three sizes (TI-1 Medium / TI-2 Large / TI-3 Extra Large) assembled from fixed component blocks: A=2,200 SF / B=2,100 SF / C=1,200 SF (repeatable) / D=1,500 SF / M=200 SF. Development class: single-storey grade-level industrial with service access. Source: AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.6.",
+      "$description_es": "Key Plans Tech Industrial — locales industriales ligeros, de I+D, y de producción tecnológica de una sola planta. Tile = Placa de Piso (sin deducción por núcleo del edificio). Tres tamaños (TI-1 Mediano / TI-2 Grande / TI-3 Extra Grande) ensamblados a partir de bloques de componentes fijos: A=2,200 SF / B=2,100 SF / C=1,200 SF (repetible) / D=1,500 SF / M=200 SF. Clase de desarrollo: industrial de una sola planta a nivel de calle con acceso de servicio. Fuente: AEC_Floor Plates_Key Plans and Tiles_V12.pdf p.6.",
       "medium": {
         "$type": "bim.entity",
         "$value": {
@@ -33,7 +35,8 @@
           "tile_role": "standalone — Tile = Floor Plate; no building core deduction",
           "design_notes": "Base Tech Industrial unit. Add C-blocks (1,200 SF each) to expand to Large or Extra Large."
         },
-        "$description": "Tech Industrial — Medium TI-1. 7,200 SF (669.0 m²). Tile = Floor Plate. Blocks: A+B+C+D+M."
+        "$description": "Tech Industrial — Medium TI-1. 7,200 SF (669.0 m²). Tile = Floor Plate. Blocks: A+B+C+D+M.",
+        "$description_es": "Tech Industrial — Mediano TI-1. 7,200 SF (669.0 m²). Tile = Placa de Piso. Bloques: A+B+C+D+M."
       },
       "large": {
         "$type": "bim.entity",
@@ -64,7 +67,8 @@
           "development_classes": ["Tech Industrial"],
           "tile_role": "standalone — Tile = Floor Plate; no building core deduction"
         },
-        "$description": "Tech Industrial — Large TI-2. 8,400 SF (780.4 m²). Tile = Floor Plate. Blocks: A+B+2×C+D+M."
+        "$description": "Tech Industrial — Large TI-2. 8,400 SF (780.4 m²). Tile = Floor Plate. Blocks: A+B+2×C+D+M.",
+        "$description_es": "Tech Industrial — Grande TI-2. 8,400 SF (780.4 m²). Tile = Placa de Piso. Bloques: A+B+2×C+D+M."
       },
       "extra-large": {
         "$type": "bim.entity",
@@ -97,7 +101,8 @@
           "tile_role": "standalone — Tile = Floor Plate; no building core deduction",
           "design_notes": "Maximum standard unit per source document floor-plate range 7,200–9,600 SF."
         },
-        "$description": "Tech Industrial — Extra Large TI-3. 9,600 SF (891.9 m²). Tile = Floor Plate. Blocks: A+B+3×C+D+M."
+        "$description": "Tech Industrial — Extra Large TI-3. 9,600 SF (891.9 m²). Tile = Floor Plate. Blocks: A+B+3×C+D+M.",
+        "$description_es": "Tech Industrial — Extra Grande TI-3. 9,600 SF (891.9 m²). Tile = Placa de Piso. Bloques: A+B+3×C+D+M."
       }
     }
   }

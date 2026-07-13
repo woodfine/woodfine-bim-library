@@ -1,6 +1,7 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$description": "BIM SYSTEMS token category — anchored to IFC 4.3 IfcDistributionElement (mechanical, electrical, plumbing systems).",
+  "$description_es": "Categoría de tokens SYSTEMS de BIM — anclada a IfcDistributionElement de IFC 4.3 (sistemas mecánicos, eléctricos, hidrosanitarios).",
   "bim": {
     "systems": {
       "pipe": {

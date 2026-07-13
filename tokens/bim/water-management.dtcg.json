@@ -1,63 +1,77 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$description": "BIM WATER MANAGEMENT token category — site water management, stormwater detention, and sustainable landscaping metrics for the Professional Centre and Suburban Office site type. These tokens represent a sample site analysis illustrating the site detention and infiltration system design for a building with a 61,200 SF roof curtain area. Source: internal design documentation. Volume values are in US gallons (authoritative for this dataset); area values in SF. Intended as reference parameters for site design tokens in IFC IfcSite context.",
+  "$description_es": "Categoría de tokens BIM WATER MANAGEMENT — manejo de agua del sitio, detención de aguas pluviales y métricas de paisajismo sostenible para el tipo de sitio Professional Centre y Suburban Office. Estos tokens representan un análisis de sitio de muestra que ilustra el diseño del sistema de detención e infiltración del sitio para un edificio con un área de cubierta de techo de 61,200 SF. Fuente: documentación de diseño interna. Los valores de volumen están en galones estadounidenses (autoritativos para este conjunto de datos); los valores de área en SF. Destinados como parámetros de referencia para tokens de diseño de sitio en el contexto IFC IfcSite.",
   "bim": {
     "water-management": {
       "site-water": {
         "$description": "Site-level water flow calculations for a sample Professional Centre site. All values are annual (GAL/YR).",
+        "$description_es": "Cálculos de flujo de agua a nivel de sitio para un sitio Professional Centre de muestra. Todos los valores son anuales (GAL/AÑO).",
         "total-treated-runoff": {
           "$type": "number",
           "$value": 2065937,
-          "$description": "2,065,937 GAL/YR — total water volume from 100% treated runoff on sample site. Includes all impervious and permeable surface contributions."
+          "$description": "2,065,937 GAL/YR — total water volume from 100% treated runoff on sample site. Includes all impervious and permeable surface contributions.",
+          "$description_es": "2,065,937 GAL/AÑO — volumen total de agua proveniente de escorrentía 100% tratada en el sitio de muestra. Incluye todas las contribuciones de superficies impermeables y permeables."
         },
         "buffalo-grass-runoff": {
           "$type": "number",
           "$value": 1858974,
-          "$description": "1,858,974 GAL/YR — annual runoff from Buffalo Grass landscaped areas. Buffalo Grass (Bouteloua dactyloides) is a drought-tolerant native prairie grass used as permaculture landscaping in Professional Centre sites."
+          "$description": "1,858,974 GAL/YR — annual runoff from Buffalo Grass landscaped areas. Buffalo Grass (Bouteloua dactyloides) is a drought-tolerant native prairie grass used as permaculture landscaping in Professional Centre sites.",
+          "$description_es": "1,858,974 GAL/AÑO — escorrentía anual de áreas ajardinadas con Buffalo Grass. Buffalo Grass (Bouteloua dactyloides) es un pasto de pradera nativo, tolerante a la sequía, usado como paisajismo de permacultura en sitios Professional Centre."
         },
         "tidal-water-storage": {
           "$type": "number",
           "$value": 409063,
-          "$description": "409,063 GAL/YR — tidal water storage volume. Represents captured stormwater retained in site detention and infiltration systems before release or reuse."
+          "$description": "409,063 GAL/YR — tidal water storage volume. Represents captured stormwater retained in site detention and infiltration systems before release or reuse.",
+          "$description_es": "409,063 GAL/AÑO — volumen de almacenamiento de agua de marea. Representa aguas pluviales captadas y retenidas en los sistemas de detención e infiltración del sitio antes de su liberación o reutilización."
         }
       },
       "site-area": {
         "$description": "Site surface areas driving stormwater calculations.",
+        "$description_es": "Áreas de superficie del sitio que determinan los cálculos de aguas pluviales.",
         "building-roof-curtain": {
           "$type": "number",
           "$value": 5685.12,
-          "$description": "61,200 SF (5,685.12 m²) — building roof curtain area contributing to stormwater runoff. Primary impervious surface on site."
+          "$description": "61,200 SF (5,685.12 m²) — building roof curtain area contributing to stormwater runoff. Primary impervious surface on site.",
+          "$description_es": "61,200 SF (5,685.12 m²) — área de cubierta de techo del edificio que contribuye a la escorrentía pluvial. Principal superficie impermeable del sitio."
         },
         "permeable-pavers": {
           "$type": "number",
           "$value": 2917.05,
-          "$description": "31,407 SF (2,917.05 m²) — permeable paver area. Reduces effective impervious surface coverage; allows stormwater infiltration to sub-base and underground gallery."
+          "$description": "31,407 SF (2,917.05 m²) — permeable paver area. Reduces effective impervious surface coverage; allows stormwater infiltration to sub-base and underground gallery.",
+          "$description_es": "31,407 SF (2,917.05 m²) — área de adoquines permeables. Reduce la cobertura efectiva de superficie impermeable; permite la infiltración de aguas pluviales hacia la subbase y la galería subterránea."
         }
       },
       "infiltration-gallery": {
         "$description": "Underground stormwater infiltration gallery — captures, stores, and infiltrates site runoff to reduce peak discharge and support landscaping irrigation.",
+        "$description_es": "Galería subterránea de infiltración de aguas pluviales — capta, almacena e infiltra la escorrentía del sitio para reducir la descarga pico y apoyar el riego del paisajismo.",
         "capacity": {
           "$type": "number",
           "$value": 258800,
-          "$description": "258,800 gallons — underground infiltration gallery storage capacity. Provides peak-flow attenuation and groundwater recharge. IFC mapping: IfcDistributionSystem (domain: DRAINAGE); Uniclass: Ss_55_30 (drainage systems)."
+          "$description": "258,800 gallons — underground infiltration gallery storage capacity. Provides peak-flow attenuation and groundwater recharge. IFC mapping: IfcDistributionSystem (domain: DRAINAGE); Uniclass: Ss_55_30 (drainage systems).",
+          "$description_es": "258,800 galones — capacidad de almacenamiento de la galería de infiltración subterránea. Proporciona atenuación de flujo pico y recarga de agua subterránea. Mapeo IFC: IfcDistributionSystem (dominio: DRAINAGE); Uniclass: Ss_55_30 (sistemas de drenaje)."
         }
       },
       "site-programming": {
         "$description": "Site programming elements associated with the water management and sustainable landscaping design.",
+        "$description_es": "Elementos de programación del sitio asociados con el manejo de agua y el diseño de paisajismo sostenible.",
         "pedestrian-circulation": {
           "$type": "string",
           "$value": "integrated",
-          "$description": "Pedestrian circulation integrated with bioswale and permaculture landscaping zones. Paths separate from vehicular access per site programming diagram."
+          "$description": "Pedestrian circulation integrated with bioswale and permaculture landscaping zones. Paths separate from vehicular access per site programming diagram.",
+          "$description_es": "Circulación peatonal integrada con zonas de biofiltros (bioswale) y paisajismo de permacultura. Rutas separadas del acceso vehicular según el diagrama de programación del sitio."
         },
         "bike-circulation": {
           "$type": "string",
           "$value": "integrated",
-          "$description": "Bike circulation routes integrated with pedestrian paths and landscaping. Supports active transportation modal split for Professional Centre tenants."
+          "$description": "Bike circulation routes integrated with pedestrian paths and landscaping. Supports active transportation modal split for Professional Centre tenants.",
+          "$description_es": "Rutas de circulación en bicicleta integradas con senderos peatonales y paisajismo. Apoya la distribución modal de transporte activo para los inquilinos de Professional Centre."
         },
         "site-materials-standard": {
           "$type": "string",
           "$value": "environmental-first",
-          "$description": "Site materials selected for environmental performance: permeable pavers over standard asphalt, Buffalo Grass over irrigated turf, bioswales over concrete drainage channels. Aligns with Permaculture as Commercial Landscaping principle (AEC_White Paper_Sample_V3.pdf)."
+          "$description": "Site materials selected for environmental performance: permeable pavers over standard asphalt, Buffalo Grass over irrigated turf, bioswales over concrete drainage channels. Aligns with Permaculture as Commercial Landscaping principle (AEC_White Paper_Sample_V3.pdf).",
+          "$description_es": "Materiales del sitio seleccionados por su desempeño ambiental: adoquines permeables en lugar de asfalto estándar, Buffalo Grass en lugar de césped irrigado, biofiltros (bioswales) en lugar de canales de drenaje de concreto. Alineado con el principio de Permacultura como Paisajismo Comercial (AEC_White Paper_Sample_V3.pdf)."
         }
       }
     }

@@ -13,7 +13,8 @@
             "depth_mm": 762,
             "role": "Habitat driver — Professional Office, Business, Civic (non-courtroom)"
           },
-          "$description": "Steelcase Ology desk, 762mm (2'6\") depth. Habitat driver for Professional Office, Business, and Civic use types."
+          "$description": "Steelcase Ology desk, 762mm (2'6\") depth. Habitat driver for Professional Office, Business, and Civic use types.",
+          "$description_es": "Escritorio Steelcase Ology, 762 mm (2'6\") de profundidad. Determina el Hábitat para los tipos de uso Professional Office, Business y Civic."
         },
         "steelcase-think-desk": {
           "$type": "bim.furniture",
@@ -23,7 +24,8 @@
             "depth_mm": 762,
             "role": "Habitat driver — alternate SKU, same depth as Ology"
           },
-          "$description": "Steelcase Think desk, 762mm (2'6\") depth. Same depth as Ology — interchangeable for zone-depth derivation purposes."
+          "$description": "Steelcase Think desk, 762mm (2'6\") depth. Same depth as Ology — interchangeable for zone-depth derivation purposes.",
+          "$description_es": "Escritorio Steelcase Think, 762 mm (2'6\") de profundidad. Misma profundidad que Ology — intercambiable para fines de derivación de profundidad de zona."
         },
         "steelcase-coalesse-round-table": {
           "$type": "bim.furniture",
@@ -34,7 +36,8 @@
             "diameter_mm": 1067,
             "role": "Habitat driver — Private Office (PO-1)"
           },
-          "$description": "Steelcase Coalesse 3-person round table, 1,067mm (3'6\") diameter. Habitat driver for Private Office — see PO-1 Habitat depth 5.9944m in building-width-calculator.dtcg.json."
+          "$description": "Steelcase Coalesse 3-person round table, 1,067mm (3'6\") diameter. Habitat driver for Private Office — see PO-1 Habitat depth 5.9944m in building-width-calculator.dtcg.json.",
+          "$description_es": "Mesa redonda Steelcase Coalesse para 3 personas, 1,067 mm (3'6\") de diámetro. Determina el Hábitat para Private Office — ver la profundidad de Hábitat de PO-1 de 5.9944 m en building-width-calculator.dtcg.json."
         },
         "credenza": {
           "$type": "bim.furniture",
@@ -45,7 +48,8 @@
             "combined_mm": 1108,
             "role": "Magazine driver"
           },
-          "$description": "Credenza, 508mm (1'8\") body depth + 600mm (2'0\") door swing clearance = 1,108mm combined. Magazine driver."
+          "$description": "Credenza, 508mm (1'8\") body depth + 600mm (2'0\") door swing clearance = 1,108mm combined. Magazine driver.",
+          "$description_es": "Credenza, 508 mm (1'8\") de profundidad de cuerpo + 600 mm (2'0\") de holgura de giro de puerta = 1,108 mm combinados. Determina Magazine."
         },
         "bookcase": {
           "$type": "bim.furniture",
@@ -54,7 +58,8 @@
             "depth_mm": 305,
             "role": "Magazine driver"
           },
-          "$description": "Bookcase, 305mm (1'0\") depth. Magazine driver."
+          "$description": "Bookcase, 305mm (1'0\") depth. Magazine driver.",
+          "$description_es": "Librero, 305 mm (1'0\") de profundidad. Determina Magazine."
         },
         "filing-cabinet": {
           "$type": "bim.furniture",
@@ -65,8 +70,10 @@
             "combined_mm": 1385,
             "role": "Magazine driver"
           },
-          "$description": "Filing cabinet, 635mm (2'1\") body depth + 750mm (2'6\") drawer-pull clearance = 1,385mm combined. Magazine driver."
-        }
+          "$description": "Filing cabinet, 635mm (2'1\") body depth + 750mm (2'6\") drawer-pull clearance = 1,385mm combined. Magazine driver.",
+          "$description_es": "Archivero, 635 mm (2'1\") de profundidad de cuerpo + 750 mm (2'6\") de holgura de apertura de cajón = 1,385 mm combinados. Determina Magazine."
+        },
+        "$description_es": "SKUs de mobiliario de oficina compartido usados en las derivaciones de profundidad de zona de Professional Office, Business y Civic (fuera de sala de audiencia)."
       },
       "medical": {
         "$description": "Medical Office furniture SKUs.",
@@ -79,8 +86,10 @@
             "ada_compliant": true,
             "role": "Habitat driver — Medical"
           },
-          "$description": "Midmark 626 exam table, 790mm (2'7\") depth, ADA-compliant. Habitat driver for Medical — see Medical Habitat depth 7.2m in building-width-calculator.dtcg.json."
-        }
+          "$description": "Midmark 626 exam table, 790mm (2'7\") depth, ADA-compliant. Habitat driver for Medical — see Medical Habitat depth 7.2m in building-width-calculator.dtcg.json.",
+          "$description_es": "Mesa de exploración Midmark 626, 790 mm (2'7\") de profundidad, conforme a ADA. Determina el Hábitat para Medical — ver la profundidad de Hábitat de Medical de 7.2 m en building-width-calculator.dtcg.json."
+        },
+        "$description_es": "SKUs de mobiliario de Medical Office."
       },
       "laboratory": {
         "$description": "Laboratory furniture SKUs.",
@@ -92,7 +101,8 @@
             "depth_mm": 900,
             "role": "Habitat driver — Laboratory"
           },
-          "$description": "Treston TP-915 lab bench, 900mm (2'11\") depth. Habitat driver for Laboratory — see Laboratory Habitat depth 6.7818m in building-width-calculator.dtcg.json."
+          "$description": "Treston TP-915 lab bench, 900mm (2'11\") depth. Habitat driver for Laboratory — see Laboratory Habitat depth 6.7818m in building-width-calculator.dtcg.json.",
+          "$description_es": "Mesa de laboratorio Treston TP-915, 900 mm (2'11\") de profundidad. Determina el Hábitat para Laboratory — ver la profundidad de Hábitat de Laboratory de 6.7818 m en building-width-calculator.dtcg.json."
         },
         "fume-hood": {
           "$type": "bim.furniture",
@@ -103,8 +113,10 @@
             "combined_mm": 2440,
             "role": "Magazine driver — Laboratory"
           },
-          "$description": "Fume hood, 940mm (3'1\") body depth + 1,500mm (4'11\") egress clearance = 2,440mm combined. Magazine driver for Laboratory."
-        }
+          "$description": "Fume hood, 940mm (3'1\") body depth + 1,500mm (4'11\") egress clearance = 2,440mm combined. Magazine driver for Laboratory.",
+          "$description_es": "Campana de extracción, 940 mm (3'1\") de profundidad de cuerpo + 1,500 mm (4'11\") de holgura de salida = 2,440 mm combinados. Determina Magazine para Laboratory."
+        },
+        "$description_es": "SKUs de mobiliario de Laboratory."
       },
       "academic": {
         "$description": "Academic furniture SKUs.",
@@ -116,8 +128,10 @@
             "row_pitch_mm": 965,
             "role": "Habitat driver — Academic"
           },
-          "$description": "Tablet-arm chair, 965mm (3'2\") row-to-row pitch. Habitat driver for Academic — see Academic Habitat depth 4.7m in building-width-calculator.dtcg.json (4 rows × pitch, forward-facing seating, not façade-facing)."
-        }
+          "$description": "Tablet-arm chair, 965mm (3'2\") row-to-row pitch. Habitat driver for Academic — see Academic Habitat depth 4.7m in building-width-calculator.dtcg.json (4 rows × pitch, forward-facing seating, not façade-facing).",
+          "$description_es": "Silla con brazo tablero, 965 mm (3'2\") de separación entre filas. Determina el Hábitat para Academic — ver la profundidad de Hábitat de Academic de 4.7 m en building-width-calculator.dtcg.json (4 filas × separación, asientos orientados hacia adelante, no hacia la fachada)."
+        },
+        "$description_es": "SKUs de mobiliario de Academic."
       },
       "civic": {
         "$description": "Civic Office furniture SKUs (courtroom-specific; non-courtroom Civic spaces use bim.furniture.office).",
@@ -129,8 +143,10 @@
             "depth_mm": 1200,
             "role": "Habitat driver — Civic courtroom variant"
           },
-          "$description": "Agati judges bench, 1,200mm (3'11\") depth. Habitat driver for Civic courtroom specialisation."
-        }
+          "$description": "Agati judges bench, 1,200mm (3'11\") depth. Habitat driver for Civic courtroom specialisation.",
+          "$description_es": "Estrado de jueces Agati, 1,200 mm (3'11\") de profundidad. Determina el Hábitat para la especialización de sala de audiencia Civic."
+        },
+        "$description_es": "SKUs de mobiliario de Civic Office (específico de sala de audiencia; los espacios Civic que no son sala de audiencia usan bim.furniture.office)."
       }
     },
     "clearance": {
@@ -138,33 +154,40 @@
       "arbstattv-workstation": {
         "$type": "dimension",
         "$value": "1.0m",
-        "$description": "3'3\" — ArbStättV (German workplace ordinance) Anhang §3.1 movement clearance behind a seated workstation."
+        "$description": "3'3\" — ArbStättV (German workplace ordinance) Anhang §3.1 movement clearance behind a seated workstation.",
+        "$description_es": "3'3\" — holgura de movimiento del ArbStättV (reglamento alemán de lugares de trabajo) Anhang §3.1 detrás de una estación de trabajo sentada."
       },
       "asr-a18-corridor-aisle-20person": {
         "$type": "dimension",
         "$value": "1.0m",
-        "$description": "3'3\" — ASR A1.8 (German workplace rule, traffic routes) Tabelle 2, aisle width for occupancy ≤20 persons. This is the one ASR A1.8 tier we have a confirmed source value for; the full multi-tier table (by occupant count) is not reproduced here — do not assume other occupancy tiers without a source."
+        "$description": "3'3\" — ASR A1.8 (German workplace rule, traffic routes) Tabelle 2, aisle width for occupancy ≤20 persons. This is the one ASR A1.8 tier we have a confirmed source value for; the full multi-tier table (by occupant count) is not reproduced here — do not assume other occupancy tiers without a source.",
+        "$description_es": "3'3\" — ASR A1.8 (norma alemana de lugares de trabajo, rutas de tránsito) Tabelle 2, ancho de pasillo para ocupación ≤20 personas. Este es el único nivel de ASR A1.8 para el que tenemos un valor de fuente confirmado; la tabla completa multinivel (por número de ocupantes) no se reproduce aquí — no asumir otros niveles de ocupación sin una fuente."
       },
       "ada-wheelchair-turn": {
         "$type": "dimension",
         "$value": "1.525m",
-        "$description": "5'0\" — ADA 2010 §305 wheelchair turning-radius clearance. Also cited by CSA-B651 for the Canadian equivalent."
+        "$description": "5'0\" — ADA 2010 §305 wheelchair turning-radius clearance. Also cited by CSA-B651 for the Canadian equivalent.",
+        "$description_es": "5'0\" — holgura de radio de giro para silla de ruedas del ADA 2010 §305. También citada por CSA-B651 para el equivalente canadiense."
       },
       "ibc-egress-laboratory": {
         "$type": "dimension",
         "$value": "3.048m",
-        "$description": "10'0\" — IBC 2021 §1020/§1029 egress-width minimum for high-hazard (laboratory) occupancy. Matches Laboratory Corridor width in building-width-calculator.dtcg.json — this is the IBC citation for that value, not a separate independent figure."
+        "$description": "10'0\" — IBC 2021 §1020/§1029 egress-width minimum for high-hazard (laboratory) occupancy. Matches Laboratory Corridor width in building-width-calculator.dtcg.json — this is the IBC citation for that value, not a separate independent figure.",
+        "$description_es": "10'0\" — ancho mínimo de salida del IBC 2021 §1020/§1029 para ocupación de alto riesgo (laboratorio). Coincide con el ancho de Corredor de Laboratory en building-width-calculator.dtcg.json — esta es la cita del IBC para ese valor, no una cifra independiente separada."
       },
       "ibc-egress-civic-assembly": {
         "$type": "dimension",
         "$value": "3.6m",
-        "$description": "11'10\" — IBC 2021 §1020/§1029 egress-width minimum for assembly (civic/public) occupancy. Matches our Civic Corridor width — this is the IBC citation for that value, not a separate independent figure. Only these two occupancy classes (laboratory high-hazard, civic assembly) have confirmed IBC citations; a full occupancy-class table is not reproduced here."
+        "$description": "11'10\" — IBC 2021 §1020/§1029 egress-width minimum for assembly (civic/public) occupancy. Matches our Civic Corridor width — this is the IBC citation for that value, not a separate independent figure. Only these two occupancy classes (laboratory high-hazard, civic assembly) have confirmed IBC citations; a full occupancy-class table is not reproduced here.",
+        "$description_es": "11'10\" — ancho mínimo de salida del IBC 2021 §1020/§1029 para ocupación de asamblea (cívica/pública). Coincide con nuestro ancho de Corredor Civic — esta es la cita del IBC para ese valor, no una cifra independiente separada. Solo estas dos clases de ocupación (alto riesgo de laboratorio, asamblea cívica) tienen citas del IBC confirmadas; no se reproduce aquí una tabla completa de clases de ocupación."
       },
       "en12464-workstation-to-window": {
         "$type": "dimension",
         "$value": "6.0m",
-        "$description": "19'8\" — EN 12464-1:2021 + EN 17037 maximum workstation-to-window distance (2.4m window head × 2.5). This is the regulatory cap that sets Professional Office/Business/Civic Habitat depth at exactly 6.0m."
-      }
+        "$description": "19'8\" — EN 12464-1:2021 + EN 17037 maximum workstation-to-window distance (2.4m window head × 2.5). This is the regulatory cap that sets Professional Office/Business/Civic Habitat depth at exactly 6.0m.",
+        "$description_es": "19'8\" — distancia máxima de estación de trabajo a ventana según EN 12464-1:2021 + EN 17037 (2.4 m de altura de ventana × 2.5). Este es el tope normativo que fija la profundidad de Hábitat de Professional Office/Business/Civic exactamente en 6.0 m."
+      },
+      "$description_es": "Dimensiones de holgura normativa y circulación citadas en las derivaciones de profundidad de zona. Cada una cita su código/norma rectora."
     },
     "derivation-example": {
       "$description": "Worked example showing how our furniture and clearance tokens sum to the Professional Office Habitat depth (6.0m) used by the Building Width Calculator, providing a machine-readable reference calculation for deriving zone depths from furniture and clearances.",
@@ -175,16 +198,40 @@
           "target_zone": "habitat",
           "target_depth_m": 6.0,
           "terms": [
-            {"source": "bim.furniture.office.steelcase-ology-desk", "quantity": 3, "arrangement": "perpendicular, in series", "depth_m": 2.286, "note": "3 × 762mm desk"},
-            {"source": "bim.clearance.arbstattv-workstation", "quantity": 1, "depth_m": 1.0, "note": "movement clearance behind seat"},
-            {"source": "bim.clearance.asr-a18-corridor-aisle-20person", "quantity": 1, "depth_m": 1.0, "note": "≤20-person aisle"},
-            {"source": "bim.clearance.en12464-workstation-to-window", "quantity": 1, "depth_m": 1.714, "note": "EN 17037 daylight buffer, derived: 2.4m window head × 2.5 minus the desk+clearance terms above, NOT the raw 6.0m cap value itself — see caveat"}
+            {
+              "source": "bim.furniture.office.steelcase-ology-desk",
+              "quantity": 3,
+              "arrangement": "perpendicular, in series",
+              "depth_m": 2.286,
+              "note": "3 × 762mm desk"
+            },
+            {
+              "source": "bim.clearance.arbstattv-workstation",
+              "quantity": 1,
+              "depth_m": 1.0,
+              "note": "movement clearance behind seat"
+            },
+            {
+              "source": "bim.clearance.asr-a18-corridor-aisle-20person",
+              "quantity": 1,
+              "depth_m": 1.0,
+              "note": "≤20-person aisle"
+            },
+            {
+              "source": "bim.clearance.en12464-workstation-to-window",
+              "quantity": 1,
+              "depth_m": 1.714,
+              "note": "EN 17037 daylight buffer, derived: 2.4m window head × 2.5 minus the desk+clearance terms above, NOT the raw 6.0m cap value itself — see caveat"
+            }
           ],
           "sum_m": 6.0,
           "caveat": "The fourth term (1.714m) is described elsewhere as 'EN 17037 daylight buffer (2.4m window head × 2.5)', summing the four terms to exactly 6.000m. The arithmetic (2.286 + 1.0 + 1.0 + 1.714 = 6.0) is confirmed; the derivation of 1.714m specifically from '2.4m × 2.5' is not (2.4 × 2.5 = 6.0, not 1.714) — this term is better read as the remainder after the desk and two clearances, independently corroborated by the EN 12464-1 6.0m cap, rather than a direct product of the cited factors."
         },
-        "$description": "Professional Office Habitat derivation: 3× Steelcase Ology desk (2.286m) + ArbStättV clearance (1.0m) + ASR A1.8 aisle (1.0m) + daylight buffer (1.714m) = 6.000m. The fourth term's stated derivation (2.4m window head × 2.5) does not actually multiply out to 1.714m — that figure is better read as the remainder after the desk and two clearances, independently corroborated by the EN 12464-1 6.0m cap, rather than a direct product of the cited factors."
-      }
+        "$description": "Professional Office Habitat derivation: 3× Steelcase Ology desk (2.286m) + ArbStättV clearance (1.0m) + ASR A1.8 aisle (1.0m) + daylight buffer (1.714m) = 6.000m. The fourth term's stated derivation (2.4m window head × 2.5) does not actually multiply out to 1.714m — that figure is better read as the remainder after the desk and two clearances, independently corroborated by the EN 12464-1 6.0m cap, rather than a direct product of the cited factors.",
+        "$description_es": "Derivación del Hábitat de Professional Office: 3× escritorio Steelcase Ology (2.286 m) + holgura ArbStättV (1.0 m) + pasillo ASR A1.8 (1.0 m) + margen de luz natural (1.714 m) = 6.000 m. La derivación declarada del cuarto término (2.4 m de altura de ventana × 2.5) en realidad no da 1.714 m al multiplicarse — esa cifra se lee mejor como el remanente después del escritorio y las dos holguras, corroborado de forma independiente por el tope de 6.0 m de EN 12464-1, en lugar de un producto directo de los factores citados."
+      },
+      "$description_es": "Ejemplo resuelto que muestra cómo nuestros tokens de mobiliario y holgura suman la profundidad de Hábitat de Professional Office (6.0 m) usada por la Calculadora de Ancho de Edificación, proporcionando un cálculo de referencia legible por máquina para derivar profundidades de zona a partir del mobiliario y las holguras."
     }
-  }
+  },
+  "$description_es": "Categoría de tokens de MOBILIARIO BIM — SKUs de mobiliario de fabricantes reales y holguras normativas que derivan las profundidades de Hábitat/Magazine/Corredor que usa nuestra Calculadora de Ancho de Edificación. Cada dimensión aquí se remonta a un producto real de fabricante o a una cláusula normativa citada. Fuente: documentación de diseño interna. Los valores en milímetros son los autoritativos para las dimensiones de mobiliario/holgura (siguiendo la convención de hoja de especificaciones del fabricante); los valores en metros figuran en $description para referencia cruzada contra las profundidades de zona de la Calculadora de Ancho de Edificación."
 }

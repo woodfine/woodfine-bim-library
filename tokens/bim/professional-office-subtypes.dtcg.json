@@ -1,6 +1,7 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$description": "BIM PROFESSIONAL OFFICE SUBTYPES token category — taxonomy and classification of the five Professional Office sub-types (Medical, Business, Laboratory, Academic, Civic) and their variants. Sub-types are the leasable-office categories within a Professional Centre or Suburban Office floor plate. Each occupies a 1/4 floor tile (5,000 SF / 464.52 m²) or combination thereof. Source: internal design documentation (January–November 2025). Key plan area measurements are tracked separately; this file captures taxonomy, codes, and specialisation variants.",
+  "$description_es": "Categoría de tokens BIM PROFESSIONAL OFFICE SUBTYPES — taxonomía y clasificación de los cinco subtipos de Professional Office (Médico, Negocios, Laboratorio, Académico, Cívico) y sus variantes. Los subtipos son las categorías de oficina arrendable dentro de una placa de piso de Professional Centre o Suburban Office. Cada uno ocupa 1/4 de Tile de piso (5,000 SF / 464.52 m²) o una combinación de estos. Fuente: documentación de diseño interna (enero–noviembre 2025). Las mediciones de área de Key Plan se registran por separado; este archivo captura la taxonomía, los códigos y las variantes de especialización.",
   "bim": {
     "professional-office-subtype": {
       "medical": {
@@ -39,7 +40,8 @@
             "large": 78.4
           }
         },
-        "$description": "Medical Office — clinical, dental, diagnostic, and allied health leaseholds. FFE codes M1 (1,100 SF), M2 (1,400 SF), M3 (800 SF). Specialisations: Dentist, General Practitioner. Key plan sizes: Small 2,401 SF, Medium 3,568 SF, Large 5,231 SF."
+        "$description": "Medical Office — clinical, dental, diagnostic, and allied health leaseholds. FFE codes M1 (1,100 SF), M2 (1,400 SF), M3 (800 SF). Specialisations: Dentist, General Practitioner. Key plan sizes: Small 2,401 SF, Medium 3,568 SF, Large 5,231 SF.",
+        "$description_es": "Medical Office — arrendamientos clínicos, dentales, de diagnóstico y de salud aliada. Códigos FFE M1 (1,100 SF), M2 (1,400 SF), M3 (800 SF). Especializaciones: Dentista, Médico General. Tamaños de Key Plan: Small 2,401 SF, Medium 3,568 SF, Large 5,231 SF."
       },
       "business": {
         "$type": "bim.entity",
@@ -64,7 +66,8 @@
             "large": 59.7
           }
         },
-        "$description": "Business Office — general commercial office, co-working-adjacent, larger open-plan leaseholds. FFE codes B1 (1,100 SF), B2 (1,400 SF), B3 (800 SF)."
+        "$description": "Business Office — general commercial office, co-working-adjacent, larger open-plan leaseholds. FFE codes B1 (1,100 SF), B2 (1,400 SF), B3 (800 SF).",
+        "$description_es": "Business Office — oficina comercial general, afín al coworking, arrendamientos de planta abierta más grandes. Códigos FFE B1 (1,100 SF), B2 (1,400 SF), B3 (800 SF)."
       },
       "laboratory": {
         "$type": "bim.entity",
@@ -102,7 +105,8 @@
             "large": 103.1
           }
         },
-        "$description": "Laboratory — scientific, research, and testing leaseholds. Specialisations: Medical Laboratory, Research Laboratory. FFE codes L1–L3. Key plan sizes: Small 2,099 SF, Medium 3,401 SF, Large 4,313 SF."
+        "$description": "Laboratory — scientific, research, and testing leaseholds. Specialisations: Medical Laboratory, Research Laboratory. FFE codes L1–L3. Key plan sizes: Small 2,099 SF, Medium 3,401 SF, Large 4,313 SF.",
+        "$description_es": "Laboratory — arrendamientos científicos, de investigación y de pruebas. Especializaciones: Laboratorio Médico, Laboratorio de Investigación. Códigos FFE L1–L3. Tamaños de Key Plan: Small 2,099 SF, Medium 3,401 SF, Large 4,313 SF."
       },
       "academic": {
         "$type": "bim.entity",
@@ -141,7 +145,8 @@
             "large": 139.1
           }
         },
-        "$description": "Academic Office — classrooms, seminar rooms, lecture halls. Specialisations: Classroom, Seminar Room, Lecture Hall. FFE codes A1–A3. Key plan sizes: Small 1,131 SF (reconciled 2026-07-03, was 944 SF from a superseded V2 source), Medium 2,586 SF, Large 4,050 SF."
+        "$description": "Academic Office — classrooms, seminar rooms, lecture halls. Specialisations: Classroom, Seminar Room, Lecture Hall. FFE codes A1–A3. Key plan sizes: Small 1,131 SF (reconciled 2026-07-03, was 944 SF from a superseded V2 source), Medium 2,586 SF, Large 4,050 SF.",
+        "$description_es": "Academic Office — aulas, salas de seminario, auditorios de conferencias. Especializaciones: Aula, Sala de Seminario, Auditorio. Códigos FFE A1–A3. Tamaños de Key Plan: Small 1,131 SF (reconciliado el 2026-07-03, antes 944 SF de una fuente V2 obsoleta), Medium 2,586 SF, Large 4,050 SF."
       },
       "civic": {
         "$type": "bim.entity",
@@ -176,7 +181,8 @@
           },
           "design_notes": "Widest overall floor plate — large Magazine (7.23m / 23'8\") for public records and secure areas; widest Corridor (3.6m / 12'0\") across all sub-types for public assembly egress. ADA/accessible-route compliance mandatory throughout leasehold. Small: 270 m² (2,912 SF); Medium: 577 m² (6,215 SF); Large: 822 m² (8,850 SF)."
         },
-        "$description": "Civic Office — courtrooms, municipal offices, cultural, and civic assembly spaces. FFE codes C1–C3. Widest corridor (3.6m / 12'0\") across all Professional Office sub-types. Key plan sizes: Small 2,912 SF, Medium 6,215 SF, Large 8,850 SF."
+        "$description": "Civic Office — courtrooms, municipal offices, cultural, and civic assembly spaces. FFE codes C1–C3. Widest corridor (3.6m / 12'0\") across all Professional Office sub-types. Key plan sizes: Small 2,912 SF, Medium 6,215 SF, Large 8,850 SF.",
+        "$description_es": "Civic Office — salas de tribunal, oficinas municipales, espacios culturales y de asamblea cívica. Códigos FFE C1–C3. El Corredor más ancho (3.6 m / 12'0\") entre todos los subtipos de Professional Office. Tamaños de Key Plan: Small 2,912 SF, Medium 6,215 SF, Large 8,850 SF."
       }
     }
   }

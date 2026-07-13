@@ -1,6 +1,7 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$description": "BIM SPATIAL token category — anchored to IFC 4.3 IfcSpatialElement entity hierarchy. Site / Building / Storey / Space taxonomy.",
+  "$description_es": "Categoría de tokens SPATIAL de BIM — anclada a la jerarquía de entidades IfcSpatialElement de IFC 4.3. Taxonomía Site / Building / Storey / Space.",
   "bim": {
     "spatial": {
       "site": {
@@ -11,7 +12,8 @@
           "uniclass": "Co",
           "description": "The geographic site or land parcel containing one or more buildings. Authoritative spatial root."
         },
-        "$description": "IFC Site — geographic land parcel; authoritative spatial root."
+        "$description": "IFC Site — geographic land parcel; authoritative spatial root.",
+        "$description_es": "IFC Site — parcela geográfica de terreno; raíz espacial autoritativa."
       },
       "building": {
         "$type": "bim.entity",

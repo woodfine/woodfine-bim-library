@@ -1,6 +1,7 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$description": "BIM INTERIOR token category — furniture BIM Objects and circulation constraints for Key Plan authoring. Each furniture token carries Steelcase/manufacturer product data (dimensions mm, clearance mm, SKU, weight, IFC class, source URL). Circulation tokens carry the applicable code reference and spatial thresholds, used for constraint validation when a Key Plan is authored. Sources: steelcase.com product pages, coalesse.com, our internal design documentation, ASR A1.2 (2011), DIN 18040, ArbStättV §12.",
+  "$description_es": "Categoría de tokens BIM INTERIOR — Objetos BIM de mobiliario y restricciones de circulación para la elaboración de Key Plans. Cada token de mobiliario lleva datos de producto de Steelcase/fabricante (dimensiones en mm, holguras en mm, SKU, peso, clase IFC, URL de fuente). Los tokens de circulación llevan la referencia normativa aplicable y los umbrales espaciales, usados para validar restricciones al elaborar un Key Plan. Fuentes: páginas de producto de steelcase.com, coalesse.com, nuestra documentación de diseño interna, ASR A1.2 (2011), DIN 18040, ArbStättV §12.",
   "bim": {
     "interior": {
       "furniture": {
@@ -35,7 +36,8 @@
               "uniclass_pr_title": "Office chairs",
               "url": "https://www.steelcase.com/products/office-chairs/leap/"
             },
-            "$description": "Steelcase Leap V2 ergonomic task chair (462 Series). W 686 mm × D 629 mm (seat-travel envelope) × H 978–1099 mm. Seat height 410–540 mm. No public SKU — configured to order. Uniclass 2015 Pr_40_50_12_57 (Office chairs). Source: uk.steelcase.com + au.steelcase.com."
+            "$description": "Steelcase Leap V2 ergonomic task chair (462 Series). W 686 mm × D 629 mm (seat-travel envelope) × H 978–1099 mm. Seat height 410–540 mm. No public SKU — configured to order. Uniclass 2015 Pr_40_50_12_57 (Office chairs). Source: uk.steelcase.com + au.steelcase.com.",
+            "$description_es": "Silla de trabajo ergonómica Steelcase Leap V2 (Serie 462). A 686 mm × P 629 mm (envolvente de recorrido del asiento) × H 978–1099 mm. Altura de asiento 410–540 mm. Sin SKU público — se configura por pedido. Uniclass 2015 Pr_40_50_12_57 (Sillas de oficina). Fuente: uk.steelcase.com + au.steelcase.com."
           }
         },
         "desk": {
@@ -65,7 +67,8 @@
               "uniclass_pr_title": "Office desks",
               "url": "https://www.steelcase.com/products/height-adjustable-desks/migration-se/"
             },
-            "$description": "Steelcase Migration SE height-adjustable desk, 58\" × 29\" (1473 × 737 mm). Extended-height base: 574–1237 mm. Motor: 24V DC, 33 mm/sec. Weight capacity 99.8 kg surface load. Uniclass 2015 Pr_40_50_21_59 (Office desks). Source: steelcase.com product page + user manual part 1323350001."
+            "$description": "Steelcase Migration SE height-adjustable desk, 58\" × 29\" (1473 × 737 mm). Extended-height base: 574–1237 mm. Motor: 24V DC, 33 mm/sec. Weight capacity 99.8 kg surface load. Uniclass 2015 Pr_40_50_21_59 (Office desks). Source: steelcase.com product page + user manual part 1323350001.",
+            "$description_es": "Escritorio de altura ajustable Steelcase Migration SE, 58\" × 29\" (1473 × 737 mm). Base de altura extendida: 574–1237 mm. Motor: 24V CD, 33 mm/seg. Capacidad de carga de superficie 99.8 kg. Uniclass 2015 Pr_40_50_21_59 (Escritorios de oficina). Fuente: página de producto de steelcase.com + manual de usuario parte 1323350001."
           }
         },
         "table": {
@@ -99,7 +102,8 @@
               "uniclass_pr_title": "Office tables",
               "url": "https://www.steelcase.com/products/conference-collaborative-tables/groupwork/"
             },
-            "$description": "Steelcase Groupwork 36-Inch Working Height Round Table. Diameter 914 mm, H 724 mm. Steelcase rates as 4-person; used as 3-person round in Private Office Key Plans per FFE program. Uniclass 2015 Pr_40_50_21_60 (Office tables). Source: steelcase.com/products/conference-collaborative-tables/groupwork/."
+            "$description": "Steelcase Groupwork 36-Inch Working Height Round Table. Diameter 914 mm, H 724 mm. Steelcase rates as 4-person; used as 3-person round in Private Office Key Plans per FFE program. Uniclass 2015 Pr_40_50_21_60 (Office tables). Source: steelcase.com/products/conference-collaborative-tables/groupwork/.",
+            "$description_es": "Mesa redonda de altura de trabajo Steelcase Groupwork de 36 pulgadas. Diámetro 914 mm, H 724 mm. Steelcase la califica para 4 personas; usada como mesa redonda de 3 personas en los Key Plans de Private Office según el programa de FFE. Uniclass 2015 Pr_40_50_21_60 (Mesas de oficina). Fuente: steelcase.com/products/conference-collaborative-tables/groupwork/."
           }
         },
         "storage": {
@@ -130,7 +134,8 @@
               "uniclass_pr_title": "Office storage units",
               "url": "https://www.steelcase.com/products/workstation-storage/ts-series/"
             },
-            "$description": "Steelcase TS Series Mobile Pedestal with Steel Top. W 387 mm × D 559 mm × H 533 mm. BBF drawer configuration. Mobile (casters). Uniclass 2015 Pr_40_30_87_57 (Office storage units). Source: TS Series brochure IM#18-0101973 via steelcase.com."
+            "$description": "Steelcase TS Series Mobile Pedestal with Steel Top. W 387 mm × D 559 mm × H 533 mm. BBF drawer configuration. Mobile (casters). Uniclass 2015 Pr_40_30_87_57 (Office storage units). Source: TS Series brochure IM#18-0101973 via steelcase.com.",
+            "$description_es": "Pedestal móvil Steelcase Serie TS con tapa de acero. A 387 mm × P 559 mm × H 533 mm. Configuración de cajones BBF. Móvil (con ruedas). Uniclass 2015 Pr_40_30_87_57 (Unidades de almacenamiento de oficina). Fuente: folleto de la Serie TS IM#18-0101973 vía steelcase.com."
           },
           "steelcase-currency-bookcase-36": {
             "$type": "bim.furniture-object",
@@ -159,7 +164,8 @@
               "uniclass_pr_title": "Open bookcases",
               "url": "https://www.steelcase.com/products/private-offices/currency/"
             },
-            "$description": "Steelcase Currency Enhanced Bookcase, 36\" wide (914 × 381 × 1846 mm). 4 adjustable shelves. Uniclass 2015 Pr_40_30_78_58 (Open bookcases). Source: Currency NASPO spec guide June 2025 via steelcase.com."
+            "$description": "Steelcase Currency Enhanced Bookcase, 36\" wide (914 × 381 × 1846 mm). 4 adjustable shelves. Uniclass 2015 Pr_40_30_78_58 (Open bookcases). Source: Currency NASPO spec guide June 2025 via steelcase.com.",
+            "$description_es": "Librero mejorado Steelcase Currency, 36\" de ancho (914 × 381 × 1846 mm). 4 repisas ajustables. Uniclass 2015 Pr_40_30_78_58 (Libreros abiertos). Fuente: guía de especificación Currency NASPO, junio de 2025, vía steelcase.com."
           }
         },
         "lounge-chair": {
@@ -194,7 +200,8 @@
               "url": "https://www.coalesse.com/products/seating/lounge-seating/ch445-wing-chair/",
               "url_note": "steelcase.com/products/lounge-chairs/wing-chair-ch445/ returned 404 on 2026-05-22; Coalesse URL is authoritative Steelcase-family source"
             },
-            "$description": "Wing Chair CH445 by Carl Hansen & Son (Coalesse Partners product). W 899 mm × D 896 mm × H 1031 mm. Seat height 391 mm. Weight 36 kg. Designed Hans J. Wegner 1960. Uniclass 2015 Pr_40_50_12_48 (Lounge chairs). Source: coalesse.com/products/seating/lounge-seating/ch445-wing-chair/."
+            "$description": "Wing Chair CH445 by Carl Hansen & Son (Coalesse Partners product). W 899 mm × D 896 mm × H 1031 mm. Seat height 391 mm. Weight 36 kg. Designed Hans J. Wegner 1960. Uniclass 2015 Pr_40_50_12_48 (Lounge chairs). Source: coalesse.com/products/seating/lounge-seating/ch445-wing-chair/.",
+            "$description_es": "Silla Wing Chair CH445 de Carl Hansen & Son (producto de Coalesse Partners). A 899 mm × P 896 mm × H 1031 mm. Altura de asiento 391 mm. Peso 36 kg. Diseñada por Hans J. Wegner en 1960. Uniclass 2015 Pr_40_50_12_48 (Sillones/butacas). Fuente: coalesse.com/products/seating/lounge-seating/ch445-wing-chair/."
           }
         },
         "utility": {
@@ -222,7 +229,8 @@
               "uniclass_pr_title": "Coat racks",
               "url": null
             },
-            "$description": "Generic freestanding coat rack / hook panel. Non-Steelcase; dimensions are representative (400 × 300 mm footprint, 1800 mm height). Used at the Corridor entry of Private Office Key Plans. Uniclass 2015 Pr_40_30_78_17 (Coat racks)."
+            "$description": "Generic freestanding coat rack / hook panel. Non-Steelcase; dimensions are representative (400 × 300 mm footprint, 1800 mm height). Used at the Corridor entry of Private Office Key Plans. Uniclass 2015 Pr_40_30_78_17 (Coat racks).",
+            "$description_es": "Perchero independiente genérico / panel de ganchos. No es Steelcase; las dimensiones son representativas (huella de 400 × 300 mm, altura de 1800 mm). Usado en el ingreso del Corredor de los Key Plans de Private Office. Uniclass 2015 Pr_40_30_78_17 (Percheros)."
           }
         }
       },
@@ -247,7 +255,8 @@
               "European Lighting Standard EN 12464-1 — desk within 6 m of facade glazing"
             ]
           },
-          "$description": "Circulation constraints for Private Office Key Plans. ASR A1.2: minimum 8 m² per person. ArbStättV §12: 875 mm single-person aisle. DIN 18040: 1500 mm wheelchair turning circle. European Lighting Standard EN 12464-1: desk within 6 m of exterior glazing."
+          "$description": "Circulation constraints for Private Office Key Plans. ASR A1.2: minimum 8 m² per person. ArbStättV §12: 875 mm single-person aisle. DIN 18040: 1500 mm wheelchair turning circle. European Lighting Standard EN 12464-1: desk within 6 m of exterior glazing.",
+          "$description_es": "Restricciones de circulación para los Key Plans de Private Office. ASR A1.2: mínimo 8 m² por persona. ArbStättV §12: pasillo de 875 mm para una persona. DIN 18040: círculo de giro de silla de ruedas de 1500 mm. European Lighting Standard EN 12464-1: escritorio a menos de 6 m del vidriado exterior."
         }
       }
     }

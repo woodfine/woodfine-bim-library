@@ -9,23 +9,27 @@
           "depth": {
             "$type": "dimension",
             "$value": "6.0m",
-            "$description": "19'8\" — desks/workstations; European Lighting Standard minimum. With desks perpendicular to façade add 0.7m for three desks in series (see bim.zone.circulation-addition.perpendicular-desk)."
+            "$description": "19'8\" — desks/workstations; European Lighting Standard minimum. With desks perpendicular to façade add 0.7m for three desks in series (see bim.zone.circulation-addition.perpendicular-desk).",
+            "$description_es": "19'8\" — escritorios/estaciones de trabajo; mínimo del European Lighting Standard. Con escritorios perpendiculares a la fachada, agregar 0.7 m para tres escritorios en serie (ver bim.zone.circulation-addition.perpendicular-desk)."
           }
         },
         "magazine": {
           "depth": {
             "$type": "dimension",
             "$value": "3.8m",
-            "$description": "12'5\" — storage, bookshelves, filing. Balances floor plate to avoid long narrow rectangle."
+            "$description": "12'5\" — storage, bookshelves, filing. Balances floor plate to avoid long narrow rectangle.",
+            "$description_es": "12'5\" — almacenamiento, libreros, archivo. Equilibra la placa de piso para evitar un rectángulo largo y angosto."
           }
         },
         "corridor": {
           "width": {
             "$type": "dimension",
             "$value": "2.0m",
-            "$description": "6'6\" — bilateral corridor; mirrored at centre of floor plate. Overdesign by 20% recommended for well-being and smaller-tenant circulation."
+            "$description": "6'6\" — bilateral corridor; mirrored at centre of floor plate. Overdesign by 20% recommended for well-being and smaller-tenant circulation.",
+            "$description_es": "6'6\" — corredor bilateral; reflejado en el centro de la placa de piso. Se recomienda un sobredimensionamiento del 20% para el bienestar y la circulación de inquilinos más pequeños."
           }
-        }
+        },
+        "$description_es": "Tipo de uso Professional Office — inquilinos de Negocios en suites de oficina arrendadas. Hábitat cumple exactamente el European Lighting Standard en 6.0 m."
       },
       "private-office": {
         "$description": "Private Office use type — individual licensed offices (PO-1/PO-2/PO-3). No shared corridor; each office opens directly to a shared floor corridor or building egress. Habitat marginally under 6m from Key Plan sample geometry.",
@@ -33,23 +37,27 @@
           "depth": {
             "$type": "dimension",
             "$value": "5.9944m",
-            "$description": "19'8\" — desks/workstations. Marginally under the 6.0m European Lighting Standard; flag for review on final Key Plan sign-off."
+            "$description": "19'8\" — desks/workstations. Marginally under the 6.0m European Lighting Standard; flag for review on final Key Plan sign-off.",
+            "$description_es": "19'8\" — escritorios/estaciones de trabajo. Ligeramente por debajo del European Lighting Standard de 6.0 m; señalado para revisión en la aprobación final del Key Plan."
           }
         },
         "magazine": {
           "depth": {
             "$type": "dimension",
             "$value": "1.3716m",
-            "$description": "4'6\" — shallow storage zone; private offices carry minimal shared storage relative to professional suites."
+            "$description": "4'6\" — shallow storage zone; private offices carry minimal shared storage relative to professional suites.",
+            "$description_es": "4'6\" — zona de almacenamiento poco profunda; las oficinas privadas llevan un almacenamiento compartido mínimo respecto a las suites profesionales."
           }
         },
         "corridor": {
           "width": {
             "$type": "dimension",
             "$value": "0.0m",
-            "$description": "No shared bilateral corridor in Private Office use type. Each office accesses the building corridor directly."
+            "$description": "No shared bilateral corridor in Private Office use type. Each office accesses the building corridor directly.",
+            "$description_es": "No hay corredor bilateral compartido en el tipo de uso Private Office. Cada oficina accede directamente al corredor del edificio."
           }
-        }
+        },
+        "$description_es": "Tipo de uso Private Office — oficinas individuales con licencia (PO-1/PO-2/PO-3). Sin corredor compartido; cada oficina abre directamente a un corredor de piso compartido o a una salida del edificio. Hábitat ligeramente por debajo de 6 m según la geometría de la muestra de Key Plan."
       },
       "laboratory": {
         "$description": "Laboratory use type — scientific, research, and testing leaseholds. Wider Habitat and Magazine reflect bench depth and fume hood clearances. Corridor corridor matches IBC egress minimums for lab occupancy.",
@@ -57,23 +65,27 @@
           "depth": {
             "$type": "dimension",
             "$value": "6.7818m",
-            "$description": "22'3\" — bench depth + circulation + safety clearances per German workplace-circulation standards (ArbStättV). Exceeds European Lighting Standard 6m minimum."
+            "$description": "22'3\" — bench depth + circulation + safety clearances per German workplace-circulation standards (ArbStättV). Exceeds European Lighting Standard 6m minimum.",
+            "$description_es": "22'3\" — profundidad de mesa de trabajo + circulación + holguras de seguridad según las normas alemanas de circulación en el lugar de trabajo (ArbStättV). Excede el mínimo de 6 m del European Lighting Standard."
           }
         },
         "magazine": {
           "depth": {
             "$type": "dimension",
             "$value": "4.8006m",
-            "$description": "15'9\" — chemical storage, equipment staging, fume hood egress zone."
+            "$description": "15'9\" — chemical storage, equipment staging, fume hood egress zone.",
+            "$description_es": "15'9\" — almacenamiento de químicos, preparación de equipo, zona de salida de campana de extracción."
           }
         },
         "corridor": {
           "width": {
             "$type": "dimension",
             "$value": "3.048m",
-            "$description": "10'0\" — wider corridor required for lab cart and equipment transport; IBC egress minimum for high-hazard occupancy."
+            "$description": "10'0\" — wider corridor required for lab cart and equipment transport; IBC egress minimum for high-hazard occupancy.",
+            "$description_es": "10'0\" — se requiere un corredor más amplio para el transporte de carros de laboratorio y equipo; mínimo de salida del IBC para ocupación de alto riesgo."
           }
-        }
+        },
+        "$description_es": "Tipo de uso Laboratory — arrendamientos científicos, de investigación y de pruebas. Un Hábitat y Magazine más amplios reflejan la profundidad de las mesas de trabajo y las holguras de las campanas de extracción. El Corredor coincide con los mínimos de salida del IBC para ocupación de laboratorio."
       },
       "academic": {
         "$description": "Academic use type — classrooms, seminar rooms, lecture halls. Habitat shorter than 6m because desks face forward (not toward façade); Corridor absent as academic suites typically open to a shared corridor.",
@@ -81,23 +93,27 @@
           "depth": {
             "$type": "dimension",
             "$value": "4.7m",
-            "$description": "15'5\" — seating rows facing forward; European Lighting Standard applies to workstations, not auditorium-style seating. Review against WELL certification requirements if workstations are present."
+            "$description": "15'5\" — seating rows facing forward; European Lighting Standard applies to workstations, not auditorium-style seating. Review against WELL certification requirements if workstations are present.",
+            "$description_es": "15'5\" — filas de asientos orientadas hacia adelante; el European Lighting Standard aplica a estaciones de trabajo, no a asientos tipo auditorio. Revisar contra los requisitos de certificación WELL si hay estaciones de trabajo presentes."
           }
         },
         "magazine": {
           "depth": {
             "$type": "dimension",
             "$value": "3.0m",
-            "$description": "9'10\" — storage, AV equipment, accessible routes. Note: source spreadsheet shows '3'7\" ' for feet which appears to be a transposition error; 3.0m = 9'10\" and is used here."
+            "$description": "9'10\" — storage, AV equipment, accessible routes. Note: source spreadsheet shows '3'7\" ' for feet which appears to be a transposition error; 3.0m = 9'10\" and is used here.",
+            "$description_es": "9'10\" — almacenamiento, equipo audiovisual, rutas accesibles. Nota: la hoja de cálculo fuente muestra '3'7\" ' en pies, lo que parece ser un error de transcripción; se usa aquí 3.0 m = 9'10\"."
           }
         },
         "corridor": {
           "width": {
             "$type": "dimension",
             "$value": "0.0m",
-            "$description": "No bilateral corridor in Academic use type. Suites open directly to building corridor."
+            "$description": "No bilateral corridor in Academic use type. Suites open directly to building corridor.",
+            "$description_es": "No hay corredor bilateral en el tipo de uso Academic. Las suites abren directamente al corredor del edificio."
           }
-        }
+        },
+        "$description_es": "Tipo de uso Academic — aulas, salas de seminario, auditorios. Hábitat más corto que 6 m porque los escritorios miran hacia adelante (no hacia la fachada); Corredor ausente ya que las suites académicas típicamente abren a un corredor compartido."
       },
       "business": {
         "$description": "Business use type — general commercial office, co-working-adjacent, larger open-plan leaseholds.",
@@ -105,24 +121,28 @@
           "depth": {
             "$type": "dimension",
             "$value": "5.63m",
-            "$description": "18'6\" — the balanced-width option's Habitat depth for Business — Small."
+            "$description": "18'6\" — the balanced-width option's Habitat depth for Business — Small.",
+            "$description_es": "18'6\" — la profundidad de Hábitat de la opción de ancho equilibrado para Business — Small."
           }
         },
         "magazine": {
           "depth": {
             "$type": "dimension",
             "$value": "6.63m",
-            "$description": "21'9\" — the balanced-width option's Magazine depth, narrower than the widest envelope option."
+            "$description": "21'9\" — the balanced-width option's Magazine depth, narrower than the widest envelope option.",
+            "$description_es": "21'9\" — la profundidad de Magazine de la opción de ancho equilibrado, más angosta que la opción de envolvente más ancha."
           }
         },
         "corridor": {
           "width": {
             "$type": "dimension",
             "$value": "2.75m",
-            "$description": "9'0\" — Corridor, constant across all width options considered."
+            "$description": "9'0\" — Corridor, constant across all width options considered.",
+            "$description_es": "9'0\" — Corredor, constante en todas las opciones de ancho consideradas."
           }
         },
-        "design_notes": "We considered two options for this mixed-option-facade building width: the widest option (5.51/9.26/2.75 → 32.29 m total) versus a balanced option (5.63/6.63/2.75 → 27.27 m total), and confirmed the balanced option. totalWidth formula: 2 × (habitat + magazine) + corridor = 2 × (5.63 + 6.63) + 2.75 = 27.27 m."
+        "design_notes": "We considered two options for this mixed-option-facade building width: the widest option (5.51/9.26/2.75 → 32.29 m total) versus a balanced option (5.63/6.63/2.75 → 27.27 m total), and confirmed the balanced option. totalWidth formula: 2 × (habitat + magazine) + corridor = 2 × (5.63 + 6.63) + 2.75 = 27.27 m.",
+        "$description_es": "Tipo de uso Business — oficina comercial general, adyacente a coworking, arrendamientos de planta abierta más grandes."
       },
       "medical": {
         "$description": "Medical use type — clinical, dental, diagnostic, and allied health leaseholds. Wider Habitat reflects exam-table depth and patient circulation. Acoustic and vibration isolation requirements apply.",
@@ -130,23 +150,27 @@
           "depth": {
             "$type": "dimension",
             "$value": "7.2m",
-            "$description": "23'10\" — widest Habitat across use types; exam table depth + patient + clinician circulation per German workplace-circulation standards (ArbStättV) and WELL health standards."
+            "$description": "23'10\" — widest Habitat across use types; exam table depth + patient + clinician circulation per German workplace-circulation standards (ArbStättV) and WELL health standards.",
+            "$description_es": "23'10\" — el Hábitat más amplio entre todos los tipos de uso; profundidad de mesa de exploración + circulación de paciente y clínico según las normas alemanas de circulación en el lugar de trabajo (ArbStättV) y los estándares de salud WELL."
           }
         },
         "magazine": {
           "depth": {
             "$type": "dimension",
             "$value": "4.87m",
-            "$description": "16'0\" — medical supply storage, sterilisation, equipment staging. Source spreadsheet shows '16\"' (inches) which is likely a display truncation of 16'0\" (feet); 4.87m = 15'11.8\" ≈ 16'0\" confirmed."
+            "$description": "16'0\" — medical supply storage, sterilisation, equipment staging. Source spreadsheet shows '16\"' (inches) which is likely a display truncation of 16'0\" (feet); 4.87m = 15'11.8\" ≈ 16'0\" confirmed.",
+            "$description_es": "16'0\" — almacenamiento de insumos médicos, esterilización, preparación de equipo. La hoja de cálculo fuente muestra '16\"' (pulgadas), lo que probablemente sea un truncamiento de visualización de 16'0\" (pies); se confirma 4.87 m = 15'11.8\" ≈ 16'0\"."
           }
         },
         "corridor": {
           "width": {
             "$type": "dimension",
             "$value": "2.89m",
-            "$description": "9'5\" — bilateral corridor; ADA/CSA-B651 compliant width for stretcher and wheelchair passage."
+            "$description": "9'5\" — bilateral corridor; ADA/CSA-B651 compliant width for stretcher and wheelchair passage.",
+            "$description_es": "9'5\" — corredor bilateral; ancho conforme a ADA/CSA-B651 para el paso de camillas y sillas de ruedas."
           }
-        }
+        },
+        "$description_es": "Tipo de uso Medical — arrendamientos clínicos, dentales, de diagnóstico y de salud afines. Un Hábitat más amplio refleja la profundidad de la mesa de exploración y la circulación de pacientes. Aplican requisitos de aislamiento acústico y de vibración."
       },
       "civic": {
         "$description": "Civic use type — courtrooms, municipal offices, cultural, and civic assembly spaces. Widest overall floor plate due to large Magazine and Corridor requirements for public assembly egress.",
@@ -154,30 +178,35 @@
           "depth": {
             "$type": "dimension",
             "$value": "6.0m",
-            "$description": "19'8\" — workstations/seating at European Lighting Standard minimum."
+            "$description": "19'8\" — workstations/seating at European Lighting Standard minimum.",
+            "$description_es": "19'8\" — estaciones de trabajo/asientos en el mínimo del European Lighting Standard."
           }
         },
         "magazine": {
           "depth": {
             "$type": "dimension",
             "$value": "7.23m",
-            "$description": "23'8\" — public records storage, jury deliberation rooms, secure document areas; second-widest Magazine zone after Business."
+            "$description": "23'8\" — public records storage, jury deliberation rooms, secure document areas; second-widest Magazine zone after Business.",
+            "$description_es": "23'8\" — almacenamiento de registros públicos, salas de deliberación del jurado, áreas seguras de documentos; la segunda zona Magazine más ancha después de Business."
           }
         },
         "corridor": {
           "width": {
             "$type": "dimension",
             "$value": "3.6m",
-            "$description": "12'0\" — widest corridor across all use types; required for public assembly egress, accessible courtroom approach, and ceremonial circulation."
+            "$description": "12'0\" — widest corridor across all use types; required for public assembly egress, accessible courtroom approach, and ceremonial circulation.",
+            "$description_es": "12'0\" — el corredor más ancho entre todos los tipos de uso; requerido para la salida de asamblea pública, el acceso accesible a la sala de audiencia y la circulación ceremonial."
           }
-        }
+        },
+        "$description_es": "Tipo de uso Civic — salas de audiencia, oficinas municipales, espacios culturales y de asamblea cívica. La placa de piso más ancha en general debido a los amplios requisitos de Magazine y Corredor para la salida de asamblea pública."
       }
     },
     "circulation-addition": {
       "perpendicular-desk": {
         "$type": "dimension",
         "$value": "0.7m",
-        "$description": "2'4\" — additional depth required in Habitat when desks are placed perpendicular to the façade, to achieve three desks in series with proper clearance under German workplace-circulation standards (ArbStättV — the Arbeitsstättenverordnung, Germany's Workplace Ordinance). Without this addition, Habitat at exactly 6.0m yields only two perpendicular desks. This is a DELTA, not a standalone clearance value: ArbStättV Anhang §3.1 requires 1.0m movement clearance behind a perpendicular-facing seat, versus the 0.3m baseline clearance already accounted for in the parallel-desk Habitat depth; 1.0m − 0.3m = 0.7m is the additional depth this perpendicular arrangement requires on top of the parallel-desk baseline."
+        "$description": "2'4\" — additional depth required in Habitat when desks are placed perpendicular to the façade, to achieve three desks in series with proper clearance under German workplace-circulation standards (ArbStättV — the Arbeitsstättenverordnung, Germany's Workplace Ordinance). Without this addition, Habitat at exactly 6.0m yields only two perpendicular desks. This is a DELTA, not a standalone clearance value: ArbStättV Anhang §3.1 requires 1.0m movement clearance behind a perpendicular-facing seat, versus the 0.3m baseline clearance already accounted for in the parallel-desk Habitat depth; 1.0m − 0.3m = 0.7m is the additional depth this perpendicular arrangement requires on top of the parallel-desk baseline.",
+        "$description_es": "2'4\" — profundidad adicional requerida en Hábitat cuando los escritorios se colocan perpendiculares a la fachada, para lograr tres escritorios en serie con la holgura adecuada según las normas alemanas de circulación en el lugar de trabajo (ArbStättV — la Arbeitsstättenverordnung, el Reglamento de Lugares de Trabajo de Alemania). Sin esta adición, un Hábitat de exactamente 6.0 m produce solo dos escritorios perpendiculares. Este es un DELTA, no un valor de holgura independiente: el ArbStättV Anhang §3.1 exige 1.0 m de holgura de movimiento detrás de un asiento orientado perpendicularmente, frente a la holgura base de 0.3 m ya contabilizada en la profundidad de Hábitat con escritorios paralelos; 1.0 m − 0.3 m = 0.7 m es la profundidad adicional que requiere este arreglo perpendicular sobre la base de escritorios paralelos."
       }
     },
     "key-plan": {
@@ -344,5 +373,6 @@
         }
       }
     }
-  }
+  },
+  "$description_es": "Categoría de tokens de la Calculadora de Ancho de Edificación BIM — profundidades de zona por tipo de uso, ancladas a la taxonomía espacial de Key Plans y Tiles. Fuente: documentación de diseño interna (V3, noviembre de 2025). Tres zonas por tipo de uso: Hábitat (escritorios; mínimo de 6 m del European Lighting Standard), Magazine (almacenamiento más allá de Hábitat), Corredor (acceso bilateral; placa de piso reflejada). Los valores en metros son los autoritativos; los equivalentes en pies figuran en $description. Todos los valores provienen de muestras de Key Plan completadas salvo donde se indica TBD."
 }

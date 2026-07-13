@@ -1,9 +1,11 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$description": "BIM LANDSCAPE AND PARKING token category — classification tokens for landscaping, site ecology, parking, circulation, and lighting elements specific to Professional Centre and Suburban Office site types. Source: internal design documentation. Landscaping types reflect our Permaculture as Commercial Landscaping design philosophy. IFC mapping: landscape elements → IfcGeographicElement; parking → IfcPaving + IfcTransportElement; lighting → IfcLightFixture. Uniclass 2015 codes included where applicable.",
+  "$description_es": "Categoría de tokens BIM LANDSCAPE AND PARKING — tokens de clasificación para paisajismo, ecología del sitio, estacionamiento, circulación y elementos de iluminación específicos de los tipos de sitio Professional Centre y Suburban Office. Fuente: documentación de diseño interna. Los tipos de paisajismo reflejan nuestra filosofía de diseño de Permacultura como Paisajismo Comercial. Mapeo IFC: elementos de paisaje → IfcGeographicElement; estacionamiento → IfcPaving + IfcTransportElement; iluminación → IfcLightFixture. Códigos Uniclass 2015 incluidos donde corresponde.",
   "bim": {
     "landscape": {
       "$description": "Landscape and ecological system classifications for Professional Centre sites. Key Plans Index entries 51–56.",
+      "$description_es": "Clasificaciones de paisaje y sistemas ecológicos para sitios Professional Centre. Entradas 51–56 del Índice de Key Plans.",
       "biofacility": {
         "$type": "bim.entity",
         "$value": {
@@ -13,7 +15,8 @@
           "uniclass": "EF_25_10",
           "description": "Biological processing facility on site — composting, organic waste management, or living machine water treatment integrated into the Professional Centre landscape."
         },
-        "$description": "Biofacility — site biological processing element (composting, living machine). Key Plans Index #51."
+        "$description": "Biofacility — site biological processing element (composting, living machine). Key Plans Index #51.",
+        "$description_es": "Biofacility — elemento de procesamiento biológico del sitio (compostaje, living machine). Índice de Key Plans #51."
       },
       "bioswale": {
         "$type": "bim.entity",
@@ -30,7 +33,8 @@
           ],
           "key_plan_code": "LL-1"
         },
-        "$description": "Bioswale — vegetated stormwater channel. Key Plans Index #52."
+        "$description": "Bioswale — vegetated stormwater channel. Key Plans Index #52.",
+        "$description_es": "Bioswale — canal vegetado para aguas pluviales. Índice de Key Plans #52."
       },
       "permaculture": {
         "$type": "bim.entity",
@@ -41,7 +45,8 @@
           "uniclass": "EF_25_20",
           "description": "Permanent agricultural and ecological planting zone. Edible landscaping, food forest, or native prairie planting (including Buffalo Grass) used as commercial landscaping. Eliminates irrigated turf from the site envelope."
         },
-        "$description": "Permaculture Zone — productive ecological landscaping (food forest, native prairie). Key Plans Index #53."
+        "$description": "Permaculture Zone — productive ecological landscaping (food forest, native prairie). Key Plans Index #53.",
+        "$description_es": "Permaculture Zone — paisajismo ecológico productivo (bosque comestible, pradera nativa). Índice de Key Plans #53."
       },
       "irrigation-gallery": {
         "$type": "bim.entity",
@@ -53,11 +58,13 @@
           "uniclass": "Ss_55_30",
           "description": "Underground stormwater capture and irrigation distribution system. Connected to site detention infiltration gallery. Delivers captured runoff to permaculture and bioswale zones, reducing potable water demand for landscape irrigation."
         },
-        "$description": "Irrigation Gallery LL-2 — underground stormwater-fed irrigation distribution system. Key Plans Index #54 / Key Plan code LL-2."
+        "$description": "Irrigation Gallery LL-2 — underground stormwater-fed irrigation distribution system. Key Plans Index #54 / Key Plan code LL-2.",
+        "$description_es": "Irrigation Gallery LL-2 — sistema subterráneo de distribución de riego alimentado por aguas pluviales. Índice de Key Plans #54 / código de Key Plan LL-2."
       }
     },
     "parking": {
       "$description": "Parking layout and surface classification tokens for Professional Centre sites. Key Plans Index entries 55–56.",
+      "$description_es": "Tokens de clasificación de trazado y superficie de estacionamiento para sitios Professional Centre. Entradas 55–56 del Índice de Key Plans.",
       "parking-stalls": {
         "$type": "bim.entity",
         "$value": {
@@ -67,7 +74,8 @@
           "uniclass": "EF_70_10",
           "description": "Standard parking stall layout for Professional Centre surface parking. Stall dimensions per local jurisdiction; 90-degree configuration typical. Pavement variant determines surface permeability."
         },
-        "$description": "Parking Stalls — standard surface parking stall layout. Key Plans Index #55."
+        "$description": "Parking Stalls — standard surface parking stall layout. Key Plans Index #55.",
+        "$description_es": "Parking Stalls — trazado estándar de cajones de estacionamiento en superficie. Índice de Key Plans #55."
       },
       "parking-layout": {
         "$type": "bim.entity",
@@ -92,11 +100,13 @@
             "PP-2"
           ]
         },
-        "$description": "Parking Layout — with pavement variants: fescue-grassland or parkland-natural (both permeable). Key Plans Index #56."
+        "$description": "Parking Layout — with pavement variants: fescue-grassland or parkland-natural (both permeable). Key Plans Index #56.",
+        "$description_es": "Parking Layout — con variantes de pavimento: fescue-grassland o parkland-natural (ambas permeables). Índice de Key Plans #56."
       }
     },
     "site-circulation": {
       "$description": "Site circulation and accessibility elements. Key Plans Index entries 57–62.",
+      "$description_es": "Elementos de circulación y accesibilidad del sitio. Entradas 57–62 del Índice de Key Plans.",
       "accessible-parking": {
         "$type": "bim.entity",
         "$value": {
@@ -107,7 +117,8 @@
           "standard": "ADA (US) / CSA-B651 (Canada)",
           "description": "Accessible parking stalls with required access aisle. Minimum width per ADA: 8'0\" stall + 5'0\" access aisle (van accessible: 11'0\" stall + 5'0\" aisle). Located nearest to accessible building entrance."
         },
-        "$description": "Accessible Parking — ADA/CSA-B651 compliant stalls with access aisle. Key Plans Index #57."
+        "$description": "Accessible Parking — ADA/CSA-B651 compliant stalls with access aisle. Key Plans Index #57.",
+        "$description_es": "Accessible Parking — cajones conformes con ADA/CSA-B651 con pasillo de acceso. Índice de Key Plans #57."
       },
       "sidewalks": {
         "$type": "bim.entity",
@@ -118,7 +129,8 @@
           "uniclass": "EF_70_30",
           "description": "Pedestrian sidewalk connecting parking field to building entrance and public street. Minimum 5'0\" (1.524m) clear width per ADA; 6'0\" recommended for comfortable bi-directional flow."
         },
-        "$description": "Sidewalks — pedestrian pathways connecting parking to building entry. Key Plans Index #58."
+        "$description": "Sidewalks — pedestrian pathways connecting parking to building entry. Key Plans Index #58.",
+        "$description_es": "Sidewalks — senderos peatonales que conectan el estacionamiento con el ingreso al edificio. Índice de Key Plans #58."
       },
       "snowdrops": {
         "$type": "bim.entity",
@@ -129,7 +141,8 @@
           "uniclass": "EF_25_30",
           "description": "Designated snow storage zones within the parking field for plowed snow accumulation during winter maintenance. Located at parking lot perimeter or in designated landscape zones. Canadian and northern US climate requirement."
         },
-        "$description": "Snowdrops — designated snow storage zones in parking field. Key Plans Index #59."
+        "$description": "Snowdrops — designated snow storage zones in parking field. Key Plans Index #59.",
+        "$description_es": "Snowdrops — zonas designadas de almacenamiento de nieve dentro del campo de estacionamiento. Índice de Key Plans #59."
       },
       "site-watering": {
         "$type": "bim.entity",
@@ -140,7 +153,8 @@
           "uniclass": "Ss_55_30",
           "description": "Site irrigation and watering system. In permaculture-landscaped sites, supplied primarily from captured stormwater via irrigation gallery. Supplemental potable connection for establishment period only."
         },
-        "$description": "Site Watering — irrigation system, preferably stormwater-fed via irrigation gallery. Key Plans Index #60."
+        "$description": "Site Watering — irrigation system, preferably stormwater-fed via irrigation gallery. Key Plans Index #60.",
+        "$description_es": "Site Watering — sistema de riego, preferentemente alimentado por aguas pluviales a través de la galería de irrigación. Índice de Key Plans #60."
       },
       "signage": {
         "$type": "bim.entity",
@@ -159,11 +173,13 @@
             "entrance / exit signs"
           ]
         },
-        "$description": "Signage PP-5 — site wayfinding, identification, and accessible stall markers. Key Plan code PP-5."
+        "$description": "Signage PP-5 — site wayfinding, identification, and accessible stall markers. Key Plan code PP-5.",
+        "$description_es": "Signage PP-5 — señalización de orientación, identificación y marcadores de cajones accesibles del sitio. Código de Key Plan PP-5."
       }
     },
     "site-lighting": {
       "$description": "Site lighting classifications for Professional Centre parking and circulation. Key Plans Index entries 61–72. PF codes indicate Parking Facility lighting fixture classifications.",
+      "$description_es": "Clasificaciones de iluminación del sitio para estacionamiento y circulación en Professional Centre. Entradas 61–72 del Índice de Key Plans. Los códigos PF indican clasificaciones de luminarias de Parking Facility.",
       "pf-1": {
         "$type": "bim.entity",
         "$value": {
@@ -173,7 +189,8 @@
           "uniclass": "Ss_70_30_30",
           "description": "Standard parking field pole-mounted luminaire. LED area light on steel pole; height 20'–30' typical. Photocell or time-clock control. IES RP-20 parking facility illuminance criteria."
         },
-        "$description": "PF-1: Standard parking field pole light. IES RP-20 compliant. Key Plans Index #61."
+        "$description": "PF-1: Standard parking field pole light. IES RP-20 compliant. Key Plans Index #61.",
+        "$description_es": "PF-1: Poste de luz estándar para campo de estacionamiento. Conforme con IES RP-20. Índice de Key Plans #61."
       },
       "pf-2": {
         "$type": "bim.entity",
@@ -184,7 +201,8 @@
           "uniclass": "Ss_70_30_30",
           "description": "Double-arm parking field pole luminaire for wider aisle coverage. Used at parking field interior rows where single-arm coverage is insufficient."
         },
-        "$description": "PF-2: Double-arm parking field pole light. Key Plans Index #62."
+        "$description": "PF-2: Double-arm parking field pole light. Key Plans Index #62.",
+        "$description_es": "PF-2: Poste de luz de doble brazo para campo de estacionamiento. Índice de Key Plans #62."
       },
       "pf-3": {
         "$type": "bim.entity",
@@ -195,7 +213,8 @@
           "uniclass": "Ss_70_30_35",
           "description": "Low-height (8'–12') pedestrian path luminaire along sidewalks and accessible routes. Bollard or decorative post style. Provides 0.2 fc minimum at grade per IES RP-20 pedestrian criteria."
         },
-        "$description": "PF-3: Pedestrian path light — bollard or low post, 8'–12' height. Key Plans Index #63."
+        "$description": "PF-3: Pedestrian path light — bollard or low post, 8'–12' height. Key Plans Index #63.",
+        "$description_es": "PF-3: Luz de sendero peatonal — bolardo o poste bajo, altura de 8'–12'. Índice de Key Plans #63."
       },
       "pf-4": {
         "$type": "bim.entity",
@@ -206,7 +225,8 @@
           "uniclass": "Ss_70_30_55",
           "description": "In-grade or wall-mounted uplighting fixture illuminating building façade for identity and wayfinding. LED wash or grazing fixture. Controls integrated with building automation system."
         },
-        "$description": "PF-4: Building façade uplighting — in-grade or wall-mounted wash fixture. Key Plans Index #64."
+        "$description": "PF-4: Building façade uplighting — in-grade or wall-mounted wash fixture. Key Plans Index #64.",
+        "$description_es": "PF-4: Iluminación ascendente de fachada del edificio — luminaria de lavado empotrada en piso o montada en muro. Índice de Key Plans #64."
       },
       "pf-5": {
         "$type": "bim.entity",
@@ -217,7 +237,8 @@
           "uniclass": "Ss_70_30_30",
           "description": "Downlight or linear fixture mounted to building entrance canopy. Provides 5 fc minimum at grade per IES RP-20 building entrance criteria. Integrated with building entrance lighting control zone."
         },
-        "$description": "PF-5: Canopy mounted entry light — 5 fc minimum at grade. Key Plans Index #65."
+        "$description": "PF-5: Canopy mounted entry light — 5 fc minimum at grade. Key Plans Index #65.",
+        "$description_es": "PF-5: Luz de ingreso montada en marquesina — mínimo 5 fc a nivel de piso. Índice de Key Plans #65."
       },
       "pf-6": {
         "$type": "bim.entity",
@@ -228,7 +249,8 @@
           "uniclass": "Ss_70_30_55",
           "description": "Low-wattage accent fixture for landscape feature illumination (bioswales, permaculture zones, specimen trees). LED spot or wash. Night-sky-friendly: full cutoff, warm CCT (2700K–3000K), minimal uplight."
         },
-        "$description": "PF-6: Landscape accent light — full cutoff, warm CCT, minimal uplight. Night-sky-friendly. Key Plans Index #66."
+        "$description": "PF-6: Landscape accent light — full cutoff, warm CCT, minimal uplight. Night-sky-friendly. Key Plans Index #66.",
+        "$description_es": "PF-6: Luz de acento de paisaje — corte total, temperatura de color cálida, iluminación ascendente mínima. Compatible con cielo nocturno. Índice de Key Plans #66."
       }
     }
   }

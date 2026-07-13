@@ -1,51 +1,62 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$description": "BIM BUILDING GRID token category — structural module dimensions, wall/partition thicknesses, and the floor-plate-width tolerance bands that drive the Building Width Calculator's bidirectional adjustment logic. Source: internal design documentation. Metre values are authoritative; feet equivalents in $description.",
+  "$description_es": "Categoría de tokens BIM BUILDING GRID — dimensiones del módulo estructural, espesores de muro/partición, y las bandas de tolerancia de ancho de placa de piso que impulsan la lógica de ajuste bidireccional de la Calculadora de Ancho de Edificación. Fuente: documentación de diseño interna. Los valores en metros son los autoritativos; los equivalentes en pies están en $description.",
   "bim": {
     "grid": {
       "$description": "Structural module and wall/partition thickness constants used when converting centerline Habitat+Magazine+Corridor arithmetic into an overall building width.",
+      "$description_es": "Constantes de módulo estructural y espesor de muro/partición utilizadas al convertir la aritmética de eje central Hábitat+Magazine+Corredor en un ancho de edificación total.",
       "structural-module": {
         "$type": "dimension",
         "$value": "1.524m",
-        "$description": "5'0\" — the base structural grid module. This is also the unit of bidirectional adjustment: the Building Width Calculator's tolerance bands (below) are expressed as multiples of this module (green = 0.5×, yellow = 1×, red = 2×)."
+        "$description": "5'0\" — the base structural grid module. This is also the unit of bidirectional adjustment: the Building Width Calculator's tolerance bands (below) are expressed as multiples of this module (green = 0.5×, yellow = 1×, red = 2×).",
+        "$description_es": "5'0\" — el módulo base de la retícula estructural. Esta es también la unidad de ajuste bidireccional: las bandas de tolerancia de la Calculadora de Ancho de Edificación (abajo) se expresan como múltiplos de este módulo (verde = 0.5×, amarillo = 1×, rojo = 2×)."
       },
       "facade-wall-thickness": {
         "$type": "dimension",
         "$value": "0.4m",
-        "$description": "1'4\" — exterior façade wall thickness, added to the Habitat+2+3 centerline sum to get overall building width."
+        "$description": "1'4\" — exterior façade wall thickness, added to the Habitat+2+3 centerline sum to get overall building width.",
+        "$description_es": "1'4\" — espesor del muro de fachada exterior, sumado al total de eje central Hábitat+2+3 para obtener el ancho total de la edificación."
       },
       "demising-wall-thickness": {
         "$type": "dimension",
         "$value": "0.15m",
-        "$description": "6\" — thickness of a demising wall between adjacent tenant leaseholds."
+        "$description": "6\" — thickness of a demising wall between adjacent tenant leaseholds.",
+        "$description_es": "6\" — espesor de un muro divisorio entre arrendamientos de inquilinos adyacentes."
       },
       "corridor-partition-thickness": {
         "$type": "dimension",
         "$value": "0.12m",
-        "$description": "4¾\" — thickness of a corridor-side partition wall."
+        "$description": "4¾\" — thickness of a corridor-side partition wall.",
+        "$description_es": "4¾\" — espesor de un muro de partición del lado del corredor."
       }
     },
     "tolerance": {
       "$description": "Floor-plate-width tolerance bands for the Building Width Calculator's bidirectional adjustment logic. Habitat and Corridor are locked downward by regulatory minima (EN 12464-1, IBC/NBC egress); Magazine is the only zone with no hard regulatory floor and yields first when a floor plate must be resized.",
+      "$description_es": "Bandas de tolerancia de ancho de placa de piso para la lógica de ajuste bidireccional de la Calculadora de Ancho de Edificación. Hábitat y Corredor están limitados hacia abajo por mínimos normativos (EN 12464-1, salidas de emergencia IBC/NBC); Magazine es la única zona sin un piso normativo estricto y es la primera en ceder cuando una placa de piso debe redimensionarse.",
       "fp-width-green-band": {
         "$type": "dimension",
         "$value": "0.762m",
-        "$description": "±2.5 ft (0.5× the structural module). Within this band, Magazine absorbs the delta silently — no composition change, no operator review required."
+        "$description": "±2.5 ft (0.5× the structural module). Within this band, Magazine absorbs the delta silently — no composition change, no operator review required.",
+        "$description_es": "±2.5 ft (0.5× el módulo estructural). Dentro de esta banda, Magazine absorbe la diferencia silenciosamente — sin cambio de composición, sin necesidad de revisión del operador."
       },
       "fp-width-yellow-band": {
         "$type": "dimension",
         "$value": "1.524m",
-        "$description": "±5 ft (1× the structural module). Magazine adjusts, key-plan areas are recomputed, tile lengths snap to the new width — operator review required before committing the adjustment."
+        "$description": "±5 ft (1× the structural module). Magazine adjusts, key-plan areas are recomputed, tile lengths snap to the new width — operator review required before committing the adjustment.",
+        "$description_es": "±5 ft (1× el módulo estructural). Magazine se ajusta, las áreas de Key Plan se recalculan, las longitudes de Tile se ajustan al nuevo ancho — se requiere revisión del operador antes de confirmar el ajuste."
       },
       "fp-width-red-band": {
         "$type": "dimension",
         "$value": "3.048m",
-        "$description": "±10 ft (2× the structural module). Beyond this band the tile family itself changes (Small→Medium or Medium→Large) — door count and climate-zone count shift, and tenant demising is affected. Requires a full re-composition, not just a zone adjustment."
+        "$description": "±10 ft (2× the structural module). Beyond this band the tile family itself changes (Small→Medium or Medium→Large) — door count and climate-zone count shift, and tenant demising is affected. Requires a full re-composition, not just a zone adjustment.",
+        "$description_es": "±10 ft (2× el módulo estructural). Más allá de esta banda, la familia de Tile misma cambia (Small→Medium o Medium→Large) — el número de puertas y de zonas climáticas cambia, y se ve afectado el deslinde entre inquilinos. Requiere una recomposición completa, no solo un ajuste de zona."
       },
       "demising-structural": {
         "$type": "dimension",
         "$value": "0.6m",
-        "$description": "2'0\" — the gap between our source documentation's stated total width (21m) and the arithmetic sum of the Professional Office zone depths (2×(6.0+3.8)+2.0 = 21.6m). This 0.6m is structural/demising allowance not captured as a separate line item in the headline total — the detailed arithmetic is correct; the headline total is the rounded/summary figure."
+        "$description": "2'0\" — the gap between our source documentation's stated total width (21m) and the arithmetic sum of the Professional Office zone depths (2×(6.0+3.8)+2.0 = 21.6m). This 0.6m is structural/demising allowance not captured as a separate line item in the headline total — the detailed arithmetic is correct; the headline total is the rounded/summary figure.",
+        "$description_es": "2'0\" — la diferencia entre el ancho total indicado en nuestra documentación fuente (21 m) y la suma aritmética de las profundidades de zona de Professional Office (2×(6.0+3.8)+2.0 = 21.6 m). Estos 0.6 m son una tolerancia estructural/de deslinde no capturada como partida separada en el total principal — la aritmética detallada es correcta; el total principal es la cifra redondeada/resumen."
       }
     }
   }

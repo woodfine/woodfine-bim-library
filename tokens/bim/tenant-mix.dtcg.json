@@ -1,42 +1,51 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$description": "BIM TENANT MIX token category — expected distribution of tenant furniture-configuration sizes and use-type categories across a Professional Centre or Suburban Office floor plate. Used for FFE procurement planning and Tile composition optimisation. Source: internal design documentation. Tenant-mix distributions are inputs to our floor-plate assembly system, not floor-plate geometry, and are tracked separately for that reason.",
+  "$description_es": "Categoría de tokens TENANT MIX de BIM — distribución esperada de tamaños de configuración de mobiliario de inquilinos y categorías de tipo de uso a lo largo de una Placa de Piso de Centro Profesional u Oficina Suburbana. Se utiliza para la planeación de adquisición de FFE y la optimización de la composición de Tiles. Fuente: documentación de diseño interna. Las distribuciones de mezcla de inquilinos son insumos de nuestro sistema de ensamblaje de placas de piso, no geometría de placa de piso, y por esa razón se rastrean por separado.",
   "bim": {
     "tenant-mix": {
       "furniture-availability": {
         "$description": "Expected distribution of furniture configuration sizes across the tenant mix. Used for FFE procurement planning and Tile composition optimisation.",
+        "$description_es": "Distribución esperada de tamaños de configuración de mobiliario en la mezcla de inquilinos. Se utiliza para la planeación de adquisición de FFE y la optimización de la composición de Tiles.",
         "small": {
           "$type": "number",
           "$value": 80,
-          "$description": "80% — majority of tenant fit-outs use small furniture configurations. Drives Private Office and small Professional Office tile prevalence."
+          "$description": "80% — majority of tenant fit-outs use small furniture configurations. Drives Private Office and small Professional Office tile prevalence.",
+          "$description_es": "80% — la mayoría de las adaptaciones de inquilinos usan configuraciones de mobiliario pequeñas. Determina la prevalencia de Tiles de Oficina Privada y de Oficina Profesional pequeña."
         },
         "medium": {
           "$type": "number",
           "$value": 10,
-          "$description": "10% — medium furniture configuration tenant mix."
+          "$description": "10% — medium furniture configuration tenant mix.",
+          "$description_es": "10% — mezcla de inquilinos con configuración de mobiliario mediana."
         },
         "large": {
           "$type": "number",
           "$value": 10,
-          "$description": "10% — large furniture configuration tenant mix; typically Corporate Office full-floor tenants."
+          "$description": "10% — large furniture configuration tenant mix; typically Corporate Office full-floor tenants.",
+          "$description_es": "10% — mezcla de inquilinos con configuración de mobiliario grande; típicamente inquilinos de Oficina Corporativa de piso completo."
         }
       },
       "use-type-distribution": {
         "$description": "Expected distribution of tenant use-type category across the tenant mix. Used by our floor-plate assembly system when no explicit tenant-mix request is supplied, to project a representative floor plate composition. Source: internal design documentation.",
+        "$description_es": "Distribución esperada de la categoría de tipo de uso de los inquilinos en la mezcla de inquilinos. Utilizada por nuestro sistema de ensamblaje de placas de piso cuando no se proporciona una solicitud explícita de mezcla de inquilinos, para proyectar una composición de placa de piso representativa. Fuente: documentación de diseño interna.",
         "private": {
           "$type": "number",
           "$value": 40,
-          "$description": "40% — Private Office leaseholds (individual licensed offices, PO-1/PO-2/PO-3)."
+          "$description": "40% — Private Office leaseholds (individual licensed offices, PO-1/PO-2/PO-3).",
+          "$description_es": "40% — arrendamientos de Oficina Privada (oficinas individuales con licencia, PO-1/PO-2/PO-3)."
         },
         "professional": {
           "$type": "number",
           "$value": 35,
-          "$description": "35% — Professional Office leaseholds across all sub-types (Medical, Business, Laboratory, Academic, Civic)."
+          "$description": "35% — Professional Office leaseholds across all sub-types (Medical, Business, Laboratory, Academic, Civic).",
+          "$description_es": "35% — arrendamientos de Oficina Profesional en todos los subtipos (Médico, Negocios, Laboratorio, Académico, Cívico)."
         },
         "corporate": {
           "$type": "number",
           "$value": 25,
-          "$description": "25% — Corporate Office leaseholds (single-tenant tiles up to full floor)."
+          "$description": "25% — Corporate Office leaseholds (single-tenant tiles up to full floor).",
+          "$description_es": "25% — arrendamientos de Oficina Corporativa (Tiles de un solo inquilino hasta piso completo)."
         }
       }
     }

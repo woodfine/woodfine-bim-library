@@ -12,12 +12,17 @@
             "total_area_sf": 2700,
             "total_area_m2": 250.84,
             "composition": [
-              {"unit": "Corporate Office", "area_sf": 2700, "count": 1}
+              {
+                "unit": "Corporate Office",
+                "area_sf": 2700,
+                "count": 1
+              }
             ],
             "climate_zones": 1,
             "notes": "Single corporate tenant unit. Maximum climate zone autonomy for corporate tenant. Simplest tile composition."
           },
-          "$description": "Tile A: Corporate Office — 2,700 SF single unit. One climate zone. Simplest tile composition."
+          "$description": "Tile A: Corporate Office — 2,700 SF single unit. One climate zone. Simplest tile composition.",
+          "$description_es": "Tile A: Corporate Office — unidad única de 2,700 SF. Una zona climática. La composición de tile más simple."
         },
         "tile-b1": {
           "$type": "bim.entity",
@@ -26,19 +31,44 @@
             "total_area_sf": 2700,
             "total_area_m2": 250.84,
             "composition": [
-              {"unit": "Private Office", "area_sf": 300, "count": 1},
-              {"unit": "Private Office", "area_sf": 450, "count": 1},
-              {"unit": "Private Office", "area_sf": 300, "count": 1},
-              {"unit": "Private Office", "area_sf": 450, "count": 1},
-              {"unit": "Private Office", "area_sf": 300, "count": 1},
-              {"unit": "Corridor", "area_sf": 900, "count": 1}
+              {
+                "unit": "Private Office",
+                "area_sf": 300,
+                "count": 1
+              },
+              {
+                "unit": "Private Office",
+                "area_sf": 450,
+                "count": 1
+              },
+              {
+                "unit": "Private Office",
+                "area_sf": 300,
+                "count": 1
+              },
+              {
+                "unit": "Private Office",
+                "area_sf": 450,
+                "count": 1
+              },
+              {
+                "unit": "Private Office",
+                "area_sf": 300,
+                "count": 1
+              },
+              {
+                "unit": "Corridor",
+                "area_sf": 900,
+                "count": 1
+              }
             ],
             "unit_count": 5,
             "climate_zones": 5,
             "end_cap": true,
             "notes": "Five private licensed offices plus corridor. End Cap tile — placed at building short-side or corner. Each private office is an independent climate zone. Total 1,800 SF office + 900 SF corridor."
           },
-          "$description": "Tile B-1: Private Office End Cap — 2,700 SF total; 5 private offices (300 + 450 + 300 + 450 + 300 SF) + 900 SF corridor. End Cap placement."
+          "$description": "Tile B-1: Private Office End Cap — 2,700 SF total; 5 private offices (300 + 450 + 300 + 450 + 300 SF) + 900 SF corridor. End Cap placement.",
+          "$description_es": "Tile B-1: Private Office End Cap — 2,700 SF en total; 5 oficinas privadas (300 + 450 + 300 + 450 + 300 SF) + 900 SF de corredor. Colocación en End Cap."
         },
         "tile-c1": {
           "$type": "bim.entity",
@@ -47,14 +77,23 @@
             "total_area_sf": 2700,
             "total_area_m2": 250.84,
             "composition": [
-              {"unit": "Professional Office Medium", "area_sf": 2000, "count": 1},
-              {"unit": "Professional Office Small", "area_sf": 700, "count": 1}
+              {
+                "unit": "Professional Office Medium",
+                "area_sf": 2000,
+                "count": 1
+              },
+              {
+                "unit": "Professional Office Small",
+                "area_sf": 700,
+                "count": 1
+              }
             ],
             "unit_count": 2,
             "climate_zones": 2,
             "notes": "Medium Professional Office combined with Small Professional Office. Standard mid-floor tile for professional centres."
           },
-          "$description": "Tile C-1: Professional Office — 2,700 SF; Medium (2,000 SF) + Small (700 SF) combination. 2 climate zones."
+          "$description": "Tile C-1: Professional Office — 2,700 SF; Medium (2,000 SF) + Small (700 SF) combination. 2 climate zones.",
+          "$description_es": "Tile C-1: Professional Office — 2,700 SF; combinación Medium (2,000 SF) + Small (700 SF). 2 zonas climáticas."
         },
         "tile-c2": {
           "$type": "bim.entity",
@@ -63,14 +102,23 @@
             "total_area_sf": 2700,
             "total_area_m2": 250.84,
             "composition": [
-              {"unit": "Professional Office Medium", "area_sf": 1100, "count": 2},
-              {"unit": "Corridor", "area_sf": 500, "count": 1}
+              {
+                "unit": "Professional Office Medium",
+                "area_sf": 1100,
+                "count": 2
+              },
+              {
+                "unit": "Corridor",
+                "area_sf": 500,
+                "count": 1
+              }
             ],
             "unit_count": 2,
             "climate_zones": 2,
             "notes": "Two medium Professional Office units side-by-side. Flexible for medical or business sub-types."
           },
-          "$description": "Tile C-2: Professional Office — 2,700 SF; two Medium (1,100 SF each) units + 500 SF corridor. 2 climate zones."
+          "$description": "Tile C-2: Professional Office — 2,700 SF; two Medium (1,100 SF each) units + 500 SF corridor. 2 climate zones.",
+          "$description_es": "Tile C-2: Professional Office — 2,700 SF; dos unidades Medium (1,100 SF cada una) + 500 SF de corredor. 2 zonas climáticas."
         },
         "tile-c3": {
           "$type": "bim.entity",
@@ -79,14 +127,23 @@
             "total_area_sf": 2700,
             "total_area_m2": 250.84,
             "composition": [
-              {"unit": "Professional Office Large", "area_sf": 2400, "count": 1},
-              {"unit": "Professional Office Small", "area_sf": 300, "count": 1}
+              {
+                "unit": "Professional Office Large",
+                "area_sf": 2400,
+                "count": 1
+              },
+              {
+                "unit": "Professional Office Small",
+                "area_sf": 300,
+                "count": 1
+              }
             ],
             "unit_count": 2,
             "climate_zones": 2,
             "notes": "Large Professional Office with a small private office attached. Suitable for laboratory or medical anchor tenant with small adjacent unit."
           },
-          "$description": "Tile C-3: Professional Office — 2,700 SF; Large (2,400 SF) + Small (300 SF). 2 climate zones."
+          "$description": "Tile C-3: Professional Office — 2,700 SF; Large (2,400 SF) + Small (300 SF). 2 climate zones.",
+          "$description_es": "Tile C-3: Professional Office — 2,700 SF; Large (2,400 SF) + Small (300 SF). 2 zonas climáticas."
         },
         "tile-c4": {
           "$type": "bim.entity",
@@ -95,14 +152,23 @@
             "total_area_sf": 2700,
             "total_area_m2": 250.84,
             "composition": [
-              {"unit": "Professional Office", "area_sf": 2200, "count": 1},
-              {"unit": "Corridor + Support", "area_sf": 500, "count": 1}
+              {
+                "unit": "Professional Office",
+                "area_sf": 2200,
+                "count": 1
+              },
+              {
+                "unit": "Corridor + Support",
+                "area_sf": 500,
+                "count": 1
+              }
             ],
             "unit_count": 1,
             "climate_zones": 1,
             "notes": "Single larger Professional Office with integrated corridor and support. Suitable for civic or academic sub-types requiring more contiguous space."
           },
-          "$description": "Tile C-4: Professional Office — 2,700 SF; single larger unit (2,200 SF) + corridor/support (500 SF). 1 climate zone."
+          "$description": "Tile C-4: Professional Office — 2,700 SF; single larger unit (2,200 SF) + corridor/support (500 SF). 1 climate zone.",
+          "$description_es": "Tile C-4: Professional Office — 2,700 SF; una sola unidad más grande (2,200 SF) + corredor/apoyo (500 SF). 1 zona climática."
         },
         "tile-e1": {
           "$type": "bim.entity",
@@ -111,9 +177,21 @@
             "total_area_sf": 2700,
             "total_area_m2": 250.84,
             "composition": [
-              {"unit": "Private Office", "area_sf": 300, "count": 2},
-              {"unit": "Professional Office Small", "area_sf": 800, "count": 1},
-              {"unit": "Corridor", "area_sf": 1300, "count": 1}
+              {
+                "unit": "Private Office",
+                "area_sf": 300,
+                "count": 2
+              },
+              {
+                "unit": "Professional Office Small",
+                "area_sf": 800,
+                "count": 1
+              },
+              {
+                "unit": "Corridor",
+                "area_sf": 1300,
+                "count": 1
+              }
             ],
             "unit_count": 3,
             "climate_zones": 3,
@@ -121,7 +199,8 @@
             "orientation": "left",
             "notes": "Mixed Private and Professional end cap for left side of building short face. Handles corner column grid resolution."
           },
-          "$description": "Tile E-1: Mixed End Cap Left — 2,700 SF; Private offices + Professional Office Small + corridor. Left building end."
+          "$description": "Tile E-1: Mixed End Cap Left — 2,700 SF; Private offices + Professional Office Small + corridor. Left building end.",
+          "$description_es": "Tile E-1: Mixed End Cap Left — 2,700 SF; oficinas privadas + Professional Office Small + corredor. Extremo izquierdo del edificio."
         },
         "tile-e2": {
           "$type": "bim.entity",
@@ -130,9 +209,21 @@
             "total_area_sf": 2700,
             "total_area_m2": 250.84,
             "composition": [
-              {"unit": "Private Office", "area_sf": 300, "count": 2},
-              {"unit": "Professional Office Small", "area_sf": 800, "count": 1},
-              {"unit": "Corridor", "area_sf": 1300, "count": 1}
+              {
+                "unit": "Private Office",
+                "area_sf": 300,
+                "count": 2
+              },
+              {
+                "unit": "Professional Office Small",
+                "area_sf": 800,
+                "count": 1
+              },
+              {
+                "unit": "Corridor",
+                "area_sf": 1300,
+                "count": 1
+              }
             ],
             "unit_count": 3,
             "climate_zones": 3,
@@ -140,8 +231,10 @@
             "orientation": "right",
             "notes": "Mirror image of Tile E-1 for right side of building short face. Small tiles at building corners may create boxing issues — review structural grid before specifying."
           },
-          "$description": "Tile E-2: Mixed End Cap Right — 2,700 SF; mirror of E-1 for right building end."
-        }
+          "$description": "Tile E-2: Mixed End Cap Right — 2,700 SF; mirror of E-1 for right building end.",
+          "$description_es": "Tile E-2: Mixed End Cap Right — 2,700 SF; espejo de E-1 para el extremo derecho del edificio."
+        },
+        "$description_es": "Familia Small Tile — 2,700 SF (250.84 m²) por tile. Siete tipos de tile que cubren toda la gama de configuraciones de oficina corporativa, privada y profesional en el incremento de 2,700 SF."
       },
       "medium-tile": {
         "$description": "Medium Tile family — 3,500 SF (325.16 m²) per tile. Our source documentation shows three tile sizes overall: Small 2,700 SF, Medium 3,500 SF, Large 4,900 SF. Precise composition line-items for the end-cap and Professional-Office variants are not yet confirmed and are flagged per-entry below rather than assumed; Tile D (single-unit Corporate Office) is the one entry with unambiguous composition.",
@@ -152,13 +245,18 @@
             "total_area_sf": 3500,
             "total_area_m2": 325.16,
             "composition": [
-              {"unit": "Corporate Office", "area_sf": 3500, "count": 1}
+              {
+                "unit": "Corporate Office",
+                "area_sf": 3500,
+                "count": 1
+              }
             ],
             "unit_count": 1,
             "climate_zones": 1,
             "notes": "Single corporate tenant unit at Medium scale, between Tile A (2,700 SF) and Tile F (4,900 SF). Unambiguous single-unit composition, same pattern as Tile A and Tile F."
           },
-          "$description": "Tile D: Corporate Office Medium — 3,500 SF single unit. 1 climate zone."
+          "$description": "Tile D: Corporate Office Medium — 3,500 SF single unit. 1 climate zone.",
+          "$description_es": "Tile D: Corporate Office Medium — unidad única de 3,500 SF. 1 zona climática."
         },
         "tile-e1-medium": {
           "$type": "bim.entity",
@@ -171,7 +269,8 @@
             "orientation": "left",
             "notes": "Our source documentation names a Medium-family 'Tile E, E-1 (Left End Cap Medium)' but does not give exact composition line-items (unlike the Small-family Tile E-1, which has a confirmed 2×Private-Office + Professional-Office-Small + Corridor breakdown). total_area_sf is the confirmed Medium-family target; composition is not yet confirmed."
           },
-          "$description": "Tile E-1 (Medium): Left End Cap — 3,500 SF target; total area is confirmed, but the exact composition line-items are not yet sourced."
+          "$description": "Tile E-1 (Medium): Left End Cap — 3,500 SF target; total area is confirmed, but the exact composition line-items are not yet sourced.",
+          "$description_es": "Tile E-1 (Medium): Left End Cap — objetivo de 3,500 SF; el área total está confirmada, pero las partidas exactas de composición aún no tienen fuente."
         },
         "tile-e2-medium": {
           "$type": "bim.entity",
@@ -184,7 +283,8 @@
             "orientation": "right",
             "notes": "Mirror of Tile E-1 (Medium). Same sourcing gap — composition not yet sourced, not fabricated."
           },
-          "$description": "Tile E-2 (Medium): Right End Cap — 3,500 SF target, composition not yet sourced. Mirror of E-1 (Medium)."
+          "$description": "Tile E-2 (Medium): Right End Cap — 3,500 SF target, composition not yet sourced. Mirror of E-1 (Medium).",
+          "$description_es": "Tile E-2 (Medium): Right End Cap — objetivo de 3,500 SF, composición aún sin fuente. Espejo de E-1 (Medium)."
         },
         "tile-f-medium": {
           "$type": "bim.entity",
@@ -192,15 +292,25 @@
             "label": "Tile F (Medium) — Professional Office",
             "total_area_sf": 3500,
             "stated_composition": [
-              {"unit": "Private Office Small", "area_sf": 325, "count": 3},
-              {"unit": "Private Office Medium", "area_sf": 465, "count": 1}
+              {
+                "unit": "Private Office Small",
+                "area_sf": 325,
+                "count": 3
+              },
+              {
+                "unit": "Private Office Medium",
+                "area_sf": 465,
+                "count": 1
+              }
             ],
             "stated_composition_sum_sf": 1440,
             "composition_status": "arithmetic-does-not-reconcile",
             "notes": "Our source documentation describes this tile as '3× PO Small + PO Medium'. Using the actual PO Small (325 SF) and PO Medium (465 SF) areas, 3×325 + 465 = 1,440 SF — this does not reconcile with the 3,500 SF Medium-tile family target (a 2,060 SF / 59% gap). We record the stated composition and the confirmed unit areas rather than inventing a corrected composition or presenting mismatched numbers as if they summed correctly."
           },
-          "$description": "Tile F (Medium): Professional Office — 3,500 SF target per our source documentation, but the stated '3× PO Small + PO Medium' composition sums to only 1,440 SF against known PO unit areas — a real gap we haven't yet resolved."
-        }
+          "$description": "Tile F (Medium): Professional Office — 3,500 SF target per our source documentation, but the stated '3× PO Small + PO Medium' composition sums to only 1,440 SF against known PO unit areas — a real gap we haven't yet resolved.",
+          "$description_es": "Tile F (Medium): Professional Office — objetivo de 3,500 SF según nuestra documentación fuente, pero la composición declarada '3× PO Small + PO Medium' suma solo 1,440 SF contra las áreas conocidas de unidad PO — un vacío real que aún no hemos resuelto."
+        },
+        "$description_es": "Familia Medium Tile — 3,500 SF (325.16 m²) por tile. Nuestra documentación fuente muestra en total tres tamaños de tile: Small 2,700 SF, Medium 3,500 SF, Large 4,900 SF. Las partidas exactas de composición de las variantes end-cap y Professional Office aún no están confirmadas y se señalan por entrada más abajo en lugar de asumirse; Tile D (unidad única de Corporate Office) es la única entrada con composición inequívoca."
       },
       "large-tile": {
         "$description": "Large Tile family — 4,900 SF (455.22 m²) per tile. Three tile types for large corporate and professional configurations. Large tiles reduce the number of climate zones but offer more contiguous space per tenant.",
@@ -211,13 +321,18 @@
             "total_area_sf": 4900,
             "total_area_m2": 455.22,
             "composition": [
-              {"unit": "Corporate Office", "area_sf": 4900, "count": 1}
+              {
+                "unit": "Corporate Office",
+                "area_sf": 4900,
+                "count": 1
+              }
             ],
             "unit_count": 1,
             "climate_zones": 1,
             "notes": "Single large corporate tenant unit. Nearly a 1/4 floor tile. Maximum contiguous space for single-tenant corporate use. One climate zone."
           },
-          "$description": "Tile F: Large Corporate Office — 4,900 SF single unit. 1 climate zone. Approaches 1/4 floor tile at 5,000 SF."
+          "$description": "Tile F: Large Corporate Office — 4,900 SF single unit. 1 climate zone. Approaches 1/4 floor tile at 5,000 SF.",
+          "$description_es": "Tile F: Large Corporate Office — unidad única de 4,900 SF. 1 zona climática. Se aproxima al tile de 1/4 de piso de 5,000 SF."
         },
         "tile-g": {
           "$type": "bim.entity",
@@ -226,14 +341,23 @@
             "total_area_sf": 4900,
             "total_area_m2": 455.22,
             "composition": [
-              {"unit": "Private Office (300–500 SF range)", "area_sf": 400, "count": 10},
-              {"unit": "Corridor", "area_sf": 900, "count": 1}
+              {
+                "unit": "Private Office (300–500 SF range)",
+                "area_sf": 400,
+                "count": 10
+              },
+              {
+                "unit": "Corridor",
+                "area_sf": 900,
+                "count": 1
+              }
             ],
             "unit_count": 10,
             "climate_zones": 10,
             "notes": "Ten private licensed offices (averaging 300–500 SF each) plus corridor. Maximum climate zone count per tile — each private office is fully independently climate-controlled. High density of small tenants."
           },
-          "$description": "Tile G: Large Private Office Mix — 4,900 SF; 10 private office units (300–500 SF each) + corridor. 10 climate zones."
+          "$description": "Tile G: Large Private Office Mix — 4,900 SF; 10 private office units (300–500 SF each) + corridor. 10 climate zones.",
+          "$description_es": "Tile G: Large Private Office Mix — 4,900 SF; 10 unidades de oficina privada (300–500 SF cada una) + corredor. 10 zonas climáticas."
         },
         "tile-h": {
           "$type": "bim.entity",
@@ -242,15 +366,25 @@
             "total_area_sf": 4900,
             "total_area_m2": 455.22,
             "composition": [
-              {"unit": "Professional Office (mixed sub-types)", "area_sf": 4200, "count": 3},
-              {"unit": "Corridor + Support", "area_sf": 700, "count": 1}
+              {
+                "unit": "Professional Office (mixed sub-types)",
+                "area_sf": 4200,
+                "count": 3
+              },
+              {
+                "unit": "Corridor + Support",
+                "area_sf": 700,
+                "count": 1
+              }
             ],
             "unit_count": 3,
             "climate_zones": 3,
             "notes": "Three Professional Office units (any mix of Medical, Business, Laboratory, Academic, Civic sub-types) plus corridor. Spans the full range of Professional Office sub-types. Suitable for mixed-professional-centre floors."
           },
-          "$description": "Tile H: Large Professional Office — 4,900 SF; 3 Professional Office units (any sub-type mix) + corridor. 3 climate zones."
-        }
+          "$description": "Tile H: Large Professional Office — 4,900 SF; 3 Professional Office units (any sub-type mix) + corridor. 3 climate zones.",
+          "$description_es": "Tile H: Large Professional Office — 4,900 SF; 3 unidades Professional Office (cualquier mezcla de subtipos) + corredor. 3 zonas climáticas."
+        },
+        "$description_es": "Familia Large Tile — 4,900 SF (455.22 m²) por tile. Tres tipos de tile para configuraciones corporativas y profesionales grandes. Los tiles Large reducen el número de zonas climáticas pero ofrecen más espacio contiguo por inquilino."
       },
       "special-tile": {
         "$description": "Special Tiles — residual tiles that fill the area around the building core, distinct from the Small/Medium/Large tile families above (which compose the main leasable floor plate). Two entries (tile-sp-a, tile-sp-b) are SF ranges rather than single fixed values — a genuine characteristic of special tiles, which flex to fill whatever residual space the core position leaves.",
@@ -265,7 +399,8 @@
             "snap_rule": "FP-SNAP-001",
             "notes": "Core-adjacent filler tile, 300–2,500 SF range. No natural light (core-adjacent position). Width snaps to the nearest Private Office key-plan width per rule FP-SNAP-001 (floor-plate-assembly-rules.dtcg.json)."
           },
-          "$description": "Special Tile A: Core-Adjacent Filler — 300–2,500 SF range, no natural light, snaps to PO key-plan width."
+          "$description": "Special Tile A: Core-Adjacent Filler — 300–2,500 SF range, no natural light, snaps to PO key-plan width.",
+          "$description_es": "Special Tile A: Core-Adjacent Filler — rango de 300–2,500 SF, sin luz natural, se ajusta al ancho del key plan de PO."
         },
         "tile-sp-b": {
           "$type": "bim.entity",
@@ -275,7 +410,8 @@
             "area_sf_max": 900,
             "notes": "Secondary core-adjacent filler tile, 300–900 SF range — a narrower/smaller residual-space filler than Special Tile A."
           },
-          "$description": "Special Tile B: Secondary Core-Adjacent — 300–900 SF range."
+          "$description": "Special Tile B: Secondary Core-Adjacent — 300–900 SF range.",
+          "$description_es": "Special Tile B: Secondary Core-Adjacent — rango de 300–900 SF."
         },
         "tile-sp-c": {
           "$type": "bim.entity",
@@ -285,8 +421,10 @@
             "constraint": "no direct elevator-door alignment",
             "notes": "Elevator-lobby front tile, 4,700 SF fixed value (not a range, unlike Special Tiles A/B). Constraint: must not have direct sightline/alignment with elevator doors, for privacy and circulation reasons."
           },
-          "$description": "Special Tile C: Elevator-Lobby Front — 4,700 SF. Constraint: no direct elevator-door alignment."
-        }
+          "$description": "Special Tile C: Elevator-Lobby Front — 4,700 SF. Constraint: no direct elevator-door alignment.",
+          "$description_es": "Special Tile C: Elevator-Lobby Front — 4,700 SF. Restricción: sin alineación directa con la puerta del elevador."
+        },
+        "$description_es": "Special Tiles — tiles residuales que llenan el área alrededor del núcleo del edificio, distintos de las familias Small/Medium/Large de arriba (que componen la placa de piso arrendable principal). Dos entradas (tile-sp-a, tile-sp-b) son rangos de SF en lugar de valores únicos fijos — una característica genuina de los special tiles, que se ajustan para llenar el espacio residual que deja la posición del núcleo."
       },
       "corridor-expander": {
         "$description": "Corridor expander component — not a full tile. Used to fill arithmetic gaps between Key Plan composition sums and headline tile SF targets at design time. Our floor-plate assembly system inserts corridor expanders automatically when Tile/Key-Plan/Floor-Plate negotiation requires it.",
@@ -299,8 +437,10 @@
             "source": "internal design documentation",
             "notes": "300 SF corridor expander. The diagram value 300 SF is operative; the nominal arithmetic sum of adjacent Key Plans may differ — this gap is intentional. Our floor-plate assembly system manages Tile/Key-Plan/Floor-Plate size negotiation at build time."
           },
-          "$description": "Corridor Expander T — 300 SF (27.87 m²). Diagram value is operative. Arithmetic gap vs Key Plan sum is intentional per Decision 4 (operator-resolved 2026-05-20)."
-        }
+          "$description": "Corridor Expander T — 300 SF (27.87 m²). Diagram value is operative. Arithmetic gap vs Key Plan sum is intentional per Decision 4 (operator-resolved 2026-05-20).",
+          "$description_es": "Corridor Expander T — 300 SF (27.87 m²). El valor del diagrama es el operativo. El vacío aritmético frente a la suma de Key Plan es intencional según la Decisión 4 (resuelta por el operador el 2026-05-20)."
+        },
+        "$description_es": "Componente expansor de corredor — no es un tile completo. Se usa para llenar vacíos aritméticos entre las sumas de composición de Key Plan y los objetivos de SF del tile principal en tiempo de diseño. Nuestro sistema de ensamblaje de placa de piso inserta expansores de corredor automáticamente cuando la negociación Tile/Key Plan/Placa de Piso lo requiere."
       },
       "reserved": {
         "$description": "Reserved tile slots — dimensions not yet confirmed. Values withheld pending further source documentation.",
@@ -312,7 +452,8 @@
             "source": "internal design documentation — not yet confirmed",
             "notes": "Values withheld pending further source documentation."
           },
-          "$description": "Tile J — Reserved stub. Values withheld pending V13 source confirmation."
+          "$description": "Tile J — Reserved stub. Values withheld pending V13 source confirmation.",
+          "$description_es": "Tile J — Marcador reservado. Valores retenidos en espera de confirmación de fuente V13."
         },
         "tile-k": {
           "$type": "bim.entity",
@@ -322,7 +463,8 @@
             "source": "internal design documentation — not yet confirmed",
             "notes": "Values withheld pending further source documentation."
           },
-          "$description": "Tile K — Reserved stub. Values withheld pending V13 source confirmation."
+          "$description": "Tile K — Reserved stub. Values withheld pending V13 source confirmation.",
+          "$description_es": "Tile K — Marcador reservado. Valores retenidos en espera de confirmación de fuente V13."
         },
         "tile-l": {
           "$type": "bim.entity",
@@ -332,7 +474,8 @@
             "source": "internal design documentation — not yet confirmed",
             "notes": "Values withheld pending further source documentation."
           },
-          "$description": "Tile L — Reserved stub. Values withheld pending V13 source confirmation."
+          "$description": "Tile L — Reserved stub. Values withheld pending V13 source confirmation.",
+          "$description_es": "Tile L — Marcador reservado. Valores retenidos en espera de confirmación de fuente V13."
         },
         "tile-m": {
           "$type": "bim.entity",
@@ -342,32 +485,40 @@
             "source": "internal design documentation — not yet confirmed",
             "notes": "Values withheld pending further source documentation."
           },
-          "$description": "Tile M — Reserved stub. Values withheld pending V13 source confirmation."
-        }
+          "$description": "Tile M — Reserved stub. Values withheld pending V13 source confirmation.",
+          "$description_es": "Tile M — Marcador reservado. Valores retenidos en espera de confirmación de fuente V13."
+        },
+        "$description_es": "Espacios de tile reservados — dimensiones aún no confirmadas. Valores retenidos en espera de más documentación fuente."
       },
       "design-principles": {
         "$description": "Encoded design principles for the Key Plans and Tiles assembly system. These are not measurable tokens but captured as reference metadata for the BIM design system substrate.",
         "climate-zone-autonomy": {
           "$type": "string",
           "$value": "one-tile-one-zone",
-          "$description": "Each Tile is an independent HVAC climate zone. Tenants seeking smaller tiles are motivated by climate control autonomy, not just space size. Combining tiles means combining climate control — negotiate accordingly."
+          "$description": "Each Tile is an independent HVAC climate zone. Tenants seeking smaller tiles are motivated by climate control autonomy, not just space size. Combining tiles means combining climate control — negotiate accordingly.",
+          "$description_es": "Cada Tile es una zona climática de HVAC independiente. Los inquilinos que buscan tiles más pequeños están motivados por la autonomía de control climático, no solo por el tamaño del espacio. Combinar tiles significa combinar el control climático — negociar en consecuencia."
         },
         "rolling-efficiency": {
           "$type": "string",
           "$value": "100-percent-target",
-          "$description": "The Tile composition must allow 100% of the floor plate to be represented by Key Plans at any tenant mix. No free space should exist without a corresponding Key Plan. Goal: reach 100% utilisation as tenant mix evolves."
+          "$description": "The Tile composition must allow 100% of the floor plate to be represented by Key Plans at any tenant mix. No free space should exist without a corresponding Key Plan. Goal: reach 100% utilisation as tenant mix evolves.",
+          "$description_es": "La composición de Tile debe permitir que el 100% de la placa de piso esté representado por Key Plans en cualquier mezcla de inquilinos. No debe existir espacio libre sin un Key Plan correspondiente. Meta: alcanzar el 100% de utilización conforme evoluciona la mezcla de inquilinos."
         },
         "corner-handling": {
           "$type": "string",
           "$value": "end-cap-tiles",
-          "$description": "Building short sides and corners use End Cap tiles (B-1, E-1, E-2). Small tiles at corners may create structural-grid boxing issues. Review column grid before specifying corner tile types. Core position should be adjusted if short-side tiles conflict."
+          "$description": "Building short sides and corners use End Cap tiles (B-1, E-1, E-2). Small tiles at corners may create structural-grid boxing issues. Review column grid before specifying corner tile types. Core position should be adjusted if short-side tiles conflict.",
+          "$description_es": "Los lados cortos y las esquinas del edificio usan tiles End Cap (B-1, E-1, E-2). Los tiles pequeños en las esquinas pueden crear problemas de encuadre con la retícula estructural. Revisar la retícula de columnas antes de especificar los tipos de tile de esquina. La posición del núcleo debe ajustarse si los tiles de lado corto entran en conflicto."
         },
         "professional-to-corporate-jump": {
           "$type": "string",
           "$value": "gap-review-required",
-          "$description": "The jump from Professional Office (max ~5,000 SF per 1/4 tile) to Corporate Office (min 2,500 SF per 1/8 tile) may leave a gap for tenants needing 5,000–7,500 SF. Consider Tile H (4,900 SF) or Small + Small Professional combinations (4,198 SF) to bridge the gap."
-        }
+          "$description": "The jump from Professional Office (max ~5,000 SF per 1/4 tile) to Corporate Office (min 2,500 SF per 1/8 tile) may leave a gap for tenants needing 5,000–7,500 SF. Consider Tile H (4,900 SF) or Small + Small Professional combinations (4,198 SF) to bridge the gap.",
+          "$description_es": "El salto de Professional Office (máx. ~5,000 SF por tile de 1/4) a Corporate Office (mín. 2,500 SF por tile de 1/8) puede dejar un vacío para inquilinos que necesitan 5,000–7,500 SF. Considerar el Tile H (4,900 SF) o combinaciones Small + Small Professional (4,198 SF) para cubrir el vacío."
+        },
+        "$description_es": "Principios de diseño codificados para el sistema de ensamblaje de Key Plans y Tiles. Estos no son tokens medibles, sino que se capturan como metadatos de referencia para el sustrato del sistema de diseño BIM."
       }
     }
-  }
+  },
+  "$description_es": "Categoría de tokens del SISTEMA DE TILES BIM — la taxonomía de ensamblaje de Key Plans y Tiles. Un Tile es un segmento componible de placa de piso que combina key plans de Private Office, Professional Office y Corporate Office en incrementos estandarizados de ancho de edificio. Tres tamaños estándar de Tile: Small (2,700 SF / 250.84 m²), Medium (3,500 SF / 325.16 m², agregado 2026-07-03) y Large (4,900 SF / 455.22 m²). Más Special Tiles — rellenos residuales adyacentes al núcleo, también agregados 2026-07-03. Los Tiles se componen para llenar la placa de piso rentable neta de 20,000 SF. Principio de diseño: maximizar la autonomía de zona climática (un Tile = una zona de HVAC) mientras se mantiene la eficiencia progresiva (capacidad de alcanzar 100% de utilización conforme cambia la mezcla de inquilinos). Fuente: documentación de diseño interna (enero de 2025)."
 }

@@ -1,6 +1,7 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$description": "BIM ELEMENTS token category — anchored to IFC 4.3 IfcBuiltElement family. The walls, slabs, columns, beams, doors, windows, roofs, stairs.",
+  "$description_es": "Categoría de tokens ELEMENTS de BIM — anclada a la familia IfcBuiltElement de IFC 4.3. Los muros, losas, columnas, vigas, puertas, ventanas, techos, escaleras.",
   "bim": {
     "elements": {
       "wall": {

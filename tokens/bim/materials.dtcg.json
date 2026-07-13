@@ -1,6 +1,7 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$description": "BIM MATERIALS token category — anchored to IFC 4.3 IfcMaterial + bSDD URI references. Pset_Material* property sets.",
+  "$description_es": "Categoría de tokens MATERIALS de BIM — anclada a IfcMaterial de IFC 4.3 + referencias URI de bSDD. Conjuntos de propiedades Pset_Material*.",
   "bim": {
     "materials": {
       "material": {
@@ -58,7 +59,8 @@
           "SpecificHeatCapacity": "IfcSpecificHeatCapacityMeasure",
           "ThermalConductivity": "IfcThermalConductivityMeasure"
         },
-        "$description": "Thermal property set — material-level properties only. ThermalConductivity (λ, W/m·K) is a material property. ThermalTransmittance (U-value, W/m²K) is an assembly property per ISO 10077; apply via Pset_WallCommon, Pset_DoorCommon, or Pset_MaterialLayerSet at the assembly level."
+        "$description": "Thermal property set — material-level properties only. ThermalConductivity (λ, W/m·K) is a material property. ThermalTransmittance (U-value, W/m²K) is an assembly property per ISO 10077; apply via Pset_WallCommon, Pset_DoorCommon, or Pset_MaterialLayerSet at the assembly level.",
+        "$description_es": "Conjunto de propiedades térmicas — solo propiedades a nivel de material. ThermalConductivity (λ, W/m·K) es una propiedad del material. ThermalTransmittance (valor U, W/m²K) es una propiedad de ensamble según ISO 10077; aplíquese mediante Pset_WallCommon, Pset_DoorCommon, o Pset_MaterialLayerSet a nivel de ensamble."
       }
     }
   }

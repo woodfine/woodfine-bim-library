@@ -1,6 +1,7 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$description": "BIM RELATIONSHIPS token category — anchored to IFC 4.3 IfcRel* relationship entities. Sub-agent A renamed 'Connections' to 'Relationships' to better match IFC vocabulary.",
+  "$description_es": "Categoría de tokens RELATIONSHIPS de BIM — anclada a las entidades de relación IfcRel* de IFC 4.3. El Sub-agent A renombró 'Connections' a 'Relationships' para coincidir mejor con el vocabulario IFC.",
   "bim": {
     "relationships": {
       "contained_in_spatial_structure": {
