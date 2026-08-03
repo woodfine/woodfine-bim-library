@@ -55,3 +55,37 @@ research/          ← AI-readable research files
 ## License
 
 Apache License 2.0 (Apache-2.0). See [LICENSE](LICENSE).
+
+<!-- BEGIN: factory-release-engineering license-section -->
+<!-- ================================================================== -->
+<!-- This section is generated from factory-release-engineering.         -->
+<!-- Do not edit here. Propose changes upstream.                          -->
+<!-- ================================================================== -->
+
+## License
+
+This repository is licensed under the **Apache-2.0**. See the
+`LICENSE` file in the root of this repository for the full legal text,
+which is authoritative.
+
+
+
+Copyright © 2026 Woodfine Capital Projects Inc. — all rights not expressly
+granted by the license are reserved.
+
+<!-- ================================================================== -->
+<!-- Esta sección se genera desde factory-release-engineering.           -->
+<!-- No editar aquí. Proponga cambios río arriba.                         -->
+<!-- ================================================================== -->
+
+## Licencia
+
+Este repositorio se distribuye bajo la **Apache-2.0**. Véase el
+archivo `LICENSE` en la raíz del repositorio para consultar el texto
+legal completo, el cual es la versión autoritativa.
+
+
+
+Copyright © 2026 Woodfine Capital Projects Inc. — se reservan todos los
+derechos no concedidos expresamente por la licencia.
+<!-- END: factory-release-engineering license-section -->
