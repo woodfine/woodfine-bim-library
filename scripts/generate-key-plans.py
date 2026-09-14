@@ -26,13 +26,40 @@ from pathlib import Path
 _GUID_CHARS = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_$"
 
 
-def ifc_guid():
-    n = uuid.uuid4().int
+_GUID_NAMESPACE = uuid.UUID("6f1c9c5e-8b8f-4b9a-9a9f-0f3a2f9d7e11")
+
+
+def _guid_from_seed(seed):
+    n = uuid.uuid5(_GUID_NAMESPACE, seed).int
     result = []
     for _ in range(22):
         result.append(_GUID_CHARS[n % 64])
         n //= 64
     return "".join(reversed(result))
+
+
+def make_guid_generator(context):
+    # 2026-09-14 fix: ifc_guid() used to be uuid.uuid4() (random), so every
+    # element's IFC GUID changed on every regeneration -- 18 tracked key-plan
+    # files rewritten nightly with 1,761 pure-noise insertions/deletions
+    # (verified via git diff), and since this directory rsyncs live to
+    # bim.woodfinegroup.com, served IFC downloads changed identity on every
+    # deploy, violating IFC's own stable-element-identifier contract.
+    # Each call site does `g = ifc_guid` once per key plan then calls `g()`
+    # bare ~17 times for different elements (project/site/building/storey/
+    # space/quantities/furniture/etc.) -- so a single fixed seed per key plan
+    # isn't enough (every element would collide on the same GUID). This
+    # returns a closure with its own per-key-plan call counter, so `context`
+    # (the key plan's own code, e.g. "PO-1") plus call order together make a
+    # stable, unique, deterministic seed per element -- a re-run converges to
+    # the same GUIDs instead of churning, and no call site needs to change.
+    counter = [0]
+
+    def _next():
+        counter[0] += 1
+        return _guid_from_seed(f"{context}:{counter[0]}")
+
+    return _next
 
 
 # ---------------------------------------------------------------------------
@@ -632,7 +659,7 @@ def build_ifc(kp):
     SPACE_QS  = next_id()
     REL_QS    = next_id()
 
-    g = ifc_guid
+    g = make_guid_generator(kp_code)
     W = f"{width:.6f}"
     D = f"{depth:.6f}"
     code_name = kp["code"] + " " + kp["name"]
